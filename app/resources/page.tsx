@@ -342,7 +342,7 @@ export default async function Resources() {
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.guides.map((guide: Resource) => (
-                <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                <Link href={`/resources/${guide.id}`} key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
                       src={`/images/resources/${guide.id}.jpg`} 
@@ -359,12 +359,12 @@ export default async function Resources() {
                     <p className="text-[#505A64] mb-4 text-sm">
                       {guide.description}
                     </p>
-                    <Link href={guide.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                    <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {guide.linkText}
                       <Icon name={guide.linkIcon} size={14} strokeWidth={2} />
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 ))}
               </div>
             </section>
@@ -376,7 +376,7 @@ export default async function Resources() {
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.casestudies.map((casestudy: Resource) => (
-                <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                <Link href={`/resources/${casestudy.id}`} key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
                       src={`/images/resources/${casestudy.id}.jpg`} 
@@ -393,12 +393,12 @@ export default async function Resources() {
                     <p className="text-[#505A64] mb-3 text-sm">
                       {casestudy.description}
                     </p>
-                    <Link href={casestudy.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                    <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {casestudy.linkText}
                       <Icon name={casestudy.linkIcon} size={14} strokeWidth={2} />
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 ))}
               </div>
             </section>
@@ -410,7 +410,7 @@ export default async function Resources() {
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.tools.map((tool: Resource) => (
-                <div key={tool.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                <Link href={`/resources/${tool.id}`} key={tool.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
                       src={`/images/resources/${tool.id}.jpg`} 
@@ -427,12 +427,12 @@ export default async function Resources() {
                     <p className="text-[#505A64] mb-3 text-sm">
                       {tool.description}
                     </p>
-                    <Link href={tool.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                    <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {tool.linkText}
                       <Icon name={tool.linkIcon} size={14} strokeWidth={2} />
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 ))}
               </div>
             </section>
@@ -471,7 +471,7 @@ export default async function Resources() {
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents</h2>
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.documents.map((document: Resource) => (
-                <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
                       src={`/images/resources/${document.id}.jpg`} 
@@ -491,12 +491,12 @@ export default async function Resources() {
                     <p className="text-[#505A64] mb-3 text-sm">
                       {document.description}
                     </p>
-                    <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                    <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {document.linkText}
                       <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                    </Link>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 ))}
               </div>
             </section>
@@ -521,7 +521,7 @@ export default async function Resources() {
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents stratégiques</h2>
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.strategic.map((document: Resource) => (
-                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
                             src={`/images/resources/team/${document.id}.jpg`} 
@@ -541,12 +541,12 @@ export default async function Resources() {
                           <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
                             <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </section>
@@ -558,7 +558,7 @@ export default async function Resources() {
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents techniques</h2>
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.technical.map((document: Resource) => (
-                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
                             src={`/images/resources/team/${document.id}.jpg`} 
@@ -578,12 +578,12 @@ export default async function Resources() {
                           <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
                             <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </section>
@@ -595,7 +595,7 @@ export default async function Resources() {
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents opérationnels</h2>
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.operational.map((document: Resource) => (
-                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
                             src={`/images/resources/team/${document.id}.jpg`} 
@@ -615,12 +615,12 @@ export default async function Resources() {
                           <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
                             <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </section>
@@ -632,7 +632,7 @@ export default async function Resources() {
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents juridiques & financiers</h2>
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.financial.map((document: Resource) => (
-                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
                             src={`/images/resources/team/${document.id}.jpg`} 
@@ -652,12 +652,12 @@ export default async function Resources() {
                           <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
                             <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </section>
@@ -669,7 +669,7 @@ export default async function Resources() {
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.testing.map((document: Resource) => (
-                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
                             src={`/images/resources/team/${document.id}.jpg`} 
@@ -689,12 +689,12 @@ export default async function Resources() {
                           <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
                             <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </Link>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </section>
