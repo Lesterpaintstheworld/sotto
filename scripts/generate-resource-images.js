@@ -189,10 +189,17 @@ async function processAllResources() {
     const resources = resourcesData.public[category];
     for (let i = 0; i < resources.length; i++) {
       const resource = resources[i];
+      const outputPath = path.join(resourcesDir, `${resource.id}.jpg`);
+      
+      // Vérifier si l'image existe déjà
+      if (fs.existsSync(outputPath)) {
+        console.log(`L'image existe déjà pour la ressource publique: ${resource.id} - Ignorée`);
+        continue;
+      }
+      
       console.log(`Traitement de la ressource publique: ${resource.id} (${i+1}/${resources.length})`);
       const prompt = await generateIdeogramPrompt(resource, i, resources.length);
       if (prompt) {
-        const outputPath = path.join(resourcesDir, `${resource.id}.jpg`);
         await generateImage(prompt, outputPath, i);
         // Attendre un peu entre chaque requête pour éviter les limitations d'API
         await new Promise(resolve => setTimeout(resolve, 2000));
@@ -206,10 +213,18 @@ async function processAllResources() {
     const resources = resourcesData.team[category];
     for (let i = 0; i < resources.length; i++) {
       const resource = resources[i];
+      const outputPath = path.join(teamDir, `${resource.id}.jpg`);
+      
+      // Vérifier si l'image existe déjà
+      if (fs.existsSync(outputPath)) {
+        console.log(`L'image existe déjà pour la ressource d'équipe: ${resource.id} - Ignorée`);
+        teamIndex++;
+        continue;
+      }
+      
       console.log(`Traitement de la ressource d'équipe: ${resource.id} (${i+1}/${resources.length})`);
       const prompt = await generateIdeogramPrompt(resource, teamIndex, resources.length);
       if (prompt) {
-        const outputPath = path.join(teamDir, `${resource.id}.jpg`);
         await generateImage(prompt, outputPath, teamIndex);
         // Attendre un peu entre chaque requête pour éviter les limitations d'API
         await new Promise(resolve => setTimeout(resolve, 2000));
