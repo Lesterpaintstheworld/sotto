@@ -56,8 +56,8 @@ export default function ResourceContent() {
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                   <td className="py-3 px-4 font-medium">Latence</td>
-                  <td className="py-3 px-4">< 50ms</td>
-                  <td className="py-3 px-4">< 20ms</td>
+                  <td className="py-3 px-4">moins de 50ms</td>
+                  <td className="py-3 px-4">moins de 20ms</td>
                   <td className="py-3 px-4">Critique pour la reconnaissance vocale</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
@@ -425,7 +425,7 @@ export default function ResourceContent() {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D47D5A] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    <span>Valider que la latence reste < 100ms en charge maximale</span>
+                    <span>Valider que la latence reste dessous 100ms en charge maximale</span>
                   </li>
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D47D5A] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -474,22 +474,22 @@ export default function ResourceContent() {
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                   <td className="py-3 px-4 font-medium">Couverture</td>
-                  <td className="py-3 px-4">Signal > -65 dBm partout</td>
+                  <td className="py-3 px-4">Signal au dessus de -65 dBm partout</td>
                   <td className="py-3 px-4">Cartographie avec outil d'analyse</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                   <td className="py-3 px-4 font-medium">Latence</td>
-                  <td className="py-3 px-4">< 100ms en tout point</td>
+                  <td className="py-3 px-4">au dessous de 100ms en tout point</td>
                   <td className="py-3 px-4">Ping continu pendant déplacement</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                   <td className="py-3 px-4 font-medium">Débit</td>
-                  <td className="py-3 px-4">> 5 Mbps par oreillette</td>
+                  <td className="py-3 px-4">au dessus de 5 Mbps par oreillette</td>
                   <td className="py-3 px-4">Test de bande passante simultané</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                   <td className="py-3 px-4 font-medium">Transition</td>
-                  <td className="py-3 px-4">< 150ms entre AP</td>
+                  <td className="py-3 px-4">au dessous de 150ms entre AP</td>
                   <td className="py-3 px-4">Test de roaming avec outil spécialisé</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">

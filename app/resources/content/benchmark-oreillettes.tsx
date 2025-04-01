@@ -252,7 +252,7 @@ export default function ResourceContent() {
               <div className="mb-4">
                 <h5 className="font-semibold text-[#D47D5A] mb-2">Points forts :</h5>
                 <ul className="list-disc list-inside space-y-1 text-sm">
-                  <li>Excellente qualité de capture vocale même en environnement bruyant (>85dB)</li>
+                  <li>Excellente qualité de capture vocale même en environnement bruyant (plus de 85dB)</li>
                   <li>Filtrage adaptatif du bruit ambiant</li>
                   <li>Autonomie de 9h en utilisation continue</li>
                   <li>Recharge rapide (70% en 30 minutes)</li>
@@ -340,7 +340,7 @@ export default function ResourceContent() {
           </div>
           <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow-md text-center">
             <div className="text-[#D47D5A] font-bold text-lg mb-2">Fast-food</div>
-            <div className="text-sm">Niveau sonore très élevé, >85dB avec pics</div>
+            <div className="text-sm">Niveau sonore très élevé, plus de 85dB avec pics</div>
           </div>
         </div>
 
