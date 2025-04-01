@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import fs from 'fs';
 import path from 'path';
-import { remark } from 'remark';
-import html from 'remark-html';
+import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 
 // Fonction pour obtenir les données JSON des ressources
 async function getResourcesData() {
@@ -44,32 +44,32 @@ function findResourceById(resourcesData: any, id: string) {
   return null;
 }
 
-// Fonction pour obtenir le contenu Markdown d'une ressource
-async function getResourceContent(id: string, category: string, isTeam: boolean) {
+// Fonction pour vérifier si le composant TSX existe
+function checkTsxComponentExists(id: string) {
   try {
-    const basePath = path.join(process.cwd(), 'content/resources');
-    const resourcePath = isTeam 
-      ? path.join(basePath, 'team', category, `${id}.md`)
-      : path.join(basePath, 'public', category, `${id}.md`);
-    
-    // Vérifier si le fichier existe
-    if (!fs.existsSync(resourcePath)) {
-      return null;
-    }
-    
-    // Lire le contenu du fichier Markdown
-    const content = fs.readFileSync(resourcePath, 'utf8');
-    
-    // Convertir le Markdown en HTML
-    const processedContent = await remark()
-      .use(html)
-      .process(content);
-    
-    return processedContent.toString();
+    const tsxPath = path.join(process.cwd(), `app/resources/content/${id}.tsx`);
+    return fs.existsSync(tsxPath);
   } catch (error) {
-    console.error('Error fetching resource content:', error);
-    return null;
+    return false;
   }
+}
+
+// Génération des métadonnées
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const resourcesData = await getResourcesData();
+  const resourceInfo = findResourceById(resourcesData, params.id);
+  
+  if (!resourceInfo) {
+    return {
+      title: 'Ressource non trouvée | Sotto',
+      description: 'La ressource demandée n\'existe pas.'
+    };
+  }
+  
+  return {
+    title: `${resourceInfo.resource.title} | Ressources Sotto`,
+    description: resourceInfo.resource.description
+  };
 }
 
 // Fonction pour obtenir les paramètres statiques
@@ -145,12 +145,28 @@ export default async function ResourcePage({ params }: { params: { id: string } 
   
   const { resource, category, isTeam } = resourceInfo;
   
-  // Obtenir le contenu de la ressource
-  const content = await getResourceContent(id, category, isTeam);
+  // Vérifier si le composant TSX existe
+  const tsxExists = checkTsxComponentExists(id);
   
-  // Si le contenu n'existe pas, retourner une page 404
-  if (!content) {
-    notFound();
+  // Importer dynamiquement le composant TSX s'il existe
+  let ResourceContent;
+  if (tsxExists) {
+    ResourceContent = dynamic(() => import(`@/app/resources/content/${id}`), {
+      loading: () => <div className="py-10 text-center">Chargement du contenu...</div>,
+      ssr: true
+    });
+  } else {
+    // Fallback si le composant TSX n'existe pas
+    ResourceContent = () => (
+      <div className="py-10">
+        <div className="bg-[#1A2A40]/5 p-6 rounded-lg text-center">
+          <h3 className="text-xl font-bold mb-4">Contenu non disponible</h3>
+          <p className="text-[#505A64]">
+            Le contenu détaillé de cette ressource n'est pas encore disponible.
+          </p>
+        </div>
+      </div>
+    );
   }
   
   // Vérifier si l'utilisateur est connecté et a accès aux ressources de l'équipe
@@ -204,7 +220,7 @@ export default async function ResourcePage({ params }: { params: { id: string } 
           
           {/* Contenu de la ressource */}
           <div className="prose prose-lg max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+            <ResourceContent />
           </div>
           
           {/* Bouton d'action */}
