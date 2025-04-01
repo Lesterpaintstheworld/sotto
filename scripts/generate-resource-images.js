@@ -1,17 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
-const { Anthropic } = require('@anthropic/sdk');
 const dotenv = require('dotenv');
 
 dotenv.config();
 
-// Initialiser le client Anthropic (Claude)
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
-
-// Initialiser le client Ideogram (assurez-vous d'avoir une clé API)
+// Récupérer les clés API depuis les variables d'environnement
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const IDEOGRAM_API_KEY = process.env.IDEOGRAM_API_KEY;
 
 // Charger les données des ressources
@@ -39,18 +34,20 @@ Style de marque Sotto:
 - Personnalité: Discret, efficace, élégant, attentif - comme le parfait serveur qui anticipe vos besoins sans jamais s'imposer
 `;
 
-// Fonction pour générer un prompt Ideogram avec Claude
+// Fonction pour générer un prompt Ideogram avec Claude via appel HTTPS direct
 async function generateIdeogramPrompt(resource) {
   try {
-    const message = await anthropic.messages.create({
-      model: "claude-3-sonnet-20240229",
-      max_tokens: 1000,
-      temperature: 0.7,
-      system: "Tu es un expert en création de prompts pour l'IA générative d'images Ideogram. Tu crées des prompts détaillés qui produisent des images de haute qualité, artistiques et cohérentes avec l'identité de marque fournie.",
-      messages: [
-        {
-          role: "user",
-          content: `Crée un prompt détaillé pour Ideogram 3.0 qui illustrera une ressource pour notre site web. L'image doit être au format 16:9.
+    const response = await axios.post(
+      'https://api.anthropic.com/v1/messages',
+      {
+        model: "claude-3-sonnet-20240229",
+        max_tokens: 1000,
+        temperature: 0.7,
+        system: "Tu es un expert en création de prompts pour l'IA générative d'images Ideogram. Tu crées des prompts détaillés qui produisent des images de haute qualité, artistiques et cohérentes avec l'identité de marque fournie.",
+        messages: [
+          {
+            role: "user",
+            content: `Crée un prompt détaillé pour Ideogram 3.0 qui illustrera une ressource pour notre site web. L'image doit être au format 16:9.
 
 Titre de la ressource: ${resource.title}
 Description: ${resource.description}
@@ -66,13 +63,21 @@ Ton prompt doit:
 6. Ne pas inclure de texte dans l'image
 
 Donne uniquement le prompt, sans explications ni commentaires.`
+          }
+        ]
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'x-api-key': ANTHROPIC_API_KEY,
+          'anthropic-version': '2023-06-01'
         }
-      ]
-    });
+      }
+    );
 
-    return message.content[0].text;
+    return response.data.content[0].text;
   } catch (error) {
-    console.error(`Erreur lors de la génération du prompt pour ${resource.title}:`, error);
+    console.error(`Erreur lors de la génération du prompt pour ${resource.title}:`, error.response?.data || error.message);
     return null;
   }
 }
