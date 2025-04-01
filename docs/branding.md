@@ -5,7 +5,7 @@
 
 **Mission:** Libérer la restauration des écrans pour créer une expérience plus humaine et efficace.
 
-**Proposition de valeur:** Un système vocal IA qui simplifie les opérations de restaurant sans barrière technologique visible.
+**Proposition de valeur:** Un système vocal IA qui simplifie les opérations de restaurant sans barrière technologique visible, s'intégrant dans un écosystème complet d'encaissement intelligent.
 
 **Personnalité:** Discret, efficace, élégant, attentif - comme le parfait serveur qui anticipe vos besoins sans jamais s'imposer.
 
@@ -27,14 +27,14 @@
 
 #### Typographie
 
-**Logo & Titres:** Didot (variante légère) - Élégance classique avec une touche moderne
+**Logo & Titres:** Geist - Élégance contemporaine avec une touche professionnelle
 
-**Corps de texte:** Proxima Nova - Lisible, contemporain, professionnel
+**Corps de texte:** Geist - Lisible, contemporain, professionnel
 - Light pour les grands textes
 - Regular pour le contenu standard
 - Semi-bold pour l'emphase
 
-**Interface utilisateur:** Inter - Optimisé pour les écrans, haute lisibilité
+**Interface utilisateur:** Geist - Optimisé pour les écrans, haute lisibilité
 
 #### Éléments graphiques
 
@@ -44,7 +44,12 @@
 
 **Motifs:** Ondes sonores minimalistes, utilisées avec parcimonie comme élément décoratif
 
-**Photographie:** Images en éclairage naturel montrant des interactions humaines authentiques dans les restaurants - jamais d'écrans visibles
+**Photographie:** 
+- Images en éclairage naturel montrant des interactions humaines authentiques dans les restaurants
+- Style duotone utilisant le bleu profond (#1A2A40) et le terracotta (#D47D5A)
+- Effets halftone subtils pour ajouter de la texture
+- Restaurants ordinaires et accessibles, pas trop luxueux ou élitistes
+- Jamais d'écrans visibles
 
 ### Ton et voix
 
@@ -100,6 +105,13 @@
 **Pour les clients:**
 "Une expérience de restauration plus attentive et fluide."
 
+### Statistiques d'impact
+
+- **30%** de réduction des coûts matériels
+- **25%** de gain de temps en service
+- **40%** d'amélioration de la satisfaction client
+- **15%** d'augmentation du chiffre d'affaires
+
 ### Signature visuelle
 
 La signature visuelle de Sotto se caractérise par des espaces négatifs généreux, une typographie élégante et des touches subtiles de couleur. Les communications visuelles devraient toujours mettre en avant des personnes engagées dans un service attentif, jamais la technologie elle-même.
@@ -122,5 +134,14 @@ La signature visuelle de Sotto se caractérise par des espaces négatifs génér
 - Stand minimaliste évitant paradoxalement les écrans
 - Démonstrations live avec personnel en situation réelle
 - Espace de discussion calme permettant des conversations de qualité
+
+### Vision élargie
+
+Sotto s'inscrit dans une vision plus large de transformation du secteur de la restauration:
+
+- Centralisation des flux: commandes, paiements, reversements
+- Intégration organique de tous les outils autour de l'expérience client
+- Solution 100% intégrée et pilotée
+- Écosystème complet incluant caisse intelligente, TPE intégrés, briques e-commerce et réseau d'API
 
 Cette identité de marque positionne Sotto comme une solution sophistiquée qui valorise l'humain et la discrétion plutôt que la technologie visible, en parfaite cohérence avec la promesse du produit.
