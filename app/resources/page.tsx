@@ -104,11 +104,8 @@ const formatDate = (dateString) => {
 };
 
 export default function Resources() {
-  // Vérifier si les données sont disponibles et correctement structurées
-  const guides = resourcesData?.team?.guides || [];
-  const casestudies = resourcesData?.team?.casestudies || [];
-  const tools = resourcesData?.team?.tools || [];
-  const webinars = resourcesData?.team?.webinars || [];
+  // Accéder directement aux données de l'équipe
+  const teamData = resourcesData.team;
 
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
@@ -124,11 +121,11 @@ export default function Resources() {
           </div>
           
           {/* Guides et tutoriels */}
-          {guides.length > 0 && (
+          {teamData.guides && teamData.guides.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
               <div className="grid md:grid-cols-3 gap-8">
-                {guides.map((guide) => (
+                {teamData.guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -152,11 +149,11 @@ export default function Resources() {
           )}
           
           {/* Études de cas */}
-          {casestudies.length > 0 && (
+          {teamData.casestudies && teamData.casestudies.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {casestudies.map((casestudy) => (
+                {teamData.casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-56 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -189,11 +186,11 @@ export default function Resources() {
           )}
           
           {/* Outils et calculateurs */}
-          {tools.length > 0 && (
+          {teamData.tools && teamData.tools.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {tools.map((tool) => (
+                {teamData.tools.map((tool) => (
                 <div key={tool.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <Icon name={tool.icon} size={24} color={tool.iconColor} strokeWidth={2} />
@@ -213,10 +210,10 @@ export default function Resources() {
           )}
           
           {/* Webinaires et événements */}
-          {webinars.length > 0 && (
+          {teamData.webinars && teamData.webinars.length > 0 && (
             <section>
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
-              {webinars.map((webinar) => (
+              {teamData.webinars.map((webinar) => (
               <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden">
                 <div className="p-8 md:p-12">
                   <span 
