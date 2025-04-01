@@ -27,6 +27,33 @@
         "link": "#",
         "linkText": "Consulter la FAQ",
         "linkIcon": "arrow-right"
+      },
+      {
+        "id": "livre-blanc",
+        "title": "Livre Blanc Sotto",
+        "description": "Document détaillé présentant la vision, l'architecture et les objectifs du projet pour partenaires et investisseurs.",
+        "icon": "file-text",
+        "link": "#",
+        "linkText": "Télécharger le PDF",
+        "linkIcon": "download"
+      },
+      {
+        "id": "business-plan",
+        "title": "Business Plan Complet",
+        "description": "Projections financières, modèle de revenus, analyse de marché, et objectifs de croissance sur 3-5 ans.",
+        "icon": "trending-up",
+        "link": "#",
+        "linkText": "Consulter le document",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "analyse-concurrentielle",
+        "title": "Analyse Concurrentielle",
+        "description": "Cartographie des solutions existantes, positionnement différentiant de Sotto, et opportunités de marché.",
+        "icon": "search",
+        "link": "#",
+        "linkText": "Télécharger l'analyse",
+        "linkIcon": "download"
       }
     ],
     "casestudies": [
@@ -51,6 +78,28 @@
         "link": "#",
         "linkText": "Lire l'étude de cas",
         "linkIcon": "arrow-right"
+      },
+      {
+        "id": "benchmark-roi",
+        "title": "Benchmark ROI Client",
+        "description": "Analyse détaillée du retour sur investissement pour les restaurants ayant adopté Sotto.",
+        "category": "Analyse financière",
+        "categoryColor": "#D47D5A",
+        "icon": "file-text",
+        "link": "#",
+        "linkText": "Consulter le benchmark",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "test-pilote",
+        "title": "Résultats des Tests Pilotes",
+        "description": "Résultats et enseignements des déploiements pilotes de Sotto dans différents types d'établissements.",
+        "category": "Validation terrain",
+        "categoryColor": "#1A2A40",
+        "icon": "file-text",
+        "link": "#",
+        "linkText": "Voir les résultats",
+        "linkIcon": "arrow-right"
       }
     ],
     "tools": [
@@ -73,6 +122,36 @@
         "link": "#",
         "linkText": "Commencer l'évaluation",
         "linkIcon": "arrow-right"
+      },
+      {
+        "id": "checklist-deploiement",
+        "title": "Checklist de Déploiement",
+        "description": "Liste de vérification interactive pour préparer votre établissement à l'installation de Sotto.",
+        "icon": "check-square",
+        "iconColor": "#87A28F",
+        "link": "#",
+        "linkText": "Accéder à la checklist",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "guide-wifi",
+        "title": "Guide d'Implémentation WiFi",
+        "description": "Évaluez et optimisez votre infrastructure réseau pour garantir une performance optimale du système Sotto.",
+        "icon": "wifi",
+        "iconColor": "#1A2A40",
+        "link": "#",
+        "linkText": "Consulter le guide",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "kpi-dashboard",
+        "title": "KPI Dashboard Demo",
+        "description": "Aperçu interactif du tableau de bord de performance que vous obtiendrez avec Sotto.",
+        "icon": "bar-chart-2",
+        "iconColor": "#D4B483",
+        "link": "#",
+        "linkText": "Explorer la démo",
+        "linkIcon": "arrow-right"
       }
     ],
     "webinars": [
@@ -87,6 +166,87 @@
         "tagColor": "#D47D5A",
         "buttonText": "S'inscrire gratuitement",
         "buttonLink": "#"
+      },
+      {
+        "id": "webinar-architecture",
+        "title": "Architecture Technique de Sotto",
+        "description": "Session technique avec notre CTO pour comprendre l'infrastructure qui permet à Sotto de fonctionner de manière fluide et sécurisée.",
+        "date": "2024-06-22",
+        "time": "11:00 - 12:30",
+        "timezone": "CET",
+        "tag": "Webinaire technique",
+        "tagColor": "#1A2A40",
+        "buttonText": "S'inscrire gratuitement",
+        "buttonLink": "#"
+      },
+      {
+        "id": "webinar-formation",
+        "title": "Former efficacement votre équipe à Sotto",
+        "description": "Stratégies et bonnes pratiques pour une adoption rapide et enthousiaste de Sotto par votre personnel.",
+        "date": "2024-07-05",
+        "time": "14:00 - 15:00",
+        "timezone": "CET",
+        "tag": "Webinaire RH",
+        "tagColor": "#87A28F",
+        "buttonText": "S'inscrire gratuitement",
+        "buttonLink": "#"
+      }
+    ],
+    "documents": [
+      {
+        "id": "architecture-technique",
+        "title": "Architecture Technique",
+        "description": "Schémas techniques détaillés, infrastructures, composants et flux de données du système Sotto.",
+        "category": "Documentation technique",
+        "categoryColor": "#1A2A40",
+        "icon": "layers",
+        "link": "#",
+        "linkText": "Consulter le document",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "specifications-api",
+        "title": "Spécifications API",
+        "description": "Documentation des interfaces pour l'intégration avec les systèmes externes (TPE, systèmes de réservation, etc.).",
+        "category": "Documentation technique",
+        "categoryColor": "#1A2A40",
+        "icon": "code",
+        "link": "#",
+        "linkText": "Consulter les spécifications",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "brand-book",
+        "title": "Brand Book Sotto",
+        "description": "Guide complet de l'identité visuelle, ton de voix, et principes de communication de la marque Sotto.",
+        "category": "Marketing",
+        "categoryColor": "#D47D5A",
+        "icon": "book",
+        "link": "#",
+        "linkText": "Télécharger le brand book",
+        "linkIcon": "download"
+      },
+      {
+        "id": "termes-conditions",
+        "title": "Termes et Conditions",
+        "description": "Contrats d'utilisation du service pour les restaurants partenaires de Sotto.",
+        "category": "Juridique",
+        "categoryColor": "#D4B483",
+        "icon": "file-text",
+        "link": "#",
+        "linkText": "Consulter le document",
+        "linkIcon": "arrow-right"
+      },
+      {
+        "id": "politique-confidentialite",
+        "title": "Politique de Confidentialité",
+        "description": "Documentation RGPD et gestion des données personnelles dans le cadre de l'utilisation de Sotto.",
+        "category": "Juridique",
+        "categoryColor": "#D4B483",
+        "icon": "shield",
+        "link": "#",
+        "linkText": "Consulter la politique",
+        "linkIcon": "arrow-right"
       }
     ]
   }

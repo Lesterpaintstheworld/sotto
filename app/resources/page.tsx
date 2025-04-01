@@ -111,6 +111,65 @@ const Icon = ({ name, size = 48, color = "#1A2A40", strokeWidth = 1.5 }) => {
             <polyline points="12 6 12 12 16 14"></polyline>
           </svg>
         );
+      case "search":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        );
+      case "check-square":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 11 12 14 22 4"></polyline>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+          </svg>
+        );
+      case "wifi":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+        );
+      case "bar-chart-2":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        );
+      case "layers":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        );
+      case "code":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        );
+      case "book":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        );
+      case "shield":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        );
       default:
         return null;
     }
@@ -234,10 +293,10 @@ export default async function Resources() {
           
           {/* Webinaires et événements */}
           {teamData.webinars && teamData.webinars.length > 0 && (
-            <section>
+            <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
               {teamData.webinars.map((webinar) => (
-              <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden">
+              <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden mb-6">
                 <div className="p-8 md:p-12">
                   <span 
                     className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4"
@@ -273,6 +332,41 @@ export default async function Resources() {
                 </div>
               </div>
               ))}
+            </section>
+          )}
+          
+          {/* Documents techniques et juridiques */}
+          {teamData.documents && teamData.documents.length > 0 && (
+            <section>
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents essentiels</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                {teamData.documents.map((document) => (
+                <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="p-6">
+                    <span 
+                      className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                      style={{ 
+                        backgroundColor: `${document.categoryColor}20`, 
+                        color: document.categoryColor 
+                      }}
+                    >
+                      {document.category}
+                    </span>
+                    <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                      <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                      {document.title}
+                    </h3>
+                    <p className="text-[#505A64] mb-4">
+                      {document.description}
+                    </p>
+                    <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                      {document.linkText}
+                      <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                    </Link>
+                  </div>
+                </div>
+                ))}
+              </div>
             </section>
           )}
         </div>
