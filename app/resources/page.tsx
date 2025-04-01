@@ -111,7 +111,7 @@ export default function Resources() {
       <main className="px-6 md:px-20 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ressources</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ressources de l'équipe</h1>
             <p className="text-lg text-[#505A64] max-w-2xl mx-auto">
               Découvrez nos guides, études de cas et outils pour tirer le meilleur parti de Sotto et optimiser votre restaurant.
             </p>
@@ -121,7 +121,7 @@ export default function Resources() {
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              {resourcesData.guides.map((guide) => (
+              {resourcesData.team.guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -147,7 +147,7 @@ export default function Resources() {
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {resourcesData.casestudies.map((casestudy) => (
+              {resourcesData.team.casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-56 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -182,7 +182,7 @@ export default function Resources() {
           <section className="mb-16">
             <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {resourcesData.tools.map((tool) => (
+              {resourcesData.team.tools.map((tool) => (
                 <div key={tool.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <Icon name={tool.icon} size={24} color={tool.iconColor} strokeWidth={2} />
@@ -203,7 +203,7 @@ export default function Resources() {
           {/* Webinaires et événements */}
           <section>
             <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
-            {resourcesData.webinars.map((webinar) => (
+            {resourcesData.team.webinars.map((webinar) => (
               <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden">
                 <div className="p-8 md:p-12">
                   <span 
