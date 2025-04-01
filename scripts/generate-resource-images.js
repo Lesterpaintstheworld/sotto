@@ -27,11 +27,11 @@ if (!fs.existsSync(teamDir)) fs.mkdirSync(teamDir);
 const brandStyleDescription = `
 Style de marque Sotto:
 - Palette de couleurs: Bleu profond (#1A2A40), Terracotta doux (#D47D5A), Blanc cassé (#F5F5F0), Vert sauge (#87A28F), Or subtil (#D4B483)
-- Style visuel: Minimaliste, élégant, épuré avec beaucoup d'espace négatif
-- Ambiance: Sophistiquée, chaleureuse, professionnelle, discrète
-- Photographie: Images combinant duotone (bleu profond #1A2A40 et terracotta #D47D5A) avec des effets halftone subtils. Éclairage naturel montrant des interactions humaines authentiques dans les restaurants - jamais d'écrans visibles
-- Éléments graphiques: Lignes fines, contours épurés, coins légèrement arrondis
-- Personnalité: Discret, efficace, élégant, attentif - comme le parfait serveur qui anticipe vos besoins sans jamais s'imposer
+- Style visuel: Accessible, chaleureux, authentique avec une touche professionnelle
+- Ambiance: Conviviale, pratique, efficace - adaptée aux restaurants de tous types
+- Photographie: Images en éclairage naturel montrant des scènes de restaurants ordinaires, des équipes au travail, des interactions authentiques - jamais d'écrans visibles
+- Éléments graphiques: Simples, fonctionnels, avec une touche chaleureuse
+- Personnalité: Fiable, accessible, utile - comme un outil qui facilite le quotidien sans prétention
 `;
 
 // Fonction pour générer un prompt Ideogram avec Claude via appel HTTPS direct
@@ -47,7 +47,7 @@ async function generateIdeogramPrompt(resource) {
         messages: [
           {
             role: "user",
-            content: `Crée un prompt détaillé pour Ideogram qui illustrera une ressource pour notre site web. L'image doit être au format 16:9.
+            content: `Crée un prompt détaillé pour Ideogram qui illustrera une ressource pour notre site web. L'image doit être au format 16:9 et DOIT être une photographie réaliste (pas d'illustration).
 
 Titre de la ressource: ${resource.title}
 Description: ${resource.description}
@@ -55,13 +55,14 @@ Description: ${resource.description}
 ${brandStyleDescription}
 
 Ton prompt doit:
-1. Décrire une image qui représente visuellement le concept de cette ressource
-2. Spécifier explicitement un style combinant duotone (bleu profond #1A2A40 et terracotta #D47D5A) avec des effets halftone subtils
-3. Inclure des détails sur la composition, l'éclairage et les éléments à inclure
-4. Être optimisé pour le format 16:9 avec une composition équilibrée
-5. Respecter notre identité de marque minimaliste et élégante
-6. Ne pas inclure de texte dans l'image
-7. Montrer des personnes dans un contexte de restaurant, sans écrans visibles
+1. Décrire une photographie réaliste qui représente visuellement le concept de cette ressource
+2. Montrer un restaurant ordinaire, accessible, pas trop chic ou élitiste
+3. Spécifier un style combinant duotone (bleu profond #1A2A40 et terracotta #D47D5A) avec des effets halftone subtils
+4. Inclure des détails sur la composition, l'éclairage et les éléments à inclure
+5. Être optimisé pour le format 16:9 avec une composition équilibrée
+6. Montrer des personnes diverses dans un contexte de restaurant ordinaire, sans écrans visibles
+7. Éviter tout élément qui paraîtrait trop luxueux ou inaccessible
+8. Ne pas inclure de texte dans l'image
 
 Donne uniquement le prompt, sans explications ni commentaires.`
           }
@@ -92,7 +93,7 @@ async function generateImage(prompt, outputPath) {
       'https://api.ideogram.ai/generate',
       {
         image_request: {
-          prompt: prompt + ", duotone photography in deep blue #1A2A40 and terracotta #D47D5A, subtle halftone effect, high contrast, cinematic lighting, professional photography, minimalist composition",
+          prompt: prompt + ", realistic photography, duotone photography in deep blue #1A2A40 and terracotta #D47D5A, subtle halftone effect, everyday restaurant setting, authentic atmosphere, natural lighting, candid moments, ordinary people, accessible environment, not luxury, photojournalistic style",
           aspect_ratio: "ASPECT_16_9",
           model: "V_2A",
           style_preset: "PHOTOGRAPHIC"
