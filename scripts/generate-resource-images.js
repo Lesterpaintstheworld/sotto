@@ -82,30 +82,32 @@ Donne uniquement le prompt, sans explications ni commentaires.`
   }
 }
 
-// Fonction pour générer une image avec Ideogram
+// Fonction pour générer une image avec Ideogram en utilisant l'API directe
 async function generateImage(prompt, outputPath) {
   try {
     console.log(`Génération de l'image avec le prompt: ${prompt.substring(0, 100)}...`);
     
     const response = await axios.post(
-      'https://api.ideogram.ai/api/v1/images/generations',
+      'https://api.ideogram.ai/generate',
       {
-        prompt: prompt,
-        aspect_ratio: "16:9",
-        model: "3.0",
-        style_preset: "photographic"
+        image_request: {
+          prompt: prompt,
+          aspect_ratio: "ASPECT_16_9",
+          model: "3",
+          style_preset: "PHOTOGRAPHIC"
+        }
       },
       {
         headers: {
-          'Authorization': `Bearer ${IDEOGRAM_API_KEY}`,
+          'Api-Key': IDEOGRAM_API_KEY,
           'Content-Type': 'application/json'
         }
       }
     );
 
     // Télécharger l'image
-    if (response.data && response.data.images && response.data.images.length > 0) {
-      const imageUrl = response.data.images[0].url;
+    if (response.data && response.data.data && response.data.data.length > 0) {
+      const imageUrl = response.data.data[0].url;
       const imageResponse = await axios.get(imageUrl, { responseType: 'arraybuffer' });
       fs.writeFileSync(outputPath, imageResponse.data);
       console.log(`Image sauvegardée: ${outputPath}`);
