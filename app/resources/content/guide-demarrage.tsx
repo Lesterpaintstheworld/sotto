@@ -71,9 +71,9 @@ const ResourceContent = () => {
         </h2>
 
         <div className="space-y-8">
-          <div className="bg-white dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
-            <h3 className="text-2xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Accueil de l'équipe technique</h3>
-            <p className="mb-6 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Notre équipe technique se déplacera dans votre établissement pour l'installation complète du système. Voici comment se déroulera leur intervention :</p>
+          <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
+            <h3 className="text-2xl font-medium text-[#1A2A40] mb-4">Accueil de l'équipe technique</h3>
+            <p className="mb-6 text-[#1A2A40]/80">Notre équipe technique se déplacera dans votre établissement pour l'installation complète du système. Voici comment se déroulera leur intervention :</p>
             
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -85,10 +85,10 @@ const ResourceContent = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-gray-200 dark:border-gray-700">
-                    <td className="py-3 px-4 bg-[#F5F5F0] dark:bg-[#1A2A40]/40">Audit WiFi</td>
-                    <td className="py-3 px-4 bg-[#F5F5F0] dark:bg-[#1A2A40]/40">30 min</td>
-                    <td className="py-3 px-4 bg-[#F5F5F0] dark:bg-[#1A2A40]/40">Analyse de la couverture réseau et optimisation si nécessaire</td>
+                  <tr className="border-b border-gray-200">
+                    <td className="py-3 px-4 bg-[#F5F5F0]">Audit WiFi</td>
+                    <td className="py-3 px-4 bg-[#F5F5F0]">30 min</td>
+                    <td className="py-3 px-4 bg-[#F5F5F0]">Analyse de la couverture réseau et optimisation si nécessaire</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700">
                     <td className="py-3 px-4 bg-[#F5F5F0] dark:bg-[#1A2A40]/40">Installation station base</td>
