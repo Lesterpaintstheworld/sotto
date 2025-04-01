@@ -416,49 +416,32 @@ export default async function Resources() {
             </section>
           )}
           
-          {/* Webinaires et événements */}
-          {publicData.webinars && publicData.webinars.length > 0 && (
-            <section className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
-              {publicData.webinars.map((webinar) => (
-              <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden mb-6">
-                <div className="p-8 md:p-12">
-                  <span 
-                    className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4"
-                    style={{ 
-                      backgroundColor: `${webinar.tagColor}20`, 
-                      color: webinar.tagColor 
-                    }}
-                  >
-                    {webinar.tag}
-                  </span>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                    {webinar.title}
-                  </h3>
-                  <p className="text-white/80 mb-6 max-w-2xl">
-                    {webinar.description}
-                  </p>
-                  <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                    <div className="flex items-center gap-2">
-                      <Icon name="calendar" size={20} color="#D47D5A" strokeWidth={2} />
-                      <span className="text-white/80">{formatDate(webinar.date)}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Icon name="clock" size={20} color="#D47D5A" strokeWidth={2} />
-                      <span className="text-white/80">{webinar.time} ({webinar.timezone})</span>
-                    </div>
-                  </div>
-                  <Link href={webinar.buttonLink}>
-                    <button className="bg-[#D47D5A] hover:bg-[#D47D5A]/90 text-white px-6 py-3 rounded-md transition-colors flex items-center gap-2">
-                      <span>{webinar.buttonText}</span>
-                      <Icon name="arrow-right" size={16} strokeWidth={2} />
-                    </button>
-                  </Link>
-                </div>
+          {/* Webinaires et événements - Coming Soon */}
+          <section className="mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
+            <div className="bg-[#1A2A40]/5 rounded-lg p-8 text-center">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#1A2A40]/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A2A40" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
               </div>
-              ))}
-            </section>
-          )}
+              <h3 className="text-xl font-bold mb-2">Prochainement disponible</h3>
+              <p className="text-[#505A64] max-w-lg mx-auto mb-4">
+                Nos webinaires et événements sont en cours de préparation. Inscrivez-vous à notre newsletter pour être informé des prochaines dates.
+              </p>
+              <a 
+                href="#" 
+                className="inline-flex items-center gap-2 bg-[#D47D5A] text-white px-6 py-3 rounded-md hover:bg-[#D47D5A]/90 transition-colors"
+              >
+                <span>S'inscrire à la newsletter</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </section>
           
           {/* Documents publics */}
           {publicData.documents && publicData.documents.length > 0 && (
