@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import fs from 'fs';
 import path from 'path';
-import { Metadata } from 'next';
 import dynamic from 'next/dynamic';
 
 // Fonction pour obtenir les données JSON des ressources
@@ -55,11 +54,7 @@ function checkTsxComponentExists(id: string) {
 }
 
 // Génération des métadonnées
-export async function generateMetadata({ 
-  params 
-}: { 
-  params: { id: string } 
-}) {
+export async function generateMetadata({ params }: { params: { id: string } }) {
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, params.id);
   
