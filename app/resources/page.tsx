@@ -318,22 +318,22 @@ export default async function Resources() {
           {publicData.guides && publicData.guides.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-5 gap-4">
                 {publicData.guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="h-48 bg-[#1A2A40]/10 relative">
+                  <div className="h-36 bg-[#1A2A40]/10 relative aspect-video">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon name={guide.icon} />
+                      <Icon name={guide.icon} size={36} />
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{guide.title}</h3>
-                    <p className="text-[#505A64] mb-4">
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold mb-2">{guide.title}</h3>
+                    <p className="text-[#505A64] mb-4 text-sm">
                       {guide.description}
                     </p>
-                    <Link href={guide.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                    <Link href={guide.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {guide.linkText}
-                      <Icon name={guide.linkIcon} size={16} strokeWidth={2} />
+                      <Icon name={guide.linkIcon} size={14} strokeWidth={2} />
                     </Link>
                   </div>
                 </div>
@@ -346,17 +346,17 @@ export default async function Resources() {
           {publicData.casestudies && publicData.casestudies.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-5 gap-4">
                 {publicData.casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="h-56 bg-[#1A2A40]/10 relative">
+                  <div className="h-36 bg-[#1A2A40]/10 relative aspect-video">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon name={casestudy.icon} />
+                      <Icon name={casestudy.icon} size={36} />
                     </div>
                   </div>
-                  <div className="p-6">
+                  <div className="p-4">
                     <span 
-                      className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                      className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                       style={{ 
                         backgroundColor: `${casestudy.categoryColor}20`, 
                         color: casestudy.categoryColor 
@@ -364,13 +364,13 @@ export default async function Resources() {
                     >
                       {casestudy.category}
                     </span>
-                    <h3 className="text-xl font-bold mb-2">{casestudy.title}</h3>
-                    <p className="text-[#505A64] mb-4">
+                    <h3 className="text-lg font-bold mb-2">{casestudy.title}</h3>
+                    <p className="text-[#505A64] mb-3 text-sm">
                       {casestudy.description}
                     </p>
-                    <Link href={casestudy.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                    <Link href={casestudy.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {casestudy.linkText}
-                      <Icon name={casestudy.linkIcon} size={16} strokeWidth={2} />
+                      <Icon name={casestudy.linkIcon} size={14} strokeWidth={2} />
                     </Link>
                   </div>
                 </div>
@@ -383,19 +383,19 @@ export default async function Resources() {
           {publicData.tools && publicData.tools.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-5 gap-4">
                 {publicData.tools.map((tool) => (
-                <div key={tool.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                    <Icon name={tool.icon} size={24} color={tool.iconColor} strokeWidth={2} />
+                <div key={tool.id} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
+                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                    <Icon name={tool.icon} size={20} color={tool.iconColor} strokeWidth={2} />
                     {tool.title}
                   </h3>
-                  <p className="text-[#505A64] mb-4">
+                  <p className="text-[#505A64] mb-3 text-sm">
                     {tool.description}
                   </p>
-                  <Link href={tool.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                  <Link href={tool.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                     {tool.linkText}
-                    <Icon name={tool.linkIcon} size={16} strokeWidth={2} />
+                    <Icon name={tool.linkIcon} size={14} strokeWidth={2} />
                   </Link>
                 </div>
                 ))}
@@ -451,12 +451,12 @@ export default async function Resources() {
           {publicData.documents && publicData.documents.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents</h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-5 gap-4">
                 {publicData.documents.map((document) => (
                 <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="p-6">
+                  <div className="p-4">
                     <span 
-                      className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                      className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                       style={{ 
                         backgroundColor: `${document.categoryColor}20`, 
                         color: document.categoryColor 
@@ -464,16 +464,16 @@ export default async function Resources() {
                     >
                       {document.category}
                     </span>
-                    <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                      <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                    <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                      <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                       {document.title}
                     </h3>
-                    <p className="text-[#505A64] mb-4">
+                    <p className="text-[#505A64] mb-3 text-sm">
                       {document.description}
                     </p>
-                    <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                    <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                       {document.linkText}
-                      <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                      <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                     </Link>
                   </div>
                 </div>
@@ -499,12 +499,12 @@ export default async function Resources() {
               {teamData.strategic && teamData.strategic.length > 0 && (
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents stratégiques</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-5 gap-4">
                     {teamData.strategic.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="p-6">
+                        <div className="p-4">
                           <span 
-                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                             style={{ 
                               backgroundColor: `${document.categoryColor}20`, 
                               color: document.categoryColor 
@@ -512,16 +512,16 @@ export default async function Resources() {
                           >
                             {document.category}
                           </span>
-                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
-                          <p className="text-[#505A64] mb-4">
+                          <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
-                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                           </Link>
                         </div>
                       </div>
@@ -534,12 +534,12 @@ export default async function Resources() {
               {teamData.technical && teamData.technical.length > 0 && (
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents techniques</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-5 gap-4">
                     {teamData.technical.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="p-6">
+                        <div className="p-4">
                           <span 
-                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                             style={{ 
                               backgroundColor: `${document.categoryColor}20`, 
                               color: document.categoryColor 
@@ -547,16 +547,16 @@ export default async function Resources() {
                           >
                             {document.category}
                           </span>
-                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
-                          <p className="text-[#505A64] mb-4">
+                          <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
-                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                           </Link>
                         </div>
                       </div>
@@ -569,12 +569,12 @@ export default async function Resources() {
               {teamData.operational && teamData.operational.length > 0 && (
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents opérationnels</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-5 gap-4">
                     {teamData.operational.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="p-6">
+                        <div className="p-4">
                           <span 
-                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                             style={{ 
                               backgroundColor: `${document.categoryColor}20`, 
                               color: document.categoryColor 
@@ -582,16 +582,16 @@ export default async function Resources() {
                           >
                             {document.category}
                           </span>
-                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
-                          <p className="text-[#505A64] mb-4">
+                          <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
-                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                           </Link>
                         </div>
                       </div>
@@ -604,12 +604,12 @@ export default async function Resources() {
               {teamData.financial && teamData.financial.length > 0 && (
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents juridiques & financiers</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-5 gap-4">
                     {teamData.financial.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="p-6">
+                        <div className="p-4">
                           <span 
-                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                             style={{ 
                               backgroundColor: `${document.categoryColor}20`, 
                               color: document.categoryColor 
@@ -617,16 +617,16 @@ export default async function Resources() {
                           >
                             {document.category}
                           </span>
-                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
-                          <p className="text-[#505A64] mb-4">
+                          <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
-                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                           </Link>
                         </div>
                       </div>
@@ -639,12 +639,12 @@ export default async function Resources() {
               {teamData.testing && teamData.testing.length > 0 && (
                 <section>
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div className="grid md:grid-cols-5 gap-4">
                     {teamData.testing.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="p-6">
+                        <div className="p-4">
                           <span 
-                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
                             style={{ 
                               backgroundColor: `${document.categoryColor}20`, 
                               color: document.categoryColor 
@@ -652,16 +652,16 @@ export default async function Resources() {
                           >
                             {document.category}
                           </span>
-                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
-                          <p className="text-[#505A64] mb-4">
+                          <p className="text-[#505A64] mb-3 text-sm">
                             {document.description}
                           </p>
-                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
                             {document.linkText}
-                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
                           </Link>
                         </div>
                       </div>
