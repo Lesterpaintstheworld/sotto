@@ -27,6 +27,10 @@ export default function Footer() {
       </div>
       <div className="border-t border-[#F5F5F0]/10 pt-6 text-center text-[#F5F5F0]/50">
         <p>© {new Date().getFullYear()} Sotto. Tous droits réservés.</p>
+        <div className="mt-4 flex justify-center gap-6">
+          <Link href="/privacy" className="hover:text-[#D47D5A] transition-colors">Politique de confidentialité</Link>
+          <Link href="/terms" className="hover:text-[#D47D5A] transition-colors">Conditions d'utilisation</Link>
+        </div>
       </div>
     </footer>
   );
