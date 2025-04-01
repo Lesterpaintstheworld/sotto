@@ -2,14 +2,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import fs from 'fs';
-import path from 'path';
 
-// Fonction pour obtenir les données JSON
-function getResourcesData() {
-  const filePath = path.join(process.cwd(), 'app/data/resources.json');
-  const fileContents = fs.readFileSync(filePath, 'utf8');
-  return JSON.parse(fileContents);
+// Fonction pour obtenir les données JSON via l'API
+async function getResourcesData() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/resources`, { 
+    cache: 'no-store' 
+  });
+  if (!res.ok) {
+    throw new Error('Failed to fetch resources data');
+  }
+  return res.json();
 }
 
 // Composant pour afficher les icônes
@@ -111,9 +113,9 @@ const formatDate = (dateString) => {
   return new Date(dateString).toLocaleDateString('fr-FR', options);
 };
 
-export default function Resources() {
+export default async function Resources() {
   // Obtenir les données
-  const resourcesData = getResourcesData();
+  const resourcesData = await getResourcesData();
   const teamData = resourcesData.team;
 
   return (
