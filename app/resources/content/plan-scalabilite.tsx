@@ -60,32 +60,32 @@ const ResourceContent = () => {
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="py-3 px-4 font-medium">Latence reconnaissance vocale</td>
-                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">< 200ms</td>
-                  <td className="py-3 px-4 text-[#D47D5A]">> 350ms</td>
+                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">&lt; 200ms</td>
+                  <td className="py-3 px-4 text-[#D47D5A]">&gt; 350ms</td>
                   <td className="py-3 px-4">Optimisation des modèles LLM ou augmentation ressources</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="py-3 px-4 font-medium">Temps de réponse système</td>
-                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">< 500ms</td>
-                  <td className="py-3 px-4 text-[#D47D5A]">> 800ms</td>
+                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">&lt; 500ms</td>
+                  <td className="py-3 px-4 text-[#D47D5A]">&gt; 800ms</td>
                   <td className="py-3 px-4">Scaling horizontal des services backend</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="py-3 px-4 font-medium">Taux d'erreur reconnaissance</td>
-                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">< 5%</td>
-                  <td className="py-3 px-4 text-[#D47D5A]">> 8%</td>
+                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">&lt; 5%</td>
+                  <td className="py-3 px-4 text-[#D47D5A]">&gt; 8%</td>
                   <td className="py-3 px-4">Réentraînement des modèles avec données récentes</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="py-3 px-4 font-medium">Disponibilité système</td>
                   <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">99.95%</td>
-                  <td className="py-3 px-4 text-[#D47D5A]">< 99.9%</td>
+                  <td className="py-3 px-4 text-[#D47D5A]">&lt; 99.9%</td>
                   <td className="py-3 px-4">Révision architecture de redondance</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                   <td className="py-3 px-4 font-medium">Utilisation mémoire/CPU</td>
-                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">< 70%</td>
-                  <td className="py-3 px-4 text-[#D47D5A]">> 85%</td>
+                  <td className="py-3 px-4 text-[#87A28F] dark:text-[#D4B483] font-medium">&lt; 70%</td>
+                  <td className="py-3 px-4 text-[#D47D5A]">&gt; 85%</td>
                   <td className="py-3 px-4">Scaling vertical ou horizontal automatique</td>
                 </tr>
               </tbody>
