@@ -330,6 +330,7 @@ export default async function Resources() {
                       className="object-cover"
                       priority={true}
                     />
+                    {/* Suppression des éléments superposés */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2">{guide.title}</h3>
@@ -363,17 +364,7 @@ export default async function Resources() {
                       className="object-cover"
                       priority={true}
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-2">
-                      <span 
-                        className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                        style={{ 
-                          backgroundColor: `${casestudy.categoryColor}90`, 
-                          color: 'white' 
-                        }}
-                      >
-                        {casestudy.category}
-                      </span>
-                    </div>
+                    {/* Suppression des éléments superposés */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2">{casestudy.title}</h3>
@@ -407,13 +398,7 @@ export default async function Resources() {
                       className="object-cover"
                       priority={true}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
-                      <div className="p-3">
-                        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-2">
-                          <Icon name={tool.icon} size={20} color={tool.iconColor} strokeWidth={2} />
-                        </div>
-                      </div>
-                    </div>
+                    {/* Suppression des éléments superposés */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-3">{tool.title}</h3>
@@ -491,19 +476,7 @@ export default async function Resources() {
                       className="object-cover"
                       priority={true}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
-                      <div className="p-3">
-                        <span 
-                          className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                          style={{ 
-                            backgroundColor: `${document.categoryColor}90`, 
-                            color: 'white' 
-                          }}
-                        >
-                          {document.category}
-                        </span>
-                      </div>
-                    </div>
+                    {/* Suppression des éléments superposés */}
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
@@ -553,22 +526,7 @@ export default async function Resources() {
                             className="object-cover"
                             priority={true}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                            <div className="p-3">
-                              <span 
-                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                                style={{ 
-                                  backgroundColor: `${document.categoryColor}90`, 
-                                  color: 'white' 
-                                }}
-                              >
-                                {document.category}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
-                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
-                          </div>
+                          {/* Suppression des éléments superposés */}
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
@@ -605,22 +563,7 @@ export default async function Resources() {
                             className="object-cover"
                             priority={true}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                            <div className="p-3">
-                              <span 
-                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                                style={{ 
-                                  backgroundColor: `${document.categoryColor}90`, 
-                                  color: 'white' 
-                                }}
-                              >
-                                {document.category}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
-                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
-                          </div>
+                          {/* Suppression des éléments superposés */}
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
@@ -657,22 +600,7 @@ export default async function Resources() {
                             className="object-cover"
                             priority={true}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                            <div className="p-3">
-                              <span 
-                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                                style={{ 
-                                  backgroundColor: `${document.categoryColor}90`, 
-                                  color: 'white' 
-                                }}
-                              >
-                                {document.category}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
-                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
-                          </div>
+                          {/* Suppression des éléments superposés */}
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
@@ -709,22 +637,7 @@ export default async function Resources() {
                             className="object-cover"
                             priority={true}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                            <div className="p-3">
-                              <span 
-                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                                style={{ 
-                                  backgroundColor: `${document.categoryColor}90`, 
-                                  color: 'white' 
-                                }}
-                              >
-                                {document.category}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
-                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
-                          </div>
+                          {/* Suppression des éléments superposés */}
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
@@ -761,22 +674,7 @@ export default async function Resources() {
                             className="object-cover"
                             priority={true}
                           />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-                            <div className="p-3">
-                              <span 
-                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
-                                style={{ 
-                                  backgroundColor: `${document.categoryColor}90`, 
-                                  color: 'white' 
-                                }}
-                              >
-                                {document.category}
-                              </span>
-                            </div>
-                          </div>
-                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
-                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
-                          </div>
+                          {/* Suppression des éléments superposés */}
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
