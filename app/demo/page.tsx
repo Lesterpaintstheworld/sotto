@@ -7,6 +7,124 @@ export default function Demo() {
       <Header />
       
       <main className="px-6 md:px-20 py-16">
+        <div className="max-w-6xl mx-auto mb-20">
+          <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Essayez Sotto maintenant !</h1>
+          
+          <div className="flex flex-col md:flex-row gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
+            {/* Partie gauche - Commande à prendre */}
+            <div className="md:w-1/2 p-8 bg-[#1A2A40]/5">
+              <h2 className="text-2xl font-bold mb-6">Commande à prendre</h2>
+              <div className="bg-white p-6 rounded-lg border border-[#1A2A40]/10 shadow-sm">
+                <h3 className="font-bold text-lg mb-3">Table 7 - 4 personnes</h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>2 menus du jour (entrée + plat)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>1 burger végétarien sans gluten avec frites</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>1 salade César avec poulet grillé</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>2 verres de vin rouge maison</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>1 eau gazeuse</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <span>1 carafe d'eau</span>
+                  </li>
+                </ul>
+                <p className="mt-4 text-sm text-[#505A64]">Essayez de dicter cette commande dans l'interface de chat à droite.</p>
+              </div>
+            </div>
+            
+            {/* Partie droite - Interface de chat */}
+            <div className="md:w-1/2 p-8 bg-white border-l border-[#1A2A40]/10">
+              <h2 className="text-2xl font-bold mb-6">Interface Sotto</h2>
+              <div className="flex flex-col h-[400px] border border-[#1A2A40]/20 rounded-lg overflow-hidden">
+                {/* En-tête du chat */}
+                <div className="bg-[#1A2A40] text-white p-4 flex items-center gap-3">
+                  <div className="w-3 h-3 rounded-full bg-[#D47D5A]"></div>
+                  <span>Sotto Assistant</span>
+                </div>
+                
+                {/* Corps du chat */}
+                <div className="flex-1 p-4 bg-[#F5F5F0] overflow-y-auto space-y-4">
+                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
+                    <p className="text-sm">Bonjour, je suis prêt à prendre votre commande.</p>
+                  </div>
+                  
+                  <div className="bg-white p-3 rounded-lg max-w-[80%]">
+                    <p className="text-sm">Table 7, 2 menus du jour avec entrée et plat.</p>
+                  </div>
+                  
+                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
+                    <p className="text-sm">J'ai enregistré 2 menus du jour avec entrée et plat pour la table 7. Que souhaitez-vous ajouter ?</p>
+                  </div>
+                  
+                  <div className="bg-white p-3 rounded-lg max-w-[80%]">
+                    <p className="text-sm">1 burger végétarien sans gluten avec frites et 1 salade César au poulet grillé.</p>
+                  </div>
+                  
+                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
+                    <p className="text-sm">Ajouté : 1 burger végétarien sans gluten avec frites et 1 salade César au poulet grillé. Souhaitez-vous des boissons ?</p>
+                  </div>
+                </div>
+                
+                {/* Pied du chat avec input */}
+                <div className="p-3 border-t border-[#1A2A40]/20 bg-white">
+                  <div className="flex items-center gap-2">
+                    <input 
+                      type="text" 
+                      placeholder="Dictez votre commande ici..." 
+                      className="flex-1 p-3 border border-[#1A2A40]/20 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D47D5A]"
+                    />
+                    <button className="bg-[#D47D5A] text-white p-3 rounded-md hover:bg-[#D47D5A]/90 transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 2L11 13"></path>
+                        <path d="M22 2L15 22 11 13 2 9 22 2z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p className="mt-4 text-sm text-[#505A64] text-center">Cette démonstration simule l'interface vocale Sotto. Dans un environnement réel, vous utiliseriez une oreillette discrète.</p>
+            </div>
+          </div>
+        </div>
+        
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
             <div className="md:w-1/2">
