@@ -93,7 +93,7 @@ async function generateImage(prompt, outputPath) {
         image_request: {
           prompt: prompt,
           aspect_ratio: "ASPECT_16_9",
-          model: "V_3",
+          model: "V_2A",
           style_preset: "PHOTOGRAPHIC"
         }
       },
