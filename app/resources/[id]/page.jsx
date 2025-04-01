@@ -23,10 +23,10 @@ async function getResourcesData() {
 }
 
 // Fonction pour trouver une ressource par ID
-function findResourceById(resourcesData: any, id: string) {
+function findResourceById(resourcesData, id) {
   // Chercher dans les ressources publiques
   for (const category in resourcesData.public) {
-    const found = resourcesData.public[category].find((resource: any) => resource.id === id);
+    const found = resourcesData.public[category].find((resource) => resource.id === id);
     if (found) {
       return { resource: found, category, isTeam: false };
     }
@@ -34,7 +34,7 @@ function findResourceById(resourcesData: any, id: string) {
   
   // Chercher dans les ressources d'équipe
   for (const category in resourcesData.team) {
-    const found = resourcesData.team[category].find((resource: any) => resource.id === id);
+    const found = resourcesData.team[category].find((resource) => resource.id === id);
     if (found) {
       return { resource: found, category, isTeam: true };
     }
@@ -44,7 +44,7 @@ function findResourceById(resourcesData: any, id: string) {
 }
 
 // Fonction pour vérifier si le composant TSX existe
-function checkTsxComponentExists(id: string) {
+function checkTsxComponentExists(id) {
   try {
     const tsxPath = path.join(process.cwd(), `app/resources/content/${id}.tsx`);
     return fs.existsSync(tsxPath);
@@ -114,7 +114,7 @@ export const generateStaticParams = async () => {
 };
 
 // Composant pour afficher une icône
-const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }: { name: string, size?: number, color?: string, strokeWidth?: number }) => {
+const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }) => {
   // Fonction pour rendre l'icône selon son nom
   const renderIcon = () => {
     switch (name) {
@@ -148,7 +148,7 @@ const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }: { name:
   return renderIcon();
 };
 
-export default async function ResourcePage({ params }: { params: { id: string } }) {
+export default async function ResourcePage({ params }) {
   const { id } = params;
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, id);
@@ -257,9 +257,9 @@ export default async function ResourcePage({ params }: { params: { id: string } 
             <div className="grid md:grid-cols-3 gap-6">
               {/* Afficher 3 ressources de la même catégorie (à l'exception de la ressource actuelle) */}
               {(isTeam ? resourcesData.team[category] : resourcesData.public[category])
-                .filter((item: any) => item.id !== id)
+                .filter((item) => item.id !== id)
                 .slice(0, 3)
-                .map((relatedResource: any) => (
+                .map((relatedResource) => (
                   <Link key={relatedResource.id} href={`/resources/${relatedResource.id}`} className="group">
                     <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                       <div className="h-40 bg-[#1A2A40]/10 relative">
