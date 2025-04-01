@@ -54,7 +54,8 @@ function checkTsxComponentExists(id: string) {
 }
 
 // Génération des métadonnées
-export async function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata(props) {
+  const { params } = props;
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, params.id);
   
