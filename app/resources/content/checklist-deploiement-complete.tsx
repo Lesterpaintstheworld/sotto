@@ -230,19 +230,19 @@ const ResourceContent = () => {
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Salle principale</td>
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">≥ -60 dBm</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">< 30 ms</td>
+                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{'< 30 ms'}</td>
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Aucune</td>
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Terrasse</td>
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">-60 à -70 dBm</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">< 50 ms</td>
+                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{'< 50 ms'}</td>
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Répéteur recommandé</td>
                   </tr>
                   <tr className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Cuisine</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">< -70 dBm</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">> 50 ms</td>
+                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{'< -70 dBm'}</td>
+                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{'> 50 ms'}</td>
                     <td className="py-3 px-4 text-gray-700 dark:text-gray-300">Installation AP obligatoire</td>
                   </tr>
                 </tbody>
@@ -618,11 +618,11 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <div className="flex-shrink-0 h-5 w-5 border border-[#D47D5A] rounded mr-3 mt-0.5"></div>
-                <span className="text-gray-700 dark:text-gray-300">Taux de reconnaissance vocale > 95% dans toutes les zones</span>
+                <span className="text-gray-700 dark:text-gray-300">Taux de reconnaissance vocale {'>'} 95% dans toutes les zones</span>
               </li>
               <li className="flex items-start">
                 <div className="flex-shrink-0 h-5 w-5 border border-[#D47D5A] rounded mr-3 mt-0.5"></div>
-                <span className="text-gray-700 dark:text-gray-300">Temps de latence < 1 seconde pour les commandes standard</span>
+                <span className="text-gray-700 dark:text-gray-300">Temps de latence {'<'} 1 seconde pour les commandes standard</span>
               </li>
               <li className="flex items-start">
                 <div className="flex-shrink-0 h-5 w-5 border border-[#D47D5A] rounded mr-3 mt-0.5"></div>

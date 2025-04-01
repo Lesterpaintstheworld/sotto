@@ -116,8 +116,8 @@ export default function ResourceContent() {
                 </tr>
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-3 px-4 font-medium">Latence</td>
-                  <td className="py-3 px-4">< 50ms</td>
-                  <td className="py-3 px-4 text-[#87A28F] font-medium">< 20ms</td>
+                  <td className="py-3 px-4">{'< 50ms'}</td>
+                  <td className="py-3 px-4 text-[#87A28F] font-medium">{'< 20ms'}</td>
                 </tr>
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-3 px-4 font-medium">Stabilité</td>
@@ -304,7 +304,7 @@ export default function ResourceContent() {
               <tbody>
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-3 px-4 font-medium">Ubiquiti UniFi 6 Lite</td>
-                  <td className="py-3 px-4">Petit (< 100m²)</td>
+                  <td className="py-3 px-4">Petit ({'< 100m²'})</td>
                   <td className="py-3 px-4">WiFi 6, MIMO 2x2, jusqu'à 1.5 Gbps</td>
                   <td className="py-3 px-4">90-120€</td>
                 </tr>
@@ -316,7 +316,7 @@ export default function ResourceContent() {
                 </tr>
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-3 px-4 font-medium">Ubiquiti UniFi 6 Pro</td>
-                  <td className="py-3 px-4">Grand (> 200m²)</td>
+                  <td className="py-3 px-4">Grand ({'> 200m²'})</td>
                   <td className="py-3 px-4">WiFi 6, MIMO 4x4, jusqu'à 5.4 Gbps</td>
                   <td className="py-3 px-4">160-190€</td>
                 </tr>
@@ -417,7 +417,7 @@ export default function ResourceContent() {
               </div>
               <div>
                 <h4 className="font-semibold text-[#1A2A40] mb-1">Test de couverture</h4>
-                <p className="text-gray-700">Signal > -65 dBm dans toutes les zones opérationnelles</p>
+                <p className="text-gray-700">Signal {'>'} -65 dBm dans toutes les zones opérationnelles</p>
               </div>
             </div>
             
@@ -441,7 +441,7 @@ export default function ResourceContent() {
               </div>
               <div>
                 <h4 className="font-semibold text-[#1A2A40] mb-1">Test de latence</h4>
-                <p className="text-gray-700">< 30ms vers le serveur local Sotto</p>
+                <p className="text-gray-700">{'< 30ms'} vers le serveur local Sotto</p>
               </div>
             </div>
             

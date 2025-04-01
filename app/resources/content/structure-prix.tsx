@@ -317,7 +317,7 @@ const ResourceContent = () => {
                     <td className="px-4 py-2 font-medium text-[#D47D5A]">1,5% du montant prépayé</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Réservation de groupe (>8 personnes)</td>
+                    <td className="px-4 py-2 text-[#1A2A40]">Réservation de groupe ({'>8'} personnes)</td>
                     <td className="px-4 py-2 font-medium text-[#D47D5A]">2€</td>
                   </tr>
                   <tr className="border-t border-gray-200">
