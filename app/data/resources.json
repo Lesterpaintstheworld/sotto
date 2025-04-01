@@ -1,0 +1,91 @@
+{
+  "guides": [
+    {
+      "id": "guide-demarrage",
+      "title": "Guide de démarrage",
+      "description": "Tout ce que vous devez savoir pour commencer avec Sotto, de l'installation à la première commande.",
+      "icon": "microphone",
+      "link": "#",
+      "linkText": "Télécharger le PDF",
+      "linkIcon": "download"
+    },
+    {
+      "id": "formation-personnel",
+      "title": "Formation du personnel",
+      "description": "Ressources pour former efficacement votre équipe à l'utilisation quotidienne de Sotto.",
+      "icon": "bell",
+      "link": "#",
+      "linkText": "Accéder aux vidéos",
+      "linkIcon": "arrow-right"
+    },
+    {
+      "id": "faq-avancee",
+      "title": "FAQ avancée",
+      "description": "Réponses détaillées aux questions techniques et opérationnelles les plus fréquentes.",
+      "icon": "help-circle",
+      "link": "#",
+      "linkText": "Consulter la FAQ",
+      "linkIcon": "arrow-right"
+    }
+  ],
+  "casestudies": [
+    {
+      "id": "bistrot-parisien",
+      "title": "Le Bistrot Parisien : +15% de chiffre d'affaires",
+      "description": "Comment un restaurant gastronomique a transformé son service et augmenté sa rentabilité grâce à Sotto.",
+      "category": "Restaurant gastronomique",
+      "categoryColor": "#87A28F",
+      "icon": "file-text",
+      "link": "#",
+      "linkText": "Lire l'étude de cas",
+      "linkIcon": "arrow-right"
+    },
+    {
+      "id": "groupe-saveurs",
+      "title": "Groupe Saveurs : Standardisation réussie sur 12 établissements",
+      "description": "Comment une chaîne de restaurants a uniformisé son service et optimisé ses opérations avec Sotto.",
+      "category": "Chaîne de restaurants",
+      "categoryColor": "#D4B483",
+      "icon": "file-text",
+      "link": "#",
+      "linkText": "Lire l'étude de cas",
+      "linkIcon": "arrow-right"
+    }
+  ],
+  "tools": [
+    {
+      "id": "calculateur-roi",
+      "title": "Calculateur de ROI",
+      "description": "Estimez votre retour sur investissement en implémentant Sotto dans votre établissement.",
+      "icon": "monitor",
+      "iconColor": "#D47D5A",
+      "link": "#",
+      "linkText": "Accéder au calculateur",
+      "linkIcon": "arrow-right"
+    },
+    {
+      "id": "evaluateur-efficacite",
+      "title": "Évaluateur d'efficacité",
+      "description": "Analysez les performances actuelles de votre restaurant et identifiez les opportunités d'amélioration.",
+      "icon": "trending-up",
+      "iconColor": "#D47D5A",
+      "link": "#",
+      "linkText": "Commencer l'évaluation",
+      "linkIcon": "arrow-right"
+    }
+  ],
+  "webinars": [
+    {
+      "id": "webinar-ia-vocale",
+      "title": "Comment optimiser votre service avec l'IA vocale",
+      "description": "Rejoignez notre expert Thomas Dubois pour découvrir les meilleures pratiques et astuces pour tirer le maximum de votre système Sotto.",
+      "date": "2024-06-15",
+      "time": "14:00 - 15:30",
+      "timezone": "CET",
+      "tag": "Prochain webinaire",
+      "tagColor": "#D47D5A",
+      "buttonText": "S'inscrire gratuitement",
+      "buttonLink": "#"
+    }
+  ]
+}
