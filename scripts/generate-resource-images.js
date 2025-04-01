@@ -29,7 +29,7 @@ Style de marque Sotto:
 - Palette de couleurs: Bleu profond (#1A2A40), Terracotta doux (#D47D5A), Blanc cassé (#F5F5F0), Vert sauge (#87A28F), Or subtil (#D4B483)
 - Style visuel: Minimaliste, élégant, épuré avec beaucoup d'espace négatif
 - Ambiance: Sophistiquée, chaleureuse, professionnelle, discrète
-- Photographie: Images en éclairage naturel montrant des interactions humaines authentiques dans les restaurants - jamais d'écrans visibles
+- Photographie: Images combinant duotone (bleu profond #1A2A40 et terracotta #D47D5A) avec des effets halftone subtils. Éclairage naturel montrant des interactions humaines authentiques dans les restaurants - jamais d'écrans visibles
 - Éléments graphiques: Lignes fines, contours épurés, coins légèrement arrondis
 - Personnalité: Discret, efficace, élégant, attentif - comme le parfait serveur qui anticipe vos besoins sans jamais s'imposer
 `;
@@ -40,14 +40,14 @@ async function generateIdeogramPrompt(resource) {
     const response = await axios.post(
       'https://api.anthropic.com/v1/messages',
       {
-        model: "claude-3-7-sonnet-latest",  // Mise à jour du modèle
+        model: "claude-3-7-sonnet-latest",
         max_tokens: 1000,
         temperature: 0.7,
         system: "Tu es un expert en création de prompts pour l'IA générative d'images Ideogram. Tu crées des prompts détaillés qui produisent des images de haute qualité, artistiques et cohérentes avec l'identité de marque fournie.",
         messages: [
           {
             role: "user",
-            content: `Crée un prompt détaillé pour Ideogram 3.0 qui illustrera une ressource pour notre site web. L'image doit être au format 16:9.
+            content: `Crée un prompt détaillé pour Ideogram qui illustrera une ressource pour notre site web. L'image doit être au format 16:9.
 
 Titre de la ressource: ${resource.title}
 Description: ${resource.description}
@@ -56,11 +56,12 @@ ${brandStyleDescription}
 
 Ton prompt doit:
 1. Décrire une image qui représente visuellement le concept de cette ressource
-2. Inclure des détails sur le style visuel, l'ambiance et les éléments à inclure
-3. Préciser les couleurs de notre palette à utiliser
-4. Être optimisé pour le format 16:9
-5. Respecter notre identité de marque
+2. Spécifier explicitement un style combinant duotone (bleu profond #1A2A40 et terracotta #D47D5A) avec des effets halftone subtils
+3. Inclure des détails sur la composition, l'éclairage et les éléments à inclure
+4. Être optimisé pour le format 16:9 avec une composition équilibrée
+5. Respecter notre identité de marque minimaliste et élégante
 6. Ne pas inclure de texte dans l'image
+7. Montrer des personnes dans un contexte de restaurant, sans écrans visibles
 
 Donne uniquement le prompt, sans explications ni commentaires.`
           }
@@ -91,7 +92,7 @@ async function generateImage(prompt, outputPath) {
       'https://api.ideogram.ai/generate',
       {
         image_request: {
-          prompt: prompt,
+          prompt: prompt + ", duotone photography in deep blue #1A2A40 and terracotta #D47D5A, subtle halftone effect, high contrast, cinematic lighting, professional photography, minimalist composition",
           aspect_ratio: "ASPECT_16_9",
           model: "V_2A",
           style_preset: "PHOTOGRAPHIC"
