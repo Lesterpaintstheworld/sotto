@@ -54,3 +54,23 @@ a:focus {
   outline: 2px solid #D47D5A;
   outline-offset: 2px;
 }
+
+/* Styles pour les contenus de type prose */
+.prose {
+  --tw-prose-body: #1A2A40;
+  --tw-prose-headings: #1A2A40;
+  --tw-prose-lead: #505A64;
+  --tw-prose-links: #D47D5A;
+  --tw-prose-bold: #1A2A40;
+  --tw-prose-counters: #505A64;
+  --tw-prose-bullets: #505A64;
+  --tw-prose-hr: #E5E7EB;
+  --tw-prose-quotes: #1A2A40;
+  --tw-prose-quote-borders: #E5E7EB;
+  --tw-prose-captions: #505A64;
+  --tw-prose-code: #1A2A40;
+  --tw-prose-pre-code: #F5F5F0;
+  --tw-prose-pre-bg: #1A2A40;
+  --tw-prose-th-borders: #E5E7EB;
+  --tw-prose-td-borders: #E5E7EB;
+}

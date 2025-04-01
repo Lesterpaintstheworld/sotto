@@ -223,7 +223,7 @@ export default async function ResourcePage({ params }: { params: { id: string } 
           </div>
           
           {/* Contenu de la ressource */}
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none prose-headings:text-[#1A2A40] prose-p:text-[#1A2A40] prose-li:text-[#1A2A40] prose-strong:text-[#1A2A40]">
             <ResourceContent />
           </div>
           
