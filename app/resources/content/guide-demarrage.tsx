@@ -1,49 +1,49 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#F5F5F0] dark:bg-[#1A2A40]/90 rounded-xl shadow-lg">
-      <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 border-b-2 border-[#D47D5A] pb-4">Guide de démarrage</h1>
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#F5F5F0] rounded-xl shadow-lg text-[#1A2A40]">
+      <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] mb-6 border-b-2 border-[#D47D5A] pb-4">Guide de démarrage</h1>
       
-      <div className="italic text-lg mb-10 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80 bg-white/50 dark:bg-[#1A2A40]/50 p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-md">
+      <div className="italic text-lg mb-10 text-[#1A2A40]/80 bg-white/50 p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-md">
         <p>Bienvenue dans l'aventure Sotto. Ce guide vous accompagne pas à pas dans l'intégration de notre système vocal IA, de l'installation initiale jusqu'à votre première commande. Découvrez comment libérer votre restaurant des écrans et recentrer votre équipe sur l'essentiel : l'humain et la gastronomie.</p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-3xl font-semibold text-[#1A2A40] mb-6 flex items-center">
           <span className="inline-block w-8 h-8 bg-[#D47D5A] rounded-full mr-3"></span>
           Avant de commencer
         </h2>
 
         <div className="space-y-8">
-          <div className="bg-white dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
-            <h3 className="text-2xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Prérequis techniques</h3>
-            <p className="mb-4 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Avant l'installation de Sotto, assurez-vous que votre établissement dispose des éléments suivants :</p>
+          <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
+            <h3 className="text-2xl font-medium text-[#1A2A40] mb-4">Prérequis techniques</h3>
+            <p className="mb-4 text-[#1A2A40]/80">Avant l'installation de Sotto, assurez-vous que votre établissement dispose des éléments suivants :</p>
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
                 <span className="text-[#87A28F] mr-3">✓</span>
                 <span>Une connexion WiFi stable avec un débit minimum de 20 Mbps</span>
               </li>
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
                 <span className="text-[#87A28F] mr-3">✓</span>
                 <span>Une prise électrique disponible près de l'emplacement prévu pour la station de base</span>
               </li>
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
                 <span className="text-[#87A28F] mr-3">✓</span>
                 <span>Un espace discret pour installer la station de charge des oreillettes</span>
               </li>
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg border-l-3 border-[#87A28F] flex items-start">
                 <span className="text-[#87A28F] mr-3">✓</span>
                 <span>Un smartphone ou tablette pour la configuration initiale (uniquement lors de l'installation)</span>
               </li>
             </ul>
           </div>
 
-          <div className="bg-white dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
-            <h3 className="text-2xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Préparation de votre équipe</h3>
-            <p className="mb-4 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">La transition vers un système vocal nécessite une préparation mentale de votre équipe :</p>
+          <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
+            <h3 className="text-2xl font-medium text-[#1A2A40] mb-4">Préparation de votre équipe</h3>
+            <p className="mb-4 text-[#1A2A40]/80">La transition vers un système vocal nécessite une préparation mentale de votre équipe :</p>
             
             <ol className="space-y-4 mt-4">
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg flex items-start">
                 <span className="bg-[#D47D5A] text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 shrink-0">1</span>
                 <span>Informez votre personnel à l'avance du changement à venir</span>
               </li>
@@ -65,7 +65,7 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-3xl font-semibold text-[#1A2A40] mb-6 flex items-center">
           <span className="inline-block w-8 h-8 bg-[#D47D5A] rounded-full mr-3"></span>
           Installation du système
         </h2>
@@ -578,7 +578,7 @@ const ResourceContent = () => {
           Conclusion
         </h2>
 
-        <div className="bg-[#1A2A40] text-[#F5F5F0] dark:bg-[#F5F5F0] dark:text-[#1A2A40] rounded-xl p-8 shadow-lg">
+        <div className="bg-[#1A2A40] text-[#F5F5F0] rounded-xl p-8 shadow-lg">
           <p className="mb-6">Félicitations ! Vous êtes maintenant prêt à transformer l'expérience de votre restaurant avec Sotto. En libérant votre équipe des contraintes des écrans, vous leur permettez de se concentrer sur l'essentiel : l'accueil, le service et l'attention portée à vos clients.</p>
           
           <p className="mb-6">Rappelez-vous que la période d'adaptation est normale et que votre équipe deviendra rapidement experte dans l'utilisation de Sotto. Notre équipe reste à votre disposition pour vous accompagner à chaque étape de cette transition.</p>

@@ -74,3 +74,17 @@ a:focus {
   --tw-prose-th-borders: #E5E7EB;
   --tw-prose-td-borders: #E5E7EB;
 }
+
+/* Force la couleur du texte pour tous les éléments dans les ressources */
+[class*="resource-content"] *,
+.prose *,
+[id^="resource-"] * {
+  color: #1A2A40 !important;
+}
+
+/* Exception pour les liens */
+[class*="resource-content"] a,
+.prose a,
+[id^="resource-"] a {
+  color: #D47D5A !important;
+}
