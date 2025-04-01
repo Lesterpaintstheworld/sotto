@@ -30,7 +30,17 @@ async function getResourcesData() {
 }
 
 // Composant pour afficher les icônes
-const Icon = ({ name, size = 48, color = "#1A2A40", strokeWidth = 1.5 }) => {
+const Icon = ({ 
+  name, 
+  size = 48, 
+  color = "#1A2A40", 
+  strokeWidth = 1.5 
+}: { 
+  name: string; 
+  size?: number; 
+  color?: string; 
+  strokeWidth?: number; 
+}) => {
   // Fonction pour rendre l'icône selon son nom
   const renderIcon = () => {
     switch (name) {
@@ -271,10 +281,22 @@ const Icon = ({ name, size = 48, color = "#1A2A40", strokeWidth = 1.5 }) => {
 };
 
 // Fonction pour formater la date
-const formatDate = (dateString) => {
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+const formatDate = (dateString: string): string => {
+  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
   return new Date(dateString).toLocaleDateString('fr-FR', options);
 };
+
+// Interface pour les ressources
+interface Resource {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  linkText: string;
+  linkIcon: string;
+  icon?: string;
+  categoryColor?: string;
+}
 
 export default async function Resources() {
   // Obtenir les données
@@ -319,7 +341,7 @@ export default async function Resources() {
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
               <div className="grid md:grid-cols-5 gap-4">
-                {publicData.guides.map((guide) => (
+                {publicData.guides.map((guide: Resource) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
@@ -353,7 +375,7 @@ export default async function Resources() {
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
               <div className="grid md:grid-cols-5 gap-4">
-                {publicData.casestudies.map((casestudy) => (
+                {publicData.casestudies.map((casestudy: Resource) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
@@ -387,7 +409,7 @@ export default async function Resources() {
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
               <div className="grid md:grid-cols-5 gap-4">
-                {publicData.tools.map((tool) => (
+                {publicData.tools.map((tool: Resource) => (
                 <div key={tool.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
@@ -448,7 +470,7 @@ export default async function Resources() {
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents</h2>
               <div className="grid md:grid-cols-5 gap-4">
-                {publicData.documents.map((document) => (
+                {publicData.documents.map((document: Resource) => (
                 <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="relative aspect-video">
                     <Image 
@@ -498,7 +520,7 @@ export default async function Resources() {
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents stratégiques</h2>
                   <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.strategic.map((document) => (
+                    {teamData.strategic.map((document: Resource) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
@@ -535,7 +557,7 @@ export default async function Resources() {
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents techniques</h2>
                   <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.technical.map((document) => (
+                    {teamData.technical.map((document: Resource) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
@@ -572,7 +594,7 @@ export default async function Resources() {
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents opérationnels</h2>
                   <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.operational.map((document) => (
+                    {teamData.operational.map((document: Resource) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
@@ -609,7 +631,7 @@ export default async function Resources() {
                 <section className="mb-16">
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents juridiques & financiers</h2>
                   <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.financial.map((document) => (
+                    {teamData.financial.map((document: Resource) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 
@@ -646,7 +668,7 @@ export default async function Resources() {
                 <section>
                   <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
                   <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.testing.map((document) => (
+                    {teamData.testing.map((document: Resource) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image 

@@ -75,7 +75,7 @@ async function getResourceContent(id: string, category: string, isTeam: boolean)
 // Fonction pour obtenir les paramètres statiques
 export async function generateStaticParams() {
   const resourcesData = await getResourcesData();
-  let params = [];
+  let params: { id: string }[] = [];
   
   // Ajouter les IDs des ressources publiques
   for (const category in resourcesData.public) {

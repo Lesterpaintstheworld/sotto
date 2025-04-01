@@ -128,7 +128,7 @@ const blogPosts = [
 ];
 
 // Fonction pour formater la date
-const formatDate = (dateString) => {
+const formatDate = (dateString: string): string => {
   return dateString; // Déjà formaté dans notre cas
 };
 
