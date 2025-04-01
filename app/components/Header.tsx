@@ -9,38 +9,38 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center p-6 md:p-10 sticky top-0 z-50 bg-[#F5F5F0]/90 backdrop-blur-sm">
+    <header className="flex justify-between items-center p-4 md:px-8 md:py-4 sticky top-0 z-50 bg-[#F5F5F0]/90 backdrop-blur-sm shadow-sm">
       <Link href="/" className="flex items-center">
         <Image 
           src="/logo.png" 
           alt="Sotto Logo" 
-          width={120} 
-          height={60} 
+          width={100} 
+          height={40} 
           priority
           className="h-auto w-auto"
         />
       </Link>
       
       {/* Navigation desktop */}
-      <nav className="hidden md:flex items-center gap-8">
-        <Link href="/about" className="hover:text-[#D47D5A] transition-colors">À propos</Link>
-        <Link href="/demo" className="hover:text-[#D47D5A] transition-colors">Démo</Link>
-        <Link href="/blog" className="hover:text-[#D47D5A] transition-colors">Blog</Link>
-        <Link href="/resources" className="hover:text-[#D47D5A] transition-colors">Ressources</Link>
-        <Link href="/contact" className="hover:text-[#D47D5A] transition-colors">Contact</Link>
+      <nav className="hidden md:flex items-center gap-6">
+        <Link href="/about" className="text-sm hover:text-[#D47D5A] transition-colors">À propos</Link>
+        <Link href="/demo" className="text-sm hover:text-[#D47D5A] transition-colors">Démo</Link>
+        <Link href="/blog" className="text-sm hover:text-[#D47D5A] transition-colors">Blog</Link>
+        <Link href="/resources" className="text-sm hover:text-[#D47D5A] transition-colors">Ressources</Link>
+        <Link href="/contact" className="text-sm hover:text-[#D47D5A] transition-colors">Contact</Link>
         
         {/* Menu déroulant "Mon Sotto" */}
         <div className="relative">
           <button 
-            className="flex items-center gap-1 hover:text-[#D47D5A] transition-colors"
+            className="flex items-center gap-1 text-sm hover:text-[#D47D5A] transition-colors"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             onBlur={() => setTimeout(() => setIsDropdownOpen(false), 100)}
           >
             Mon Sotto
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
-              width="16" 
-              height="16" 
+              width="12" 
+              height="12" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 
@@ -54,28 +54,28 @@ export default function Header() {
           </button>
           
           {isDropdownOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
+            <div className="absolute right-0 mt-1 w-48 bg-white rounded-md shadow-lg py-1 z-50">
               <Link 
                 href="/login" 
-                className="block px-4 py-2 text-sm text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
+                className="block px-4 py-2 text-xs text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
               >
                 Connexion
               </Link>
               <Link 
                 href="/dashboard" 
-                className="block px-4 py-2 text-sm text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
+                className="block px-4 py-2 text-xs text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
               >
                 Tableau de bord
               </Link>
               <Link 
                 href="/settings" 
-                className="block px-4 py-2 text-sm text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
+                className="block px-4 py-2 text-xs text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
               >
                 Paramètres
               </Link>
               <Link 
                 href="/support" 
-                className="block px-4 py-2 text-sm text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
+                className="block px-4 py-2 text-xs text-[#1A2A40] hover:bg-[#F5F5F0] hover:text-[#D47D5A]"
               >
                 Support
               </Link>
@@ -98,66 +98,66 @@ export default function Header() {
           <div className="flex flex-col p-4">
             <Link 
               href="/about" 
-              className="py-2 hover:text-[#D47D5A]"
+              className="py-2 text-sm hover:text-[#D47D5A]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               À propos
             </Link>
             <Link 
               href="/demo" 
-              className="py-2 hover:text-[#D47D5A]"
+              className="py-2 text-sm hover:text-[#D47D5A]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Démo
             </Link>
             <Link 
               href="/blog" 
-              className="py-2 hover:text-[#D47D5A]"
+              className="py-2 text-sm hover:text-[#D47D5A]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Blog
             </Link>
             <Link 
               href="/resources" 
-              className="py-2 hover:text-[#D47D5A]"
+              className="py-2 text-sm hover:text-[#D47D5A]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Ressources
             </Link>
             <Link 
               href="/contact" 
-              className="py-2 hover:text-[#D47D5A]"
+              className="py-2 text-sm hover:text-[#D47D5A]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact
             </Link>
             
             <div className="border-t border-gray-200 mt-2 pt-2">
-              <p className="font-medium py-2">Mon Sotto</p>
+              <p className="font-medium py-1 text-sm">Mon Sotto</p>
               <Link 
                 href="/login" 
-                className="py-2 pl-4 block hover:text-[#D47D5A]"
+                className="py-1 pl-4 block text-sm hover:text-[#D47D5A]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Connexion
               </Link>
               <Link 
                 href="/dashboard" 
-                className="py-2 pl-4 block hover:text-[#D47D5A]"
+                className="py-1 pl-4 block text-sm hover:text-[#D47D5A]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Tableau de bord
               </Link>
               <Link 
                 href="/settings" 
-                className="py-2 pl-4 block hover:text-[#D47D5A]"
+                className="py-1 pl-4 block text-sm hover:text-[#D47D5A]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Paramètres
               </Link>
               <Link 
                 href="/support" 
-                className="py-2 pl-4 block hover:text-[#D47D5A]"
+                className="py-1 pl-4 block text-sm hover:text-[#D47D5A]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Support
