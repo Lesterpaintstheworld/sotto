@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import Image from "next/image";
 
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
@@ -321,10 +322,15 @@ export default async function Resources() {
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="h-36 bg-[#1A2A40]/10 relative aspect-video">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon name={guide.icon} size={36} />
-                    </div>
+                  <div className="relative aspect-video">
+                    <Image 
+                      src={`/images/resources/${guide.id}.jpg`} 
+                      alt={guide.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 20vw"
+                      className="object-cover"
+                      priority={true}
+                    />
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2">{guide.title}</h3>
@@ -349,21 +355,28 @@ export default async function Resources() {
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                  <div className="h-36 bg-[#1A2A40]/10 relative aspect-video">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon name={casestudy.icon} size={36} />
+                  <div className="relative aspect-video">
+                    <Image 
+                      src={`/images/resources/${casestudy.id}.jpg`} 
+                      alt={casestudy.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 20vw"
+                      className="object-cover"
+                      priority={true}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-2">
+                      <span 
+                        className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                        style={{ 
+                          backgroundColor: `${casestudy.categoryColor}90`, 
+                          color: 'white' 
+                        }}
+                      >
+                        {casestudy.category}
+                      </span>
                     </div>
                   </div>
                   <div className="p-4">
-                    <span 
-                      className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                      style={{ 
-                        backgroundColor: `${casestudy.categoryColor}20`, 
-                        color: casestudy.categoryColor 
-                      }}
-                    >
-                      {casestudy.category}
-                    </span>
                     <h3 className="text-lg font-bold mb-2">{casestudy.title}</h3>
                     <p className="text-[#505A64] mb-3 text-sm">
                       {casestudy.description}
@@ -385,18 +398,34 @@ export default async function Resources() {
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.tools.map((tool) => (
-                <div key={tool.id} className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md transition-shadow">
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
-                    <Icon name={tool.icon} size={20} color={tool.iconColor} strokeWidth={2} />
-                    {tool.title}
-                  </h3>
-                  <p className="text-[#505A64] mb-3 text-sm">
-                    {tool.description}
-                  </p>
-                  <Link href={tool.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                    {tool.linkText}
-                    <Icon name={tool.linkIcon} size={14} strokeWidth={2} />
-                  </Link>
+                <div key={tool.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="relative aspect-video">
+                    <Image 
+                      src={`/images/resources/${tool.id}.jpg`} 
+                      alt={tool.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 20vw"
+                      className="object-cover"
+                      priority={true}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                      <div className="p-3">
+                        <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-2">
+                          <Icon name={tool.icon} size={20} color={tool.iconColor} strokeWidth={2} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold mb-3">{tool.title}</h3>
+                    <p className="text-[#505A64] mb-3 text-sm">
+                      {tool.description}
+                    </p>
+                    <Link href={tool.link} className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
+                      {tool.linkText}
+                      <Icon name={tool.linkIcon} size={14} strokeWidth={2} />
+                    </Link>
+                  </div>
                 </div>
                 ))}
               </div>
@@ -454,16 +483,30 @@ export default async function Resources() {
               <div className="grid md:grid-cols-5 gap-4">
                 {publicData.documents.map((document) => (
                 <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                  <div className="relative aspect-video">
+                    <Image 
+                      src={`/images/resources/${document.id}.jpg`} 
+                      alt={document.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 20vw"
+                      className="object-cover"
+                      priority={true}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end">
+                      <div className="p-3">
+                        <span 
+                          className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                          style={{ 
+                            backgroundColor: `${document.categoryColor}90`, 
+                            color: 'white' 
+                          }}
+                        >
+                          {document.category}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                   <div className="p-4">
-                    <span 
-                      className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                      style={{ 
-                        backgroundColor: `${document.categoryColor}20`, 
-                        color: document.categoryColor 
-                      }}
-                    >
-                      {document.category}
-                    </span>
                     <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                       <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                       {document.title}
@@ -502,16 +545,33 @@ export default async function Resources() {
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.strategic.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="relative aspect-video">
+                          <Image 
+                            src={`/images/resources/team/${document.id}.jpg`} 
+                            alt={document.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 20vw"
+                            className="object-cover"
+                            priority={true}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <div className="p-3">
+                              <span 
+                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                                style={{ 
+                                  backgroundColor: `${document.categoryColor}90`, 
+                                  color: 'white' 
+                                }}
+                              >
+                                {document.category}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
+                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
+                          </div>
+                        </div>
                         <div className="p-4">
-                          <span 
-                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                            style={{ 
-                              backgroundColor: `${document.categoryColor}20`, 
-                              color: document.categoryColor 
-                            }}
-                          >
-                            {document.category}
-                          </span>
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                             <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
@@ -537,16 +597,33 @@ export default async function Resources() {
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.technical.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="relative aspect-video">
+                          <Image 
+                            src={`/images/resources/team/${document.id}.jpg`} 
+                            alt={document.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 20vw"
+                            className="object-cover"
+                            priority={true}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <div className="p-3">
+                              <span 
+                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                                style={{ 
+                                  backgroundColor: `${document.categoryColor}90`, 
+                                  color: 'white' 
+                                }}
+                              >
+                                {document.category}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
+                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
+                          </div>
+                        </div>
                         <div className="p-4">
-                          <span 
-                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                            style={{ 
-                              backgroundColor: `${document.categoryColor}20`, 
-                              color: document.categoryColor 
-                            }}
-                          >
-                            {document.category}
-                          </span>
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                             <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
@@ -572,16 +649,33 @@ export default async function Resources() {
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.operational.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="relative aspect-video">
+                          <Image 
+                            src={`/images/resources/team/${document.id}.jpg`} 
+                            alt={document.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 20vw"
+                            className="object-cover"
+                            priority={true}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <div className="p-3">
+                              <span 
+                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                                style={{ 
+                                  backgroundColor: `${document.categoryColor}90`, 
+                                  color: 'white' 
+                                }}
+                              >
+                                {document.category}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
+                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
+                          </div>
+                        </div>
                         <div className="p-4">
-                          <span 
-                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                            style={{ 
-                              backgroundColor: `${document.categoryColor}20`, 
-                              color: document.categoryColor 
-                            }}
-                          >
-                            {document.category}
-                          </span>
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                             <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
@@ -607,16 +701,33 @@ export default async function Resources() {
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.financial.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="relative aspect-video">
+                          <Image 
+                            src={`/images/resources/team/${document.id}.jpg`} 
+                            alt={document.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 20vw"
+                            className="object-cover"
+                            priority={true}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <div className="p-3">
+                              <span 
+                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                                style={{ 
+                                  backgroundColor: `${document.categoryColor}90`, 
+                                  color: 'white' 
+                                }}
+                              >
+                                {document.category}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
+                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
+                          </div>
+                        </div>
                         <div className="p-4">
-                          <span 
-                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                            style={{ 
-                              backgroundColor: `${document.categoryColor}20`, 
-                              color: document.categoryColor 
-                            }}
-                          >
-                            {document.category}
-                          </span>
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                             <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
@@ -642,16 +753,33 @@ export default async function Resources() {
                   <div className="grid md:grid-cols-5 gap-4">
                     {teamData.testing.map((document) => (
                       <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="relative aspect-video">
+                          <Image 
+                            src={`/images/resources/team/${document.id}.jpg`} 
+                            alt={document.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, 20vw"
+                            className="object-cover"
+                            priority={true}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                            <div className="p-3">
+                              <span 
+                                className="inline-block px-2 py-1 rounded-full text-xs font-medium"
+                                style={{ 
+                                  backgroundColor: `${document.categoryColor}90`, 
+                                  color: 'white' 
+                                }}
+                              >
+                                {document.category}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-[#1A2A40]/80 flex items-center justify-center">
+                            <Icon name="lock" size={14} color="#FFFFFF" strokeWidth={2} />
+                          </div>
+                        </div>
                         <div className="p-4">
-                          <span 
-                            className="inline-block px-2 py-1 rounded-full text-xs font-medium mb-2"
-                            style={{ 
-                              backgroundColor: `${document.categoryColor}20`, 
-                              color: document.categoryColor 
-                            }}
-                          >
-                            {document.category}
-                          </span>
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
                             <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
