@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sotto | Système IA vocal pour restaurants",
   description: "Sotto révolutionne les opérations de restauration en éliminant les interfaces à écran, créant une expérience plus humaine et efficace.",
+  metadataBase: new URL('https://sottohq.ai'),
 };
 
 export default function RootLayout({

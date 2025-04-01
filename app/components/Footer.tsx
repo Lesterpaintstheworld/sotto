@@ -12,8 +12,9 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4">Contact</h3>
-          <p className="text-[#F5F5F0]/70">info@sotto.ai</p>
-          <p className="text-[#F5F5F0]/70">+33 1 23 45 67 89</p>
+          <p className="text-[#F5F5F0]/70">contact@sottohq.ai</p>
+          <p className="text-[#F5F5F0]/70">+33 6 21 23 58 50</p>
+          <p className="text-[#F5F5F0]/70">97B rue Pierre Valdo, 69005 Lyon</p>
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4">Suivez-nous</h3>
