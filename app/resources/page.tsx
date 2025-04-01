@@ -2,7 +2,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import resourcesData from "../data/resources.json";
+import fs from 'fs';
+import path from 'path';
+
+// Fonction pour obtenir les données JSON
+function getResourcesData() {
+  const filePath = path.join(process.cwd(), 'app/data/resources.json');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
 
 // Composant pour afficher les icônes
 const Icon = ({ name, size = 48, color = "#1A2A40", strokeWidth = 1.5 }) => {
@@ -104,7 +112,8 @@ const formatDate = (dateString) => {
 };
 
 export default function Resources() {
-  // Accéder directement aux données de l'équipe
+  // Obtenir les données
+  const resourcesData = getResourcesData();
   const teamData = resourcesData.team;
 
   return (
