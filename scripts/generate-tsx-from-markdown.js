@@ -136,7 +136,7 @@ ${content}
 
 Le titre de la ressource est: "${title}"
 La catégorie est: "${file.category}"
-C'est ${file.isTeam ? 'une ressource d'équipe' : 'une ressource publique'}
+C'est ${file.isTeam ? 'une ressource d\'équipe' : 'une ressource publique'}
 
 Génère un composant TSX élégant et visuel qui affiche ce contenu.`
           }
