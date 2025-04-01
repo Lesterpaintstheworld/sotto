@@ -185,8 +185,8 @@ export default async function ResourcePage({ params }) {
   }
   
   // Vérifier si l'utilisateur est connecté et a accès aux ressources de l'équipe
-  // Pour l'instant, nous utiliserons une variable simple pour simuler l'authentification
-  const isTeamMember = true; // À remplacer par une vérification d'authentification réelle
+  // Authentification désactivée pour le prérendu statique
+  const isTeamMember = true; // Authentification désactivée pour le moment, accès complet aux ressources
   
   // Si c'est une ressource d'équipe et que l'utilisateur n'est pas membre de l'équipe, retourner une page 404
   if (isTeam && !isTeamMember) {
