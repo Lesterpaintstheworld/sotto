@@ -9,6 +9,9 @@ export default function Footer() {
           <p className="text-[#F5F5F0]/70">
             Libérez votre restaurant des écrans et recentrez-vous sur l'essentiel : l'humain et la gastronomie.
           </p>
+          <p className="text-[#F5F5F0]/70 mt-2">
+            Une entreprise du Groupe Au Comptoir de la Caisse
+          </p>
         </div>
         <div>
           <h3 className="text-xl font-bold mb-4">Contact</h3>

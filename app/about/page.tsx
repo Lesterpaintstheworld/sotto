@@ -36,8 +36,9 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8 mt-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-24 h-24 rounded-full bg-[#1A2A40] mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold text-center">Sophie Martin</h3>
-                <p className="text-center text-[#505A64]">CEO & Co-fondatrice</p>
+                <h3 className="text-xl font-bold text-center">Karim Omri</h3>
+                <p className="text-center text-[#505A64]">CEO & Co-fondateur</p>
+                <p className="text-center text-xs text-[#505A64] mt-2">emlyon business school</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-24 h-24 rounded-full bg-[#1A2A40] mx-auto mb-4"></div>
@@ -55,9 +56,17 @@ export default function About() {
             <div className="mt-10 bg-[#1A2A40]/5 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">Notre expertise</h3>
               <p className="text-[#505A64] mb-4">
-                Notre équipe combine une expertise unique en intelligence artificielle, développement logiciel et expérience utilisateur. Avec plus de 10 ans d'expérience dans la création de solutions technologiques innovantes, nous apportons une perspective unique au secteur de la restauration.
+                Notre équipe combine une expertise unique en intelligence artificielle, développement logiciel et expérience utilisateur. Avec plus de 15 ans d'expérience dans la création de solutions technologiques innovantes pour la restauration, nous apportons une perspective unique au secteur.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mt-6">
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <span className="text-[#D47D5A]">●</span> Karim Omri, CEO
+                  </h4>
+                  <p className="text-sm text-[#505A64]">
+                    Entrepreneur aguerri, Karim dirige également le Groupe Au Comptoir de la Caisse depuis plus de 16 ans, leader dans les solutions de caisse et TPV pour la restauration. Cette double expertise lui permet d'avoir une vision complète des enjeux du secteur et d'apporter des solutions innovantes parfaitement adaptées aux besoins des restaurateurs.
+                  </p>
+                </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <h4 className="font-bold mb-2 flex items-center gap-2">
                     <span className="text-[#D47D5A]">●</span> Nicolas Lester Reynolds, CTO
@@ -66,20 +75,12 @@ export default function About() {
                     Ingénieur INSA Lyon, Nicolas a co-fondé et développé plusieurs startups à succès, dont Civocracy (1M€+ levés) et des plateformes de jeu comptant des millions d'utilisateurs. Expert en IA et systèmes distribués, il apporte son expertise en développement de systèmes vocaux avancés et en architecture cloud.
                   </p>
                 </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h4 className="font-bold mb-2 flex items-center gap-2">
-                    <span className="text-[#D47D5A]">●</span> Parcours entrepreneurial
-                  </h4>
-                  <p className="text-sm text-[#505A64]">
-                    Notre équipe a fondé et développé plusieurs entreprises innovantes dans les domaines de la technologie et des services. Cette expérience nous permet de comprendre les défis des entrepreneurs et d'apporter des solutions pragmatiques et efficaces au secteur de la restauration.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
           
           <section className="mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Notre Partenaire Stratégique</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Notre Force : L'Intégration Verticale</h2>
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/3">
@@ -88,21 +89,12 @@ export default function About() {
                   </div>
                 </div>
                 <div className="md:w-2/3">
-                  <h3 className="text-xl font-bold mb-2">Groupe Au Comptoir de la Caisse</h3>
+                  <h3 className="text-xl font-bold mb-2">Synergie avec le Groupe Au Comptoir de la Caisse</h3>
                   <p className="text-[#505A64] mb-4">
-                    Sotto est fier de collaborer avec le Groupe Au Comptoir de la Caisse, leader dans les solutions de caisse et TPV pour la restauration depuis plus de 15 ans. Cette alliance stratégique nous permet d'intégrer notre technologie vocale à des systèmes d'encaissement éprouvés.
+                    Sotto bénéficie d'une intégration verticale unique grâce à la double fonction de Karim Omri, également PDG du Groupe Au Comptoir de la Caisse, leader dans les solutions de caisse et TPV pour la restauration depuis plus de 16 ans. Cette synergie nous permet d'intégrer parfaitement notre technologie vocale à des systèmes d'encaissement éprouvés.
                   </p>
-                  <div className="flex items-center gap-4 mt-4">
-                    <div className="w-12 h-12 rounded-full bg-[#1A2A40]/10 flex items-center justify-center">
-                      <span className="font-bold">KO</span>
-                    </div>
-                    <div>
-                      <p className="font-bold">Karim Omri</p>
-                      <p className="text-sm text-[#505A64]">PDG, Groupe Au Comptoir de la Caisse</p>
-                    </div>
-                  </div>
-                  <p className="text-[#505A64] mt-4 italic">
-                    "L'innovation dans le secteur de la restauration passe par des solutions qui simplifient le quotidien des professionnels tout en améliorant l'expérience client. La vision de Sotto s'aligne parfaitement avec notre philosophie d'excellence et de service."
+                  <p className="text-[#505A64] mt-4">
+                    Cette alliance stratégique offre à nos clients une solution complète et parfaitement intégrée, combinant l'expertise historique d'ACDC en matière de systèmes d'encaissement avec l'innovation de pointe de Sotto en intelligence artificielle vocale.
                   </p>
                 </div>
               </div>
