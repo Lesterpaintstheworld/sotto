@@ -22,7 +22,10 @@ async function getResourcesData() {
   } catch (error) {
     console.error('Error fetching resources data:', error);
     // Retourner un objet vide mais avec la structure attendue pour éviter les erreurs
-    return { team: { guides: [], casestudies: [], tools: [], webinars: [] } };
+    return { 
+      public: { guides: [], casestudies: [], tools: [], webinars: [], documents: [] },
+      team: { strategic: [], technical: [], operational: [], financial: [], testing: [] } 
+    };
   }
 }
 
@@ -170,6 +173,95 @@ const Icon = ({ name, size = 48, color = "#1A2A40", strokeWidth = 1.5 }) => {
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
           </svg>
         );
+      case "lock":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        );
+      case "target":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="6"></circle>
+            <circle cx="12" cy="12" r="2"></circle>
+          </svg>
+        );
+      case "map":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+            <line x1="8" y1="2" x2="8" y2="18"></line>
+            <line x1="16" y1="6" x2="16" y2="22"></line>
+          </svg>
+        );
+      case "headphones":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+          </svg>
+        );
+      case "clipboard":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+          </svg>
+        );
+      case "users":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        );
+      case "dollar-sign":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        );
+      case "briefcase":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
+        );
+      case "alert-triangle":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+        );
+      case "message-square":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        );
+      case "refresh-cw":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        );
+      case "pie-chart":
+        return (
+          <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+          </svg>
+        );
       default:
         return null;
     }
@@ -187,7 +279,27 @@ const formatDate = (dateString) => {
 export default async function Resources() {
   // Obtenir les données
   const resourcesData = await getResourcesData();
-  const teamData = resourcesData?.team || { guides: [], casestudies: [], tools: [], webinars: [] };
+  
+  // Séparer les données publiques et privées (team)
+  const publicData = resourcesData?.public || { 
+    guides: [], 
+    casestudies: [], 
+    tools: [], 
+    webinars: [],
+    documents: []
+  };
+  
+  const teamData = resourcesData?.team || { 
+    strategic: [], 
+    technical: [], 
+    operational: [], 
+    financial: [],
+    testing: []
+  };
+
+  // Vérifier si l'utilisateur est connecté et a accès aux ressources de l'équipe
+  // Pour l'instant, nous utiliserons une variable simple pour simuler l'authentification
+  const isTeamMember = true; // À remplacer par une vérification d'authentification réelle
 
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
@@ -196,18 +308,18 @@ export default async function Resources() {
       <main className="px-6 md:px-20 py-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ressources de l'équipe</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Ressources</h1>
             <p className="text-lg text-[#505A64] max-w-2xl mx-auto">
               Découvrez nos guides, études de cas et outils pour tirer le meilleur parti de Sotto et optimiser votre restaurant.
             </p>
           </div>
           
           {/* Guides et tutoriels */}
-          {teamData.guides && teamData.guides.length > 0 && (
+          {publicData.guides && publicData.guides.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
               <div className="grid md:grid-cols-3 gap-8">
-                {teamData.guides.map((guide) => (
+                {publicData.guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -231,11 +343,11 @@ export default async function Resources() {
           )}
           
           {/* Études de cas */}
-          {teamData.casestudies && teamData.casestudies.length > 0 && (
+          {publicData.casestudies && publicData.casestudies.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {teamData.casestudies.map((casestudy) => (
+                {publicData.casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-56 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -268,11 +380,11 @@ export default async function Resources() {
           )}
           
           {/* Outils et calculateurs */}
-          {teamData.tools && teamData.tools.length > 0 && (
+          {publicData.tools && publicData.tools.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {teamData.tools.map((tool) => (
+                {publicData.tools.map((tool) => (
                 <div key={tool.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <Icon name={tool.icon} size={24} color={tool.iconColor} strokeWidth={2} />
@@ -292,10 +404,10 @@ export default async function Resources() {
           )}
           
           {/* Webinaires et événements */}
-          {teamData.webinars && teamData.webinars.length > 0 && (
+          {publicData.webinars && publicData.webinars.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
-              {teamData.webinars.map((webinar) => (
+              {publicData.webinars.map((webinar) => (
               <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden mb-6">
                 <div className="p-8 md:p-12">
                   <span 
@@ -335,12 +447,12 @@ export default async function Resources() {
             </section>
           )}
           
-          {/* Documents techniques et juridiques */}
-          {teamData.documents && teamData.documents.length > 0 && (
-            <section>
-              <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents essentiels</h2>
+          {/* Documents publics */}
+          {publicData.documents && publicData.documents.length > 0 && (
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents</h2>
               <div className="grid md:grid-cols-2 gap-8">
-                {teamData.documents.map((document) => (
+                {publicData.documents.map((document) => (
                 <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="p-6">
                     <span 
@@ -368,6 +480,196 @@ export default async function Resources() {
                 ))}
               </div>
             </section>
+          )}
+          
+          {/* Section Ressources d'équipe (privée) */}
+          {isTeamMember && (
+            <div className="mt-20 pt-16 border-t border-[#1A2A40]/10">
+              <div className="text-center mb-12">
+                <span className="inline-block px-4 py-1 rounded-full bg-[#1A2A40]/10 text-[#1A2A40] text-sm font-medium mb-2">
+                  Accès restreint
+                </span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Ressources d'équipe</h2>
+                <p className="text-lg text-[#505A64] max-w-2xl mx-auto">
+                  Documents internes et ressources stratégiques pour l'équipe Sotto.
+                </p>
+              </div>
+              
+              {/* Documents stratégiques */}
+              {teamData.strategic && teamData.strategic.length > 0 && (
+                <section className="mb-16">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents stratégiques</h2>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {teamData.strategic.map((document) => (
+                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="p-6">
+                          <span 
+                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            style={{ 
+                              backgroundColor: `${document.categoryColor}20`, 
+                              color: document.categoryColor 
+                            }}
+                          >
+                            {document.category}
+                          </span>
+                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                            {document.title}
+                          </h3>
+                          <p className="text-[#505A64] mb-4">
+                            {document.description}
+                          </p>
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                            {document.linkText}
+                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+              
+              {/* Documents techniques */}
+              {teamData.technical && teamData.technical.length > 0 && (
+                <section className="mb-16">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents techniques</h2>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {teamData.technical.map((document) => (
+                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="p-6">
+                          <span 
+                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            style={{ 
+                              backgroundColor: `${document.categoryColor}20`, 
+                              color: document.categoryColor 
+                            }}
+                          >
+                            {document.category}
+                          </span>
+                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                            {document.title}
+                          </h3>
+                          <p className="text-[#505A64] mb-4">
+                            {document.description}
+                          </p>
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                            {document.linkText}
+                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+              
+              {/* Documents opérationnels */}
+              {teamData.operational && teamData.operational.length > 0 && (
+                <section className="mb-16">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents opérationnels</h2>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {teamData.operational.map((document) => (
+                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="p-6">
+                          <span 
+                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            style={{ 
+                              backgroundColor: `${document.categoryColor}20`, 
+                              color: document.categoryColor 
+                            }}
+                          >
+                            {document.category}
+                          </span>
+                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                            {document.title}
+                          </h3>
+                          <p className="text-[#505A64] mb-4">
+                            {document.description}
+                          </p>
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                            {document.linkText}
+                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+              
+              {/* Documents financiers */}
+              {teamData.financial && teamData.financial.length > 0 && (
+                <section className="mb-16">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents juridiques & financiers</h2>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {teamData.financial.map((document) => (
+                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="p-6">
+                          <span 
+                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            style={{ 
+                              backgroundColor: `${document.categoryColor}20`, 
+                              color: document.categoryColor 
+                            }}
+                          >
+                            {document.category}
+                          </span>
+                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                            {document.title}
+                          </h3>
+                          <p className="text-[#505A64] mb-4">
+                            {document.description}
+                          </p>
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                            {document.linkText}
+                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+              
+              {/* Documents de test */}
+              {teamData.testing && teamData.testing.length > 0 && (
+                <section>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
+                  <div className="grid md:grid-cols-2 gap-8">
+                    {teamData.testing.map((document) => (
+                      <div key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                        <div className="p-6">
+                          <span 
+                            className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
+                            style={{ 
+                              backgroundColor: `${document.categoryColor}20`, 
+                              color: document.categoryColor 
+                            }}
+                          >
+                            {document.category}
+                          </span>
+                          <h3 className="text-xl font-bold mb-2 flex items-center gap-2">
+                            <Icon name={document.icon} size={24} color={document.categoryColor} strokeWidth={2} />
+                            {document.title}
+                          </h3>
+                          <p className="text-[#505A64] mb-4">
+                            {document.description}
+                          </p>
+                          <Link href={document.link} className="text-[#D47D5A] hover:underline flex items-center gap-1">
+                            {document.linkText}
+                            <Icon name={document.linkIcon} size={16} strokeWidth={2} />
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              )}
+            </div>
           )}
         </div>
       </main>

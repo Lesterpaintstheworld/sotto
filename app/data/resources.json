@@ -1,5 +1,5 @@
 {
-  "team": {
+  "public": {
     "guides": [
       {
         "id": "guide-demarrage",
@@ -27,33 +27,6 @@
         "link": "#",
         "linkText": "Consulter la FAQ",
         "linkIcon": "arrow-right"
-      },
-      {
-        "id": "livre-blanc",
-        "title": "Livre Blanc Sotto",
-        "description": "Document détaillé présentant la vision, l'architecture et les objectifs du projet pour partenaires et investisseurs.",
-        "icon": "file-text",
-        "link": "#",
-        "linkText": "Télécharger le PDF",
-        "linkIcon": "download"
-      },
-      {
-        "id": "business-plan",
-        "title": "Business Plan Complet",
-        "description": "Projections financières, modèle de revenus, analyse de marché, et objectifs de croissance sur 3-5 ans.",
-        "icon": "trending-up",
-        "link": "#",
-        "linkText": "Consulter le document",
-        "linkIcon": "arrow-right"
-      },
-      {
-        "id": "analyse-concurrentielle",
-        "title": "Analyse Concurrentielle",
-        "description": "Cartographie des solutions existantes, positionnement différentiant de Sotto, et opportunités de marché.",
-        "icon": "search",
-        "link": "#",
-        "linkText": "Télécharger l'analyse",
-        "linkIcon": "download"
       }
     ],
     "casestudies": [
@@ -247,6 +220,271 @@
         "link": "#",
         "linkText": "Consulter la politique",
         "linkIcon": "arrow-right"
+      }
+    ]
+  },
+  "team": {
+    "strategic": [
+      {
+        "id": "livre-blanc-sotto",
+        "title": "Livre Blanc Sotto",
+        "description": "Document détaillé présentant la vision, l'architecture et les objectifs du projet pour partenaires et investisseurs.",
+        "category": "Documents Stratégiques",
+        "categoryColor": "#1A2A40",
+        "icon": "file-text",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "business-plan",
+        "title": "Business Plan Complet",
+        "description": "Projections financières, modèle de revenus, analyse de marché, et objectifs de croissance sur 3-5 ans.",
+        "category": "Documents Stratégiques",
+        "categoryColor": "#1A2A40",
+        "icon": "trending-up",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "analyse-concurrentielle",
+        "title": "Analyse Concurrentielle",
+        "description": "Cartographie des solutions existantes, positionnement différentiant de Sotto, et opportunités de marché.",
+        "category": "Documents Stratégiques",
+        "categoryColor": "#1A2A40",
+        "icon": "search",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "plan-go-to-market",
+        "title": "Plan Go-to-Market",
+        "description": "Stratégie de lancement, segmentation des clients cibles, et plan d'acquisition des premiers utilisateurs.",
+        "category": "Documents Stratégiques",
+        "categoryColor": "#1A2A40",
+        "icon": "target",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "roadmap-produit",
+        "title": "Roadmap Produit",
+        "description": "Chronologie détaillée du développement par phases, priorités fonctionnelles, et jalons clés.",
+        "category": "Documents Stratégiques",
+        "categoryColor": "#1A2A40",
+        "icon": "map",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      }
+    ],
+    "technical": [
+      {
+        "id": "architecture-technique-detaillee",
+        "title": "Architecture Technique",
+        "description": "Schémas techniques détaillés, infrastructures, composants et flux de données du système.",
+        "category": "Documents Techniques",
+        "categoryColor": "#D47D5A",
+        "icon": "layers",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "specifications-api-detaillees",
+        "title": "Spécifications API",
+        "description": "Documentation des interfaces pour l'intégration avec les systèmes externes (TPE, systèmes de réservation, etc.).",
+        "category": "Documents Techniques",
+        "categoryColor": "#D47D5A",
+        "icon": "code",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "guide-implementation-wifi",
+        "title": "Guide d'Implémentation WiFi",
+        "description": "Prérequis, configuration et tests pour l'installation dans les restaurants.",
+        "category": "Documents Techniques",
+        "categoryColor": "#D47D5A",
+        "icon": "wifi",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "benchmark-oreillettes",
+        "title": "Benchmark des Oreillettes WiFi",
+        "description": "Évaluation comparative des options matérielles, avec recommandations.",
+        "category": "Documents Techniques",
+        "categoryColor": "#D47D5A",
+        "icon": "headphones",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "plan-scalabilite",
+        "title": "Plan de Scalabilité Technique",
+        "description": "Stratégies pour gérer la croissance du volume de données et d'utilisateurs.",
+        "category": "Documents Techniques",
+        "categoryColor": "#D47D5A",
+        "icon": "trending-up",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      }
+    ],
+    "operational": [
+      {
+        "id": "guide-onboarding",
+        "title": "Guide d'Onboarding Restaurant",
+        "description": "Processus complet d'intégration d'un nouveau restaurant, de l'installation à la formation.",
+        "category": "Documents Opérationnels",
+        "categoryColor": "#87A28F",
+        "icon": "clipboard",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "checklist-deploiement-complete",
+        "title": "Checklist de Déploiement",
+        "description": "Liste de vérification pour chaque installation, assurant la standardisation du processus.",
+        "category": "Documents Opérationnels",
+        "categoryColor": "#87A28F",
+        "icon": "check-square",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "scripts-formation",
+        "title": "Scripts de Formation Personnel",
+        "description": "Matériel de formation pour différents rôles (serveurs, cuisiniers, managers).",
+        "category": "Documents Opérationnels",
+        "categoryColor": "#87A28F",
+        "icon": "users",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "manuel-support",
+        "title": "Manuel de Support Niveau 1",
+        "description": "Procédures de résolution des problèmes courants pour l'équipe support.",
+        "category": "Documents Opérationnels",
+        "categoryColor": "#87A28F",
+        "icon": "help-circle",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "plan-continuite",
+        "title": "Plan de Continuité de Service",
+        "description": "Stratégies pour gérer les interruptions et garantir la disponibilité du service.",
+        "category": "Documents Opérationnels",
+        "categoryColor": "#87A28F",
+        "icon": "shield",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      }
+    ],
+    "financial": [
+      {
+        "id": "structure-prix",
+        "title": "Structure de Prix",
+        "description": "Modèles d'abonnement, commissions et options premium détaillés.",
+        "category": "Documents Juridiques & Financiers",
+        "categoryColor": "#D4B483",
+        "icon": "dollar-sign",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "plan-investissement",
+        "title": "Plan d'Investissement",
+        "description": "Besoins financiers, utilisation des fonds et stratégie de levée de fonds.",
+        "category": "Documents Juridiques & Financiers",
+        "categoryColor": "#D4B483",
+        "icon": "briefcase",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "analyse-risques",
+        "title": "Analyse des Risques",
+        "description": "Identification des risques techniques, commerciaux et réglementaires avec plans d'atténuation.",
+        "category": "Documents Juridiques & Financiers",
+        "categoryColor": "#D4B483",
+        "icon": "alert-triangle",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      }
+    ],
+    "testing": [
+      {
+        "id": "protocole-test",
+        "title": "Protocole de Test Pilote",
+        "description": "Méthodologie détaillée pour mesurer succès et collecter feedback lors des tests initiaux.",
+        "category": "Tests & Validation",
+        "categoryColor": "#505A64",
+        "icon": "clipboard",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "kpi-dashboard-complet",
+        "title": "KPI Dashboard",
+        "description": "Indicateurs clés de performance pour suivre l'efficacité opérationnelle et commerciale.",
+        "category": "Tests & Validation",
+        "categoryColor": "#505A64",
+        "icon": "bar-chart-2",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "guide-entretien",
+        "title": "Guide d'Entretien Utilisateur",
+        "description": "Questionnaire structuré pour les interviews post-déploiement.",
+        "category": "Tests & Validation",
+        "categoryColor": "#505A64",
+        "icon": "message-square",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "plan-iteration",
+        "title": "Plan d'Itération Produit",
+        "description": "Processus de collecte et intégration du feedback pour les améliorations continues.",
+        "category": "Tests & Validation",
+        "categoryColor": "#505A64",
+        "icon": "refresh-cw",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
+        "id": "benchmark-roi-complet",
+        "title": "Benchmark ROI Client",
+        "description": "Outil de mesure du retour sur investissement pour les restaurants clients.",
+        "category": "Tests & Validation",
+        "categoryColor": "#505A64",
+        "icon": "pie-chart",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
       }
     ]
   }
