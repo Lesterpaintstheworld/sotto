@@ -6,17 +6,22 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-images": "node scripts/generate-resource-images.js",
+    "generate-content": "node scripts/generate-resource-content.js"
   },
   "dependencies": {
     "anthropic": "^0.0.0",
     "axios": "^1.8.4",
     "next": "15.2.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
