@@ -1,18 +1,12 @@
 import Image from "next/image";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
       {/* En-tête */}
-      <header className="flex justify-between items-center p-6 md:p-10">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight">SOTTO</h1>
-        <nav className="hidden md:flex gap-8">
-          <a href="#vision" className="hover:text-[#D47D5A] transition-colors">Vision</a>
-          <a href="#valeur" className="hover:text-[#D47D5A] transition-colors">Valeur</a>
-          <a href="#fonctionnalites" className="hover:text-[#D47D5A] transition-colors">Fonctionnalités</a>
-          <a href="#contact" className="hover:text-[#D47D5A] transition-colors">Contact</a>
-        </nav>
-      </header>
+      <Header />
 
       {/* Section héro */}
       <section className="px-6 md:px-20 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10 md:gap-20">
@@ -158,32 +152,7 @@ export default function Home() {
       </section>
 
       {/* Pied de page */}
-      <footer id="contact" className="bg-[#1A2A40] text-[#F5F5F0] px-6 md:px-20 py-10">
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
-          <div>
-            <h3 className="text-xl font-bold mb-4">SOTTO</h3>
-            <p className="text-[#F5F5F0]/70">
-              Libérez votre restaurant des écrans et recentrez-vous sur l'essentiel : l'humain et la gastronomie.
-            </p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact</h3>
-            <p className="text-[#F5F5F0]/70">info@sotto.ai</p>
-            <p className="text-[#F5F5F0]/70">+33 1 23 45 67 89</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-bold mb-4">Suivez-nous</h3>
-            <div className="flex gap-4">
-              <a href="#" className="text-[#F5F5F0]/70 hover:text-[#D47D5A]">LinkedIn</a>
-              <a href="#" className="text-[#F5F5F0]/70 hover:text-[#D47D5A]">Twitter</a>
-              <a href="#" className="text-[#F5F5F0]/70 hover:text-[#D47D5A]">Instagram</a>
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-[#F5F5F0]/10 pt-6 text-center text-[#F5F5F0]/50">
-          <p>© {new Date().getFullYear()} Sotto. Tous droits réservés.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
