@@ -40,7 +40,7 @@ async function generateIdeogramPrompt(resource) {
     const response = await axios.post(
       'https://api.anthropic.com/v1/messages',
       {
-        model: "claude-3-sonnet-20240229",
+        model: "claude-3-7-sonnet-latest",  // Mise à jour du modèle
         max_tokens: 1000,
         temperature: 0.7,
         system: "Tu es un expert en création de prompts pour l'IA générative d'images Ideogram. Tu crées des prompts détaillés qui produisent des images de haute qualité, artistiques et cohérentes avec l'identité de marque fournie.",
