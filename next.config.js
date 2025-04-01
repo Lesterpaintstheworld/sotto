@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Désactiver la génération statique pour les pages problématiques
-  experimental: {
-    disableStaticGeneration: true,
+  // Configuration pour Next.js
+  output: 'export', // Utiliser l'export statique pour les pages
+  images: {
+    unoptimized: true, // Désactiver l'optimisation d'images pour l'export statique
   },
 }
 

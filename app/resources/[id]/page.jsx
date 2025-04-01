@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import fs from 'fs';
 import path from 'path';
-import dynamic from 'next/dynamic';
 
 // Fonction pour obtenir les données JSON des ressources
 async function getResourcesData() {
@@ -54,7 +53,6 @@ function checkTsxComponentExists(id) {
 }
 
 // Génération des métadonnées
-// @ts-ignore - Ignorer l'erreur de type pour cette fonction
 export const generateMetadata = async ({ params }) => {
   try {
     const id = params.id;
@@ -82,7 +80,6 @@ export const generateMetadata = async ({ params }) => {
 };
 
 // Fonction pour obtenir les paramètres statiques
-// @ts-ignore - Ignorer l'erreur de type pour cette fonction
 export const generateStaticParams = async () => {
   try {
     const resourcesData = await getResourcesData();
@@ -163,13 +160,13 @@ export default async function ResourcePage({ params }) {
   // Vérifier si le composant TSX existe
   const tsxExists = checkTsxComponentExists(id);
   
-  // Importer dynamiquement le composant TSX s'il existe
+  // Importer le contenu de la ressource
   let ResourceContent;
+  
   if (tsxExists) {
-    ResourceContent = dynamic(() => import(`@/app/resources/content/${id}`), {
-      loading: () => <div className="py-10 text-center">Chargement du contenu...</div>,
-      ssr: true
-    });
+    // Importer statiquement le composant pour éviter les problèmes avec dynamic import
+    const { default: Content } = await import(`@/app/resources/content/${id}`);
+    ResourceContent = Content;
   } else {
     // Fallback si le composant TSX n'existe pas
     ResourceContent = () => (
@@ -184,9 +181,8 @@ export default async function ResourcePage({ params }) {
     );
   }
   
-  // Vérifier si l'utilisateur est connecté et a accès aux ressources de l'équipe
-  // Authentification désactivée pour le prérendu statique
-  const isTeamMember = true; // Authentification désactivée pour le moment, accès complet aux ressources
+  // Accès complet aux ressources pour le rendu statique
+  const isTeamMember = true;
   
   // Si c'est une ressource d'équipe et que l'utilisateur n'est pas membre de l'équipe, retourner une page 404
   if (isTeam && !isTeamMember) {
