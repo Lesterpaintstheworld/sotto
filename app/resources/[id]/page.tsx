@@ -53,11 +53,10 @@ function checkTsxComponentExists(id: string) {
   }
 }
 
-// Génération des métadonnées
-export async function generateMetadata(props: any) {
-  const { params } = props;
+// Fonction auxiliaire pour obtenir les métadonnées
+async function getResourceMetadata(id: string) {
   const resourcesData = await getResourcesData();
-  const resourceInfo = findResourceById(resourcesData, params.id);
+  const resourceInfo = findResourceById(resourcesData, id);
   
   if (!resourceInfo) {
     return {
@@ -70,6 +69,11 @@ export async function generateMetadata(props: any) {
     title: `${resourceInfo.resource.title} | Ressources Sotto`,
     description: resourceInfo.resource.description
   };
+}
+
+// Génération des métadonnées - version simplifiée sans typage explicite
+export async function generateMetadata(props) {
+  return getResourceMetadata(props.params.id);
 }
 
 // Fonction pour obtenir les paramètres statiques
