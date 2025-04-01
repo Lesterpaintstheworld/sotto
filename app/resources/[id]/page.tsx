@@ -53,8 +53,9 @@ function checkTsxComponentExists(id: string) {
   }
 }
 
-// Fonction auxiliaire pour obtenir les métadonnées
-async function getResourceMetadata(id: string) {
+// Génération des métadonnées
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const id = params.id;
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, id);
   
@@ -69,11 +70,6 @@ async function getResourceMetadata(id: string) {
     title: `${resourceInfo.resource.title} | Ressources Sotto`,
     description: resourceInfo.resource.description
   };
-}
-
-// Génération des métadonnées - version simplifiée sans typage explicite
-export async function generateMetadata(props) {
-  return getResourceMetadata(props.params.id);
 }
 
 // Fonction pour obtenir les paramètres statiques
