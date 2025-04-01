@@ -5,13 +5,24 @@ import Image from "next/image";
 
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/api/resources`, { 
-    cache: 'no-store' 
-  });
-  if (!res.ok) {
-    throw new Error('Failed to fetch resources data');
+  try {
+    // Utilisez une URL relative pour éviter les problèmes avec les environnements
+    const res = await fetch('/api/resources', { 
+      cache: 'no-store',
+      // Ajoutez next: { revalidate: 0 } pour s'assurer que les données sont toujours fraîches
+      next: { revalidate: 0 }
+    });
+    
+    if (!res.ok) {
+      throw new Error(`Failed to fetch resources data: ${res.status}`);
+    }
+    
+    return res.json();
+  } catch (error) {
+    console.error('Error fetching resources data:', error);
+    // Retourner un objet vide mais avec la structure attendue pour éviter les erreurs
+    return { team: { guides: [], casestudies: [], tools: [], webinars: [] } };
   }
-  return res.json();
 }
 
 // Composant pour afficher les icônes
@@ -116,7 +127,7 @@ const formatDate = (dateString) => {
 export default async function Resources() {
   // Obtenir les données
   const resourcesData = await getResourcesData();
-  const teamData = resourcesData.team;
+  const teamData = resourcesData?.team || { guides: [], casestudies: [], tools: [], webinars: [] };
 
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
