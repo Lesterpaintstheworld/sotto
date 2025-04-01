@@ -221,7 +221,7 @@ const ResourceContent: React.FC = () => {
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Réassocier l'oreillette</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
                       <li>Accéder au portail administrateur avec les identifiants du restaurant</li>
-                      <li>Naviguer vers "Gestion des appareils" > "Oreillettes"</li>
+                      <li>Naviguer vers "Gestion des appareils" {`>`} "Oreillettes"</li>
                       <li>Sélectionner "Réassocier" pour l'oreillette problématique</li>
                       <li>Guider le partenaire pour suivre les instructions à l'écran</li>
                     </ul>
@@ -287,7 +287,7 @@ const ResourceContent: React.FC = () => {
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Ajuster les paramètres de sensibilité</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
                       <li>Accéder au portail administrateur</li>
-                      <li>Naviguer vers "Paramètres" > "Reconnaissance vocale"</li>
+                      <li>Naviguer vers "Paramètres" {`>`} "Reconnaissance vocale"</li>
                       <li>Ajuster légèrement la sensibilité du microphone (+10%)</li>
                       <li>Demander au partenaire de tester à nouveau</li>
                     </ul>
@@ -297,7 +297,7 @@ const ResourceContent: React.FC = () => {
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Vérifier les mises à jour linguistiques</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
                       <li>Confirmer que les dernières mises à jour du modèle linguistique sont installées</li>
-                      <li>Si nécessaire, forcer la mise à jour depuis "Paramètres" > "Système" > "Mises à jour"</li>
+                      <li>Si nécessaire, forcer la mise à jour depuis "Paramètres" {`>`} "Système" {`>`} "Mises à jour"</li>
                     </ul>
                   </div>
                 </div>
@@ -332,7 +332,7 @@ const ResourceContent: React.FC = () => {
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Vérifier la configuration des zones</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
                       <li>Accéder au portail administrateur</li>
-                      <li>Naviguer vers "Configuration" > "Zones de service"</li>
+                      <li>Naviguer vers "Configuration" {`>`} "Zones de service"</li>
                       <li>Confirmer que les zones "Salle" et "Cuisine" sont correctement définies</li>
                       <li>Vérifier que les oreillettes sont assignées aux bonnes zones</li>
                     </ul>
@@ -358,7 +358,7 @@ const ResourceContent: React.FC = () => {
                   <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/50 p-4 rounded-lg">
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Réinitialiser le module de communication</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
-                      <li>Naviguer vers "Système" > "Modules" > "Communication inter-zones"</li>
+                      <li>Naviguer vers "Système" {`>`} "Modules" {`>`} "Communication inter-zones"</li>
                       <li>Sélectionner "Redémarrer le module"</li>
                       <li>Demander au personnel de tester à nouveau après le redémarrage</li>
                     </ul>
@@ -391,7 +391,7 @@ const ResourceContent: React.FC = () => {
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Vérifier l'intégration avec le système de caisse</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
                       <li>Accéder au portail administrateur</li>
-                      <li>Naviguer vers "Intégrations" > "Système de caisse"</li>
+                      <li>Naviguer vers "Intégrations" {`>`} "Système de caisse"</li>
                       <li>Vérifier l'état de la connexion et les dernières synchronisations</li>
                       <li>Forcer une synchronisation manuelle si nécessaire</li>
                     </ul>
@@ -400,7 +400,7 @@ const ResourceContent: React.FC = () => {
                   <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/50 p-4 rounded-lg">
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Examiner les journaux de commandes</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
-                      <li>Naviguer vers "Rapports" > "Journaux de commandes"</li>
+                      <li>Naviguer vers "Rapports" {`>`} "Journaux de commandes"</li>
                       <li>Rechercher les commandes problématiques par heure ou numéro de table</li>
                       <li>Vérifier si les commandes apparaissent dans les journaux mais pas dans le système de caisse</li>
                     </ul>
@@ -418,7 +418,7 @@ const ResourceContent: React.FC = () => {
                   <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/50 p-4 rounded-lg">
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Vérifier la configuration du menu</h5>
                     <ul className="space-y-1 ml-6 list-disc text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">
-                      <li>Naviguer vers "Menu" > "Configuration"</li>
+                      <li>Naviguer vers "Menu" {`>`} "Configuration"</li>
                       <li>Confirmer que tous les articles mentionnés comme problématiques sont correctement configurés</li>
                       <li>Vérifier les synonymes et variations de prononciation pour les articles fréquemment mal interprétés</li>
                     </ul>
