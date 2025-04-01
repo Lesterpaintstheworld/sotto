@@ -54,49 +54,62 @@ function checkTsxComponentExists(id: string) {
 }
 
 // Génération des métadonnées
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  const id = params.id;
-  const resourcesData = await getResourcesData();
-  const resourceInfo = findResourceById(resourcesData, id);
-  
-  if (!resourceInfo) {
+export const generateMetadata = async ({ params }: any) => {
+  try {
+    const id = params.id;
+    const resourcesData = await getResourcesData();
+    const resourceInfo = findResourceById(resourcesData, id);
+    
+    if (!resourceInfo) {
+      return {
+        title: 'Ressource non trouvée | Sotto',
+        description: 'La ressource demandée n\'existe pas.'
+      };
+    }
+    
     return {
-      title: 'Ressource non trouvée | Sotto',
-      description: 'La ressource demandée n\'existe pas.'
+      title: `${resourceInfo.resource.title} | Ressources Sotto`,
+      description: resourceInfo.resource.description
+    };
+  } catch (error) {
+    console.error('Error generating metadata:', error);
+    return {
+      title: 'Ressources | Sotto',
+      description: 'Découvrez nos ressources pour optimiser votre expérience de restauration.'
     };
   }
-  
-  return {
-    title: `${resourceInfo.resource.title} | Ressources Sotto`,
-    description: resourceInfo.resource.description
-  };
-}
+};
 
 // Fonction pour obtenir les paramètres statiques
-export async function generateStaticParams() {
-  const resourcesData = await getResourcesData();
-  let params: { id: string }[] = [];
-  
-  // Ajouter les IDs des ressources publiques
-  for (const category in resourcesData.public) {
-    params = params.concat(
-      resourcesData.public[category].map((resource: any) => ({
-        id: resource.id
-      }))
-    );
+export const generateStaticParams = async () => {
+  try {
+    const resourcesData = await getResourcesData();
+    let params: { id: string }[] = [];
+    
+    // Ajouter les IDs des ressources publiques
+    for (const category in resourcesData.public) {
+      params = params.concat(
+        resourcesData.public[category].map((resource: any) => ({
+          id: resource.id
+        }))
+      );
+    }
+    
+    // Ajouter les IDs des ressources d'équipe
+    for (const category in resourcesData.team) {
+      params = params.concat(
+        resourcesData.team[category].map((resource: any) => ({
+          id: resource.id
+        }))
+      );
+    }
+    
+    return params;
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
   }
-  
-  // Ajouter les IDs des ressources d'équipe
-  for (const category in resourcesData.team) {
-    params = params.concat(
-      resourcesData.team[category].map((resource: any) => ({
-        id: resource.id
-      }))
-    );
-  }
-  
-  return params;
-}
+};
 
 // Composant pour afficher une icône
 const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }: { name: string, size?: number, color?: string, strokeWidth?: number }) => {
