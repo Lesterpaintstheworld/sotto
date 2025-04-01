@@ -485,7 +485,7 @@ export default async function Resources() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                      <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                      <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                       {document.title}
                     </h3>
                     <p className="text-[#505A64] mb-3 text-sm">
@@ -535,7 +535,7 @@ export default async function Resources() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
                           <p className="text-[#505A64] mb-3 text-sm">
@@ -572,7 +572,7 @@ export default async function Resources() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
                           <p className="text-[#505A64] mb-3 text-sm">
@@ -609,7 +609,7 @@ export default async function Resources() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
                           <p className="text-[#505A64] mb-3 text-sm">
@@ -646,7 +646,7 @@ export default async function Resources() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
                           <p className="text-[#505A64] mb-3 text-sm">
@@ -683,7 +683,7 @@ export default async function Resources() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon} size={20} color={document.categoryColor} strokeWidth={2} />
+                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
                             {document.title}
                           </h3>
                           <p className="text-[#505A64] mb-3 text-sm">
