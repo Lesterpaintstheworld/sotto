@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -51,7 +52,38 @@ export default function About() {
             </div>
           </section>
           
-          <section>
+          <section className="mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Notre Partenaire Stratégique</h2>
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="md:w-1/3">
+                  <div className="w-32 h-32 rounded-full bg-[#1A2A40]/10 mx-auto md:mx-0 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-[#1A2A40]">ACDC</span>
+                  </div>
+                </div>
+                <div className="md:w-2/3">
+                  <h3 className="text-xl font-bold mb-2">Groupe Au Comptoir de la Caisse</h3>
+                  <p className="text-[#505A64] mb-4">
+                    Sotto est fier de collaborer avec le Groupe Au Comptoir de la Caisse, leader dans les solutions de caisse et TPV pour la restauration depuis plus de 15 ans. Cette alliance stratégique nous permet d'intégrer notre technologie vocale à des systèmes d'encaissement éprouvés.
+                  </p>
+                  <div className="flex items-center gap-4 mt-4">
+                    <div className="w-12 h-12 rounded-full bg-[#1A2A40]/10 flex items-center justify-center">
+                      <span className="font-bold">KO</span>
+                    </div>
+                    <div>
+                      <p className="font-bold">Karim Omri</p>
+                      <p className="text-sm text-[#505A64]">PDG, Groupe Au Comptoir de la Caisse</p>
+                    </div>
+                  </div>
+                  <p className="text-[#505A64] mt-4 italic">
+                    "L'innovation dans le secteur de la restauration passe par des solutions qui simplifient le quotidien des professionnels tout en améliorant l'expérience client. La vision de Sotto s'aligne parfaitement avec notre philosophie d'excellence et de service."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section className="mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Nos Valeurs</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -87,6 +119,16 @@ export default function About() {
                 </p>
               </div>
             </div>
+          </section>
+          
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Notre Vision pour l'Avenir</h2>
+            <p className="text-lg text-[#505A64] mb-6">
+              Nous envisageons un futur où la technologie dans la restauration devient invisible, où les interactions humaines reprennent leur place centrale, et où les restaurateurs peuvent se concentrer sur leur passion : créer des expériences culinaires mémorables.
+            </p>
+            <p className="text-lg text-[#505A64]">
+              Avec nos partenaires stratégiques comme le Groupe Au Comptoir de la Caisse, nous travaillons à construire un écosystème complet qui révolutionne l'ensemble des opérations de restauration, de la prise de commande au paiement, en passant par la gestion des stocks et l'analyse des données.
+            </p>
           </section>
         </div>
       </main>
