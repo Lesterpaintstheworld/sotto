@@ -9,9 +9,18 @@ import path from 'path';
 // Fonction pour obtenir les données JSON des ressources
 async function getResourcesData() {
   try {
-    const resourcesPath = path.join(process.cwd(), 'app/data/resources.json');
-    const resourcesData = JSON.parse(fs.readFileSync(resourcesPath, 'utf8'));
-    return resourcesData;
+    // En développement, utiliser le fichier local
+    if (process.env.NODE_ENV === 'development') {
+      const resourcesPath = path.join(process.cwd(), 'app/data/resources.json');
+      const resourcesData = JSON.parse(fs.readFileSync(resourcesPath, 'utf8'));
+      return resourcesData;
+    } 
+    // En production, utiliser l'API
+    else {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/resources`);
+      const resourcesData = await response.json();
+      return resourcesData;
+    }
   } catch (error) {
     console.error('Error fetching resources data:', error);
     return { 
