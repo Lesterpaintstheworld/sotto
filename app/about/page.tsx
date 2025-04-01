@@ -41,13 +41,39 @@ export default function About() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-24 h-24 rounded-full bg-[#1A2A40] mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold text-center">Thomas Dubois</h3>
+                <h3 className="text-xl font-bold text-center">Nicolas Lester Reynolds</h3>
                 <p className="text-center text-[#505A64]">CTO & Co-fondateur</p>
+                <p className="text-center text-xs text-[#505A64] mt-2">INSA Lyon</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-24 h-24 rounded-full bg-[#1A2A40] mx-auto mb-4"></div>
                 <h3 className="text-xl font-bold text-center">Julie Lefèvre</h3>
                 <p className="text-center text-[#505A64]">Directrice Produit</p>
+              </div>
+            </div>
+            
+            <div className="mt-10 bg-[#1A2A40]/5 p-6 rounded-lg">
+              <h3 className="text-xl font-bold mb-4">Notre expertise</h3>
+              <p className="text-[#505A64] mb-4">
+                Notre équipe combine une expertise unique en intelligence artificielle, développement logiciel et expérience utilisateur. Avec plus de 10 ans d'expérience dans la création de solutions technologiques innovantes, nous apportons une perspective unique au secteur de la restauration.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6 mt-6">
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <span className="text-[#D47D5A]">●</span> Nicolas Lester Reynolds, CTO
+                  </h4>
+                  <p className="text-sm text-[#505A64]">
+                    Ingénieur INSA Lyon, Nicolas a co-fondé et développé plusieurs startups à succès, dont Civocracy (1M€+ levés) et des plateformes de jeu comptant des millions d'utilisateurs. Expert en IA et systèmes distribués, il apporte son expertise en développement de systèmes vocaux avancés et en architecture cloud.
+                  </p>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-sm">
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <span className="text-[#D47D5A]">●</span> Parcours entrepreneurial
+                  </h4>
+                  <p className="text-sm text-[#505A64]">
+                    Notre équipe a fondé et développé plusieurs entreprises innovantes dans les domaines de la technologie et des services. Cette expérience nous permet de comprendre les défis des entrepreneurs et d'apporter des solutions pragmatiques et efficaces au secteur de la restauration.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
