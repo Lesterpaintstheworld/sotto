@@ -2,7 +2,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
-import Image from "next/image";
 
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
