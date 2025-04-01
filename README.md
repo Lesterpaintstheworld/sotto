@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SOTTO
 
-## Getting Started
+Sotto est un système IA vocal qui révolutionne les opérations de restauration en éliminant les interfaces à écran, créant une expérience de restauration plus humaine et efficace.
 
-First, run the development server:
+## Vision
+
+Sotto transforme l'expérience de restauration en remplaçant toutes les interfaces à écran (caisses enregistreuses, tablettes, bornes) par un système vocal IA centralisé. En connectant le personnel via des oreillettes discrètes, Sotto fluidifie les opérations tout en recentrant l'attention sur l'interaction humaine et l'expérience culinaire.
+
+## Proposition de Valeur
+
+- **Pour les Restaurateurs** : Réduction des coûts matériels, optimisation de l'espace, données opérationnelles en temps réel, simplification de la formation
+- **Pour le Personnel** : Interactions plus naturelles, moins de temps passé sur les interfaces, assistance contextuelle, mains libres en permanence
+- **Pour les Clients** : Service plus attentif, temps d'attente réduit, atmosphère débarrassée des écrans
+
+## Fonctionnalités Principales
+
+- Système de reconnaissance vocale intelligent avec traitement du langage naturel
+- IA centralisée gérant toutes les opérations du restaurant
+- Communication fluide entre la salle et la cuisine
+- Interface humaine discrète via des oreillettes élégantes et confortables
+
+## Stack Technologique
+
+- Next.js pour le backend et l'interface d'administration
+- WebSockets pour la communication en temps réel avec les oreillettes
+- Intégration Airtable pour la gestion des données
+- Progressive Web App pour la fonctionnalité hors ligne
+
+## Démarrage Rapide
+
+Pour lancer le serveur de développement :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrez [http://localhost:3000](http://localhost:3000) avec votre navigateur pour voir le résultat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Identité de Marque
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+L'identité de marque de Sotto se caractérise par :
 
-## Learn More
+- **Personnalité** : Discret, efficace, élégant, attentif
+- **Palette de Couleurs** : Bleu profond (#1A2A40), Terracotta (#D47D5A), Blanc cassé (#F5F5F0)
+- **Typographie** : Didot pour les titres, Proxima Nova pour le corps de texte, Inter pour l'interface utilisateur
+- **Message Principal** : "Libérez votre restaurant des écrans et recentrez-vous sur l'essentiel : l'humain et la gastronomie."
 
-To learn more about Next.js, take a look at the following resources:
+## État du Projet
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Ce projet est actuellement en développement.
