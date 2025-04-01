@@ -15,9 +15,9 @@ async function getResourcesData() {
       const resourcesData = JSON.parse(fs.readFileSync(resourcesPath, 'utf8'));
       return resourcesData;
     } 
-    // En production, utiliser l'API
+    // En production, utiliser l'API avec une URL relative
     else {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/resources`);
+      const response = await fetch('/api/resources');
       const resourcesData = await response.json();
       return resourcesData;
     }
@@ -62,9 +62,11 @@ function checkTsxComponentExists(id) {
 }
 
 // Génération des métadonnées
-export const generateMetadata = async ({ params }) => {
+export async function generateMetadata({ params }) {
+  // Attendre les paramètres
+  const id = await params.id;
+  
   try {
-    const id = params.id;
     const resourcesData = await getResourcesData();
     const resourceInfo = findResourceById(resourcesData, id);
     
@@ -86,7 +88,7 @@ export const generateMetadata = async ({ params }) => {
       description: 'Découvrez nos ressources pour optimiser votre expérience de restauration.'
     };
   }
-};
+}
 
 // Fonction pour obtenir les paramètres statiques
 export const generateStaticParams = async () => {
@@ -155,7 +157,9 @@ const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }) => {
 };
 
 export default async function ResourcePage({ params }) {
-  const { id } = params;
+  // Attendre les paramètres
+  const id = await params.id;
+  
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, id);
   
