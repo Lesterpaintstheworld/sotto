@@ -156,10 +156,15 @@ export default function Blog() {
               <Link href={`/blog/${featuredPost.id}`} className="block group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
                   <div className="grid md:grid-cols-2">
-                    <div className="h-64 md:h-auto bg-[#1A2A40]/10 relative">
-                      <div className="absolute inset-0 flex items-center justify-center text-[#1A2A40]/30 text-xl font-bold">
-                        Image de couverture
-                      </div>
+                    <div className="h-64 md:h-auto relative">
+                      <Image 
+                        src={`/blog/${featuredPost.id}.jpg`}
+                        alt={featuredPost.title}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover"
+                        priority={true}
+                      />
                     </div>
                     <div className="p-8">
                       <div className="flex items-center text-sm text-[#505A64] mb-3">
@@ -213,6 +218,7 @@ export default function Blog() {
                 Témoignages
               </button>
             </div>
+            </div>
           </div>
           
           {/* Liste des articles */}
@@ -220,10 +226,15 @@ export default function Blog() {
             {regularPosts.map((post) => (
               <Link key={post.id} href={`/blog/${post.id}`} className="group">
                 <div className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
-                  <div className="h-48 bg-[#1A2A40]/10 relative">
-                    <div className="absolute inset-0 flex items-center justify-center text-[#1A2A40]/30 text-lg font-bold">
-                      Image de couverture
-                    </div>
+                  <div className="h-48 relative">
+                    <Image 
+                      src={`/blog/${post.id}.jpg`}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                      priority={post.id === regularPosts[0].id}
+                    />
                   </div>
                   <div className="p-6 flex-grow flex flex-col">
                     <div className="flex items-center text-xs text-[#505A64] mb-3">
@@ -274,8 +285,18 @@ export default function Blog() {
             </div>
           </div>
           
-          {/* Newsletter */}
-          <div className="mt-16 bg-[#1A2A40] text-white p-8 rounded-lg">
+          {/* Newsletter avec image de fond */}
+          <div className="mt-16 bg-[#1A2A40] text-white p-8 rounded-lg relative overflow-hidden">
+            <div className="absolute inset-0 opacity-20">
+              <Image 
+                src="/blog/main-header.jpg"
+                alt="Blog Sotto"
+                fill
+                sizes="100vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative z-10">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl font-bold mb-4">Restez informé des dernières innovations</h2>
               <p className="text-white/80 mb-6">
