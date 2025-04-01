@@ -104,6 +104,12 @@ const formatDate = (dateString) => {
 };
 
 export default function Resources() {
+  // Vérifier si les données sont disponibles et correctement structurées
+  const guides = resourcesData?.team?.guides || [];
+  const casestudies = resourcesData?.team?.casestudies || [];
+  const tools = resourcesData?.team?.tools || [];
+  const webinars = resourcesData?.team?.webinars || [];
+
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
       <Header />
@@ -118,10 +124,11 @@ export default function Resources() {
           </div>
           
           {/* Guides et tutoriels */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {resourcesData.team.guides.map((guide) => (
+          {guides.length > 0 && (
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Guides et tutoriels</h2>
+              <div className="grid md:grid-cols-3 gap-8">
+                {guides.map((guide) => (
                 <div key={guide.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -139,15 +146,17 @@ export default function Resources() {
                     </Link>
                   </div>
                 </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
           
           {/* Études de cas */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {resourcesData.team.casestudies.map((casestudy) => (
+          {casestudies.length > 0 && (
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Études de cas</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                {casestudies.map((casestudy) => (
                 <div key={casestudy.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-56 bg-[#1A2A40]/10 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -158,7 +167,7 @@ export default function Resources() {
                     <span 
                       className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-3"
                       style={{ 
-                        backgroundColor: `${casestudy.categoryColor}/20`, 
+                        backgroundColor: `${casestudy.categoryColor}20`, 
                         color: casestudy.categoryColor 
                       }}
                     >
@@ -174,15 +183,17 @@ export default function Resources() {
                     </Link>
                   </div>
                 </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
           
           {/* Outils et calculateurs */}
-          <section className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {resourcesData.team.tools.map((tool) => (
+          {tools.length > 0 && (
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Outils et calculateurs</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                {tools.map((tool) => (
                 <div key={tool.id} className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
                   <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                     <Icon name={tool.icon} size={24} color={tool.iconColor} strokeWidth={2} />
@@ -196,20 +207,22 @@ export default function Resources() {
                     <Icon name={tool.linkIcon} size={16} strokeWidth={2} />
                   </Link>
                 </div>
-              ))}
-            </div>
-          </section>
+                ))}
+              </div>
+            </section>
+          )}
           
           {/* Webinaires et événements */}
-          <section>
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
-            {resourcesData.team.webinars.map((webinar) => (
+          {webinars.length > 0 && (
+            <section>
+              <h2 className="text-2xl md:text-3xl font-bold mb-8">Webinaires et événements</h2>
+              {webinars.map((webinar) => (
               <div key={webinar.id} className="bg-[#1A2A40] text-white rounded-lg overflow-hidden">
                 <div className="p-8 md:p-12">
                   <span 
                     className="inline-block px-3 py-1 rounded-full text-xs font-medium mb-4"
                     style={{ 
-                      backgroundColor: `${webinar.tagColor}/20`, 
+                      backgroundColor: `${webinar.tagColor}20`, 
                       color: webinar.tagColor 
                     }}
                   >
@@ -239,8 +252,9 @@ export default function Resources() {
                   </Link>
                 </div>
               </div>
-            ))}
-          </section>
+              ))}
+            </section>
+          )}
         </div>
       </main>
       
