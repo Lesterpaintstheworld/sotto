@@ -84,6 +84,22 @@ export default function Header() {
         </div>
       </nav>
       
+      {/* Bouton S'inscrire et Se connecter */}
+      <div className="hidden md:flex flex-col items-center ml-4">
+        <button 
+          className="bg-[#1A2A40]/30 text-[#1A2A40]/50 px-4 py-2 rounded-md text-sm font-medium cursor-not-allowed"
+          disabled
+        >
+          S'inscrire
+        </button>
+        <Link 
+          href="/login" 
+          className="text-xs text-[#1A2A40]/70 hover:text-[#D47D5A] mt-1"
+        >
+          Se connecter
+        </Link>
+      </div>
+      
       {/* Menu hamburger pour mobile */}
       <button 
         className="md:hidden text-2xl"
@@ -161,6 +177,23 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Support
+              </Link>
+            </div>
+            
+            {/* Boutons S'inscrire et Se connecter pour mobile */}
+            <div className="border-t border-gray-200 mt-2 pt-2 flex flex-col items-center">
+              <button 
+                className="bg-[#1A2A40]/30 text-[#1A2A40]/50 px-4 py-2 rounded-md text-sm font-medium w-full cursor-not-allowed"
+                disabled
+              >
+                S'inscrire
+              </button>
+              <Link 
+                href="/login" 
+                className="text-xs text-[#1A2A40]/70 hover:text-[#D47D5A] mt-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Se connecter
               </Link>
             </div>
           </div>
