@@ -11,62 +11,121 @@ export default function Demo() {
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Essayez Sotto maintenant !</h1>
           
           <div className="flex flex-col md:flex-row gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
-            {/* Partie gauche - Commande à prendre */}
+            {/* Partie gauche - Commande à prendre (transformée en carousel) */}
             <div className="md:w-1/2 p-8 bg-[#1A2A40]/5">
-              <h2 className="text-2xl font-bold mb-6">Commande à prendre</h2>
-              <div className="bg-white p-6 rounded-lg border border-[#1A2A40]/10 shadow-sm">
-                <h3 className="font-bold text-lg mb-3">Table 7 - 4 personnes</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
+              <h2 className="text-2xl font-bold mb-6 flex items-center justify-between">
+                <span>Commande à prendre</span>
+                <div className="flex gap-2">
+                  <button className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m15 18-6-6 6-6"></path>
                     </svg>
-                    <span>2 menus du jour (entrée + plat)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                  </button>
+                  <button className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="m9 18 6-6-6-6"></path>
                     </svg>
-                    <span>1 burger végétarien sans gluten avec frites</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
-                    </svg>
-                    <span>1 salade César avec poulet grillé</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
-                    </svg>
-                    <span>2 verres de vin rouge maison</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
-                    </svg>
-                    <span>1 eau gazeuse</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D47D5A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="8" x2="12" y2="16"></line>
-                      <line x1="8" y1="12" x2="16" y2="12"></line>
-                    </svg>
-                    <span>1 carafe d'eau</span>
-                  </li>
-                </ul>
-                <p className="mt-4 text-sm text-[#505A64]">Essayez de dicter cette commande dans l'interface de chat à droite.</p>
+                  </button>
+                </div>
+              </h2>
+              
+              {/* Carousel d'exemples de commandes */}
+              <div className="relative overflow-hidden">
+                {/* Premier exemple de commande (visible) */}
+                <div className="bg-white p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-sm">
+                  <h3 className="font-bold text-lg mb-3 flex items-center">
+                    <span className="w-6 h-6 rounded-full bg-[#D47D5A] text-white flex items-center justify-center text-sm mr-2">1</span>
+                    Table 7 - 4 personnes
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D47D5A] font-bold">•</span>
+                      <span className="font-medium">2 menus du jour</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#87A28F] font-bold">•</span>
+                      <span className="font-medium">1 burger végétarien <span className="text-[#D47D5A] text-sm">(sans gluten)</span></span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#1A2A40] font-bold">•</span>
+                      <span className="font-medium">1 salade César poulet</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D4B483] font-bold">•</span>
+                      <span className="font-medium">2 verres de vin rouge</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#87A28F] font-bold">•</span>
+                      <span className="font-medium">1 eau gazeuse + 1 carafe d'eau</span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-sm text-[#505A64] italic">Dictez cette commande dans l'interface à droite →</p>
+                </div>
+                
+                {/* Deuxième exemple de commande (caché) */}
+                <div className="bg-white p-6 rounded-lg border-l-4 border-[#87A28F] shadow-sm hidden">
+                  <h3 className="font-bold text-lg mb-3 flex items-center">
+                    <span className="w-6 h-6 rounded-full bg-[#87A28F] text-white flex items-center justify-center text-sm mr-2">2</span>
+                    Table 12 - 2 personnes
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D47D5A] font-bold">•</span>
+                      <span className="font-medium">1 pizza margherita</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#87A28F] font-bold">•</span>
+                      <span className="font-medium">1 risotto aux champignons <span className="text-[#D47D5A] text-sm">(sans parmesan)</span></span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D4B483] font-bold">•</span>
+                      <span className="font-medium">1 bouteille de vin blanc</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#1A2A40] font-bold">•</span>
+                      <span className="font-medium">2 tiramisus</span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-sm text-[#505A64] italic">Dictez cette commande dans l'interface à droite →</p>
+                </div>
+                
+                {/* Troisième exemple de commande (caché) */}
+                <div className="bg-white p-6 rounded-lg border-l-4 border-[#D4B483] shadow-sm hidden">
+                  <h3 className="font-bold text-lg mb-3 flex items-center">
+                    <span className="w-6 h-6 rounded-full bg-[#D4B483] text-white flex items-center justify-center text-sm mr-2">3</span>
+                    Table 3 - 6 personnes
+                  </h3>
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D47D5A] font-bold">•</span>
+                      <span className="font-medium">3 plateaux de fruits de mer</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#87A28F] font-bold">•</span>
+                      <span className="font-medium">2 entrecôtes <span className="text-[#D47D5A] text-sm">(saignantes)</span></span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#1A2A40] font-bold">•</span>
+                      <span className="font-medium">1 poisson du jour</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#D4B483] font-bold">•</span>
+                      <span className="font-medium">2 bouteilles de champagne</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-[#87A28F] font-bold">•</span>
+                      <span className="font-medium">1 jus d'orange pressé</span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-sm text-[#505A64] italic">Dictez cette commande dans l'interface à droite →</p>
+                </div>
+                
+                {/* Indicateurs de position du carousel */}
+                <div className="flex justify-center gap-2 mt-4">
+                  <div className="w-2 h-2 rounded-full bg-[#D47D5A]"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#1A2A40]/20"></div>
+                  <div className="w-2 h-2 rounded-full bg-[#1A2A40]/20"></div>
+                </div>
               </div>
             </div>
             
