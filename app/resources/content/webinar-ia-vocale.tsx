@@ -1,4 +1,14 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+
 const ResourceContent = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6 text-[#1A2A40]">Comment optimiser votre service avec l'IA vocale</h1>
