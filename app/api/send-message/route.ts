@@ -52,7 +52,8 @@ export async function POST(request: NextRequest) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
+        'Authorization': `Bearer ${apiKey}`,
+        'X-API-Key': apiKey  // Adding dedicated API key header as an alternative authentication method
       },
       body: JSON.stringify(requestBody)
     });
