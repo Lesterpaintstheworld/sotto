@@ -20,12 +20,32 @@ export default function Demo() {
   
   // Fonction pour faire défiler vers le bas
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    // Vérifier si l'utilisateur est déjà en bas de la conversation
+    const chatContainer = document.querySelector('.chat-container');
+    if (chatContainer) {
+      const { scrollHeight, scrollTop, clientHeight } = chatContainer;
+      const isAtBottom = scrollHeight - scrollTop - clientHeight < 100; // Marge de 100px
+      
+      // Ne faire défiler que si l'utilisateur est déjà proche du bas
+      if (isAtBottom) {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
   
   // Effet pour faire défiler vers le bas quand les messages changent
   useEffect(() => {
-    scrollToBottom();
+    // Ajouter une classe au conteneur de chat pour pouvoir le sélectionner
+    const chatContainer = document.querySelector('.flex-1.p-4.bg-\\[\\#F5F5F0\\].overflow-y-auto');
+    if (chatContainer) {
+      chatContainer.classList.add('chat-container');
+    }
+    
+    // Appeler scrollToBottom uniquement lors de l'ajout d'un nouveau message de l'assistant
+    const lastMessage = messages[messages.length - 1];
+    if (lastMessage && lastMessage.role === "assistant") {
+      scrollToBottom();
+    }
   }, [messages]);
   
   // Fonction pour passer au slide suivant
@@ -51,6 +71,8 @@ export default function Demo() {
     // Réinitialiser l'input et activer l'état de chargement
     setInputMessage("");
     setIsLoading(true);
+    
+    // Ne pas défiler automatiquement ici
     
     try {
       // Appeler notre API qui communique avec Claude
@@ -239,7 +261,7 @@ export default function Demo() {
                 </div>
                 
                 {/* Corps du chat */}
-                <div className="flex-1 p-4 bg-[#F5F5F0] overflow-y-auto space-y-4">
+                <div className="flex-1 p-4 bg-[#F5F5F0] overflow-y-auto space-y-4 chat-container">
                   {messages.map((message, index) => (
                     <div 
                       key={index} 
