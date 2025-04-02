@@ -3,12 +3,15 @@
 import { useEffect, useState } from 'react';
 
 const ResourceContent = () => {
-  const [isClient, setIsClient] = useState(false);
+  // Utiliser une approche qui fonctionne côté serveur et client
+  const [mounted, setMounted] = useState(false);
 
+  // Ce hook ne s'exécutera que côté client
   useEffect(() => {
-    setIsClient(true);
+    setMounted(true);
   }, []);
 
+  // Rendu côté serveur sécurisé
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6 text-[#1A2A40]">Comment optimiser votre service avec l'IA vocale</h1>
@@ -28,6 +31,15 @@ const ResourceContent = () => {
       <p className="text-[#505A64]">
         Le contenu complet du webinar sera disponible prochainement. Inscrivez-vous pour être notifié de sa publication.
       </p>
+      
+      {/* Contenu conditionnel qui ne s'affiche que côté client */}
+      {mounted && (
+        <div className="mt-6 p-4 bg-blue-dark/5 rounded-lg">
+          <p className="text-[#505A64]">
+            Contenu interactif chargé côté client.
+          </p>
+        </div>
+      )}
     </div>
   );
 };
