@@ -90,6 +90,23 @@ a:focus {
   color: #D47D5A !important;
 }
 
+/* Règles spécifiques pour le mode sombre */
+@media (prefers-color-scheme: dark) {
+  [class*="resource-content"] *,
+  .prose *,
+  [id^="resource-"] *,
+  .bg-blue-dark * {
+    color: #F5F5F0 !important;
+  }
+  
+  /* Exception pour les liens en mode sombre */
+  [class*="resource-content"] a,
+  .prose a,
+  [id^="resource-"] a {
+    color: #D47D5A !important;
+  }
+}
+
 /* Exception pour les boutons et éléments d'interface spécifiques */
 button.bg-terracotta *,
 .bg-terracotta * {
