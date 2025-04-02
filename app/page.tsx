@@ -172,13 +172,14 @@ export default function Home() {
           </div>
           
           <div className="mt-12 p-6 bg-[#1A2A40]/5 rounded-lg">
-            <h3 className="text-xl font-bold mb-3">Exemple de dialogue</h3>
-            <div className="space-y-4">
-              <div className="flex gap-3">
+            <h3 className="text-xl font-bold mb-6">Exemple de dialogue</h3>
+            <div className="space-y-8">
+              {/* Premier message - Serveur */}
+              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '0.2s' }}>
                 <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
                 <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
-                  {/* Icône micro pour indiquer commande vocale */}
-                  <div className="absolute -left-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                  {/* Icône micro pour indiquer commande vocale - maintenant à droite du cercle S */}
+                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '0.5s' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                       <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
@@ -188,10 +189,11 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="flex gap-3 justify-end">
+              {/* Deuxième message - Sotto */}
+              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '1.2s' }}>
                 <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
-                  {/* Icône son pour indiquer réponse vocale */}
-                  <div className="absolute -right-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                  {/* Icône son pour indiquer réponse vocale - maintenant à gauche du cercle AI */}
+                  <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '1.5s' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                       <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
@@ -203,11 +205,12 @@ export default function Home() {
                 <div className="w-10 h-10 rounded-full bg-[#D47D5A] text-white flex items-center justify-center flex-shrink-0">AI</div>
               </div>
               
-              <div className="flex gap-3">
+              {/* Troisième message - Serveur */}
+              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '2.2s' }}>
                 <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
                 <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône micro pour indiquer commande vocale */}
-                  <div className="absolute -left-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                  <div className="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '2.5s' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
                       <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
@@ -217,10 +220,11 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="flex gap-3 justify-end">
+              {/* Quatrième message - Sotto */}
+              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '3.2s' }}>
                 <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône son pour indiquer réponse vocale */}
-                  <div className="absolute -right-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                  <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '3.5s' }}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                       <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
