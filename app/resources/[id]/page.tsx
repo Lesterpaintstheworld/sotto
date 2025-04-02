@@ -67,8 +67,8 @@ function checkTsxComponentExists(id) {
 
 // Génération des métadonnées
 export async function generateMetadata({ params }) {
-  // Attendre les paramètres
-  const id = await params.id;
+  // Récupérer l'ID directement des paramètres
+  const { id } = params;
   
   try {
     const resourcesData = await getResourcesData();
@@ -161,8 +161,8 @@ const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }) => {
 };
 
 export default async function ResourcePage({ params }) {
-  // Attendre les paramètres
-  const id = await params.id;
+  // Récupérer l'ID directement des paramètres
+  const { id } = params;
   
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, id);
