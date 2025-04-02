@@ -12,11 +12,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Force light mode regardless of system preference */
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 body {
@@ -90,56 +90,37 @@ a:focus {
   color: #D47D5A !important;
 }
 
-/* Règles spécifiques pour le mode sombre */
-@media (prefers-color-scheme: dark) {
-  /* Assurer que le texte est blanc en mode sombre */
-  [class*="resource-content"] *,
-  .prose *,
-  [id^="resource-"] *,
-  .bg-blue-dark * {
-    color: #F5F5F0 !important;
-  }
-  
-  /* Exception pour les liens en mode sombre */
-  [class*="resource-content"] a,
-  .prose a,
-  [id^="resource-"] a {
-    color: #D47D5A !important;
-  }
-  
-  /* S'assurer que les éléments avec bg-white ont un fond sombre en mode sombre */
-  .bg-white {
-    background-color: #1A2A40 !important;
-  }
-  
-  /* Cibler spécifiquement les éléments avec fond blanc dans les ressources */
-  [class*="resource-content"] .bg-white,
-  .prose .bg-white,
-  [id^="resource-"] .bg-white {
-    background-color: #1A2A40 !important;
-  }
-  
-  /* Cibler les éléments de tableau */
-  table tbody tr,
-  table tbody td {
-    background-color: #1A2A40 !important;
-  }
-  
-  /* Conteneur principal transparent pour hériter du fond de la page */
-  .resource-content {
-    background-color: transparent !important;
-  }
-  
-  /* Permettre aux cartes et sections de conserver leur fond */
-  .bg-white, .bg-gray-50, .bg-gray-100 {
-    background-color: #1A2A40 !important;
-  }
-  
-  /* Fond plus clair pour les éléments qui doivent se distinguer */
-  .bg-light-gray, 
-  .bg-\[\#F5F5F0\] {
-    background-color: #2A3A50 !important;
-  }
+/* Force les éléments avec des classes dark: à utiliser les styles du mode clair */
+.dark\:bg-gray-800 {
+  background-color: white !important;
+}
+
+.dark\:text-\[\#F5F5F0\] {
+  color: #1A2A40 !important;
+}
+
+.dark\:bg-\[\#D47D5A\] {
+  background-color: #D47D5A !important;
+}
+
+.dark\:bg-\[\#D47D5A\]\/80 {
+  background-color: #1A2A40 !important;
+}
+
+.dark\:hover\:bg-gray-700:hover {
+  background-color: #f8f8f8 !important;
+}
+
+.dark\:divide-gray-700 {
+  border-color: #e5e7eb !important;
+}
+
+.dark\:bg-\[\#1A2A40\] {
+  background-color: #F5F5F0 !important;
+}
+
+.dark\:bg-\[\#D47D5A\]\/20 {
+  background-color: rgba(212, 125, 90, 0.1) !important;
 }
 
 /* Exception pour les boutons et éléments d'interface spécifiques */
