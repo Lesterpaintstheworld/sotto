@@ -16,7 +16,7 @@ export default function Demo() {
   const [isLoading, setIsLoading] = useState(false);
   
   // Référence pour faire défiler automatiquement vers le bas
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   
   // Fonction pour faire défiler vers le bas
   const scrollToBottom = () => {
@@ -73,7 +73,7 @@ export default function Demo() {
   };
   
   // Fonction pour envoyer un message à l'API Claude
-  const sendMessage = async (e) => {
+  const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
     if (!inputMessage.trim()) return;
