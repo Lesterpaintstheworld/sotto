@@ -2,10 +2,10 @@ const ResourceContent = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 font-sans">
       <div className="mb-10">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0] leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-blue-dark dark:text-off-white leading-tight">
           Plan de Scalabilité Technique
         </h1>
-        <div className="w-20 h-1 bg-[#D47D5A] rounded-full mb-8"></div>
+        <div className="w-20 h-1 bg-terracotta rounded-full mb-8"></div>
       </div>
 
       <section className="mb-12">

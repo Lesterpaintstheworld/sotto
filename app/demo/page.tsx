@@ -75,8 +75,8 @@ export default function Demo() {
               <h2 className="text-2xl font-bold mb-6">Interface Sotto</h2>
               <div className="flex flex-col h-[400px] border border-[#1A2A40]/20 rounded-lg overflow-hidden">
                 {/* En-tête du chat */}
-                <div className="bg-[#1A2A40] text-white p-4 flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-[#D47D5A]"></div>
+                <div className="bg-blue-dark text-white p-4 flex items-center gap-3">
+                  <div className="w-3 h-3 rounded-full bg-terracotta"></div>
                   <span>Sotto Assistant</span>
                 </div>
                 
@@ -128,7 +128,7 @@ export default function Demo() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20">
             <div className="md:w-1/2">
-              <span className="inline-block px-4 py-1 rounded-full bg-[#D47D5A]/10 text-[#D47D5A] text-sm font-medium mb-4">
+              <span className="inline-block px-4 py-1 rounded-full bg-terracotta/10 text-terracotta text-sm font-medium mb-4">
                 Démonstration
               </span>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Découvrez Sotto en action</h1>
@@ -317,7 +317,7 @@ export default function Demo() {
             </div>
           </div>
           
-          <div className="mt-20 bg-[#1A2A40] text-white p-10 rounded-lg">
+          <div className="mt-20 bg-blue-dark text-white p-10 rounded-lg">
             <div className="flex flex-col md:flex-row items-center gap-10">
               <div className="md:w-2/3">
                 <h2 className="text-3xl font-bold mb-4">Vous préférez nous parler directement ?</h2>
@@ -325,13 +325,13 @@ export default function Demo() {
                   Notre équipe est disponible pour répondre à toutes vos questions et vous guider dans votre projet.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:+33123456789" className="flex items-center gap-2 text-[#D47D5A] hover:text-[#D47D5A]/80 transition-colors">
+                  <a href="tel:+33123456789" className="flex items-center gap-2 text-terracotta hover:text-terracotta/80 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
                     <span>+33 1 23 45 67 89</span>
                   </a>
-                  <a href="mailto:contact@sottohq.ai" className="flex items-center gap-2 text-[#D47D5A] hover:text-[#D47D5A]/80 transition-colors">
+                  <a href="mailto:contact@sottohq.ai" className="flex items-center gap-2 text-terracotta hover:text-terracotta/80 transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                       <polyline points="22,6 12,13 2,6"></polyline>
@@ -343,7 +343,7 @@ export default function Demo() {
               <div className="md:w-1/3 flex justify-center">
                 <a
                   href="/contact"
-                  className="rounded-full bg-[#D47D5A] text-white px-6 py-3 text-center hover:bg-[#D47D5A]/90 transition-colors flex items-center justify-center gap-2"
+                  className="rounded-full bg-terracotta text-white px-6 py-3 text-center hover:bg-terracotta/90 transition-colors flex items-center justify-center gap-2"
                 >
                   <span>Contactez-nous</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

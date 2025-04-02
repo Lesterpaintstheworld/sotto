@@ -7,6 +7,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'blue-dark': '#1A2A40',
+        'terracotta': '#D47D5A',
+        'off-white': '#F5F5F0',
+        'sage': '#87A28F',
+        'gold': '#D4B483',
+        'slate': '#505A64',
+      },
       typography: {
         DEFAULT: {
           css: {

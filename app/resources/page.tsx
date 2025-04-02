@@ -508,7 +508,7 @@ export default async function Resources() {
           {isTeamMember && (
             <div className="mt-20 pt-16 border-t border-[#1A2A40]/10">
               <div className="text-center mb-12">
-                <span className="inline-block px-4 py-1 rounded-full bg-[#1A2A40]/10 text-[#1A2A40] text-sm font-medium mb-2">
+                <span className="inline-block px-4 py-1 rounded-full bg-blue-dark/10 text-blue-dark text-sm font-medium mb-2">
                   Accès restreint
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Ressources d'équipe</h2>

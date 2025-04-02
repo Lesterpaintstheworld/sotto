@@ -257,7 +257,7 @@ export default async function ResourcePage(props: any) {
           <div className="mb-12">
             {isTeam && (
               <div className="flex items-center gap-2 mb-4">
-                <span className="inline-block px-3 py-1 rounded-full bg-[#1A2A40]/10 text-[#1A2A40] text-xs font-medium">
+                <span className="inline-block px-3 py-1 rounded-full bg-blue-dark/10 text-blue-dark text-xs font-medium">
                   Accès restreint
                 </span>
                 <Icon name="lock" size={16} color="#1A2A40" strokeWidth={2} />

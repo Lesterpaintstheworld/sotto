@@ -79,7 +79,7 @@ a:focus {
 [class*="resource-content"] *,
 .prose *,
 [id^="resource-"] *,
-.bg-[#1A2A40] * {
+.bg-blue-dark * {
   color: #1A2A40 !important;
 }
 
@@ -91,7 +91,7 @@ a:focus {
 }
 
 /* Exception pour les boutons et éléments d'interface spécifiques */
-button.bg-[#D47D5A] *,
-.bg-[#D47D5A] * {
+button.bg-terracotta *,
+.bg-terracotta * {
   color: white !important;
 }
