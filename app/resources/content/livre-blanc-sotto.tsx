@@ -1,10 +1,10 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 font-sans">
+    <div className="max-w-4xl mx-auto px-4 py-12 font-sans resource-content">
       <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40]">Livre Blanc Sotto</h1>
         <h2 className="text-2xl md:text-3xl font-medium mb-6 text-[#D47D5A]">Révolutionner la Restauration par l'Interface Vocale</h2>
-        <p className="text-lg italic text-gray-600 dark:text-gray-300">*Document stratégique pour partenaires et investisseurs*</p>
+        <p className="text-lg italic text-[#1A2A40] dark:text-[#F5F5F0]">*Document stratégique pour partenaires et investisseurs*</p>
         <div className="w-32 h-1 bg-[#D47D5A] mx-auto my-8 rounded-full"></div>
       </div>
 
@@ -63,9 +63,9 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Segment</th>
-                  <th className="py-3 px-4 text-left">Nombre d'établissements en France</th>
-                  <th className="py-3 px-4 text-left">Potentiel CA annuel</th>
+                  <th className="py-3 px-4 text-left text-white">Segment</th>
+                  <th className="py-3 px-4 text-left text-white">Nombre d'établissements en France</th>
+                  <th className="py-3 px-4 text-left text-white">Potentiel CA annuel</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -125,8 +125,8 @@ const ResourceContent = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-semibold mb-4 text-[#87A28F]">Notre Vision</h3>
-          <div className="bg-[#1A2A40] text-white p-6 rounded-lg shadow-lg mb-6">
-            <p className="text-lg leading-relaxed italic">
+          <div className="bg-[#1A2A40] p-6 rounded-lg shadow-lg mb-6">
+            <p className="text-lg leading-relaxed italic text-white">
               Sotto transforme l'expérience de la restauration en éliminant toutes les interfaces à écran au profit d'un système vocal IA centralisé. En connectant le personnel via des oreillettes discrètes, nous fluidifions les opérations tout en recentrant l'attention sur l'humain et l'expérience culinaire.
             </p>
           </div>
@@ -318,7 +318,7 @@ const ResourceContent = () => {
           </div>
           
           <div className="mt-8 bg-[#F5F5F0] dark:bg-gray-800 p-4 rounded-lg text-center">
-            <p className="text-gray-500 dark:text-gray-400 italic">Diagramme: Architecture Sotto</p>
+            <p className="text-[#1A2A40] dark:text-gray-300 italic">Diagramme: Architecture Sotto</p>
           </div>
         </div>
         
@@ -402,7 +402,7 @@ const ResourceContent = () => {
           <h3 className="text-xl font-semibold mb-4 text-[#87A28F]">Architecture Centralisée</h3>
           
           <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg overflow-x-auto font-mono text-sm">
-            <pre>
+            <pre className="text-[#1A2A40] dark:text-white">
 {`┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │   Interface     │◄────┤    Noyau IA     │────►│    Backend      │
 │   Vocale        │     │    Central      │     │    Cloud        │
@@ -718,9 +718,9 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Source</th>
-                  <th className="py-3 px-4 text-left">Description</th>
-                  <th className="py-3 px-4 text-left">% du CA projeté</th>
+                  <th className="py-3 px-4 text-left text-white">Source</th>
+                  <th className="py-3 px-4 text-left text-white">Description</th>
+                  <th className="py-3 px-4 text-left text-white">% du CA projeté</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -1054,7 +1054,7 @@ const ResourceContent = () => {
         </div>
         
         <div className="text-center mt-10">
-          <p className="italic text-gray-600 dark:text-gray-400">
+          <p className="italic text-[#1A2A40] dark:text-gray-300">
             *Pour toute information complémentaire, contactez l'équipe Sotto à <a href="mailto:contact@sotto.ai" className="text-[#D47D5A] hover:underline">contact@sotto.ai</a>*
           </p>
         </div>

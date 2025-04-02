@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#F5F5F0] dark:bg-[#0a0a0a] text-[#1A2A40] dark:text-[#F5F5F0] rounded-xl shadow-lg">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#F5F5F0] dark:bg-[#0a0a0a] text-[#1A2A40] dark:text-[#F5F5F0] rounded-xl shadow-lg resource-content">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0] border-b-2 border-[#D47D5A] pb-4">
         Calculateur de ROI Sotto
       </h1>
@@ -32,15 +32,15 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="font-medium">Réduction des coûts matériels</span> — Élimination progressive des terminaux de caisse coûteux, des tablettes et des bornes de commande
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des coûts matériels</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Élimination progressive des terminaux de caisse coûteux, des tablettes et des bornes de commande</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="font-medium">Diminution des frais de maintenance</span> — Moins d'appareils signifie moins de pannes et de mises à jour
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Diminution des frais de maintenance</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Moins d'appareils signifie moins de pannes et de mises à jour</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="font-medium">Optimisation de l'espace</span> — Libération d'espace précieux pouvant être converti en places assises supplémentaires
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Optimisation de l'espace</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Libération d'espace précieux pouvant être converti en places assises supplémentaires</span>
               </li>
             </ul>
           </div>
@@ -50,15 +50,15 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span className="font-medium">Service plus rapide</span> — Les commandes vocales sont 37% plus rapides que la saisie sur écran
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Service plus rapide</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Les commandes vocales sont 37% plus rapides que la saisie sur écran</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span className="font-medium">Réduction des erreurs</span> — Diminution de 42% des erreurs de commande grâce à la confirmation vocale intelligente
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des erreurs</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Diminution de 42% des erreurs de commande grâce à la confirmation vocale intelligente</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span className="font-medium">Formation simplifiée</span> — Réduction de 60% du temps de formation des nouveaux serveurs
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Formation simplifiée</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Réduction de 60% du temps de formation des nouveaux serveurs</span>
               </li>
             </ul>
           </div>
@@ -68,15 +68,15 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#D4B483] mr-2">•</span>
-                <span className="font-medium">Rotation des tables améliorée</span> — Service plus fluide permettant d'accueillir plus de clients
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Rotation des tables améliorée</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Service plus fluide permettant d'accueillir plus de clients</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D4B483] mr-2">•</span>
-                <span className="font-medium">Tickets moyens supérieurs</span> — Suggestions contextuelles intelligentes augmentant les ventes additionnelles
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Tickets moyens supérieurs</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Suggestions contextuelles intelligentes augmentant les ventes additionnelles</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D4B483] mr-2">•</span>
-                <span className="font-medium">Satisfaction client accrue</span> — Personnel plus disponible et attentif, créant une expérience client supérieure
+                <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Satisfaction client accrue</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Personnel plus disponible et attentif, créant une expérience client supérieure</span>
               </li>
             </ul>
           </div>
@@ -101,28 +101,28 @@ const ResourceContent = () => {
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Nombre de tables</td>
-                <td className="py-3 px-4">Capacité actuelle de votre établissement</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Nombre de tables</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Capacité actuelle de votre établissement</td>
               </tr>
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Nombre de serveurs</td>
-                <td className="py-3 px-4">Effectif typique par service</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Nombre de serveurs</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Effectif typique par service</td>
               </tr>
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Ticket moyen</td>
-                <td className="py-3 px-4">Votre système de caisse actuel</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Ticket moyen</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Votre système de caisse actuel</td>
               </tr>
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Rotation moyenne des tables</td>
-                <td className="py-3 px-4">Registre des réservations ou estimation</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Rotation moyenne des tables</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Registre des réservations ou estimation</td>
               </tr>
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Nombre d'heures d'ouverture</td>
-                <td className="py-3 px-4">Planning hebdomadaire</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Nombre d'heures d'ouverture</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Planning hebdomadaire</td>
               </tr>
               <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                <td className="py-3 px-4 font-medium">Coût actuel des systèmes d'encaissement</td>
-                <td className="py-3 px-4">Contrats et factures existants</td>
+                <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Coût actuel des systèmes d'encaissement</td>
+                <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Contrats et factures existants</td>
               </tr>
             </tbody>
           </table>
@@ -131,11 +131,11 @@ const ResourceContent = () => {
         <div className="bg-white dark:bg-[#1A2A40] p-6 rounded-xl shadow-md mb-10">
           <h3 className="text-xl font-bold mb-4 text-[#D47D5A]">Étapes d'utilisation</h3>
           <ol className="list-decimal pl-6 space-y-3">
-            <li className="text-lg">Accédez au <a href="https://sotto.io/calculateur-roi" className="text-[#D47D5A] hover:text-[#1A2A40] dark:hover:text-[#F5F5F0] underline">calculateur en ligne</a> ou téléchargez notre application</li>
-            <li className="text-lg">Renseignez les informations demandées concernant votre établissement</li>
-            <li className="text-lg">Ajustez les paramètres selon vos objectifs et priorités</li>
-            <li className="text-lg">Visualisez les résultats sous forme de graphiques et tableaux détaillés</li>
-            <li className="text-lg">Exportez votre rapport personnalisé en PDF</li>
+            <li className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">Accédez au <a href="https://sotto.io/calculateur-roi" className="text-[#D47D5A] hover:text-[#1A2A40] dark:hover:text-[#F5F5F0] underline">calculateur en ligne</a> ou téléchargez notre application</li>
+            <li className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">Renseignez les informations demandées concernant votre établissement</li>
+            <li className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">Ajustez les paramètres selon vos objectifs et priorités</li>
+            <li className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">Visualisez les résultats sous forme de graphiques et tableaux détaillés</li>
+            <li className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">Exportez votre rapport personnalisé en PDF</li>
           </ol>
         </div>
       </section>
@@ -153,27 +153,27 @@ const ResourceContent = () => {
           <ul className="space-y-2 mb-6">
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>20 tables</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">20 tables</span>
             </li>
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>5 serveurs par service</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">5 serveurs par service</span>
             </li>
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Ticket moyen de 35€</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Ticket moyen de 35€</span>
             </li>
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Rotation moyenne de 2,5 tables par service</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Rotation moyenne de 2,5 tables par service</span>
             </li>
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Ouvert 12 heures par jour, 6 jours par semaine</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Ouvert 12 heures par jour, 6 jours par semaine</span>
             </li>
             <li className="flex items-center">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Coût annuel des systèmes d'encaissement : 8 500€</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Coût annuel des systèmes d'encaissement : 8 500€</span>
             </li>
           </ul>
         </div>
@@ -194,29 +194,29 @@ const ResourceContent = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Réduction des coûts matériels</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des coûts matériels</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">3 400€</td>
-                    <td className="py-3 px-4">Élimination progressive des tablettes et écrans</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Élimination progressive des tablettes et écrans</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Gain d'efficacité</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Gain d'efficacité</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">12 600€</td>
-                    <td className="py-3 px-4">Réduction du temps de prise de commande et d'erreurs</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Réduction du temps de prise de commande et d'erreurs</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Augmentation des revenus</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Augmentation des revenus</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">18 200€</td>
-                    <td className="py-3 px-4">Amélioration de la rotation et du ticket moyen</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Amélioration de la rotation et du ticket moyen</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Coût Sotto</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Coût Sotto</td>
                     <td className="py-3 px-4 text-red-500 font-medium">-9 600€</td>
-                    <td className="py-3 px-4">Abonnement annuel et installation</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Abonnement annuel et installation</td>
                   </tr>
                   <tr className="bg-[#F5F5F0] dark:bg-gray-900 font-bold">
-                    <td className="py-3 px-4">Total Année 1</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Total Année 1</td>
                     <td className="py-3 px-4 text-[#D47D5A]">24 600€</td>
-                    <td className="py-3 px-4">ROI de 256%</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">ROI de 256%</td>
                   </tr>
                 </tbody>
               </table>
@@ -236,29 +236,29 @@ const ResourceContent = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Réduction des coûts matériels</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des coûts matériels</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">6 800€</td>
-                    <td className="py-3 px-4">Élimination complète des systèmes traditionnels</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Élimination complète des systèmes traditionnels</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Gain d'efficacité</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Gain d'efficacité</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">19 400€</td>
-                    <td className="py-3 px-4">Maîtrise du système par l'équipe</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Maîtrise du système par l'équipe</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Augmentation des revenus</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Augmentation des revenus</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">27 500€</td>
-                    <td className="py-3 px-4">Exploitation optimale des suggestions contextuelles</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Exploitation optimale des suggestions contextuelles</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Coût Sotto</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Coût Sotto</td>
                     <td className="py-3 px-4 text-red-500 font-medium">-9 600€</td>
-                    <td className="py-3 px-4">Abonnement annuel</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Abonnement annuel</td>
                   </tr>
                   <tr className="bg-[#F5F5F0] dark:bg-gray-900 font-bold">
-                    <td className="py-3 px-4">Total Année 2</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Total Année 2</td>
                     <td className="py-3 px-4 text-[#D47D5A]">44 100€</td>
-                    <td className="py-3 px-4">ROI de 459%</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">ROI de 459%</td>
                   </tr>
                 </tbody>
               </table>
@@ -278,29 +278,29 @@ const ResourceContent = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Réduction des coûts matériels</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des coûts matériels</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">8 500€</td>
-                    <td className="py-3 px-4">Économies complètes sur les systèmes traditionnels</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Économies complètes sur les systèmes traditionnels</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Gain d'efficacité</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Gain d'efficacité</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">22 800€</td>
-                    <td className="py-3 px-4">Processus optimisés et équipe parfaitement formée</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Processus optimisés et équipe parfaitement formée</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Augmentation des revenus</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Augmentation des revenus</td>
                     <td className="py-3 px-4 text-[#87A28F] font-medium">31 200€</td>
-                    <td className="py-3 px-4">Fidélisation client et expérience optimale</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Fidélisation client et expérience optimale</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                    <td className="py-3 px-4 font-medium">Coût Sotto</td>
+                    <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Coût Sotto</td>
                     <td className="py-3 px-4 text-red-500 font-medium">-9 600€</td>
-                    <td className="py-3 px-4">Abonnement annuel</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Abonnement annuel</td>
                   </tr>
                   <tr className="bg-[#F5F5F0] dark:bg-gray-900 font-bold">
-                    <td className="py-3 px-4">Total Année 3</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Total Année 3</td>
                     <td className="py-3 px-4 text-[#D47D5A]">52 900€</td>
-                    <td className="py-3 px-4">ROI de 551%</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">ROI de 551%</td>
                   </tr>
                 </tbody>
               </table>
@@ -341,19 +341,19 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span><span className="font-medium">Volume d'activité élevé</span> — Plus votre établissement est fréquenté, plus les gains d'efficacité se traduisent par des économies importantes</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Volume d'activité élevé</span> — Plus votre établissement est fréquenté, plus les gains d'efficacité se traduisent par des économies importantes</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span><span className="font-medium">Ticket moyen élevé</span> — Les suggestions contextuelles ont un impact plus significatif sur les établissements à ticket moyen élevé</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Ticket moyen élevé</span> — Les suggestions contextuelles ont un impact plus significatif sur les établissements à ticket moyen élevé</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span><span className="font-medium">Forte rotation</span> — Les restaurants à rotation rapide bénéficient davantage de l'optimisation du temps de service</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Forte rotation</span> — Les restaurants à rotation rapide bénéficient davantage de l'optimisation du temps de service</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span><span className="font-medium">Coûts actuels élevés</span> — Si vous utilisez actuellement des systèmes onéreux, les économies seront plus importantes</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Coûts actuels élevés</span> — Si vous utilisez actuellement des systèmes onéreux, les économies seront plus importantes</span>
               </li>
             </ul>
           </div>
@@ -363,15 +363,15 @@ const ResourceContent = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span><span className="font-medium">Petite équipe</span> — Les établissements avec très peu de personnel verront un ROI plus modéré</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Petite équipe</span> — Les établissements avec très peu de personnel verront un ROI plus modéré</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span><span className="font-medium">Offre très spécifique</span> — Les établissements avec un menu très limité bénéficieront moins des suggestions intelligentes</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Offre très spécifique</span> — Les établissements avec un menu très limité bénéficieront moins des suggestions intelligentes</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span><span className="font-medium">Clientèle particulièrement âgée</span> — Peut nécessiter une période d'adaptation plus longue pour le personnel</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><span className="font-medium">Clientèle particulièrement âgée</span> — Peut nécessiter une période d'adaptation plus longue pour le personnel</span>
               </li>
             </ul>
           </div>
@@ -385,29 +385,29 @@ const ResourceContent = () => {
 
         <div className="space-y-8">
           <blockquote className="bg-white dark:bg-[#1A2A40] p-6 rounded-xl shadow-md border-l-4 border-[#D47D5A]">
-            <p className="text-lg italic mb-4">
+            <p className="text-lg italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               "Nous avons récupéré notre investissement en moins de 5 mois. La différence la plus notable a été l'augmentation de 17% de notre ticket moyen grâce aux suggestions pertinentes de Sotto."
             </p>
             <footer className="font-medium">
-              <span className="text-[#D47D5A]">Marie Dufresne</span> — Bistrot La Cantine, Lyon
+              <span className="text-[#D47D5A]">Marie Dufresne</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Bistrot La Cantine, Lyon</span>
             </footer>
           </blockquote>
 
           <blockquote className="bg-white dark:bg-[#1A2A40] p-6 rounded-xl shadow-md border-l-4 border-[#87A28F]">
-            <p className="text-lg italic mb-4">
+            <p className="text-lg italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               "Au-delà des chiffres, c'est l'atmosphère du restaurant qui a changé. Mes serveurs sont plus présents, plus attentifs. Nos clients le remarquent et reviennent plus souvent."
             </p>
             <footer className="font-medium">
-              <span className="text-[#87A28F]">Thomas Mercier</span> — Restaurant L'Ardoise, Paris
+              <span className="text-[#87A28F]">Thomas Mercier</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Restaurant L'Ardoise, Paris</span>
             </footer>
           </blockquote>
 
           <blockquote className="bg-white dark:bg-[#1A2A40] p-6 rounded-xl shadow-md border-l-4 border-[#D4B483]">
-            <p className="text-lg italic mb-4">
+            <p className="text-lg italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               "En tant que gérant de trois établissements, j'apprécie particulièrement la réduction des coûts matériels et la simplicité de formation des nouveaux employés. Sotto s'est rentabilisé dès la première année."
             </p>
             <footer className="font-medium">
-              <span className="text-[#D4B483]">Sophie Blanchard</span> — Groupe Les Trois Tables, Bordeaux
+              <span className="text-[#D4B483]">Sophie Blanchard</span> — <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Groupe Les Trois Tables, Bordeaux</span>
             </footer>
           </blockquote>
         </div>
@@ -440,13 +440,13 @@ const ResourceContent = () => {
           Conclusion : Au-delà des chiffres
         </h2>
         <div className="prose prose-lg max-w-none dark:prose-invert">
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             Si les bénéfices économiques de Sotto sont considérables et mesurables, la véritable valeur de notre solution réside dans la transformation qualitative de votre établissement.
           </p>
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             En libérant votre restaurant des écrans, vous créez un environnement plus humain, plus chaleureux, où la technologie s'efface pour laisser place à l'essentiel : l'expérience culinaire et le contact humain.
           </p>
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             Notre calculateur de ROI vous donne une vision claire des bénéfices financiers, mais nous vous invitons également à imaginer votre établissement transformé par Sotto : des serveurs plus disponibles, une atmosphère débarrassée des barrières technologiques, et une expérience client authentiquement centrée sur la gastronomie et l'hospitalité.
           </p>
         </div>

@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 bg-[#F5F5F0] dark:bg-[#1A2A40]/20 rounded-xl">
+    <div className="max-w-4xl mx-auto px-4 py-8 bg-[#F5F5F0] dark:bg-[#1A2A40]/20 rounded-xl resource-content">
       <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 border-b border-[#D47D5A] pb-4">
         Termes et Conditions d'Utilisation Sotto
       </h1>
@@ -8,10 +8,10 @@ const ResourceContent = () => {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Introduction</h2>
         <div className="prose dark:prose-invert max-w-none">
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0] leading-relaxed">
             Bienvenue dans les conditions générales d'utilisation de Sotto, le système d'interface vocale IA conçu pour révolutionner l'expérience de la restauration. Ce document définit les termes contractuels qui régissent notre relation avec votre établissement et encadre l'utilisation de notre technologie. Nous avons conçu ces conditions pour être aussi claires et transparentes que possible, en accord avec notre philosophie de simplicité et d'efficacité.
           </p>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0] leading-relaxed mt-4">
             Sotto s'engage à libérer votre restaurant des écrans pour créer une expérience plus humaine et efficace. Ces termes et conditions établissent un cadre de confiance mutuelle qui nous permet de vous accompagner dans cette transformation.
           </p>
         </div>
@@ -19,7 +19,7 @@ const ResourceContent = () => {
 
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">1. Définitions</h2>
-        <p className="text-gray-700 dark:text-gray-300 mb-4">
+        <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
           Dans le cadre du présent contrat, les termes suivants ont la signification qui leur est attribuée ci-dessous :
         </p>
         <div className="grid grid-cols-1 gap-4 mt-6">
@@ -34,7 +34,7 @@ const ResourceContent = () => {
           ].map((item, index) => (
             <div key={index} className="bg-white dark:bg-[#1A2A40]/50 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#D47D5A] hover:translate-y-[-2px]">
               <h3 className="font-bold text-[#D47D5A]">{item.term}</h3>
-              <p className="text-gray-700 dark:text-gray-300">{item.def}</p>
+              <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.def}</p>
             </div>
           ))}
         </div>
@@ -46,7 +46,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">2.1 Composantes du Service</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Le Service Sotto comprend :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Le Service Sotto comprend :</p>
             <ul className="space-y-2">
               {[
                 "Un système d'interface vocale IA accessible via des oreillettes sans fil",
@@ -58,7 +58,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="inline-block w-4 h-4 mr-2 mt-1 rounded-full bg-[#D47D5A]"></span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -68,7 +68,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">2.2 Fonctionnalités principales</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Le Service permet notamment :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Le Service permet notamment :</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {[
                 "La prise de commandes par reconnaissance vocale",
@@ -80,7 +80,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-center p-2 bg-[#F5F5F0] dark:bg-[#1A2A40]/70 rounded-md">
                   <span className="text-[#D47D5A] mr-2">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">2.3 Évolutions du Service</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
               Sotto s'engage à améliorer continuellement son Service. De nouvelles fonctionnalités seront régulièrement déployées et accessibles selon votre formule d'abonnement. Vous serez informé des mises à jour majeures au moins 14 jours avant leur déploiement.
             </p>
           </div>
@@ -103,7 +103,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">3.1 Éligibilité</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Pour utiliser le Service Sotto, votre établissement doit :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Pour utiliser le Service Sotto, votre établissement doit :</p>
             <ul className="space-y-2">
               {[
                 "Disposer d'une connexion WiFi stable avec un débit minimum de 10 Mbps",
@@ -113,7 +113,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="inline-block w-4 h-4 mr-2 mt-1 rounded-full bg-[#87A28F]"></span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -123,7 +123,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">3.2 Création et gestion du compte</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300 mb-3">L'administrateur principal sera responsable de :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">L'administrateur principal sera responsable de :</p>
             <ul className="space-y-2">
               {[
                 "La création et la gestion des comptes utilisateurs",
@@ -133,7 +133,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -143,7 +143,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">3.3 Utilisation conforme</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300 mb-3">En utilisant le Service Sotto, vous vous engagez à :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">En utilisant le Service Sotto, vous vous engagez à :</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 "Utiliser le Service uniquement pour les besoins de votre établissement de restauration",
@@ -155,7 +155,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-start p-3 bg-[#F5F5F0] dark:bg-[#1A2A40]/70 rounded-md">
                   <span className="text-[#1A2A40] dark:text-[#D47D5A] mr-2 font-bold">✓</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </div>
               ))}
             </div>
@@ -169,7 +169,7 @@ const ResourceContent = () => {
         <div className="mb-6">
           <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">4.1 Propriété du matériel</h3>
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
               Le matériel fourni par Sotto (oreillettes, stations de charge, etc.) reste la propriété de Sotto pendant toute la durée de l'abonnement. Il est mis à disposition de l'établissement sous forme de location incluse dans l'abonnement.
             </p>
           </div>
@@ -195,9 +195,9 @@ const ResourceContent = () => {
                   { etape: "Période de test", responsabilite: "Conjointe", delai: "7 jours" }
                 ].map((item, index) => (
                   <tr key={index} className={index % 2 === 0 ? "bg-gray-50 dark:bg-[#1A2A40]/30" : ""}>
-                    <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{item.etape}</td>
-                    <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{item.responsabilite}</td>
-                    <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{item.delai}</td>
+                    <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{item.etape}</td>
+                    <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{item.responsabilite}</td>
+                    <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{item.delai}</td>
                   </tr>
                 ))}
               </tbody>
@@ -218,7 +218,7 @@ const ResourceContent = () => {
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#87A28F] mr-2">✓</span>
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                    <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -234,7 +234,7 @@ const ResourceContent = () => {
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#87A28F] mr-2">✓</span>
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                    <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -249,7 +249,7 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#D47D5A] pb-2">5.1 Structure tarifaire</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">L'abonnement au Service Sotto se compose de :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">L'abonnement au Service Sotto se compose de :</p>
             <ul className="space-y-3">
               {[
                 { label: "Frais d'installation", value: "prise en charge par Sotto (offerts)" },
@@ -258,7 +258,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="text-sm">
                   <span className="font-semibold text-[#D47D5A]">{item.label} : </span>
-                  <span className="text-gray-700 dark:text-gray-300">{item.value}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.value}</span>
                 </li>
               ))}
             </ul>
@@ -275,7 +275,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D4B483] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -283,7 +283,7 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#D47D5A] pb-2">5.3 Révision tarifaire</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Sotto se réserve le droit de modifier ses tarifs. Toute modification tarifaire sera notifiée au moins 60 jours avant son application et n'affectera pas les contrats en cours avant leur renouvellement.
             </p>
           </div>
@@ -296,7 +296,7 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#87A28F] pb-2">6.1 Données collectées</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Dans le cadre du Service, Sotto collecte et traite :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Dans le cadre du Service, Sotto collecte et traite :</p>
             <ul className="space-y-2">
               {[
                 "Des données opérationnelles (commandes, temps de service, etc.)",
@@ -306,7 +306,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#87A28F] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -314,7 +314,7 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#87A28F] pb-2">6.2 Utilisation des données</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Sotto s'engage à utiliser ces données uniquement pour :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Sotto s'engage à utiliser ces données uniquement pour :</p>
             <ul className="space-y-2">
               {[
                 "Fournir et améliorer le Service",
@@ -325,7 +325,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#87A28F] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -333,10 +333,10 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#87A28F] pb-2">6.3 Protection des données</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm mb-3">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm mb-3">
               Sotto met en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données, conformément au Règlement Général sur la Protection des Données (RGPD).
             </p>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Les conversations des clients captées accidentellement par le système ne sont ni enregistrées ni traitées, conformément à notre engagement de confidentialité.
             </p>
           </div>
@@ -349,7 +349,7 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">7.1 Droits de Sotto</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Sotto reste propriétaire de tous les droits de propriété intellectuelle relatifs au Service, incluant mais non limité à :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Sotto reste propriétaire de tous les droits de propriété intellectuelle relatifs au Service, incluant mais non limité à :</p>
             <ul className="space-y-2">
               {[
                 "Le logiciel et ses mises à jour",
@@ -359,7 +359,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -367,14 +367,14 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">7.2 Licence d'utilisation</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Sotto vous accorde une licence non-exclusive, non-transférable et révocable pour utiliser le Service pendant la durée de votre abonnement, uniquement pour les besoins de votre établissement.
             </p>
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">7.3 Feedback et améliorations</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Les suggestions et retours d'expérience que vous pourriez fournir à Sotto peuvent être utilisés pour améliorer le Service, sans que cela ne vous confère de droits sur ces améliorations.
             </p>
           </div>
@@ -387,14 +387,14 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">8.1 Durée de l'engagement</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               L'abonnement au Service Sotto est conclu pour une durée initiale de 12 mois, renouvelable tacitement par périodes successives de 12 mois.
             </p>
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">8.4 Conséquences de la résiliation</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">En cas de résiliation :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">En cas de résiliation :</p>
             <ul className="space-y-2">
               {[
                 "L'accès au Service sera désactivé",
@@ -403,7 +403,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -413,7 +413,7 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">8.2 Résiliation par le Restaurant Partenaire</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Vous pouvez résilier votre abonnement :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Vous pouvez résilier votre abonnement :</p>
             <ul className="space-y-2">
               {[
                 "À l'échéance de la période d'engagement, moyennant un préavis de 60 jours",
@@ -421,7 +421,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -429,7 +429,7 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">8.3 Résiliation par Sotto</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Sotto peut résilier votre abonnement :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Sotto peut résilier votre abonnement :</p>
             <ul className="space-y-2">
               {[
                 "En cas de non-paiement après deux relances",
@@ -439,7 +439,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -453,14 +453,14 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">9.1 Garanties de service</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Sotto s'engage à fournir un Service conforme aux spécifications décrites dans la documentation. Sotto garantit une disponibilité du Service de 99,5% sur une base mensuelle.
             </p>
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">9.2 Exclusions de responsabilité</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-3">Sotto ne pourra être tenu responsable :</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Sotto ne pourra être tenu responsable :</p>
             <ul className="space-y-2">
               {[
                 "Des dysfonctionnements liés à votre infrastructure réseau",
@@ -470,7 +470,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300 text-sm">{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{item}</span>
                 </li>
               ))}
             </ul>
@@ -478,7 +478,7 @@ const ResourceContent = () => {
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">9.3 Plafond d'indemnisation</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               La responsabilité de Sotto est limitée au montant total payé par votre établissement au cours des 12 derniers mois précédant l'événement donnant lieu à responsabilité.
             </p>
           </div>
@@ -491,21 +491,21 @@ const ResourceContent = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">10.1 Modification des conditions</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Sotto se réserve le droit de modifier les présentes conditions. Toute modification vous sera notifiée au moins 30 jours avant son entrée en vigueur. L'utilisation continue du Service après cette notification vaudra acceptation des nouvelles conditions.
             </p>
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">10.2 Droit applicable et juridiction</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Le présent contrat est soumis au droit français. Tout litige relatif à son interprétation ou son exécution relèvera de la compétence exclusive des tribunaux de Paris, après tentative de résolution amiable.
             </p>
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/50 p-5 rounded-lg shadow-md">
             <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">10.3 Divisibilité</h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">
               Si une disposition du présent contrat était jugée invalide ou inapplicable, les autres dispositions conserveraient leur pleine force et effet.
             </p>
           </div>
@@ -515,19 +515,19 @@ const ResourceContent = () => {
       <section className="mb-10">
         <h2 className="text-2xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Conclusion</h2>
         <div className="bg-white dark:bg-[#1A2A40]/50 p-6 rounded-lg shadow-md">
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
             Ces termes et conditions établissent un cadre de collaboration transparent entre Sotto et votre établissement. Notre objectif est de vous accompagner dans la transformation de votre expérience de restauration, en recentrant l'attention sur l'humain et la gastronomie.
           </p>
-          <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
             Pour toute question concernant ces conditions, notre équipe est à votre disposition à l'adresse <a href="mailto:contact@sotto.ai" className="text-[#D47D5A] hover:underline transition-all">contact@sotto.ai</a>.
           </p>
-          <p className="text-gray-700 dark:text-gray-300 italic">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0] italic">
             En choisissant Sotto, vous optez pour une technologie qui s'adapte à vous, et non l'inverse.
           </p>
         </div>
       </section>
 
-      <footer className="text-center text-gray-500 dark:text-gray-400 mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
+      <footer className="text-center text-[#1A2A40] dark:text-[#F5F5F0] mt-10 pt-6 border-t border-gray-200 dark:border-gray-700">
         <p className="text-sm">Dernière mise à jour : Janvier 2024</p>
       </footer>
     </div>

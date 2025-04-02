@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 resource-content">
       <div className="bg-[#F5F5F0] dark:bg-[#1A2A40] rounded-xl p-6 mb-8 shadow-lg transform transition-all hover:shadow-xl">
         <h1 className="text-3xl md:text-4xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
           Business Plan Complet
@@ -14,7 +14,7 @@ const ResourceContent = () => {
         <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-4 border-b-2 border-[#D47D5A] pb-2">
           Introduction
         </h2>
-        <div className="prose prose-lg max-w-none text-[#1A2A40] dark:text-[#F5F5F0]">
+        <div className="prose prose-lg max-w-none">
           <p className="mb-4">
             Ce business plan détaille la stratégie de croissance de Sotto pour les cinq prochaines années, en présentant une analyse approfondie du marché, notre modèle économique, nos projections financières et notre feuille de route de développement. Sotto se positionne comme une solution révolutionnaire dans le secteur de la restauration, en remplaçant les interfaces à écran traditionnelles par un système d'intelligence artificielle vocale, permettant ainsi une expérience plus humaine et efficace.
           </p>
@@ -41,10 +41,10 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Segment</th>
-                  <th className="py-3 px-4 text-left">Nombre d'établissements</th>
-                  <th className="py-3 px-4 text-left">Chiffre d'affaires annuel</th>
-                  <th className="py-3 px-4 text-left">Croissance annuelle</th>
+                  <th className="py-3 px-4 text-left text-white">Segment</th>
+                  <th className="py-3 px-4 text-left text-white">Nombre d'établissements</th>
+                  <th className="py-3 px-4 text-left text-white">Chiffre d'affaires annuel</th>
+                  <th className="py-3 px-4 text-left text-white">Croissance annuelle</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -138,11 +138,11 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Concurrent</th>
-                  <th className="py-3 px-4 text-left">Type de solution</th>
-                  <th className="py-3 px-4 text-left">Forces</th>
-                  <th className="py-3 px-4 text-left">Faiblesses</th>
-                  <th className="py-3 px-4 text-left">Part de marché</th>
+                  <th className="py-3 px-4 text-left text-white">Concurrent</th>
+                  <th className="py-3 px-4 text-left text-white">Type de solution</th>
+                  <th className="py-3 px-4 text-left text-white">Forces</th>
+                  <th className="py-3 px-4 text-left text-white">Faiblesses</th>
+                  <th className="py-3 px-4 text-left text-white">Part de marché</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -245,10 +245,10 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Formule</th>
-                  <th className="py-3 px-4 text-left">Tarif mensuel</th>
-                  <th className="py-3 px-4 text-left">Inclusions</th>
-                  <th className="py-3 px-4 text-left">Commission</th>
+                  <th className="py-3 px-4 text-left text-white">Formule</th>
+                  <th className="py-3 px-4 text-left text-white">Tarif mensuel</th>
+                  <th className="py-3 px-4 text-left text-white">Inclusions</th>
+                  <th className="py-3 px-4 text-left text-white">Commission</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -365,12 +365,12 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Indicateur</th>
-                  <th className="py-3 px-4 text-left">Année 1</th>
-                  <th className="py-3 px-4 text-left">Année 2</th>
-                  <th className="py-3 px-4 text-left">Année 3</th>
-                  <th className="py-3 px-4 text-left">Année 4</th>
-                  <th className="py-3 px-4 text-left">Année 5</th>
+                  <th className="py-3 px-4 text-left text-white">Indicateur</th>
+                  <th className="py-3 px-4 text-left text-white">Année 1</th>
+                  <th className="py-3 px-4 text-left text-white">Année 2</th>
+                  <th className="py-3 px-4 text-left text-white">Année 3</th>
+                  <th className="py-3 px-4 text-left text-white">Année 4</th>
+                  <th className="py-3 px-4 text-left text-white">Année 5</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -580,8 +580,8 @@ const ResourceContent = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left">Période</th>
-                  <th className="py-3 px-4 text-left">Développements clés</th>
+                  <th className="py-3 px-4 text-left text-white">Période</th>
+                  <th className="py-3 px-4 text-left text-white">Développements clés</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -786,10 +786,10 @@ const ResourceContent = () => {
           <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
             <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
               <tr>
-                <th className="py-3 px-4 text-left">Risque</th>
-                <th className="py-3 px-4 text-left">Probabilité</th>
-                <th className="py-3 px-4 text-left">Impact</th>
-                <th className="py-3 px-4 text-left">Stratégie de mitigation</th>
+                <th className="py-3 px-4 text-left text-white">Risque</th>
+                <th className="py-3 px-4 text-left text-white">Probabilité</th>
+                <th className="py-3 px-4 text-left text-white">Impact</th>
+                <th className="py-3 px-4 text-left text-white">Stratégie de mitigation</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-gray-700">

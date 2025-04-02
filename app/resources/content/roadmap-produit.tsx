@@ -1,8 +1,8 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 resource-content">
       <div className="mb-12 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40]">
           Roadmap Produit Sotto
         </h1>
         <div className="inline-block px-4 py-1 rounded-full bg-[#D47D5A]/10 text-[#D47D5A] font-medium text-sm">
@@ -11,9 +11,9 @@ const ResourceContent = () => {
       </div>
 
       <section className="mb-12">
-        <div className="prose prose-lg max-w-none dark:prose-invert">
-          <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A]/30 pb-2">Introduction</h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-2xl font-bold text-[#1A2A40] border-b border-[#D47D5A]/30 pb-2">Introduction</h2>
+          <p className="text-[#1A2A40] leading-relaxed">
             Cette roadmap détaille la trajectoire de développement de Sotto, notre système IA vocal pour les restaurants. 
             Elle présente une chronologie structurée en phases distinctes, établit les priorités fonctionnelles et définit 
             les jalons clés qui guideront notre équipe vers une transformation réussie de l'expérience restauration. 
@@ -25,9 +25,9 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <div className="prose prose-lg max-w-none dark:prose-invert">
-          <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A]/30 pb-2">Vision globale</h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-2xl font-bold text-[#1A2A40] border-b border-[#D47D5A]/30 pb-2">Vision globale</h2>
+          <p className="text-[#1A2A40] leading-relaxed">
             Sotto vise à révolutionner l'expérience de restauration en éliminant les interfaces à écran au profit 
             d'un système vocal IA centralisé. Notre roadmap s'articule autour de quatre phases principales qui nous 
             mèneront progressivement d'un MVP fonctionnel à un écosystème complet d'encaissement intelligent, en 
@@ -37,13 +37,13 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16 bg-gradient-to-br from-[#F5F5F0]/50 to-[#87A28F]/20 dark:from-[#1A2A40]/70 dark:to-[#1A2A40]/50 rounded-xl p-6 shadow-lg animate-float">
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 flex items-center">
           <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">1</span>
           Phase 1: Fondations (T1-T2 2024)
         </h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Objectifs clés</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Objectifs clés</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Développer un MVP fonctionnel démontrant la valeur fondamentale de Sotto",
@@ -52,18 +52,18 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#87A28F]/20 flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                <span className="text-[#1A2A40]">{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Fonctionnalités prioritaires</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Fonctionnalités prioritaires</h3>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-sm border border-[#87A28F]/20">
               <thead>
-                <tr className="bg-[#87A28F]/20 dark:bg-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">
+                <tr className="bg-[#87A28F]/20 dark:bg-[#87A28F]/10 text-[#1A2A40]">
                   <th className="py-3 px-4 text-left font-semibold">Fonctionnalité</th>
                   <th className="py-3 px-4 text-left font-semibold">Description</th>
                   <th className="py-3 px-4 text-left font-semibold">Priorité</th>
@@ -78,13 +78,13 @@ const ResourceContent = () => {
                   ["Interface admin minimale", "Dashboard de configuration basique", "Moyenne"]
                 ].map((row, index) => (
                   <tr key={index} className={`border-t border-[#87A28F]/20 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-[#1A2A40]/40' : ''}`}>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[0]}</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[1]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[0]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[1]}</td>
                     <td className="py-3 px-4">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        row[2] === 'Critique' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' :
-                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300' :
-                        'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                        row[2] === 'Critique' ? 'bg-red-100 text-red-800' :
+                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800' :
+                        'bg-blue-100 text-blue-800'
                       }`}>
                         {row[2]}
                       </span>
@@ -98,7 +98,7 @@ const ResourceContent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Jalons techniques</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Jalons techniques</h3>
             <ul className="space-y-3">
               {[
                 ["Semaine 4", "Architecture technique validée"],
@@ -108,13 +108,13 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="font-semibold text-[#D47D5A] mr-2">{item[0]}:</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item[1]}</span>
+                  <span className="text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Tests et validation</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Tests et validation</h3>
             <ul className="space-y-3">
               {[
                 "Tests internes hebdomadaires à partir de la semaine 10",
@@ -123,7 +123,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -132,13 +132,13 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16 bg-gradient-to-br from-[#F5F5F0]/50 to-[#D4B483]/20 dark:from-[#1A2A40]/70 dark:to-[#1A2A40]/50 rounded-xl p-6 shadow-lg animate-float" style={{animationDelay: "1s"}}>
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 flex items-center">
           <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">2</span>
           Phase 2: Consolidation (T3-T4 2024)
         </h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Objectifs clés</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Objectifs clés</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Affiner l'expérience utilisateur basée sur les retours du pilote",
@@ -147,18 +147,18 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#D4B483]/20 flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                <span className="text-[#1A2A40]">{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Fonctionnalités prioritaires</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Fonctionnalités prioritaires</h3>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-sm border border-[#D4B483]/20">
               <thead>
-                <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40] dark:text-[#F5F5F0]">
+                <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40]">
                   <th className="py-3 px-4 text-left font-semibold">Fonctionnalité</th>
                   <th className="py-3 px-4 text-left font-semibold">Description</th>
                   <th className="py-3 px-4 text-left font-semibold">Priorité</th>
@@ -174,13 +174,13 @@ const ResourceContent = () => {
                   ["Gestion des stocks simple", "Alertes de rupture et suivi basique", "Moyenne"]
                 ].map((row, index) => (
                   <tr key={index} className={`border-t border-[#D4B483]/20 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-[#1A2A40]/40' : ''}`}>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[0]}</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[1]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[0]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[1]}</td>
                     <td className="py-3 px-4">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        row[2] === 'Critique' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' :
-                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300' :
-                        'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                        row[2] === 'Critique' ? 'bg-red-100 text-red-800' :
+                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800' :
+                        'bg-blue-100 text-blue-800'
                       }`}>
                         {row[2]}
                       </span>
@@ -194,7 +194,7 @@ const ResourceContent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Jalons techniques</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Jalons techniques</h3>
             <ul className="space-y-3">
               {[
                 ["Mois 7", "Optimisation acoustique pour environnements bruyants"],
@@ -204,13 +204,13 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="font-semibold text-[#D47D5A] mr-2">{item[0]}:</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item[1]}</span>
+                  <span className="text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Expansion et tests</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Expansion et tests</h3>
             <ul className="space-y-3">
               {[
                 "Déploiement progressif dans 5-10 restaurants tests",
@@ -219,7 +219,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -228,13 +228,13 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16 bg-gradient-to-br from-[#F5F5F0]/50 to-[#87A28F]/20 dark:from-[#1A2A40]/70 dark:to-[#1A2A40]/50 rounded-xl p-6 shadow-lg animate-float" style={{animationDelay: "2s"}}>
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 flex items-center">
           <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">3</span>
           Phase 3: Optimisation (T1-T2 2025)
         </h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Objectifs clés</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Objectifs clés</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Perfectionner l'expérience utilisateur pour adoption à grande échelle",
@@ -243,18 +243,18 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#87A28F]/20 flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                <span className="text-[#1A2A40]">{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Fonctionnalités prioritaires</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Fonctionnalités prioritaires</h3>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-sm border border-[#87A28F]/20">
               <thead>
-                <tr className="bg-[#87A28F]/20 dark:bg-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">
+                <tr className="bg-[#87A28F]/20 dark:bg-[#87A28F]/10 text-[#1A2A40]">
                   <th className="py-3 px-4 text-left font-semibold">Fonctionnalité</th>
                   <th className="py-3 px-4 text-left font-semibold">Description</th>
                   <th className="py-3 px-4 text-left font-semibold">Priorité</th>
@@ -270,13 +270,13 @@ const ResourceContent = () => {
                   ["Intégration paiements", "Connexion avec systèmes de paiement", "Haute"]
                 ].map((row, index) => (
                   <tr key={index} className={`border-t border-[#87A28F]/20 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-[#1A2A40]/40' : ''}`}>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[0]}</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[1]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[0]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[1]}</td>
                     <td className="py-3 px-4">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        row[2] === 'Critique' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' :
-                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300' :
-                        'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                        row[2] === 'Critique' ? 'bg-red-100 text-red-800' :
+                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800' :
+                        'bg-blue-100 text-blue-800'
                       }`}>
                         {row[2]}
                       </span>
@@ -290,7 +290,7 @@ const ResourceContent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Jalons techniques</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Jalons techniques</h3>
             <ul className="space-y-3">
               {[
                 ["Mois 13", "Architecture évolutive pour déploiement à grande échelle"],
@@ -300,13 +300,13 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="font-semibold text-[#D47D5A] mr-2">{item[0]}:</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item[1]}</span>
+                  <span className="text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Préparation commerciale</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Préparation commerciale</h3>
             <ul className="space-y-3">
               {[
                 "Élaboration du modèle de pricing définitif",
@@ -316,7 +316,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -325,13 +325,13 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16 bg-gradient-to-br from-[#F5F5F0]/50 to-[#D4B483]/20 dark:from-[#1A2A40]/70 dark:to-[#1A2A40]/50 rounded-xl p-6 shadow-lg animate-float" style={{animationDelay: "3s"}}>
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 flex items-center">
           <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">4</span>
           Phase 4: Expansion (T3 2025 et au-delà)
         </h2>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Objectifs clés</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Objectifs clés</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Étendre l'écosystème Sotto avec des fonctionnalités innovantes",
@@ -340,18 +340,18 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#D4B483]/20 flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                <span className="text-[#1A2A40]">{item}</span>
               </li>
             ))}
           </ul>
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Fonctionnalités prioritaires</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Fonctionnalités prioritaires</h3>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-sm border border-[#D4B483]/20">
               <thead>
-                <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40] dark:text-[#F5F5F0]">
+                <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40]">
                   <th className="py-3 px-4 text-left font-semibold">Fonctionnalité</th>
                   <th className="py-3 px-4 text-left font-semibold">Description</th>
                   <th className="py-3 px-4 text-left font-semibold">Priorité</th>
@@ -367,14 +367,14 @@ const ResourceContent = () => {
                   ["Mode multimodal", "Intégration future avec AR discrète", "Basse"]
                 ].map((row, index) => (
                   <tr key={index} className={`border-t border-[#D4B483]/20 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-[#1A2A40]/40' : ''}`}>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[0]}</td>
-                    <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[1]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[0]}</td>
+                    <td className="py-3 px-4 text-[#1A2A40]">{row[1]}</td>
                     <td className="py-3 px-4">
                       <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                        row[2] === 'Critique' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' :
-                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-300' :
-                        row[2] === 'Basse' ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300' :
-                        'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300'
+                        row[2] === 'Critique' ? 'bg-red-100 text-red-800' :
+                        row[2] === 'Haute' ? 'bg-amber-100 text-amber-800' :
+                        row[2] === 'Basse' ? 'bg-green-100 text-green-800' :
+                        'bg-blue-100 text-blue-800'
                       }`}>
                         {row[2]}
                       </span>
@@ -388,7 +388,7 @@ const ResourceContent = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Jalons techniques</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Jalons techniques</h3>
             <ul className="space-y-3">
               {[
                 ["Mois 19", "API publique pour intégrations tierces"],
@@ -398,13 +398,13 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="font-semibold text-[#D47D5A] mr-2">{item[0]}:</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item[1]}</span>
+                  <span className="text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Expansion commerciale</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Expansion commerciale</h3>
             <ul className="space-y-3">
               {[
                 "Déploiement international dans marchés européens clés",
@@ -413,7 +413,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                  <span className="text-[#1A2A40]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -422,7 +422,7 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 border-b border-[#D47D5A]/30 pb-2">Principes directeurs de développement</h2>
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 border-b border-[#D47D5A]/30 pb-2">Principes directeurs de développement</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
@@ -448,21 +448,21 @@ const ResourceContent = () => {
             }
           ].map((principle, index) => (
             <div key={index} className="bg-white dark:bg-[#1A2A40]/60 p-6 rounded-xl shadow-sm border border-[#87A28F]/20 hover:shadow-md transition-shadow">
-              <h3 className="text-lg font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">
+              <h3 className="text-lg font-semibold text-[#1A2A40] mb-3">
                 {index + 1}. {principle.title}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300">{principle.description}</p>
+              <p className="text-[#1A2A40]">{principle.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 border-b border-[#D47D5A]/30 pb-2">Métriques de succès</h2>
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 border-b border-[#D47D5A]/30 pb-2">Métriques de succès</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4 flex items-center">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4 flex items-center">
               <span className="w-6 h-6 rounded-full bg-[#87A28F] flex items-center justify-center mr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" />
@@ -479,15 +479,15 @@ const ResourceContent = () => {
                 ["Temps d'onboarding", "(formation en moins de 2 heures pour nouveaux utilisateurs)"]
               ].map((item, index) => (
                 <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#87A28F]/20">
-                  <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0] block mb-1">{item[0]}</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">{item[1]}</span>
+                  <span className="font-medium text-[#1A2A40] block mb-1">{item[0]}</span>
+                  <span className="text-sm text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4 flex items-center">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4 flex items-center">
               <span className="w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center mr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
@@ -503,8 +503,8 @@ const ResourceContent = () => {
                 ["Coût d'acquisition client", "(diminution progressive de 30% entre Phase 2 et 4)"]
               ].map((item, index) => (
                 <li key={index} className="bg-white dark:bg-[#1A2A40]/60 p-4 rounded-lg shadow-sm border border-[#D47D5A]/20">
-                  <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0] block mb-1">{item[0]}</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">{item[1]}</span>
+                  <span className="font-medium text-[#1A2A40] block mb-1">{item[0]}</span>
+                  <span className="text-sm text-[#1A2A40]">{item[1]}</span>
                 </li>
               ))}
             </ul>
@@ -513,12 +513,12 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 border-b border-[#D47D5A]/30 pb-2">Risques et mitigations</h2>
+        <h2 className="text-2xl font-bold text-[#1A2A40] mb-6 border-b border-[#D47D5A]/30 pb-2">Risques et mitigations</h2>
         
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-sm border border-[#D4B483]/20">
             <thead>
-              <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40] dark:text-[#F5F5F0]">
+              <tr className="bg-[#D4B483]/20 dark:bg-[#D4B483]/10 text-[#1A2A40]">
                 <th className="py-3 px-4 text-left font-semibold">Risque</th>
                 <th className="py-3 px-4 text-left font-semibold">Impact</th>
                 <th className="py-3 px-4 text-left font-semibold">Probabilité</th>
@@ -534,25 +534,25 @@ const ResourceContent = () => {
                 ["Autonomie des oreillettes", "Moyen", "Moyenne", "Sélection modèles longue durée, stations de charge discrètes, alertes batterie"]
               ].map((row, index) => (
                 <tr key={index} className={`border-t border-[#D4B483]/20 ${index % 2 === 0 ? 'bg-gray-50 dark:bg-[#1A2A40]/40' : ''}`}>
-                  <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[0]}</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">{row[0]}</td>
                   <td className="py-3 px-4">
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                      row[1] === 'Élevé' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' : 
-                      'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300'
+                      row[1] === 'Élevé' ? 'bg-red-100 text-red-800' : 
+                      'bg-yellow-100 text-yellow-800'
                     }`}>
                       {row[1]}
                     </span>
                   </td>
                   <td className="py-3 px-4">
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${
-                      row[2] === 'Élevée' ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300' : 
-                      row[2] === 'Moyenne' ? 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300' :
-                      'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300'
+                      row[2] === 'Élevée' ? 'bg-red-100 text-red-800' : 
+                      row[2] === 'Moyenne' ? 'bg-yellow-100 text-yellow-800' :
+                      'bg-green-100 text-green-800'
                     }`}>
                       {row[2]}
                     </span>
                   </td>
-                  <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{row[3]}</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">{row[3]}</td>
                 </tr>
               ))}
             </tbody>
@@ -562,8 +562,8 @@ const ResourceContent = () => {
 
       <section className="mb-12">
         <div className="bg-gradient-to-br from-[#F5F5F0]/50 to-[#D47D5A]/10 dark:from-[#1A2A40]/70 dark:to-[#1A2A40]/50 rounded-xl p-6 shadow-lg">
-          <h2 className="text-2xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Conclusion</h2>
-          <div className="text-gray-700 dark:text-gray-300 space-y-4">
+          <h2 className="text-2xl font-bold text-[#1A2A40] mb-4">Conclusion</h2>
+          <div className="text-[#1A2A40] space-y-4">
             <p>
               Cette roadmap produit trace une trajectoire claire et ambitieuse pour Sotto, nous guidant de la preuve de concept initiale à un écosystème complet qui transformera l'expérience de restauration. En restant fidèles à notre vision d'une technologie discrète au service de l'humain, nous développerons progressivement une solution qui libérera les restaurants des écrans tout en optimisant leurs opérations.
             </p>
@@ -576,7 +576,7 @@ const ResourceContent = () => {
 
       <section>
         <div className="border-t border-[#D47D5A]/30 pt-8">
-          <h2 className="text-xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Actions prioritaires:</h2>
+          <h2 className="text-xl font-bold text-[#1A2A40] mb-4">Actions prioritaires:</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               "Validation de la roadmap avec l'équipe élargie",
@@ -590,7 +590,7 @@ const ResourceContent = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </span>
-                <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                <span className="text-[#1A2A40]">{item}</span>
               </li>
             ))}
           </ul>

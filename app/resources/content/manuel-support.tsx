@@ -1,6 +1,6 @@
 const ResourceContent: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 bg-[#F5F5F0] dark:bg-[#1A2A40]/90 rounded-xl shadow-lg">
+    <div className="max-w-4xl mx-auto px-4 py-8 bg-[#F5F5F0] dark:bg-[#1A2A40]/90 rounded-xl shadow-lg resource-content">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0] border-b-2 border-[#D47D5A] pb-4">
         Manuel de Support Niveau 1
       </h1>
@@ -11,7 +11,7 @@ const ResourceContent: React.FC = () => {
 
       <section className="mb-10">
         <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Introduction</h2>
-        <div className="prose prose-lg dark:prose-invert max-w-none text-[#1A2A40] dark:text-[#F5F5F0]/90">
+        <div className="prose prose-lg dark:prose-invert max-w-none">
           <p>
             Ce manuel fournit les procédures standardisées de résolution des problèmes courants pour l'équipe de support niveau 1 de Sotto. En tant que première ligne d'assistance auprès de nos restaurateurs partenaires, votre rôle est essentiel pour garantir une expérience fluide avec notre système vocal IA. Ce document vous guidera à travers les problèmes les plus fréquemment rencontrés et leurs solutions, vous permettant de résoudre efficacement la majorité des incidents sans avoir à les escalader vers le support de niveau 2.
           </p>
@@ -63,36 +63,36 @@ const ResourceContent: React.FC = () => {
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/50 rounded-lg shadow-md">
               <thead className="bg-[#1A2A40] text-white dark:bg-[#D47D5A]/90">
                 <tr>
-                  <th className="py-3 px-4 text-left">Niveau</th>
-                  <th className="py-3 px-4 text-left">Description</th>
-                  <th className="py-3 px-4 text-left">Temps de réponse cible</th>
-                  <th className="py-3 px-4 text-left">Exemples</th>
+                  <th className="py-3 px-4 text-left text-white">Niveau</th>
+                  <th className="py-3 px-4 text-left text-white">Description</th>
+                  <th className="py-3 px-4 text-left text-white">Temps de réponse cible</th>
+                  <th className="py-3 px-4 text-left text-white">Exemples</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="border-b border-gray-200 dark:border-gray-700">
                   <td className="py-3 px-4 font-bold text-[#D47D5A]">P1</td>
-                  <td className="py-3 px-4">Critique - Service totalement indisponible</td>
-                  <td className="py-3 px-4">15 minutes</td>
-                  <td className="py-3 px-4">Système vocal entièrement hors service, aucune oreillette ne fonctionne</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Critique - Service totalement indisponible</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">15 minutes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Système vocal entièrement hors service, aucune oreillette ne fonctionne</td>
                 </tr>
                 <tr className="border-b border-gray-200 dark:border-gray-700">
                   <td className="py-3 px-4 font-bold text-[#D47D5A]">P2</td>
-                  <td className="py-3 px-4">Majeur - Fonctionnalité principale dégradée</td>
-                  <td className="py-3 px-4">30 minutes</td>
-                  <td className="py-3 px-4">Reconnaissance vocale intermittente, délais importants</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Majeur - Fonctionnalité principale dégradée</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">30 minutes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Reconnaissance vocale intermittente, délais importants</td>
                 </tr>
                 <tr className="border-b border-gray-200 dark:border-gray-700">
                   <td className="py-3 px-4 font-bold text-[#D47D5A]">P3</td>
-                  <td className="py-3 px-4">Modéré - Fonctionnalité secondaire affectée</td>
-                  <td className="py-3 px-4">2 heures</td>
-                  <td className="py-3 px-4">Problème avec une fonctionnalité spécifique, une seule oreillette défectueuse</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Modéré - Fonctionnalité secondaire affectée</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2 heures</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Problème avec une fonctionnalité spécifique, une seule oreillette défectueuse</td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 font-bold text-[#D47D5A]">P4</td>
-                  <td className="py-3 px-4">Mineur - Impact limité</td>
-                  <td className="py-3 px-4">24 heures</td>
-                  <td className="py-3 px-4">Questions d'utilisation, demandes de fonctionnalités</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Mineur - Impact limité</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">24 heures</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Questions d'utilisation, demandes de fonctionnalités</td>
                 </tr>
               </tbody>
             </table>
@@ -110,7 +110,7 @@ const ResourceContent: React.FC = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-white dark:bg-[#1A2A40]/50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-[#87A28F]">
-              <span className="inline-block bg-[#87A28F] text-white dark:bg-[#87A28F]/80 w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">1</span>
+              <span className="inline-block bg-[#87A28F] text-white w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">1</span>
               <h4 className="font-bold mb-2 text-[#1A2A40] dark:text-[#F5F5F0] inline-block ml-2">État du système</h4>
               <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80 ml-10">
                 Consultez le tableau de bord d'état des services Sotto pour vérifier si un incident général est en cours
@@ -118,7 +118,7 @@ const ResourceContent: React.FC = () => {
             </div>
 
             <div className="bg-white dark:bg-[#1A2A40]/50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-[#87A28F]">
-              <span className="inline-block bg-[#87A28F] text-white dark:bg-[#87A28F]/80 w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">2</span>
+              <span className="inline-block bg-[#87A28F] text-white w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">2</span>
               <h4 className="font-bold mb-2 text-[#1A2A40] dark:text-[#F5F5F0] inline-block ml-2">Version du logiciel</h4>
               <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80 ml-10">
                 Confirmez que le restaurant utilise la dernière version du système
@@ -126,7 +126,7 @@ const ResourceContent: React.FC = () => {
             </div>
 
             <div className="bg-white dark:bg-[#1A2A40]/50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-[#87A28F]">
-              <span className="inline-block bg-[#87A28F] text-white dark:bg-[#87A28F]/80 w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">3</span>
+              <span className="inline-block bg-[#87A28F] text-white w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">3</span>
               <h4 className="font-bold mb-2 text-[#1A2A40] dark:text-[#F5F5F0] inline-block ml-2">Connectivité réseau</h4>
               <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80 ml-10">
                 Vérifiez l'état de la connexion WiFi du restaurant
@@ -134,7 +134,7 @@ const ResourceContent: React.FC = () => {
             </div>
 
             <div className="bg-white dark:bg-[#1A2A40]/50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-t-4 border-[#87A28F]">
-              <span className="inline-block bg-[#87A28F] text-white dark:bg-[#87A28F]/80 w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">4</span>
+              <span className="inline-block bg-[#87A28F] text-white w-8 h-8 rounded-full text-center leading-8 font-bold mb-2">4</span>
               <h4 className="font-bold mb-2 text-[#1A2A40] dark:text-[#F5F5F0] inline-block ml-2">Historique récent</h4>
               <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80 ml-10">
                 Consultez les tickets récents pour ce partenaire pour identifier d'éventuels problèmes récurrents
@@ -175,8 +175,8 @@ const ResourceContent: React.FC = () => {
         <div className="space-y-8">
           {/* Problème 1 */}
           <div className="bg-white dark:bg-[#1A2A40]/30 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4 text-white">
-              <h3 className="text-xl font-bold">1. Problèmes de connexion des oreillettes</h3>
+            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4">
+              <h3 className="text-xl font-bold text-white">1. Problèmes de connexion des oreillettes</h3>
             </div>
             <div className="p-6">
               <div className="mb-4">
@@ -229,7 +229,7 @@ const ResourceContent: React.FC = () => {
                 </div>
                 
                 <div className="mt-4 bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/80 border-l-4 border-[#D47D5A] p-4 rounded-r-lg italic">
-                  <span className="font-bold">Note :</span> Si après ces étapes l'oreillette ne se connecte toujours pas, il peut s'agir d'un problème matériel. Créez un ticket de niveau 2 pour un remplacement potentiel.
+                  <span className="font-bold text-[#1A2A40] dark:text-[#F5F5F0]">Note :</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Si après ces étapes l'oreillette ne se connecte toujours pas, il peut s'agir d'un problème matériel. Créez un ticket de niveau 2 pour un remplacement potentiel.</span>
                 </div>
               </div>
             </div>
@@ -237,8 +237,8 @@ const ResourceContent: React.FC = () => {
           
           {/* Problème 2 */}
           <div className="bg-white dark:bg-[#1A2A40]/30 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4 text-white">
-              <h3 className="text-xl font-bold">2. Problèmes de reconnaissance vocale</h3>
+            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4">
+              <h3 className="text-xl font-bold text-white">2. Problèmes de reconnaissance vocale</h3>
             </div>
             <div className="p-6">
               <div className="mb-4">
@@ -303,7 +303,7 @@ const ResourceContent: React.FC = () => {
                 </div>
                 
                 <div className="mt-4 bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/80 border-l-4 border-[#87A28F] p-4 rounded-r-lg italic">
-                  <span className="font-bold">Conseil :</span> Pour les restaurants avec des accents régionaux prononcés ou un vocabulaire spécifique, proposez d'activer la période d'apprentissage adaptatif de 7 jours.
+                  <span className="font-bold text-[#1A2A40] dark:text-[#F5F5F0]">Conseil :</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Pour les restaurants avec des accents régionaux prononcés ou un vocabulaire spécifique, proposez d'activer la période d'apprentissage adaptatif de 7 jours.</span>
                 </div>
               </div>
             </div>
@@ -311,8 +311,8 @@ const ResourceContent: React.FC = () => {
           
           {/* Problème 3 */}
           <div className="bg-white dark:bg-[#1A2A40]/30 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4 text-white">
-              <h3 className="text-xl font-bold">3. Problèmes de communication entre salle et cuisine</h3>
+            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4">
+              <h3 className="text-xl font-bold text-white">3. Problèmes de communication entre salle et cuisine</h3>
             </div>
             <div className="p-6">
               <div className="mb-4">
@@ -370,8 +370,8 @@ const ResourceContent: React.FC = () => {
           
           {/* Problème 4 */}
           <div className="bg-white dark:bg-[#1A2A40]/30 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
-            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4 text-white">
-              <h3 className="text-xl font-bold">4. Problèmes de gestion des commandes</h3>
+            <div className="bg-[#1A2A40] dark:bg-[#D47D5A] p-4">
+              <h3 className="text-xl font-bold text-white">4. Problèmes de gestion des commandes</h3>
             </div>
             <div className="p-6">
               <div className="mb-4">

@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
+    <div className="max-w-4xl mx-auto py-8 px-4 resource-content">
       <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40]">Guide d'Onboarding Restaurant</h1>
         <div className="inline-block px-4 py-1 rounded-full bg-[#F5F5F0] text-[#1A2A40] font-medium">
@@ -116,31 +116,31 @@ const ResourceContent = () => {
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead>
                 <tr>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Élément à analyser</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Outils</th>
-                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Livrables</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Élément à analyser</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Outils</th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Livrables</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr>
-                  <td className="px-4 py-3 text-sm">Couverture WiFi</td>
-                  <td className="px-4 py-3 text-sm">Scanner réseau, heat mapper</td>
-                  <td className="px-4 py-3 text-sm">Carte de couverture avec recommandations</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Couverture WiFi</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Scanner réseau, heat mapper</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Carte de couverture avec recommandations</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 text-sm">Encaissement</td>
-                  <td className="px-4 py-3 text-sm">Questionnaire structuré</td>
-                  <td className="px-4 py-3 text-sm">Rapport de compatibilité et plan de migration</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Encaissement</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Questionnaire structuré</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Rapport de compatibilité et plan de migration</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 text-sm">Espaces</td>
-                  <td className="px-4 py-3 text-sm">Mesures et photos</td>
-                  <td className="px-4 py-3 text-sm">Plan annoté avec emplacements des équipements</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Espaces</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Mesures et photos</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Plan annoté avec emplacements des équipements</td>
                 </tr>
                 <tr>
-                  <td className="px-4 py-3 text-sm">Processus</td>
-                  <td className="px-4 py-3 text-sm">Observation et interviews</td>
-                  <td className="px-4 py-3 text-sm">Diagramme de flux optimisé pour Sotto</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Processus</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Observation et interviews</td>
+                  <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Diagramme de flux optimisé pour Sotto</td>
                 </tr>
               </tbody>
             </table>
@@ -359,7 +359,7 @@ const ResourceContent = () => {
           </div>
           
           <div className="bg-[#F5F5F0] dark:bg-gray-700 rounded-lg p-5 border-l-4 border-[#D47D5A] mb-6">
-            <p className="italic text-[#1A2A40] dark:text-gray-200">
+            <p className="italic text-[#1A2A40] dark:text-[#F5F5F0]">
               <strong>Note importante</strong>: Adapter le rythme de formation à l'équipe. Certains restaurants nécessiteront plus de temps pour s'approprier le système. La qualité de l'adoption prime sur la rapidité.
             </p>
           </div>
@@ -585,41 +585,41 @@ const ResourceContent = () => {
           <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
             <thead>
               <tr>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Indicateur</th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Objectif</th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Méthode de mesure</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Indicateur</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Objectif</th>
+                <th className="px-4 py-3 text-left text-xs font-medium text-[#1A2A40] dark:text-[#F5F5F0] uppercase tracking-wider">Méthode de mesure</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
               <tr>
-                <td className="px-4 py-3 text-sm">Taux d'utilisation</td>
-                <td className="px-4 py-3 text-sm">&gt;90% des commandes via Sotto</td>
-                <td className="px-4 py-3 text-sm">Automatique via système</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Taux d'utilisation</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">&gt;90% des commandes via Sotto</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Automatique via système</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 text-sm">Temps de formation</td>
-                <td className="px-4 py-3 text-sm">&lt;5h pour maîtrise de base</td>
-                <td className="px-4 py-3 text-sm">Évaluation par formateur</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Temps de formation</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">&lt;5h pour maîtrise de base</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Évaluation par formateur</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 text-sm">Satisfaction équipe</td>
-                <td className="px-4 py-3 text-sm">Score &gt;8/10</td>
-                <td className="px-4 py-3 text-sm">Questionnaire J+14</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Satisfaction équipe</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Score &gt;8/10</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Questionnaire J+14</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 text-sm">Erreurs de commande</td>
-                <td className="px-4 py-3 text-sm">Réduction de 30% vs ancien système</td>
-                <td className="px-4 py-3 text-sm">Comparaison pré/post</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Erreurs de commande</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Réduction de 30% vs ancien système</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Comparaison pré/post</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 text-sm">Autonomie</td>
-                <td className="px-4 py-3 text-sm">0 appel support non planifié après J+10</td>
-                <td className="px-4 py-3 text-sm">Suivi des tickets support</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Autonomie</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">0 appel support non planifié après J+10</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Suivi des tickets support</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 text-sm">Temps de service</td>
-                <td className="px-4 py-3 text-sm">Réduction de 15% minimum</td>
-                <td className="px-4 py-3 text-sm">Mesure automatisée</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Temps de service</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Réduction de 15% minimum</td>
+                <td className="px-4 py-3 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Mesure automatisée</td>
               </tr>
             </tbody>
           </table>
@@ -736,28 +736,28 @@ const ResourceContent = () => {
         </p>
         
         <div className="bg-[#F5F5F0] dark:bg-gray-700 rounded-lg p-6 border-l-4 border-[#1A2A40] mb-6">
-          <h3 className="text-lg font-semibold mb-3 text-[#1A2A40] dark:text-gray-200">Actions pour l'équipe d'onboarding:</h3>
+          <h3 className="text-lg font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">Actions pour l'équipe d'onboarding:</h3>
           <ul className="space-y-2">
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Planifier un suivi à J+30 pour évaluer l'adoption à long terme</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Planifier un suivi à J+30 pour évaluer l'adoption à long terme</span>
             </li>
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Solliciter un témoignage client après stabilisation complète</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Solliciter un témoignage client après stabilisation complète</span>
             </li>
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Documenter les leçons apprises pour amélioration continue du processus</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Documenter les leçons apprises pour amélioration continue du processus</span>
             </li>
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
-              <span>Identifier les opportunités de vente additionnelle adaptées au profil du restaurant</span>
+              <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Identifier les opportunités de vente additionnelle adaptées au profil du restaurant</span>
             </li>
           </ul>
         </div>
         
-        <p className="italic text-sm text-gray-600 dark:text-gray-400">
+        <p className="italic text-sm text-[#1A2A40] dark:text-[#F5F5F0]">
           Ce guide est un document vivant. Partagez vos retours d'expérience et suggestions d'amélioration via notre plateforme interne pour nous aider à perfectionner continuellement notre processus d'onboarding.
         </p>
       </section>

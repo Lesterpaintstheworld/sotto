@@ -1,12 +1,12 @@
 const ResourceContent = () => {
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-[#0a0a0a] text-[#1A2A40] dark:text-[#F5F5F0]">
+    <article className="resource-content max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-white dark:bg-[#0a0a0a] text-[#1A2A40] dark:text-[#F5F5F0]">
       <div className="space-y-8">
         <header className="text-center mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             Résultats des Tests Pilotes
           </h1>
-          <p className="text-xl italic text-[#D47D5A] dark:text-[#D47D5A] max-w-3xl mx-auto">
+          <p className="text-xl italic text-[#D47D5A] max-w-3xl mx-auto">
             Une analyse approfondie des déploiements initiaux de Sotto dans divers établissements de restauration
           </p>
         </header>
@@ -15,7 +15,7 @@ const ResourceContent = () => {
           <h2 className="text-2xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D4B483] pb-2">
             Introduction
           </h2>
-          <p className="text-lg leading-relaxed mb-6">
+          <p className="text-lg leading-relaxed mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">
             La transformation d'un restaurant par l'adoption d'une technologie vocale représente un changement significatif dans les habitudes opérationnelles. Pour valider notre approche et affiner notre solution, nous avons déployé Sotto dans plusieurs établissements aux profils variés pendant une période de trois mois. Ce document présente les résultats détaillés de ces tests pilotes, les défis rencontrés et les enseignements qui ont guidé l'évolution de notre système. Les données recueillies démontrent non seulement l'efficacité de Sotto mais également son impact profond sur l'expérience client et le bien-être du personnel.
           </p>
         </section>
@@ -29,7 +29,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Établissements participants
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Nous avons sélectionné un panel diversifié de restaurants pour garantir la représentativité de nos résultats :
             </p>
             
@@ -44,7 +44,7 @@ const ResourceContent = () => {
                     <th className="py-3 px-4 text-left border-b">Localisation</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="text-[#1A2A40] dark:text-[#F5F5F0]">
                   <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/80 transition-colors">
                     <td className="py-3 px-4 border-b">Bistrot traditionnel</td>
                     <td className="py-3 px-4 border-b">45 couverts</td>
@@ -89,7 +89,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Protocole d'évaluation
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Chaque établissement a suivi un processus d'intégration en trois phases :
             </p>
             
@@ -98,7 +98,7 @@ const ResourceContent = () => {
                 <h4 className="text-lg font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
                   Phase d'installation et formation <span className="text-[#D47D5A]">(1 semaine)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
                     Audit de l'infrastructure WiFi et optimisation
@@ -118,7 +118,7 @@ const ResourceContent = () => {
                 <h4 className="text-lg font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
                   Phase de transition <span className="text-[#D47D5A]">(2 semaines)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
                     Utilisation parallèle de Sotto et des systèmes existants
@@ -138,7 +138,7 @@ const ResourceContent = () => {
                 <h4 className="text-lg font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
                   Phase d'évaluation complète <span className="text-[#D47D5A]">(10 semaines)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
                     Utilisation exclusive de Sotto pour les opérations
@@ -166,7 +166,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Performance opérationnelle
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Les améliorations mesurées dans les opérations quotidiennes ont dépassé nos projections initiales :
             </p>
             
@@ -202,7 +202,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Impact économique
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               L'adoption de Sotto a généré des bénéfices économiques tangibles :
             </p>
             
@@ -220,28 +220,28 @@ const ResourceContent = () => {
                   <div className="text-3xl font-bold text-[#D4B483] mr-3">+8,5%</div>
                   <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Augmentation du ticket moyen</div>
                 </div>
-                <p className="text-sm mt-2 text-[#1A2A40]/70 dark:text-[#F5F5F0]/70">Attribuée à une meilleure disponibilité du personnel pour suggérer des accompagnements</p>
+                <p className="text-sm mt-2 text-[#1A2A40] dark:text-[#F5F5F0]/80">Attribuée à une meilleure disponibilité du personnel pour suggérer des accompagnements</p>
               </div>
               <div className="bg-[#1A2A40]/5 dark:bg-[#F5F5F0]/5 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[#87A28F]/20">
                 <div className="flex items-center">
                   <div className="text-3xl font-bold text-[#D4B483] mr-3">-27%</div>
                   <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Réduction des coûts d'équipement</div>
                 </div>
-                <p className="text-sm mt-2 text-[#1A2A40]/70 dark:text-[#F5F5F0]/70">Sur les frais de maintenance des systèmes d'encaissement</p>
+                <p className="text-sm mt-2 text-[#1A2A40] dark:text-[#F5F5F0]/80">Sur les frais de maintenance des systèmes d'encaissement</p>
               </div>
               <div className="bg-[#1A2A40]/5 dark:bg-[#F5F5F0]/5 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[#87A28F]/20">
                 <div className="flex items-center">
                   <div className="text-3xl font-bold text-[#D4B483] mr-3">+15%</div>
                   <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Optimisation de la masse salariale</div>
                 </div>
-                <p className="text-sm mt-2 text-[#1A2A40]/70 dark:text-[#F5F5F0]/70">Capacité à servir plus de clients à personnel constant</p>
+                <p className="text-sm mt-2 text-[#1A2A40] dark:text-[#F5F5F0]/80">Capacité à servir plus de clients à personnel constant</p>
               </div>
               <div className="bg-[#1A2A40]/5 dark:bg-[#F5F5F0]/5 p-5 rounded-lg shadow-sm hover:shadow-md transition-shadow border border-[#87A28F]/20">
                 <div className="flex items-center">
                   <div className="text-3xl font-bold text-[#D4B483] mr-3">5,7</div>
                   <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Mois pour atteindre le retour sur investissement</div>
                 </div>
-                <p className="text-sm mt-2 text-[#1A2A40]/70 dark:text-[#F5F5F0]/70">En moyenne sur l'ensemble des établissements</p>
+                <p className="text-sm mt-2 text-[#1A2A40] dark:text-[#F5F5F0]/80">En moyenne sur l'ensemble des établissements</p>
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Satisfaction et expérience
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Les enquêtes de satisfaction ont révélé des améliorations significatives :
             </p>
             
@@ -292,7 +292,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Adaptation du personnel
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               L'adoption de Sotto par les équipes a suivi une courbe d'apprentissage prévisible mais encourageante :
             </p>
             
@@ -302,7 +302,7 @@ const ResourceContent = () => {
                   <span className="bg-[#D47D5A] text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">1</span>
                   Phase initiale <span className="text-[#D47D5A] ml-1">(1-3 jours)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
                     Réticence naturelle et scepticisme
@@ -323,7 +323,7 @@ const ResourceContent = () => {
                   <span className="bg-[#87A28F] text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">2</span>
                   Phase d'accommodation <span className="text-[#87A28F] ml-1">(4-10 jours)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#87A28F] mr-2">•</span>
                     Familiarisation avec les commandes vocales essentielles
@@ -344,7 +344,7 @@ const ResourceContent = () => {
                   <span className="bg-[#D4B483] text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">3</span>
                   Phase d'adoption <span className="text-[#D4B483] ml-1">(11+ jours)</span>
                 </h4>
-                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li className="flex items-start">
                     <span className="text-[#D4B483] mr-2">•</span>
                     Maîtrise des fonctionnalités avancées
@@ -373,7 +373,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Défis spécifiques par type d'établissement
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Chaque environnement a présenté des défis uniques qui ont enrichi notre compréhension :
             </p>
             
@@ -385,19 +385,19 @@ const ResourceContent = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
                     <h5 className="font-medium text-[#D4B483] mb-2">Forces</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Précision des commandes complexes, discrétion appréciée par la clientèle
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#D47D5A] mb-2">Défis</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Nécessité d'un vocabulaire plus étendu pour les préparations spécifiques
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#87A28F] mb-2">Adaptation</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Enrichissement du lexique gastronomique et ajustement de la sensibilité vocale
                     </p>
                   </div>
@@ -411,19 +411,19 @@ const ResourceContent = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
                     <h5 className="font-medium text-[#D4B483] mb-2">Forces</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Gain de temps considérable, réduction du stress en période d'affluence
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#D47D5A] mb-2">Défis</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Performances dans un environnement très bruyant
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#87A28F] mb-2">Adaptation</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Amélioration des algorithmes de filtrage du bruit, ajout d'un mode "haute intensité"
                     </p>
                   </div>
@@ -437,19 +437,19 @@ const ResourceContent = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div>
                     <h5 className="font-medium text-[#D4B483] mb-2">Forces</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Flexibilité entre service rapide et service à table
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#D47D5A] mb-2">Défis</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Transitions entre différents modes d'opération
                     </p>
                   </div>
                   <div>
                     <h5 className="font-medium text-[#87A28F] mb-2">Adaptation</h5>
-                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]/90">
+                    <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       Développement de profils d'utilisation adaptables selon les moments de la journée
                     </p>
                   </div>
@@ -463,7 +463,7 @@ const ResourceContent = () => {
           <h2 className="text-2xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D4B483] pb-2">
             Enseignements et améliorations
           </h2>
-          <p className="mb-6">
+          <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">
             Les tests pilotes ont directement influencé l'évolution de Sotto, conduisant à plusieurs améliorations significatives :
           </p>
           
@@ -479,25 +479,25 @@ const ResourceContent = () => {
               <ul className="space-y-3">
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#D47D5A] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Optimisation acoustique :</span> Nouveaux algorithmes de filtrage pour environnements bruyants
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#D47D5A] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Mode hors-ligne renforcé :</span> Capacité à fonctionner pendant 20 minutes sans connexion
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#D47D5A] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Batterie optimisée :</span> Extension de l'autonomie de 6 à 8 heures par charge complète
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#D47D5A] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Reconnaissance contextuelle :</span> Meilleure interprétation des commandes partielles ou ambiguës
                   </div>
                 </li>
@@ -514,25 +514,25 @@ const ResourceContent = () => {
               <ul className="space-y-3">
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#87A28F] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Mode formation accélérée :</span> Programme d'intégration réduit à 45 minutes
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#87A28F] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Commandes groupées :</span> Possibilité de saisir plusieurs commandes en une seule interaction
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#87A28F] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Alertes prioritaires :</span> Système de hiérarchisation des notifications vocales
                   </div>
                 </li>
                 <li className="bg-[#F5F5F0]/70 dark:bg-[#1A2A40]/30 p-3 rounded-md flex items-start">
                   <span className="text-[#87A28F] font-bold mr-2">•</span>
-                  <div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                     <span className="font-medium">Intégration inventaire :</span> Alerte automatique sur les plats en rupture de stock
                   </div>
                 </li>
@@ -544,7 +544,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Bonnes pratiques identifiées
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               L'observation des utilisateurs les plus performants a permis d'identifier des pratiques optimales :
             </p>
             
@@ -552,29 +552,29 @@ const ResourceContent = () => {
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border border-[#87A28F]/20 flex">
                 <div className="bg-[#D4B483] rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
                 <div>
-                  <h4 className="font-medium mb-1">Briefing d'équipe quotidien</h4>
-                  <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">5 minutes pour partager les retours sur l'utilisation</p>
+                  <h4 className="font-medium mb-1 text-[#1A2A40] dark:text-[#F5F5F0]">Briefing d'équipe quotidien</h4>
+                  <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">5 minutes pour partager les retours sur l'utilisation</p>
                 </div>
               </div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border border-[#87A28F]/20 flex">
                 <div className="bg-[#D4B483] rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
                 <div>
-                  <h4 className="font-medium mb-1">Désignation d'un "champion Sotto"</h4>
-                  <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Dans chaque équipe pour accompagner les nouveaux utilisateurs</p>
+                  <h4 className="font-medium mb-1 text-[#1A2A40] dark:text-[#F5F5F0]">Désignation d'un "champion Sotto"</h4>
+                  <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Dans chaque équipe pour accompagner les nouveaux utilisateurs</p>
                 </div>
               </div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border border-[#87A28F]/20 flex">
                 <div className="bg-[#D4B483] rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
                 <div>
-                  <h4 className="font-medium mb-1">Sessions de micro-formation</h4>
-                  <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">10 minutes hebdomadaires sur des fonctionnalités spécifiques</p>
+                  <h4 className="font-medium mb-1 text-[#1A2A40] dark:text-[#F5F5F0]">Sessions de micro-formation</h4>
+                  <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">10 minutes hebdomadaires sur des fonctionnalités spécifiques</p>
                 </div>
               </div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border border-[#87A28F]/20 flex">
                 <div className="bg-[#D4B483] rounded-full w-10 h-10 flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
                 <div>
-                  <h4 className="font-medium mb-1">Personnalisation du vocabulaire</h4>
-                  <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Adapté aux spécificités du menu et de l'établissement</p>
+                  <h4 className="font-medium mb-1 text-[#1A2A40] dark:text-[#F5F5F0]">Personnalisation du vocabulaire</h4>
+                  <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Adapté aux spécificités du menu et de l'établissement</p>
                 </div>
               </div>
             </div>
@@ -616,10 +616,10 @@ const ResourceContent = () => {
           </h2>
           
           <div className="mb-8">
-            <p className="text-lg leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Les tests pilotes de Sotto ont démontré que l'interface vocale représente bien plus qu'une simple évolution technologique pour la restauration — c'est une transformation fondamentale de l'expérience de service. Les résultats quantitatifs et qualitatifs confirment notre hypothèse initiale : en libérant le personnel des contraintes des interfaces à écran, nous permettons un recentrage sur l'humain et la qualité de service.
             </p>
-            <p className="text-lg leading-relaxed mb-4">
+            <p className="text-lg leading-relaxed mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Les défis identifiés ont enrichi notre compréhension des besoins réels des restaurateurs et ont directement influencé l'évolution de notre solution. Chaque environnement unique a contribué à rendre Sotto plus robuste, adaptable et intuitive.
             </p>
           </div>
@@ -628,7 +628,7 @@ const ResourceContent = () => {
             <h3 className="text-xl font-semibold mb-4 text-[#D47D5A]">
               Prochaines étapes
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
               Suite à ces résultats encourageants, nous élargissons notre programme pilote à 50 établissements supplémentaires, incluant de nouvelles typologies :
             </p>
             
@@ -667,7 +667,7 @@ const ResourceContent = () => {
               </div>
             </div>
             
-            <p className="text-lg">
+            <p className="text-lg text-[#1A2A40] dark:text-[#F5F5F0]">
               Cette diversification nous permettra d'affiner encore davantage notre solution avant son déploiement à grande échelle prévu pour le trimestre prochain.
             </p>
           </div>

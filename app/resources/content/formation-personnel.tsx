@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <article className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <article className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 resource-content">
       <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0] leading-tight">
           Formation du personnel
@@ -13,10 +13,10 @@ const ResourceContent = () => {
           Introduction
         </h2>
         <div className="bg-[#F5F5F0]/30 dark:bg-[#1A2A40]/30 p-6 rounded-lg shadow-sm mb-8 border border-[#87A28F]/20">
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed text-[#1A2A40] dark:text-[#F5F5F0]">
             Bienvenue dans votre guide de formation au système Sotto. Ce document a été conçu pour vous accompagner dans l'intégration de notre solution vocale IA au sein de votre établissement. La transition vers un environnement de travail sans écran représente un changement significatif dans les habitudes de votre équipe, mais offre des bénéfices considérables en termes d'efficacité et d'expérience client.
           </p>
-          <p className="leading-relaxed">
+          <p className="leading-relaxed text-[#1A2A40] dark:text-[#F5F5F0]">
             Ce guide propose une méthodologie progressive pour former efficacement votre personnel à l'utilisation quotidienne de Sotto. Notre approche privilégie une adoption en douceur qui respecte les rythmes d'apprentissage individuels tout en assurant une transition fluide pour l'ensemble de votre établissement.
           </p>
         </div>
@@ -31,44 +31,44 @@ const ResourceContent = () => {
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">
             Identification des rôles clés
           </h3>
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed text-[#1A2A40] dark:text-[#F5F5F0]">
             Avant de débuter la formation, identifiez les différents rôles au sein de votre équipe qui interagiront avec Sotto :
           </p>
 
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 border border-[#87A28F]/30 rounded-lg">
               <thead>
-                <tr className="bg-[#87A28F]/20 text-[#1A2A40] dark:text-[#F5F5F0]">
-                  <th className="py-3 px-4 text-left border-b">Rôle</th>
-                  <th className="py-3 px-4 text-left border-b">Utilisation principale</th>
-                  <th className="py-3 px-4 text-left border-b">Besoins spécifiques</th>
+                <tr className="bg-[#87A28F]/20">
+                  <th className="py-3 px-4 text-left border-b text-[#1A2A40] dark:text-[#F5F5F0]">Rôle</th>
+                  <th className="py-3 px-4 text-left border-b text-[#1A2A40] dark:text-[#F5F5F0]">Utilisation principale</th>
+                  <th className="py-3 px-4 text-left border-b text-[#1A2A40] dark:text-[#F5F5F0]">Besoins spécifiques</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/40 transition-colors">
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Serveurs</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Prise de commande, service, gestion des tables</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Communication fluide, multitâche</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Serveurs</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Prise de commande, service, gestion des tables</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Communication fluide, multitâche</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/40 transition-colors">
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Barman</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Gestion des boissons, commandes directes</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Environnement bruyant, mains occupées</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Barman</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Gestion des boissons, commandes directes</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Environnement bruyant, mains occupées</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/40 transition-colors">
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Cuisine</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Réception des commandes, coordination</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Communication claire, timing précis</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Cuisine</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Réception des commandes, coordination</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Communication claire, timing précis</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/40 transition-colors">
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Manager</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Supervision, gestion des problèmes</td>
-                  <td className="py-3 px-4 border-b border-[#87A28F]/10">Vue d'ensemble, résolution rapide</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Manager</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Supervision, gestion des problèmes</td>
+                  <td className="py-3 px-4 border-b border-[#87A28F]/10 text-[#1A2A40] dark:text-[#F5F5F0]">Vue d'ensemble, résolution rapide</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/40 transition-colors">
-                  <td className="py-3 px-4">Hôte/Hôtesse</td>
-                  <td className="py-3 px-4">Gestion des réservations, accueil</td>
-                  <td className="py-3 px-4">Première impression, coordination</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Hôte/Hôtesse</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Gestion des réservations, accueil</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Première impression, coordination</td>
                 </tr>
               </tbody>
             </table>
@@ -79,7 +79,7 @@ const ResourceContent = () => {
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">
             Préparation de l'environnement
           </h3>
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4 leading-relaxed text-[#1A2A40] dark:text-[#F5F5F0]">
             Pour une formation optimale, assurez-vous de :
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -96,7 +96,7 @@ const ResourceContent = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                 </span>
-                <span>{item}</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
               </li>
             ))}
           </ul>
@@ -109,12 +109,12 @@ const ResourceContent = () => {
         </h2>
 
         <div className="mb-8">
-          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 text-white dark:text-[#F5F5F0] p-5 rounded-t-lg">
-            <h3 className="text-xl font-medium mb-2 flex items-center">
+          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 p-5 rounded-t-lg">
+            <h3 className="text-xl font-medium mb-2 flex items-center text-white dark:text-[#F5F5F0]">
               <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">1</span>
               Phase 1 : Introduction et familiarisation (Jour 1)
             </h3>
-            <p className="italic text-[#D4B483] dark:text-[#D4B483] mb-2">Objectif : Comprendre le concept et prendre en main l'équipement</p>
+            <p className="italic text-[#D4B483] mb-2">Objectif : Comprendre le concept et prendre en main l'équipement</p>
           </div>
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-b-lg shadow-sm mb-8 border-x border-b border-[#87A28F]/20">
             <div className="mb-6">
@@ -122,15 +122,15 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Explication du système Sotto et de sa philosophie</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Explication du système Sotto et de sa philosophie</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Démonstration des avantages pour le personnel et les clients</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Démonstration des avantages pour le personnel et les clients</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Présentation des oreillettes et de leur utilisation</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Présentation des oreillettes et de leur utilisation</span>
                 </li>
               </ul>
             </div>
@@ -140,15 +140,15 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Distribution des oreillettes personnalisées</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Distribution des oreillettes personnalisées</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Ajustement pour un confort optimal</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Ajustement pour un confort optimal</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Apprentissage des gestes de base (allumage, mise en charge)</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Apprentissage des gestes de base (allumage, mise en charge)</span>
                 </li>
               </ul>
             </div>
@@ -158,32 +158,32 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Exercices de calibration vocale</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Exercices de calibration vocale</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Test des commandes de base</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Test des commandes de base</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Retours sur la qualité de reconnaissance</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Retours sur la qualité de reconnaissance</span>
                 </li>
               </ul>
             </div>
             
             <div className="mt-6 bg-[#F5F5F0] dark:bg-[#1A2A40]/60 p-4 rounded-lg border-l-4 border-[#D4B483]">
-              <p className="italic">
+              <p className="italic text-[#1A2A40] dark:text-[#F5F5F0]">
                 <strong>Conseil</strong> : Commencez par des exercices simples dans un environnement calme pour construire la confiance des utilisateurs. La première impression est déterminante pour l'adoption.
               </p>
             </div>
           </div>
 
-          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 text-white dark:text-[#F5F5F0] p-5 rounded-t-lg">
-            <h3 className="text-xl font-medium mb-2 flex items-center">
+          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 p-5 rounded-t-lg">
+            <h3 className="text-xl font-medium mb-2 flex items-center text-white dark:text-[#F5F5F0]">
               <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">2</span>
               Phase 2 : Maîtrise des fondamentaux (Jours 2-3)
             </h3>
-            <p className="italic text-[#D4B483] dark:text-[#D4B483] mb-2">Objectif : Acquérir les compétences essentielles pour l'utilisation quotidienne</p>
+            <p className="italic text-[#D4B483] mb-2">Objectif : Acquérir les compétences essentielles pour l'utilisation quotidienne</p>
           </div>
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-b-lg shadow-sm mb-8 border-x border-b border-[#87A28F]/20">
             <div className="mb-6">
@@ -191,19 +191,19 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Prise de commande simple</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Prise de commande simple</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Modification de commande</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Modification de commande</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Gestion des tables</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Gestion des tables</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Demande d'addition</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Demande d'addition</span>
                 </li>
               </ul>
             </div>
@@ -213,15 +213,15 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Exercices spécifiques pour chaque poste</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Exercices spécifiques pour chaque poste</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Mises en situation réalistes</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Mises en situation réalistes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Résolution des problèmes courants</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Résolution des problèmes courants</span>
                 </li>
               </ul>
             </div>
@@ -231,26 +231,26 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Coordination cuisine-salle</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Coordination cuisine-salle</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Transmission d'informations importantes</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Transmission d'informations importantes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Gestion des priorités</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Gestion des priorités</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 text-white dark:text-[#F5F5F0] p-5 rounded-t-lg">
-            <h3 className="text-xl font-medium mb-2 flex items-center">
+          <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 p-5 rounded-t-lg">
+            <h3 className="text-xl font-medium mb-2 flex items-center text-white dark:text-[#F5F5F0]">
               <span className="bg-[#D47D5A] text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">3</span>
               Phase 3 : Simulation réelle (Jour 4)
             </h3>
-            <p className="italic text-[#D4B483] dark:text-[#D4B483] mb-2">Objectif : Mettre en pratique dans des conditions proches du réel</p>
+            <p className="italic text-[#D4B483] mb-2">Objectif : Mettre en pratique dans des conditions proches du réel</p>
           </div>
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-b-lg shadow-sm border-x border-b border-[#87A28F]/20">
             <div className="mb-6">
@@ -258,15 +258,15 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Reproduction d'un service complet</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Reproduction d'un service complet</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Introduction de scénarios variés (affluence, demandes spéciales)</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Introduction de scénarios variés (affluence, demandes spéciales)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Rotation des rôles pour comprendre les interactions</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Rotation des rôles pour comprendre les interactions</span>
                 </li>
               </ul>
             </div>
@@ -276,15 +276,15 @@ const ResourceContent = () => {
               <ul className="pl-6 space-y-2">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Analyse des points forts</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Analyse des points forts</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Identification des difficultés</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Identification des difficultés</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Ajustements personnalisés</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Ajustements personnalisés</span>
                 </li>
               </ul>
             </div>
@@ -302,23 +302,23 @@ const ResourceContent = () => {
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A] border-b border-[#87A28F]/20 pb-2">
               Apprentissage progressif
             </h3>
-            <p className="mb-4">Pour faciliter l'adoption de Sotto, privilégiez une approche par étapes :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Pour faciliter l'adoption de Sotto, privilégiez une approche par étapes :</p>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span><strong>Jour 1-2</strong> : Utilisation pour les tâches simples uniquement</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><strong>Jour 1-2</strong> : Utilisation pour les tâches simples uniquement</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span><strong>Jour 3-5</strong> : Intégration progressive de fonctionnalités avancées</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><strong>Jour 3-5</strong> : Intégration progressive de fonctionnalités avancées</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span><strong>Jour 6-10</strong> : Utilisation complète avec supervision</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><strong>Jour 6-10</strong> : Utilisation complète avec supervision</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span><strong>Après 2 semaines</strong> : Autonomie et optimisation des pratiques</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]"><strong>Après 2 semaines</strong> : Autonomie et optimisation des pratiques</span>
               </li>
             </ul>
           </div>
@@ -327,19 +327,19 @@ const ResourceContent = () => {
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A] border-b border-[#87A28F]/20 pb-2">
               Formation par les pairs
             </h3>
-            <p className="mb-4">Identifiez rapidement les membres de l'équipe qui s'adaptent le plus facilement au système et encouragez-les à devenir des "ambassadeurs Sotto" :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Identifiez rapidement les membres de l'équipe qui s'adaptent le plus facilement au système et encouragez-les à devenir des "ambassadeurs Sotto" :</p>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span>Désignez 1-2 référents par service</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Désignez 1-2 référents par service</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span>Organisez des sessions de partage d'expérience</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Organisez des sessions de partage d'expérience</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2 font-bold">•</span>
-                <span>Valorisez les bonnes pratiques découvertes par l'équipe</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Valorisez les bonnes pratiques découvertes par l'équipe</span>
               </li>
             </ul>
           </div>
@@ -353,15 +353,15 @@ const ResourceContent = () => {
               <ul className="pl-5 space-y-1">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Prise de commande avec variations et modifications</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Prise de commande avec variations et modifications</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Gestion simultanée de plusieurs tables</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Gestion simultanée de plusieurs tables</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Communication des spécificités du menu</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Communication des spécificités du menu</span>
                 </li>
               </ul>
             </div>
@@ -370,15 +370,15 @@ const ResourceContent = () => {
               <ul className="pl-5 space-y-1">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Annonce des plats prêts</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Annonce des plats prêts</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Gestion des priorités et timing</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Gestion des priorités et timing</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">-</span>
-                  <span>Communication des ruptures de stock</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Communication des ruptures de stock</span>
                 </li>
               </ul>
             </div>
@@ -403,23 +403,23 @@ const ResourceContent = () => {
                 Environnement bruyant
               </h3>
             </div>
-            <p className="mb-4">L'un des défis majeurs dans la restauration est le niveau sonore ambiant. Pour optimiser l'utilisation de Sotto :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">L'un des défis majeurs dans la restauration est le niveau sonore ambiant. Pour optimiser l'utilisation de Sotto :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Enseignez les techniques d'articulation claire</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Enseignez les techniques d'articulation claire</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Montrez comment positionner le micro de manière optimale</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Montrez comment positionner le micro de manière optimale</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Pratiquez dans des conditions de bruit progressivement plus élevées</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Pratiquez dans des conditions de bruit progressivement plus élevées</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Utilisez les commandes courtes et précises</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Utilisez les commandes courtes et précises</span>
               </li>
             </ul>
           </div>
@@ -435,23 +435,23 @@ const ResourceContent = () => {
                 Résistance au changement
               </h3>
             </div>
-            <p className="mb-4">Certains membres de l'équipe peuvent montrer des réticences face à cette nouvelle technologie :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Certains membres de l'équipe peuvent montrer des réticences face à cette nouvelle technologie :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Écoutez activement les préoccupations</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Écoutez activement les préoccupations</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Démontrez les bénéfices concrets pour leur confort de travail</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Démontrez les bénéfices concrets pour leur confort de travail</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Proposez un accompagnement personnalisé</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Proposez un accompagnement personnalisé</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Célébrez les petites victoires et progrès</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Célébrez les petites victoires et progrès</span>
               </li>
             </ul>
           </div>
@@ -467,23 +467,23 @@ const ResourceContent = () => {
                 Erreurs de reconnaissance
               </h3>
             </div>
-            <p className="mb-4">Pour minimiser les frustrations liées aux erreurs de reconnaissance vocale :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Pour minimiser les frustrations liées aux erreurs de reconnaissance vocale :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Enseignez les formulations qui fonctionnent le mieux</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Enseignez les formulations qui fonctionnent le mieux</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Montrez comment confirmer ou corriger rapidement</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Montrez comment confirmer ou corriger rapidement</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Créez un lexique des termes spécifiques à votre établissement</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Créez un lexique des termes spécifiques à votre établissement</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
-                <span>Rappelez que le système s'améliore avec l'usage</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Rappelez que le système s'améliore avec l'usage</span>
               </li>
             </ul>
           </div>
@@ -500,23 +500,23 @@ const ResourceContent = () => {
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">
               Évaluation régulière
             </h3>
-            <p className="mb-4">Pour maintenir et améliorer les performances de votre équipe avec Sotto :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Pour maintenir et améliorer les performances de votre équipe avec Sotto :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Organisez des sessions de feedback hebdomadaires le premier mois</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Organisez des sessions de feedback hebdomadaires le premier mois</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Recueillez les impressions individuelles et collectives</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Recueillez les impressions individuelles et collectives</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Identifiez les opportunités d'amélioration</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Identifiez les opportunités d'amélioration</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Partagez les succès et bonnes pratiques</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Partagez les succès et bonnes pratiques</span>
               </li>
             </ul>
           </div>
@@ -525,23 +525,23 @@ const ResourceContent = () => {
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">
               Perfectionnement
             </h3>
-            <p className="mb-4">Après la phase d'adoption initiale, proposez des formations avancées :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Après la phase d'adoption initiale, proposez des formations avancées :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Utilisation des fonctionnalités analytiques</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Utilisation des fonctionnalités analytiques</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Optimisation des flux de travail</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Optimisation des flux de travail</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Personnalisation avancée des commandes vocales</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Personnalisation avancée des commandes vocales</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Intégration avec d'autres aspects de la gestion</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Intégration avec d'autres aspects de la gestion</span>
               </li>
             </ul>
           </div>
@@ -550,19 +550,19 @@ const ResourceContent = () => {
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">
               Documentation continue
             </h3>
-            <p className="mb-4">Encouragez votre équipe à contribuer à la documentation interne :</p>
+            <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Encouragez votre équipe à contribuer à la documentation interne :</p>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Créez un "livre de bord" des astuces découvertes</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Créez un "livre de bord" des astuces découvertes</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Documentez les phrases qui fonctionnent particulièrement bien</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Documentez les phrases qui fonctionnent particulièrement bien</span>
               </li>
               <li className="flex items-start">
                 <span className="text-[#87A28F] mr-2">•</span>
-                <span>Notez les situations spécifiques et leurs solutions</span>
+                <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Notez les situations spécifiques et leurs solutions</span>
               </li>
             </ul>
           </div>
@@ -570,15 +570,15 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 text-[#F5F5F0] p-8 rounded-lg shadow-lg">
+        <div className="bg-[#1A2A40] dark:bg-[#F5F5F0]/10 p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-6 text-[#D47D5A]">
             Conclusion
           </h2>
           <div className="space-y-4">
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-[#F5F5F0]">
               La formation de votre personnel à l'utilisation de Sotto représente un investissement initial qui portera ses fruits rapidement. En suivant cette approche progressive et structurée, votre équipe développera une aisance naturelle avec le système vocal, transformant fondamentalement l'expérience de service dans votre établissement.
             </p>
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-[#F5F5F0]">
               Rappelez-vous que l'objectif de Sotto n'est pas de remplacer l'humain mais de libérer son potentiel en éliminant les barrières technologiques visibles. Une fois pleinement adoptée, cette solution permet à votre équipe de se concentrer sur ce qui compte vraiment : l'attention portée aux clients et l'excellence culinaire.
             </p>
           </div>
@@ -586,10 +586,10 @@ const ResourceContent = () => {
       </section>
 
       <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-6 rounded-lg border border-[#87A28F]/20 text-center">
-        <p className="font-medium mb-2">
+        <p className="font-medium mb-2 text-[#1A2A40] dark:text-[#F5F5F0]">
           <strong>Besoin d'assistance supplémentaire ?</strong> Notre équipe de support est disponible pour des sessions de formation personnalisées ou pour répondre à vos questions spécifiques.
         </p>
-        <p>
+        <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
           Contactez-nous via votre espace client ou par email à{" "}
           <a href="mailto:support@sotto.io" className="text-[#D47D5A] hover:underline">
             support@sotto.io

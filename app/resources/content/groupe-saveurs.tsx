@@ -1,11 +1,11 @@
 const ResourceContent = () => {
   return (
-    <article className="max-w-4xl mx-auto px-4 py-8 prose prose-lg dark:prose-invert">
+    <article className="max-w-4xl mx-auto px-4 py-8 prose prose-lg dark:prose-invert resource-content">
       <div className="mb-10 text-center">
         <h1 className="text-4xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
           Groupe Saveurs : Standardisation réussie sur 12 établissements
         </h1>
-        <p className="text-lg italic text-[#87A28F] dark:text-[#D4B483]">
+        <p className="text-lg italic text-[#505A64] dark:text-[#F5F5F0]">
           Comment une chaîne de restaurants a uniformisé son service et optimisé ses opérations avec Sotto.
         </p>
       </div>
@@ -51,7 +51,7 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow-md border border-[#87A28F]/30 hover:shadow-lg transition-shadow duration-300 hover:border-[#D47D5A]/50"
+                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-4 rounded-lg shadow-md border border-[#87A28F]/30 hover:shadow-lg transition-shadow duration-300 hover:border-[#D47D5A]/50"
               >
                 <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</p>
               </div>
@@ -68,8 +68,8 @@ const ResourceContent = () => {
           </p>
           
           <div className="overflow-x-auto mb-6">
-            <table className="min-w-full bg-white dark:bg-[#1A2A40]/60 border border-[#87A28F]/30 rounded-lg overflow-hidden">
-              <thead className="bg-[#1A2A40] text-white dark:bg-[#D47D5A]/80">
+            <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 border border-[#87A28F]/30 rounded-lg overflow-hidden">
+              <thead className="bg-[#1A2A40] text-white dark:bg-[#D47D5A]">
                 <tr>
                   <th className="py-3 px-4 text-left">Solution testée</th>
                   <th className="py-3 px-4 text-left">Limites rencontrées</th>
@@ -77,32 +77,32 @@ const ResourceContent = () => {
               </thead>
               <tbody>
                 <tr className="border-b border-[#87A28F]/20">
-                  <td className="py-3 px-4 font-medium">Logiciel de caisse unifié</td>
-                  <td className="py-3 px-4">Interface peu intuitive, résistance du personnel, coûts élevés</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Logiciel de caisse unifié</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Interface peu intuitive, résistance du personnel, coûts élevés</td>
                 </tr>
-                <tr className="border-b border-[#87A28F]/20 bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/80">
-                  <td className="py-3 px-4 font-medium">Tablettes pour les serveurs</td>
-                  <td className="py-3 px-4">Casse fréquente, batterie limitée, distraction du personnel</td>
+                <tr className="border-b border-[#87A28F]/20 bg-[#F5F5F0]/50 dark:bg-[#1A2A40]">
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Tablettes pour les serveurs</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Casse fréquente, batterie limitée, distraction du personnel</td>
                 </tr>
                 <tr className="border-b border-[#87A28F]/20">
-                  <td className="py-3 px-4 font-medium">Manuels de procédures</td>
-                  <td className="py-3 px-4">Peu consultés, rapidement obsolètes, difficiles à mettre à jour</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Manuels de procédures</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Peu consultés, rapidement obsolètes, difficiles à mettre à jour</td>
                 </tr>
-                <tr className="bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/80">
-                  <td className="py-3 px-4 font-medium">Formation centralisée</td>
-                  <td className="py-3 px-4">Coûteuse, chronophage, difficulté à maintenir les standards dans la durée</td>
+                <tr className="bg-[#F5F5F0]/50 dark:bg-[#1A2A40]">
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Formation centralisée</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Coûteuse, chronophage, difficulté à maintenir les standards dans la durée</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
-          <blockquote className="italic border-l-4 border-[#D47D5A] pl-4 py-2 mb-6 bg-[#F5F5F0]/30 dark:bg-[#1A2A40]/40 rounded-r">
-            <p>
+          <blockquote className="italic border-l-4 border-[#D47D5A] pl-4 py-2 mb-6 bg-[#F5F5F0]/30 dark:bg-[#1A2A40]/80 rounded-r">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
               "Nous étions confrontés au paradoxe de vouloir standardiser nos processus tout en préservant l'authenticité de chaque établissement. 
               Les solutions technologiques traditionnelles créaient une barrière avec nos clients, exactement l'inverse de notre philosophie 
               centrée sur l'humain."
             </p>
-            <footer className="text-right text-sm mt-2 text-[#87A28F] dark:text-[#D4B483]">
+            <footer className="text-right text-sm mt-2 text-[#505A64] dark:text-[#F5F5F0]">
               — Marie Deschamps, Directrice des Opérations du Groupe Saveurs
             </footer>
           </blockquote>
@@ -123,9 +123,9 @@ const ResourceContent = () => {
           </p>
           
           <div className="space-y-6 mb-6">
-            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border-l-4 border-[#D47D5A] hover:shadow-lg transition-shadow duration-300">
-              <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">Phase pilote (2 restaurants, 2 mois)</h4>
-              <ul className="list-disc pl-5 space-y-1">
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md border-l-4 border-[#D47D5A] hover:shadow-lg transition-shadow duration-300">
+              <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Phase pilote (2 restaurants, 2 mois)</h4>
+              <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li>Audit initial des processus existants</li>
                 <li>Adaptation du vocabulaire Sotto aux spécificités du groupe</li>
                 <li>Formation intensive des équipes pilotes</li>
@@ -133,9 +133,9 @@ const ResourceContent = () => {
               </ul>
             </div>
             
-            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border-l-4 border-[#87A28F] hover:shadow-lg transition-shadow duration-300">
-              <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">Phase d'expansion (5 restaurants supplémentaires, 3 mois)</h4>
-              <ul className="list-disc pl-5 space-y-1">
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md border-l-4 border-[#87A28F] hover:shadow-lg transition-shadow duration-300">
+              <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Phase d'expansion (5 restaurants supplémentaires, 3 mois)</h4>
+              <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li>Intégration des apprentissages de la phase pilote</li>
                 <li>Formation par les ambassadeurs des restaurants pilotes</li>
                 <li>Personnalisation fine pour chaque concept de restaurant</li>
@@ -143,9 +143,9 @@ const ResourceContent = () => {
               </ul>
             </div>
             
-            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow duration-300">
-              <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">Déploiement complet (5 derniers restaurants, 3 mois)</h4>
-              <ul className="list-disc pl-5 space-y-1">
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow duration-300">
+              <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Déploiement complet (5 derniers restaurants, 3 mois)</h4>
+              <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li>Standardisation finalisée des processus</li>
                 <li>Intégration complète avec les systèmes de gestion existants</li>
                 <li>Formation accélérée grâce à l'expérience accumulée</li>
@@ -185,9 +185,9 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow-md border border-[#87A28F]/30 hover:shadow-lg transition-shadow duration-300"
+                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-4 rounded-lg shadow-md border border-[#87A28F]/30 hover:shadow-lg transition-shadow duration-300"
               >
-                <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-1">{item.title}</h4>
+                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-1">{item.title}</h4>
                 <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.desc}</p>
               </div>
             ))}
@@ -238,12 +238,12 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 animate-float"
+                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 animate-float"
                 style={{animationDelay: `${index * 0.2}s`}}
               >
                 <div className={`${item.color} h-2`}></div>
                 <div className="p-4 text-center">
-                  <p className="text-3xl font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">{item.metric}</p>
+                  <p className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">{item.metric}</p>
                   <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{item.desc}</p>
                 </div>
               </div>
@@ -257,24 +257,24 @@ const ResourceContent = () => {
           </h3>
           
           <div className="space-y-6 mb-6">
-            <blockquote className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border-l-4 border-[#D47D5A]">
-              <p className="italic mb-4">
+            <blockquote className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-6 rounded-lg shadow-md border-l-4 border-[#D47D5A]">
+              <p className="italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
                 "Avant Sotto, je devais jongler entre les tables, la caisse et les allers-retours en cuisine. 
                 Maintenant, je reste présent avec mes clients tout en communiquant instantanément avec l'équipe. 
                 C'est comme avoir un assistant personnel discret."
               </p>
-              <footer className="text-right font-medium text-[#87A28F] dark:text-[#D4B483]">
+              <footer className="text-right font-medium text-[#505A64] dark:text-[#F5F5F0]">
                 — Thomas, Chef de rang, La Table de Lyon
               </footer>
             </blockquote>
             
-            <blockquote className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border-l-4 border-[#87A28F]">
-              <p className="italic mb-4">
+            <blockquote className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-6 rounded-lg shadow-md border-l-4 border-[#87A28F]">
+              <p className="italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
                 "En tant que manager multi-sites, Sotto m'a donné une visibilité que je n'avais jamais eue. 
                 Je peux analyser les performances de chaque établissement selon les mêmes critères et identifier 
                 rapidement les bonnes pratiques à partager."
               </p>
-              <footer className="text-right font-medium text-[#87A28F] dark:text-[#D4B483]">
+              <footer className="text-right font-medium text-[#505A64] dark:text-[#F5F5F0]">
                 — Julien, Directeur régional, Groupe Saveurs
               </footer>
             </blockquote>
@@ -299,7 +299,7 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow-md border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow duration-300"
+                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-4 rounded-lg shadow-md border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow duration-300"
               >
                 <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</p>
               </div>
@@ -338,9 +338,9 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">{item.title}</h4>
+                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">{item.title}</h4>
                 <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.desc}</p>
               </div>
             ))}
@@ -376,7 +376,7 @@ const ResourceContent = () => {
             ].map((item, index) => (
               <div 
                 key={index} 
-                className="flex bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="flex bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="mr-4">
                   <div className="w-10 h-10 flex items-center justify-center bg-[#D47D5A] text-white rounded-full">
@@ -384,7 +384,7 @@ const ResourceContent = () => {
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-1">{item.title}</h4>
+                  <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-1">{item.title}</h4>
                   <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.desc}</p>
                 </div>
               </div>
@@ -402,33 +402,33 @@ const ResourceContent = () => {
         </p>
         
         <div className="space-y-6 mb-6">
-          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#D4B483] mb-3">
+          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">
               1. Développement de l'analytique prédictive
             </h3>
-            <ul className="list-disc pl-5 space-y-1">
+            <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
               <li>Anticipation des besoins en personnel selon les périodes</li>
               <li>Prévisions d'approvisionnement optimisées</li>
               <li>Suggestions d'ajustements de carte basées sur les performances</li>
             </ul>
           </div>
           
-          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#D4B483] mb-3">
+          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">
               2. Intégration fournisseurs
             </h3>
-            <ul className="list-disc pl-5 space-y-1">
+            <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
               <li>Commandes automatisées basées sur les niveaux de stock</li>
               <li>Suivi en temps réel des livraisons</li>
               <li>Alertes proactives sur les ruptures potentielles</li>
             </ul>
           </div>
           
-          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#D4B483] mb-3">
+          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-3">
               3. Programme de fidélité vocal
             </h3>
-            <ul className="list-disc pl-5 space-y-1">
+            <ul className="list-disc pl-5 space-y-1 text-[#1A2A40] dark:text-[#F5F5F0]">
               <li>Reconnaissance des clients réguliers</li>
               <li>Personnalisation des recommandations selon l'historique</li>
               <li>Expérience VIP discrète et naturelle</li>
@@ -447,20 +447,20 @@ const ResourceContent = () => {
           la technologie vocale a permis de recentrer l'attention sur l'essentiel : le service client et l'art culinaire.
         </p>
         
-        <blockquote className="bg-[#1A2A40] text-white dark:bg-[#D47D5A]/80 p-6 rounded-lg shadow-md mb-6">
-          <p className="italic mb-4">
+        <blockquote className="bg-[#1A2A40] text-white dark:bg-[#D47D5A] p-6 rounded-lg shadow-md mb-6">
+          <p className="italic mb-4 text-white dark:text-white">
             "Avec Sotto, nous avons trouvé le parfait équilibre entre l'efficacité opérationnelle d'une chaîne et l'âme d'un restaurant indépendant. 
             Notre personnel est plus présent, nos processus plus fluides, et paradoxalement, en ajoutant cette technologie, 
             nous avons rendu nos établissements plus humains."
           </p>
-          <footer className="text-right font-medium text-[#F5F5F0] dark:text-[#F5F5F0]">
+          <footer className="text-right font-medium text-white dark:text-white">
             — Pierre Moreau, fondateur du Groupe Saveurs
           </footer>
         </blockquote>
       </section>
 
-      <div className="mt-12 p-6 bg-[#1A2A40]/10 dark:bg-[#1A2A40]/40 rounded-lg border border-[#87A28F]/30">
-        <p className="italic mb-4">
+      <div className="mt-12 p-6 bg-[#1A2A40]/10 dark:bg-[#1A2A40]/80 rounded-lg border border-[#87A28F]/30">
+        <p className="italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
           Vous dirigez plusieurs établissements et souhaitez explorer comment Sotto peut vous aider à standardiser vos opérations 
           tout en préservant l'identité unique de chaque restaurant ? 
           <a href="https://sotto.ai/contact" className="text-[#D47D5A] hover:text-[#D4B483] ml-1 font-medium">

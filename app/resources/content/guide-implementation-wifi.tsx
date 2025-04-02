@@ -1,14 +1,14 @@
 export default function ResourceContent() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 space-y-12">
+    <div className="max-w-4xl mx-auto px-4 py-8 space-y-12 resource-content">
       <div className="space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] leading-tight">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] leading-tight">
           Guide d'Implémentation WiFi
         </h1>
         
         <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/80 p-6 rounded-xl shadow-md">
-          <h2 className="text-2xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Introduction</h2>
-          <div className="space-y-4 text-gray-700 dark:text-gray-300">
+          <h2 className="text-2xl font-semibold text-[#1A2A40] mb-4">Introduction</h2>
+          <div className="space-y-4 text-[#1A2A40]">
             <p>
               La connectivité WiFi représente la colonne vertébrale de l'écosystème Sotto. Contrairement aux systèmes traditionnels qui peuvent fonctionner avec des connexions intermittentes, notre solution vocale repose entièrement sur une infrastructure réseau solide et optimisée. Ce guide détaille les prérequis techniques, les configurations recommandées et les procédures de test pour garantir une implémentation réussie du système Sotto dans les environnements de restauration.
             </p>
@@ -20,62 +20,62 @@ export default function ResourceContent() {
       </div>
 
       <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Prérequis Techniques</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Prérequis Techniques</h2>
         
         <div className="space-y-6">
-          <h3 className="text-2xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0]">Matériel Réseau Recommandé</h3>
+          <h3 className="text-2xl font-semibold text-[#1A2A40]">Matériel Réseau Recommandé</h3>
           
           <div className="overflow-x-auto rounded-lg shadow">
             <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-              <thead className="bg-[#1A2A40] text-white">
+              <thead className="bg-[#1A2A40]">
                 <tr>
-                  <th className="py-3 px-4 text-left">Composant</th>
-                  <th className="py-3 px-4 text-left">Spécification Minimale</th>
-                  <th className="py-3 px-4 text-left">Recommandation Optimale</th>
-                  <th className="py-3 px-4 text-left">Notes</th>
+                  <th className="py-3 px-4 text-left text-white">Composant</th>
+                  <th className="py-3 px-4 text-left text-white">Spécification Minimale</th>
+                  <th className="py-3 px-4 text-left text-white">Recommandation Optimale</th>
+                  <th className="py-3 px-4 text-left text-white">Notes</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Points d'accès</td>
-                  <td className="py-3 px-4">WiFi 5 (802.11ac)</td>
-                  <td className="py-3 px-4">WiFi 6 (802.11ax)</td>
-                  <td className="py-3 px-4">Minimum 2 points d'accès pour redondance</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Points d'accès</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">WiFi 5 (802.11ac)</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">WiFi 6 (802.11ax)</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Minimum 2 points d'accès pour redondance</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Routeur</td>
-                  <td className="py-3 px-4">Double bande (2.4/5GHz)</td>
-                  <td className="py-3 px-4">Maillage (mesh)</td>
-                  <td className="py-3 px-4">Support VLAN recommandé</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Routeur</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Double bande (2.4/5GHz)</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Maillage (mesh)</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Support VLAN recommandé</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Bande passante</td>
-                  <td className="py-3 px-4">50 Mbps symétrique</td>
-                  <td className="py-3 px-4">100+ Mbps symétrique</td>
-                  <td className="py-3 px-4">Fibre optique privilégiée</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Bande passante</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">50 Mbps symétrique</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">100+ Mbps symétrique</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Fibre optique privilégiée</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Latence</td>
-                  <td className="py-3 px-4">moins de 50ms</td>
-                  <td className="py-3 px-4">moins de 20ms</td>
-                  <td className="py-3 px-4">Critique pour la reconnaissance vocale</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Latence</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">moins de 50ms</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">moins de 20ms</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Critique pour la reconnaissance vocale</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Redondance</td>
-                  <td className="py-3 px-4">Connexion 4G/5G de secours</td>
-                  <td className="py-3 px-4">Double FAI</td>
-                  <td className="py-3 px-4">Basculement automatique nécessaire</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Redondance</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Connexion 4G/5G de secours</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Double FAI</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Basculement automatique nécessaire</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border-l-4 border-[#87A28F] hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Couverture et Densité</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Couverture et Densité</h3>
+            <p className="mb-4 text-[#1A2A40]">
               La qualité de l'expérience Sotto dépend directement de la couverture WiFi dans l'établissement. Une analyse préalable est indispensable pour identifier:
             </p>
-            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+            <ul className="space-y-2 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
                 <span><strong>Zones critiques</strong>: Salle, bar, cuisine, réserves, entrée</span>
@@ -94,20 +94,20 @@ export default function ResourceContent() {
               </li>
             </ul>
             
-            <div className="mt-4 bg-[#1A2A40]/10 dark:bg-[#F5F5F0]/10 p-4 rounded-lg border-l-4 border-[#D47D5A]">
-              <p className="italic font-medium">
+            <div className="mt-4 bg-[#1A2A40]/10 p-4 rounded-lg border-l-4 border-[#D47D5A]">
+              <p className="italic font-medium text-[#1A2A40]">
                 <strong>Règle essentielle</strong>: Aucune zone de l'établissement ne doit présenter un signal inférieur à -70 dBm pour garantir une transmission vocale fiable.
               </p>
             </div>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border-l-4 border-[#D4B483] hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Configuration Réseau</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Configuration Réseau</h3>
             
             <div className="space-y-6">
               <div>
-                <h4 className="text-lg font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Architecture Recommandée</h4>
-                <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg font-mono text-sm overflow-x-auto">
+                <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Architecture Recommandée</h4>
+                <div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg font-mono text-sm overflow-x-auto text-[#1A2A40]">
                   <pre>
 {`Internet ─── Routeur Principal ─┬─ Point d'accès 1 (Salle)
                                 │
@@ -119,9 +119,9 @@ export default function ResourceContent() {
               </div>
               
               <div>
-                <h4 className="text-lg font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Paramètres SSID</h4>
-                <p className="mb-2 text-gray-700 dark:text-gray-300">Pour optimiser les performances des oreillettes Sotto:</p>
-                <ul className="space-y-1 text-gray-700 dark:text-gray-300">
+                <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Paramètres SSID</h4>
+                <p className="mb-2 text-[#1A2A40]">Pour optimiser les performances des oreillettes Sotto:</p>
+                <ul className="space-y-1 text-[#1A2A40]">
                   <li className="flex items-start">
                     <span className="text-[#D4B483] mr-2">•</span>
                     <span>Créer un SSID dédié pour le système Sotto</span>
@@ -142,9 +142,9 @@ export default function ResourceContent() {
               </div>
               
               <div>
-                <h4 className="text-lg font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Qualité de Service (QoS)</h4>
-                <p className="mb-2 text-gray-700 dark:text-gray-300">La configuration QoS est critique pour prioriser le trafic vocal:</p>
-                <ul className="space-y-1 text-gray-700 dark:text-gray-300">
+                <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Qualité de Service (QoS)</h4>
+                <p className="mb-2 text-[#1A2A40]">La configuration QoS est critique pour prioriser le trafic vocal:</p>
+                <ul className="space-y-1 text-[#1A2A40]">
                   <li className="flex items-start">
                     <span className="text-[#D4B483] mr-2">•</span>
                     <span>Prioriser le trafic UDP sur les ports utilisés par Sotto (8080-8089)</span>
@@ -169,17 +169,17 @@ export default function ResourceContent() {
       </section>
 
       <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Procédure d'Évaluation Préalable</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Procédure d'Évaluation Préalable</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300 animate-float">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Analyse Site Survey</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">Avant toute installation, une analyse complète du site est requise:</p>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Analyse Site Survey</h3>
+            <p className="mb-4 text-[#1A2A40]">Avant toute installation, une analyse complète du site est requise:</p>
             
             <div className="space-y-4">
               <div>
                 <h4 className="font-medium text-[#D47D5A]">1. Cartographie physique</h4>
-                <ul className="mt-2 ml-6 list-disc text-gray-700 dark:text-gray-300">
+                <ul className="mt-2 ml-6 list-disc text-[#1A2A40]">
                   <li>Plan détaillé de l'établissement</li>
                   <li>Identification des matériaux de construction (béton, métal, verre)</li>
                   <li>Repérage des obstacles potentiels au signal</li>
@@ -188,7 +188,7 @@ export default function ResourceContent() {
               
               <div>
                 <h4 className="font-medium text-[#D47D5A]">2. Analyse spectrale</h4>
-                <ul className="mt-2 ml-6 list-disc text-gray-700 dark:text-gray-300">
+                <ul className="mt-2 ml-6 list-disc text-[#1A2A40]">
                   <li>Mesure des interférences sur les bandes 2.4 GHz et 5 GHz</li>
                   <li>Identification des canaux les moins encombrés</li>
                   <li>Détection des réseaux voisins et leur puissance</li>
@@ -197,7 +197,7 @@ export default function ResourceContent() {
               
               <div>
                 <h4 className="font-medium text-[#D47D5A]">3. Test de couverture</h4>
-                <ul className="mt-2 ml-6 list-disc text-gray-700 dark:text-gray-300">
+                <ul className="mt-2 ml-6 list-disc text-[#1A2A40]">
                   <li>Mesure du signal dans toutes les zones opérationnelles</li>
                   <li>Identification des zones nécessitant des points d'accès supplémentaires</li>
                   <li>Création d'une carte thermique de couverture</li>
@@ -207,7 +207,7 @@ export default function ResourceContent() {
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Outils Recommandés</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Outils Recommandés</h3>
             <div className="space-y-4">
               <div className="flex items-center p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
                 <div className="flex-shrink-0 w-12 h-12 mr-4 bg-[#1A2A40] dark:bg-[#87A28F] rounded-full flex items-center justify-center">
@@ -216,8 +216,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Analyseurs WiFi professionnels</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Ekahau Site Survey, NetSpot Pro</p>
+                  <h4 className="font-medium text-[#1A2A40]">Analyseurs WiFi professionnels</h4>
+                  <p className="text-sm text-[#1A2A40]">Ekahau Site Survey, NetSpot Pro</p>
                 </div>
               </div>
               
@@ -228,8 +228,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Applications mobiles</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">WiFi Analyzer, Network Analyzer Pro</p>
+                  <h4 className="font-medium text-[#1A2A40]">Applications mobiles</h4>
+                  <p className="text-sm text-[#1A2A40]">WiFi Analyzer, Network Analyzer Pro</p>
                 </div>
               </div>
               
@@ -240,8 +240,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Équipement de test</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">TP-Link TL-WA801ND pour simulation de points d'accès</p>
+                  <h4 className="font-medium text-[#1A2A40]">Équipement de test</h4>
+                  <p className="text-sm text-[#1A2A40]">TP-Link TL-WA801ND pour simulation de points d'accès</p>
                 </div>
               </div>
             </div>
@@ -250,15 +250,15 @@ export default function ResourceContent() {
       </section>
 
       <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Configuration et Optimisation</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Configuration et Optimisation</h2>
         
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Sécurisation du Réseau</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Sécurisation du Réseau</h3>
+            <p className="mb-4 text-[#1A2A40]">
               La sécurité du réseau Sotto est primordiale pour protéger les données sensibles:
             </p>
-            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+            <ul className="space-y-3 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="flex-shrink-0 w-6 h-6 bg-[#D47D5A] rounded-full flex items-center justify-center mr-3 mt-0.5">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -303,12 +303,12 @@ export default function ResourceContent() {
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Optimisation des Points d'Accès</h3>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Optimisation des Points d'Accès</h3>
             
             <div className="space-y-6">
               <div>
                 <h4 className="font-medium text-[#87A28F] mb-2">Placement Stratégique</h4>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-2 text-[#1A2A40]">
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#87A28F] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -338,7 +338,7 @@ export default function ResourceContent() {
               
               <div>
                 <h4 className="font-medium text-[#87A28F] mb-2">Configuration Avancée</h4>
-                <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                <ul className="space-y-2 text-[#1A2A40]">
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#87A28F] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -378,19 +378,19 @@ export default function ResourceContent() {
       </section>
 
       <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Procédures de Test et Validation</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Procédures de Test et Validation</h2>
         
         <div className="space-y-6">
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Tests de Performance</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Tests de Performance</h3>
+            <p className="mb-4 text-[#1A2A40]">
               Avant de déclarer l'installation conforme, effectuer les tests suivants:
             </p>
             
             <div className="space-y-6">
               <div className="bg-[#F5F5F0] dark:bg-gray-700/50 p-4 rounded-lg">
-                <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">1. Test de couverture</h4>
-                <ul className="space-y-1 text-gray-700 dark:text-gray-300">
+                <h4 className="font-medium text-[#1A2A40] mb-2">1. Test de couverture</h4>
+                <ul className="space-y-1 text-[#1A2A40]">
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D47D5A] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -413,8 +413,8 @@ export default function ResourceContent() {
               </div>
               
               <div className="bg-[#F5F5F0] dark:bg-gray-700/50 p-4 rounded-lg">
-                <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">2. Test de latence</h4>
-                <ul className="space-y-1 text-gray-700 dark:text-gray-300">
+                <h4 className="font-medium text-[#1A2A40] mb-2">2. Test de latence</h4>
+                <ul className="space-y-1 text-[#1A2A40]">
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D47D5A] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -437,8 +437,8 @@ export default function ResourceContent() {
               </div>
               
               <div className="bg-[#F5F5F0] dark:bg-gray-700/50 p-4 rounded-lg">
-                <h4 className="font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-2">3. Test de charge</h4>
-                <ul className="space-y-1 text-gray-700 dark:text-gray-300">
+                <h4 className="font-medium text-[#1A2A40] mb-2">3. Test de charge</h4>
+                <ul className="space-y-1 text-[#1A2A40]">
                   <li className="flex items-start">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D47D5A] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -464,49 +464,49 @@ export default function ResourceContent() {
           
           <div className="overflow-x-auto rounded-lg shadow">
             <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-              <thead className="bg-[#1A2A40] text-white">
+              <thead className="bg-[#1A2A40]">
                 <tr>
-                  <th className="py-3 px-4 text-left">Test</th>
-                  <th className="py-3 px-4 text-left">Critère de succès</th>
-                  <th className="py-3 px-4 text-left">Méthode de vérification</th>
+                  <th className="py-3 px-4 text-left text-white">Test</th>
+                  <th className="py-3 px-4 text-left text-white">Critère de succès</th>
+                  <th className="py-3 px-4 text-left text-white">Méthode de vérification</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Couverture</td>
-                  <td className="py-3 px-4">Signal au dessus de -65 dBm partout</td>
-                  <td className="py-3 px-4">Cartographie avec outil d'analyse</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Couverture</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Signal au dessus de -65 dBm partout</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Cartographie avec outil d'analyse</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Latence</td>
-                  <td className="py-3 px-4">au dessous de 100ms en tout point</td>
-                  <td className="py-3 px-4">Ping continu pendant déplacement</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Latence</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">au dessous de 100ms en tout point</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Ping continu pendant déplacement</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Débit</td>
-                  <td className="py-3 px-4">au dessus de 5 Mbps par oreillette</td>
-                  <td className="py-3 px-4">Test de bande passante simultané</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Débit</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">au dessus de 5 Mbps par oreillette</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Test de bande passante simultané</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Transition</td>
-                  <td className="py-3 px-4">au dessous de 150ms entre AP</td>
-                  <td className="py-3 px-4">Test de roaming avec outil spécialisé</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Transition</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">au dessous de 150ms entre AP</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Test de roaming avec outil spécialisé</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Fiabilité</td>
-                  <td className="py-3 px-4">0 déconnexion sur 4h</td>
-                  <td className="py-3 px-4">Test longue durée en conditions réelles</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Fiabilité</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">0 déconnexion sur 4h</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Test longue durée en conditions réelles</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Documentation Post-Installation</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Documentation Post-Installation</h3>
+            <p className="mb-4 text-[#1A2A40]">
               À l'issue de l'installation, fournir:
             </p>
-            <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+            <ul className="space-y-2 text-[#1A2A40]">
               <li className="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#D4B483] mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -543,51 +543,51 @@ export default function ResourceContent() {
       </section>
 
       <section className="space-y-8">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Résolution des Problèmes Courants</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Résolution des Problèmes Courants</h2>
         
         <div className="space-y-6">
           <div className="overflow-x-auto rounded-lg shadow">
             <table className="min-w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-              <thead className="bg-[#1A2A40] text-white">
+              <thead className="bg-[#1A2A40]">
                 <tr>
-                  <th className="py-3 px-4 text-left">Symptôme</th>
-                  <th className="py-3 px-4 text-left">Causes Possibles</th>
-                  <th className="py-3 px-4 text-left">Solutions</th>
+                  <th className="py-3 px-4 text-left text-white">Symptôme</th>
+                  <th className="py-3 px-4 text-left text-white">Causes Possibles</th>
+                  <th className="py-3 px-4 text-left text-white">Solutions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Déconnexions fréquentes</td>
-                  <td className="py-3 px-4">Interférences, signal faible</td>
-                  <td className="py-3 px-4">Ajuster canaux, ajouter AP</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Déconnexions fréquentes</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Interférences, signal faible</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Ajuster canaux, ajouter AP</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Latence élevée</td>
-                  <td className="py-3 px-4">Congestion réseau, interférences</td>
-                  <td className="py-3 px-4">QoS, changer canal, vérifier FAI</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Latence élevée</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Congestion réseau, interférences</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">QoS, changer canal, vérifier FAI</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Audio saccadé</td>
-                  <td className="py-3 px-4">Perte de paquets, bande passante</td>
-                  <td className="py-3 px-4">Vérifier QoS, optimiser roaming</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Audio saccadé</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Perte de paquets, bande passante</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Vérifier QoS, optimiser roaming</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Zones mortes</td>
-                  <td className="py-3 px-4">Obstacles, mauvais placement AP</td>
-                  <td className="py-3 px-4">Repositionner/ajouter des AP</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Zones mortes</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Obstacles, mauvais placement AP</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Repositionner/ajouter des AP</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
-                  <td className="py-3 px-4 font-medium">Connexion impossible</td>
-                  <td className="py-3 px-4">Problème DHCP, auth</td>
-                  <td className="py-3 px-4">Vérifier serveur DHCP, RADIUS</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40]">Connexion impossible</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Problème DHCP, auth</td>
+                  <td className="py-3 px-4 text-[#1A2A40]">Vérifier serveur DHCP, RADIUS</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
           <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Procédure de Maintenance Préventive</h3>
-            <p className="mb-4 text-gray-700 dark:text-gray-300">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Procédure de Maintenance Préventive</h3>
+            <p className="mb-4 text-[#1A2A40]">
               Programmer des vérifications régulières:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -598,8 +598,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Mensuel</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Analyse des performances WiFi</span>
+                  <span className="block font-medium text-[#1A2A40]">Mensuel</span>
+                  <span className="text-sm text-[#1A2A40]">Analyse des performances WiFi</span>
                 </div>
               </div>
               
@@ -610,8 +610,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Trimestriel</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Vérification de la couverture</span>
+                  <span className="block font-medium text-[#1A2A40]">Trimestriel</span>
+                  <span className="text-sm text-[#1A2A40]">Vérification de la couverture</span>
                 </div>
               </div>
               
@@ -622,8 +622,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Semestriel</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Mise à jour des firmwares</span>
+                  <span className="block font-medium text-[#1A2A40]">Semestriel</span>
+                  <span className="text-sm text-[#1A2A40]">Mise à jour des firmwares</span>
                 </div>
               </div>
               
@@ -634,8 +634,8 @@ export default function ResourceContent() {
                   </svg>
                 </div>
                 <div>
-                  <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Annuel</span>
-                  <span className="text-sm text-gray-600 dark:text-gray-400">Test complet de l'infrastructure</span>
+                  <span className="block font-medium text-[#1A2A40]">Annuel</span>
+                  <span className="text-sm text-[#1A2A40]">Test complet de l'infrastructure</span>
                 </div>
               </div>
             </div>
@@ -644,19 +644,19 @@ export default function ResourceContent() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-3xl font-bold text-[#1A2A40] dark:text-[#F5F5F0] border-b border-[#D47D5A] pb-2">Conclusion</h2>
+        <h2 className="text-3xl font-bold text-[#1A2A40] border-b border-[#D47D5A] pb-2">Conclusion</h2>
         
-        <div className="bg-[#1A2A40] dark:bg-[#1A2A40]/80 text-white p-6 rounded-xl shadow-md">
-          <p className="mb-4">
+        <div className="bg-[#1A2A40] dark:bg-[#1A2A40]/80 p-6 rounded-xl shadow-md">
+          <p className="mb-4 text-white">
             Une infrastructure WiFi robuste et optimisée constitue le fondement indispensable du système Sotto. En suivant ce guide, vous garantissez une expérience utilisateur fluide et fiable, permettant au personnel de se concentrer sur l'essentiel: le service et l'expérience client.
           </p>
-          <p>
+          <p className="text-white">
             Les spécifications et recommandations de ce document représentent les conditions idéales pour le déploiement de Sotto. Toutefois, notre équipe technique est disponible pour adapter ces exigences aux contraintes spécifiques de chaque établissement, tout en maintenant les standards de qualité qui font la réputation de notre solution.
           </p>
         </div>
         
         <div className="bg-[#F5F5F0] dark:bg-gray-800 p-6 rounded-xl shadow-md border-l-4 border-[#D47D5A]">
-          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Actions Recommandées</h3>
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Actions Recommandées</h3>
           <ul className="space-y-4">
             <li className="flex">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#D47D5A] flex items-center justify-center mr-4">
@@ -665,8 +665,8 @@ export default function ResourceContent() {
                 </svg>
               </div>
               <div>
-                <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Avant tout déploiement</span>
-                <span className="text-gray-700 dark:text-gray-300">Réaliser une analyse complète du site avec notre outil d'évaluation</span>
+                <span className="block font-medium text-[#1A2A40]">Avant tout déploiement</span>
+                <span className="text-[#1A2A40]">Réaliser une analyse complète du site avec notre outil d'évaluation</span>
               </div>
             </li>
             <li className="flex">
@@ -676,8 +676,8 @@ export default function ResourceContent() {
                 </svg>
               </div>
               <div>
-                <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Pour les installations existantes</span>
-                <span className="text-gray-700 dark:text-gray-300">Programmer un audit réseau pour identifier les optimisations possibles</span>
+                <span className="block font-medium text-[#1A2A40]">Pour les installations existantes</span>
+                <span className="text-[#1A2A40]">Programmer un audit réseau pour identifier les optimisations possibles</span>
               </div>
             </li>
             <li className="flex">
@@ -687,14 +687,14 @@ export default function ResourceContent() {
                 </svg>
               </div>
               <div>
-                <span className="block font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Formation</span>
-                <span className="text-gray-700 dark:text-gray-300">Inscrire votre équipe technique à notre webinaire mensuel "Infrastructure Réseau pour Sotto"</span>
+                <span className="block font-medium text-[#1A2A40]">Formation</span>
+                <span className="text-[#1A2A40]">Inscrire votre équipe technique à notre webinaire mensuel "Infrastructure Réseau pour Sotto"</span>
               </div>
             </li>
           </ul>
           
           <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-[#1A2A40]">
               Pour toute question technique, contactez notre équipe d'intégration à <a href="mailto:integration@sotto.ai" className="text-[#D47D5A] hover:underline">integration@sotto.ai</a> ou via le canal Slack #team-implementation.
             </p>
           </div>

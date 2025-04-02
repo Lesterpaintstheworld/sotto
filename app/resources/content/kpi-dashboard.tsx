@@ -1,21 +1,21 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 resource-content">
       <div className="mb-10 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#1A2A40]">
           KPI Dashboard Demo
         </h1>
         <div className="inline-block bg-[#D47D5A] h-1 w-24 rounded-full mb-6"></div>
         <div className="flex justify-center">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#1A2A40] text-[#F5F5F0]">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#1A2A40] text-white">
             tools
           </span>
         </div>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Introduction</h2>
-        <div className="prose prose-lg max-w-none dark:prose-invert">
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Introduction</h2>
+        <div className="prose prose-lg max-w-none">
           <p className="text-lg leading-relaxed mb-4">
             Le tableau de bord Sotto représente une véritable révolution dans la manière dont vous analysez les performances de votre établissement. Contrairement aux systèmes traditionnels qui vous noient sous des données brutes difficiles à interpréter, notre dashboard épuré vous offre une vision claire et stratégique de tous les indicateurs clés de performance (KPI) qui impactent réellement votre activité.
           </p>
@@ -26,15 +26,15 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Vue d'ensemble du dashboard</h2>
-        <div className="prose prose-lg max-w-none dark:prose-invert mb-8">
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Vue d'ensemble du dashboard</h2>
+        <div className="prose prose-lg max-w-none mb-8">
           <p className="text-lg leading-relaxed">
             Le tableau de bord Sotto se distingue par son interface minimaliste qui met l'accent sur la lisibilité et l'accessibilité des données. Nous avons délibérément évité la surcharge d'informations pour vous permettre de vous concentrer sur ce qui compte vraiment.
           </p>
         </div>
 
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold mb-5 text-[#1A2A40] dark:text-[#F5F5F0]">Design et ergonomie</h3>
+          <h3 className="text-2xl font-semibold mb-5 text-[#1A2A40]">Design et ergonomie</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { title: "Interface épurée", description: "utilisant notre palette de couleurs signature (bleu profond, terracotta, blanc cassé)" },
@@ -48,16 +48,16 @@ const ResourceContent = () => {
                 className="bg-white dark:bg-[#1A2A40]/60 rounded-lg shadow-md p-5 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1"
               >
                 <h4 className="font-bold text-[#D47D5A] mb-2">{item.title}</h4>
-                <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold mb-5 text-[#1A2A40] dark:text-[#F5F5F0]">Personnalisation</h3>
+          <h3 className="text-2xl font-semibold mb-5 text-[#1A2A40]">Personnalisation</h3>
           <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 rounded-xl p-6 shadow-md">
-            <p className="text-lg mb-4">Chaque restaurant étant unique, nous avons conçu le dashboard pour qu'il s'adapte à vos priorités :</p>
+            <p className="text-lg mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Chaque restaurant étant unique, nous avons conçu le dashboard pour qu'il s'adapte à vos priorités :</p>
             <ul className="space-y-3">
               {[
                 "Modules réorganisables selon vos préférences",
@@ -71,7 +71,7 @@ const ResourceContent = () => {
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                   </span>
-                  <span>{item}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -80,12 +80,12 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-8 text-[#1A2A40] dark:text-[#F5F5F0]">Sections principales du dashboard</h2>
+        <h2 className="text-3xl font-bold mb-8 text-[#1A2A40]">Sections principales du dashboard</h2>
         
         <div className="space-y-10">
           <div className="bg-gradient-to-r from-[#1A2A40]/5 to-[#1A2A40]/10 dark:from-[#1A2A40]/40 dark:to-[#1A2A40]/60 p-6 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">1. Vue d'ensemble des performances</h3>
-            <p className="mb-6">Ce module central vous donne instantanément une vision globale de la santé de votre établissement avec :</p>
+            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40]">1. Vue d'ensemble des performances</h3>
+            <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Ce module central vous donne instantanément une vision globale de la santé de votre établissement avec :</p>
             
             <div className="overflow-x-auto mb-6">
               <table className="min-w-full bg-white dark:bg-[#1A2A40]/70 rounded-lg overflow-hidden">
@@ -126,20 +126,20 @@ const ResourceContent = () => {
                   ].map((row, index) => (
                     <tr key={index} className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/90 transition-colors">
                       <td className="py-3 px-4 text-[#D47D5A] font-medium">{row.indicateur}</td>
-                      <td className="py-3 px-4">{row.description}</td>
-                      <td className="py-3 px-4">{row.benefice}</td>
+                      <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">{row.description}</td>
+                      <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">{row.benefice}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
             
-            <p>Un graphique élégant visualise ces données sur différentes périodes (jour, semaine, mois, trimestre) pour identifier facilement les tendances.</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">Un graphique élégant visualise ces données sur différentes périodes (jour, semaine, mois, trimestre) pour identifier facilement les tendances.</p>
           </div>
 
           <div className="bg-gradient-to-r from-[#1A2A40]/5 to-[#1A2A40]/10 dark:from-[#1A2A40]/40 dark:to-[#1A2A40]/60 p-6 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">2. Analyse des ventes</h3>
-            <p className="mb-6">Cette section décompose vos ventes de manière détaillée mais digeste :</p>
+            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40]">2. Analyse des ventes</h3>
+            <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Cette section décompose vos ventes de manière détaillée mais digeste :</p>
             
             <div className="space-y-6">
               {[
@@ -173,7 +173,7 @@ const ResourceContent = () => {
                     {section.items.map((item, i) => (
                       <li key={i} className="flex items-start">
                         <span className="text-[#87A28F] mr-2">•</span>
-                        <span>{item}</span>
+                        <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -183,8 +183,8 @@ const ResourceContent = () => {
           </div>
 
           <div className="bg-gradient-to-r from-[#1A2A40]/5 to-[#1A2A40]/10 dark:from-[#1A2A40]/40 dark:to-[#1A2A40]/60 p-6 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">3. Efficacité opérationnelle</h3>
-            <p className="mb-6">Cette section, particulièrement enrichie par les données collectées via notre système vocal, offre des insights uniques sur l'efficacité de votre équipe :</p>
+            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40]">3. Efficacité opérationnelle</h3>
+            <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Cette section, particulièrement enrichie par les données collectées via notre système vocal, offre des insights uniques sur l'efficacité de votre équipe :</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               {[
@@ -195,17 +195,17 @@ const ResourceContent = () => {
                 "Temps d'attente client : durée moyenne avant la prise de commande"
               ].map((item, index) => (
                 <div key={index} className="bg-white dark:bg-[#1A2A40]/70 rounded-lg p-4 shadow-sm border-l-4 border-[#87A28F]">
-                  <p>{item}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</p>
                 </div>
               ))}
             </div>
             
-            <p>Un graphique radar permet de visualiser ces métriques par rapport à vos objectifs et aux moyennes du secteur.</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">Un graphique radar permet de visualiser ces métriques par rapport à vos objectifs et aux moyennes du secteur.</p>
           </div>
 
           <div className="bg-gradient-to-r from-[#1A2A40]/5 to-[#1A2A40]/10 dark:from-[#1A2A40]/40 dark:to-[#1A2A40]/60 p-6 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">4. Gestion des stocks et coûts</h3>
-            <p className="mb-6">Sotto intègre les données de commandes vocales avec votre gestion des stocks pour vous offrir :</p>
+            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40]">4. Gestion des stocks et coûts</h3>
+            <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Sotto intègre les données de commandes vocales avec votre gestion des stocks pour vous offrir :</p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               {[
@@ -217,17 +217,17 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <div key={index} className="bg-white dark:bg-[#1A2A40]/70 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 flex items-center">
                   <div className="w-3 h-3 rounded-full bg-[#D4B483] mr-3 flex-shrink-0"></div>
-                  <p>{item}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</p>
                 </div>
               ))}
             </div>
             
-            <p>Un tableau de bord visuel utilise notre code couleur intuitif pour identifier rapidement les points d'attention.</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">Un tableau de bord visuel utilise notre code couleur intuitif pour identifier rapidement les points d'attention.</p>
           </div>
 
           <div className="bg-gradient-to-r from-[#1A2A40]/5 to-[#1A2A40]/10 dark:from-[#1A2A40]/40 dark:to-[#1A2A40]/60 p-6 rounded-xl shadow-md">
-            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">5. Satisfaction client</h3>
-            <p className="mb-6">Cette section unique combine les données quantitatives et qualitatives pour mesurer réellement la satisfaction :</p>
+            <h3 className="text-2xl font-semibold mb-4 text-[#1A2A40]">5. Satisfaction client</h3>
+            <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Cette section unique combine les données quantitatives et qualitatives pour mesurer réellement la satisfaction :</p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               {[
@@ -238,18 +238,18 @@ const ResourceContent = () => {
                 "Commentaires clients avec analyse de sentiment par IA"
               ].map((item, index) => (
                 <div key={index} className="bg-white dark:bg-[#1A2A40]/70 rounded-lg p-4 shadow-sm border-t-4 border-[#D47D5A]">
-                  <p>{item}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</p>
                 </div>
               ))}
             </div>
             
-            <p>Un graphique d'évolution permet de suivre ces indicateurs dans le temps et d'identifier l'impact de vos actions correctives.</p>
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">Un graphique d'évolution permet de suivre ces indicateurs dans le temps et d'identifier l'impact de vos actions correctives.</p>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-8 text-[#1A2A40] dark:text-[#F5F5F0]">Fonctionnalités avancées</h2>
+        <h2 className="text-3xl font-bold mb-8 text-[#1A2A40]">Fonctionnalités avancées</h2>
         
         <div className="space-y-8">
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -257,7 +257,7 @@ const ResourceContent = () => {
               <h3 className="text-xl font-semibold">Intelligence prédictive</h3>
             </div>
             <div className="bg-white dark:bg-[#1A2A40]/70 p-5">
-              <p className="mb-4">Notre dashboard ne se contente pas d'analyser le passé, il vous aide à anticiper l'avenir :</p>
+              <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Notre dashboard ne se contente pas d'analyser le passé, il vous aide à anticiper l'avenir :</p>
               <ul className="space-y-3">
                 {[
                   "Prévisions d'affluence basées sur l'historique, la météo et les événements locaux",
@@ -269,7 +269,7 @@ const ResourceContent = () => {
                     <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-[#87A28F] text-white mr-3 flex-shrink-0 text-xs">
                       {index + 1}
                     </span>
-                    <span>{item}</span>
+                    <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -281,7 +281,7 @@ const ResourceContent = () => {
               <h3 className="text-xl font-semibold">Rapports automatisés</h3>
             </div>
             <div className="bg-white dark:bg-[#1A2A40]/70 p-5">
-              <p className="mb-4">Pour vous libérer davantage des écrans, Sotto peut :</p>
+              <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Pour vous libérer davantage des écrans, Sotto peut :</p>
               <ul className="space-y-3">
                 {[
                   "Générer des rapports hebdomadaires et mensuels synthétiques",
@@ -291,7 +291,7 @@ const ResourceContent = () => {
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">→</span>
-                    <span>{item}</span>
+                    <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -303,10 +303,10 @@ const ResourceContent = () => {
               <h3 className="text-xl font-semibold">Mode vocal</h3>
             </div>
             <div className="bg-white dark:bg-[#1A2A40]/70 p-5">
-              <p className="mb-4">Fidèle à notre philosophie, le dashboard est également accessible via des commandes vocales :</p>
+              <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Fidèle à notre philosophie, le dashboard est également accessible via des commandes vocales :</p>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40] rounded-lg p-4 font-mono text-sm">
-                <p className="mb-2"><span className="text-[#D47D5A] font-bold">Vous:</span> "Sotto, quel a été le chiffre d'affaires d'hier comparé à la semaine dernière?"</p>
-                <p><span className="text-[#87A28F] font-bold">Sotto:</span> "Hier, vous avez réalisé 3 420€, soit une hausse de 12% par rapport au même jour la semaine dernière. Votre ticket moyen était de 42€, en augmentation de 3€."</p>
+                <p className="mb-2"><span className="text-[#D47D5A] font-bold">Vous:</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">"Sotto, quel a été le chiffre d'affaires d'hier comparé à la semaine dernière?"</span></p>
+                <p><span className="text-[#87A28F] font-bold">Sotto:</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">"Hier, vous avez réalisé 3 420€, soit une hausse de 12% par rapport au même jour la semaine dernière. Votre ticket moyen était de 42€, en augmentation de 3€."</span></p>
               </div>
             </div>
           </div>
@@ -314,8 +314,8 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Intégration à l'écosystème Sotto</h2>
-        <p className="mb-6">Le dashboard s'intègre parfaitement avec les autres composants de l'écosystème Sotto :</p>
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Intégration à l'écosystème Sotto</h2>
+        <p className="mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Le dashboard s'intègre parfaitement avec les autres composants de l'écosystème Sotto :</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {[
@@ -362,7 +362,7 @@ const ResourceContent = () => {
               </div>
               <div>
                 <h4 className="font-bold text-[#D47D5A] mb-1">{item.title}</h4>
-                <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.description}</p>
               </div>
             </div>
           ))}
@@ -370,17 +370,17 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Témoignages de restaurateurs</h2>
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Témoignages de restaurateurs</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 rounded-xl p-6 shadow-md relative">
             <div className="absolute -top-3 -left-3 text-[#D47D5A] text-5xl">"</div>
             <blockquote className="relative z-10 pt-4">
-              <p className="italic mb-4 text-gray-700 dark:text-gray-300">
+              <p className="italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
                 Le dashboard Sotto a transformé ma façon de gérer mon établissement. Je passe moins de temps devant les écrans tout en ayant une meilleure compréhension de mes performances. Les alertes prédictives m'ont permis d'optimiser mes commandes et de réduire mon gaspillage de 23%.
               </p>
               <footer className="font-semibold">
-                <span className="text-[#D47D5A]">Marie L.,</span> Propriétaire de bistrot, Lyon
+                <span className="text-[#D47D5A]">Marie L.,</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Propriétaire de bistrot, Lyon</span>
               </footer>
             </blockquote>
           </div>
@@ -388,11 +388,11 @@ const ResourceContent = () => {
           <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 rounded-xl p-6 shadow-md relative">
             <div className="absolute -top-3 -left-3 text-[#D47D5A] text-5xl">"</div>
             <blockquote className="relative z-10 pt-4">
-              <p className="italic mb-4 text-gray-700 dark:text-gray-300">
+              <p className="italic mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
                 Avant Sotto, j'avais l'impression de naviguer à l'aveugle. Maintenant, je prends des décisions basées sur des données concrètes. Le plus impressionnant est la précision des prévisions d'affluence qui me permet d'ajuster mon personnel en conséquence.
               </p>
               <footer className="font-semibold">
-                <span className="text-[#D47D5A]">Thomas B.,</span> Chef restaurateur, Bordeaux
+                <span className="text-[#D47D5A]">Thomas B.,</span> <span className="text-[#1A2A40] dark:text-[#F5F5F0]">Chef restaurateur, Bordeaux</span>
               </footer>
             </blockquote>
           </div>
@@ -400,19 +400,19 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Conclusion</h2>
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Conclusion</h2>
         <div className="bg-gradient-to-r from-[#1A2A40]/10 to-[#D47D5A]/10 dark:from-[#1A2A40]/60 dark:to-[#D47D5A]/30 rounded-xl p-6 shadow-md">
-          <p className="text-lg leading-relaxed mb-4">
+          <p className="text-lg leading-relaxed mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             Le KPI Dashboard Sotto représente bien plus qu'un simple outil d'analyse - c'est un véritable copilote stratégique pour votre établissement. En transformant des données complexes en insights actionnables, il vous permet de prendre des décisions éclairées tout en vous libérant du temps pour vous concentrer sur l'essentiel : l'expérience humaine et gastronomique que vous offrez à vos clients.
           </p>
-          <p className="text-lg leading-relaxed">
+          <p className="text-lg leading-relaxed text-[#1A2A40] dark:text-[#F5F5F0]">
             Contrairement aux solutions traditionnelles qui vous enchaînent aux écrans, notre dashboard s'intègre naturellement dans votre flux de travail, respectant notre engagement à recentrer la restauration sur l'humain plutôt que sur la technologie.
           </p>
         </div>
       </section>
 
       <section>
-        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">Pour aller plus loin</h2>
+        <h2 className="text-3xl font-bold mb-6 text-[#1A2A40]">Pour aller plus loin</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {[
             {
@@ -454,7 +454,7 @@ const ResourceContent = () => {
               </div>
               <div className="bg-white dark:bg-[#1A2A40]/70 p-5">
                 <h3 className="font-bold text-xl mb-2 text-[#1A2A40] dark:text-[#F5F5F0] group-hover:text-[#D47D5A] transition-colors duration-300">{item.title}</h3>
-                <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.description}</p>
               </div>
             </div>
           ))}
@@ -462,7 +462,7 @@ const ResourceContent = () => {
         
         <div className="mt-10 text-center p-4 bg-[#F5F5F0] dark:bg-[#1A2A40]/40 rounded-lg">
           <p className="italic">
-            <span className="font-medium">Le dashboard Sotto est inclus sans surcoût dans votre abonnement Sotto et accessible dès l'installation du système.</span>
+            <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Le dashboard Sotto est inclus sans surcoût dans votre abonnement Sotto et accessible dès l'installation du système.</span>
           </p>
         </div>
       </section>

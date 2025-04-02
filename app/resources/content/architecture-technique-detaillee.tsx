@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <article className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 prose prose-lg dark:prose-invert">
+    <article className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 prose prose-lg resource-content">
       <h1 className="text-4xl font-bold mb-8 text-[#1A2A40] dark:text-[#F5F5F0] border-b pb-4 border-[#D47D5A]">
         Architecture Technique
       </h1>
@@ -15,10 +15,10 @@ const ResourceContent = () => {
           Introduction
         </h2>
         <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/30 p-6 rounded-lg shadow-md mb-6 transform hover:translate-y-[-5px] transition-transform duration-300">
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40]">
             Ce document présente l'architecture technique complète du système Sotto, notre solution d'interface vocale IA pour la restauration. Il détaille les infrastructures, composants et flux de données qui permettent à notre système de fonctionner de manière fluide, fiable et sécurisée. Cette architecture a été conçue pour éliminer les interfaces à écran traditionnelles au profit d'une expérience vocale naturelle, tout en garantissant une robustesse opérationnelle dans l'environnement exigeant de la restauration.
           </p>
-          <p>
+          <p className="text-[#1A2A40]">
             L'architecture technique de Sotto repose sur quatre piliers fondamentaux : le système d'interaction vocale, l'infrastructure cloud, le système de communication en temps réel, et l'intégration avec l'écosystème plus large de la restauration. Chaque composant a été soigneusement pensé pour offrir une solution discrète mais puissante qui s'intègre naturellement dans le quotidien des restaurants.
           </p>
         </div>
@@ -36,8 +36,8 @@ const ResourceContent = () => {
 
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#D4B483]">Schéma global</h3>
-          <div className="bg-[#1A2A40] text-[#F5F5F0] p-6 rounded-lg overflow-x-auto font-mono text-sm">
-            <pre>{`┌─────────────────────────────────────────────────────────────────────┐
+          <div className="bg-[#1A2A40] p-6 rounded-lg overflow-x-auto font-mono text-sm">
+            <pre className="text-white">{`┌─────────────────────────────────────────────────────────────────────┐
 │                        ÉCOSYSTÈME RESTAURANT                         │
 │                                                                     │
 │  ┌──────────────┐     ┌──────────────┐     ┌──────────────────────┐ │
@@ -98,7 +98,7 @@ const ResourceContent = () => {
                 className="bg-white dark:bg-[#1A2A40]/30 rounded-lg p-4 shadow-md border-l-4 border-[#D47D5A] hover:shadow-lg transition-shadow duration-300"
               >
                 <h4 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-2">{principle.title}</h4>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">{principle.description}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0] text-sm">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -134,24 +134,24 @@ const ResourceContent = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                    <td className="py-3 px-4">Oreillettes</td>
-                    <td className="py-3 px-4">WiFi direct, batterie 8h, microphone directionnel</td>
-                    <td className="py-3 px-4">Interface utilisateur principale</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Oreillettes</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">WiFi direct, batterie 8h, microphone directionnel</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Interface utilisateur principale</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                    <td className="py-3 px-4">Stations de charge</td>
-                    <td className="py-3 px-4">5 ports USB-C, indicateurs LED</td>
-                    <td className="py-3 px-4">Recharge et stockage des oreillettes</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Stations de charge</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">5 ports USB-C, indicateurs LED</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Recharge et stockage des oreillettes</td>
                   </tr>
                   <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                    <td className="py-3 px-4">Edge Server</td>
-                    <td className="py-3 px-4">Mini PC Intel NUC, 16GB RAM, 512GB SSD</td>
-                    <td className="py-3 px-4">Traitement local et mise en cache</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Edge Server</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Mini PC Intel NUC, 16GB RAM, 512GB SSD</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Traitement local et mise en cache</td>
                   </tr>
                   <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                    <td className="py-3 px-4">Points d'accès WiFi</td>
-                    <td className="py-3 px-4">WiFi 6, couverture optimisée</td>
-                    <td className="py-3 px-4">Connectivité sans fil fiable</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Points d'accès WiFi</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">WiFi 6, couverture optimisée</td>
+                    <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Connectivité sans fil fiable</td>
                   </tr>
                 </tbody>
               </table>
@@ -161,11 +161,11 @@ const ResourceContent = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow">
                 <h5 className="font-bold text-[#D47D5A] mb-2">Modèle de langage</h5>
-                <p className="text-sm">LLM spécialisé pour la restauration avec vocabulaire enrichi</p>
+                <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">LLM spécialisé pour la restauration avec vocabulaire enrichi</p>
               </div>
               <div className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow">
                 <h5 className="font-bold text-[#D47D5A] mb-2">Traitement audio</h5>
-                <ul className="list-disc pl-5 text-sm">
+                <ul className="list-disc pl-5 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li>Suppression de bruit adaptative (SNR &gt;20dB)</li>
                   <li>Filtrage des conversations ambiantes</li>
                   <li>Détection d'intention contextuelle</li>
@@ -173,7 +173,7 @@ const ResourceContent = () => {
               </div>
               <div className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow">
                 <h5 className="font-bold text-[#D47D5A] mb-2">Optimisations</h5>
-                <ul className="list-disc pl-5 text-sm">
+                <ul className="list-disc pl-5 text-sm text-[#1A2A40] dark:text-[#F5F5F0]">
                   <li>Modèle léger pour traitement local des commandes courantes</li>
                   <li>Streaming vers le cloud pour requêtes complexes</li>
                   <li>Mémoire contextuelle pour suivi des conversations</li>
@@ -191,8 +191,8 @@ const ResourceContent = () => {
 
           <div className="ml-13 pl-13">
             <h4 className="text-lg font-medium mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">Architecture serverless</h4>
-            <div className="bg-[#1A2A40] text-[#F5F5F0] p-6 rounded-lg overflow-x-auto font-mono text-sm mb-6">
-              <pre>{`┌──────────────────────────────────────────┐
+            <div className="bg-[#1A2A40] p-6 rounded-lg overflow-x-auto font-mono text-sm mb-6">
+              <pre className="text-white">{`┌──────────────────────────────────────────┐
 │             API Gateway                  │
 └───────────────────┬──────────────────────┘
                     │
@@ -232,7 +232,7 @@ const ResourceContent = () => {
                   <div className="w-2 h-full bg-[#D4B483] mr-3 rounded-full"></div>
                   <div>
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#D4B483]">{service.name}</h5>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{service.desc}</p>
+                    <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{service.desc}</p>
                   </div>
                 </div>
               ))}
@@ -257,7 +257,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       <span className="font-bold">WebSockets:</span> Communication bidirectionnelle avec les oreillettes
                     </div>
                   </li>
@@ -267,7 +267,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       <span className="font-bold">MQTT:</span> Communication légère avec les dispositifs IoT (imprimantes)
                     </div>
                   </li>
@@ -277,7 +277,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       <span className="font-bold">HTTP/2:</span> API REST avec multiplexage pour les requêtes administratives
                     </div>
                   </li>
@@ -287,7 +287,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">
                       <span className="font-bold">gRPC:</span> Communication inter-services à haute performance
                     </div>
                   </li>
@@ -303,7 +303,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>Connexion WebSocket persistante avec heartbeat</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Connexion WebSocket persistante avec heartbeat</div>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-6 h-6 rounded-full bg-[#87A28F] text-white flex items-center justify-center mr-2 mt-0.5">
@@ -311,7 +311,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>Mise en cache locale des données fréquemment utilisées</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Mise en cache locale des données fréquemment utilisées</div>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-6 h-6 rounded-full bg-[#87A28F] text-white flex items-center justify-center mr-2 mt-0.5">
@@ -319,7 +319,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>Priorisation du trafic vocal sur le réseau local</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Priorisation du trafic vocal sur le réseau local</div>
                   </li>
                   <li className="flex items-start">
                     <span className="inline-block w-6 h-6 rounded-full bg-[#87A28F] text-white flex items-center justify-center mr-2 mt-0.5">
@@ -327,7 +327,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>Circuit breakers pour éviter les cascades d'erreurs</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">Circuit breakers pour éviter les cascades d'erreurs</div>
                   </li>
                 </ul>
               </div>
@@ -343,7 +343,7 @@ const ResourceContent = () => {
               ].map((item, index) => (
                 <div key={index} className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow-md border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow duration-300">
                   <h5 className="font-bold text-[#1A2A40] dark:text-[#D4B483] mb-1">{item.title}</h5>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">{item.desc}</p>
+                  <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -374,7 +374,7 @@ const ResourceContent = () => {
                   </div>
                   <div>
                     <h5 className="font-bold text-[#1A2A40] dark:text-[#D4B483]">{system.name}</h5>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">{system.desc}</p>
+                    <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{system.desc}</p>
                   </div>
                 </div>
               ))}
@@ -396,7 +396,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>{item}</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</div>
                   </li>
                 ))}
               </ul>
@@ -434,7 +434,7 @@ const ResourceContent = () => {
                   <span className="absolute flex items-center justify-center w-8 h-8 bg-[#D47D5A] rounded-full -left-4 ring-4 ring-white dark:ring-[#1A2A40]">
                     {index + 1}
                   </span>
-                  <p className="text-base">{step}</p>
+                  <p className="text-base text-[#1A2A40] dark:text-[#F5F5F0]">{step}</p>
                 </li>
               ))}
             </ol>
@@ -446,8 +446,8 @@ const ResourceContent = () => {
 
         <div className="mb-10">
           <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#D4B483]">Synchronisation des données</h3>
-          <div className="bg-[#1A2A40] text-[#F5F5F0] p-6 rounded-lg overflow-x-auto font-mono text-sm mb-4">
-            <pre>{`┌────────────────┐     ┌─────────────────┐     ┌────────────────┐
+          <div className="bg-[#1A2A40] p-6 rounded-lg overflow-x-auto font-mono text-sm mb-4">
+            <pre className="text-white">{`┌────────────────┐     ┌─────────────────┐     ┌────────────────┐
 │ Base de données│     │ Service de      │     │ Edge Server    │
 │     Cloud      │────►│ synchronisation │────►│    Local       │
 └────────────────┘     └─────────────────┘     └────────────────┘
@@ -470,7 +470,7 @@ const ResourceContent = () => {
                       <path fillRule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clipRule="evenodd" />
                     </svg>
                   </span>
-                  <div>{item}</div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</div>
                 </li>
               ))}
             </ul>
@@ -499,7 +499,7 @@ const ResourceContent = () => {
             ].map((opt, index) => (
               <div key={index} className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                 <h4 className="font-bold text-[#D47D5A] mb-2">{opt.title}</h4>
-                <p className="text-sm text-gray-700 dark:text-gray-300">{opt.value}</p>
+                <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">{opt.value}</p>
               </div>
             ))}
           </div>
@@ -519,28 +519,28 @@ const ResourceContent = () => {
               </thead>
               <tbody>
                 <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                  <td className="py-3 px-4">Latence API</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Latence API</td>
                   <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">&gt;500ms</td>
                   <td className="py-3 px-4 text-red-600 dark:text-red-400">&gt;1s</td>
-                  <td className="py-3 px-4">Scaling automatique</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Scaling automatique</td>
                 </tr>
                 <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                  <td className="py-3 px-4">Taux d'erreur</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Taux d'erreur</td>
                   <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">&gt;1%</td>
                   <td className="py-3 px-4 text-red-600 dark:text-red-400">&gt;5%</td>
-                  <td className="py-3 px-4">Notification équipe technique</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Notification équipe technique</td>
                 </tr>
                 <tr className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                  <td className="py-3 px-4">Utilisation CPU</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Utilisation CPU</td>
                   <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">&gt;70%</td>
                   <td className="py-3 px-4 text-red-600 dark:text-red-400">&gt;90%</td>
-                  <td className="py-3 px-4">Scaling vertical</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Scaling vertical</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40]/50">
-                  <td className="py-3 px-4">Disponibilité</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Disponibilité</td>
                   <td className="py-3 px-4 text-yellow-600 dark:text-yellow-400">&lt;99.9%</td>
                   <td className="py-3 px-4 text-red-600 dark:text-red-400">&lt;99%</td>
-                  <td className="py-3 px-4">Basculement sur système secondaire</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Basculement sur système secondaire</td>
                 </tr>
               </tbody>
             </table>
@@ -574,7 +574,7 @@ const ResourceContent = () => {
                       <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
                     </svg>
                   </span>
-                  <div>{item}</div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</div>
                 </li>
               ))}
             </ul>
@@ -595,7 +595,7 @@ const ResourceContent = () => {
                       <path fillRule="evenodd" d="M10 2a1 1 0 00-1 1v1a1 1 0 002 0V3a1 1 0 00-1-1zM4 4h3a3 3 0 006 0h3a2 2 0 012 2v9a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm2.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm2.45 4a2.5 2.5 0 10-4.9 0h4.9zM12 9a1 1 0 100 2h3a1 1 0 100-2h-3zm-1 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clipRule="evenodd" />
                     </svg>
                   </span>
-                  <div>{item}</div>
+                  <div className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</div>
                 </li>
               ))}
             </ul>
@@ -653,7 +653,7 @@ const ResourceContent = () => {
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </span>
-                    <div>{item}</div>
+                    <div className="text-[#1A2A40] dark:text-[#F5F5F0]">{item}</div>
                   </li>
                 ))}
               </ul>
@@ -673,7 +673,7 @@ const ResourceContent = () => {
         </h2>
 
         <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/30 p-6 rounded-lg shadow-md mb-6">
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             L'architecture technique de Sotto a été conçue pour allier simplicité d'usage et robustesse opérationnelle. En privilégiant une approche hybride (edge computing + cloud), nous garantissons à la fois réactivité et fiabilité, même dans les environnements difficiles des restaurants. La modularité de notre architecture permet une évolution progressive du système pour intégrer de nouvelles fonctionnalités sans perturber le service existant.
           </p>
         </div>
@@ -694,7 +694,7 @@ const ResourceContent = () => {
                 <div className="w-8 h-8 rounded-full bg-[#D4B483] flex items-center justify-center text-white mr-3">
                   {index + 1}
                 </div>
-                <div className="pt-1">{step}</div>
+                <div className="pt-1 text-[#1A2A40] dark:text-[#F5F5F0]">{step}</div>
               </div>
             ))}
           </div>

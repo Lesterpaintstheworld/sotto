@@ -1,6 +1,6 @@
 const ResourceContent: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8 resource-content">
       <h1 className="text-4xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0] tracking-tight">
         Plan de Continuité de Service
       </h1>
@@ -21,7 +21,7 @@ const ResourceContent: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-6 text-[#D47D5A]">Principes fondamentaux</h2>
         
         <div className="mb-8">
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Hiérarchie des priorités</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Hiérarchie des priorités</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { id: 1, title: "Sécurité des données client", desc: "Protection des informations sensibles en toutes circonstances" },
@@ -48,41 +48,41 @@ const ResourceContent: React.FC = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Niveaux de gravité des incidents</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Niveaux de gravité des incidents</h3>
           <div className="overflow-x-auto rounded-lg shadow border border-[#D4B483]/30">
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead className="bg-[#1A2A40] text-white dark:bg-[#1A2A40]/80">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Niveau</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Description</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Temps de réponse cible</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Impact opérationnel</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Niveau</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Description</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Temps de réponse cible</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Impact opérationnel</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200 dark:bg-[#1A2A40]/40 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#D47D5A]">P1</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Critique - Service totalement indisponible</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Immédiat (&lt; 15 min)</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Impossibilité de prendre/traiter les commandes</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Critique - Service totalement indisponible</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Immédiat (&lt; 15 min)</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Impossibilité de prendre/traiter les commandes</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#D47D5A]">P2</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Majeur - Fonctionnalités principales dégradées</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 1 heure</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Ralentissement significatif des opérations</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Majeur - Fonctionnalités principales dégradées</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 1 heure</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Ralentissement significatif des opérations</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#D47D5A]">P3</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Modéré - Fonctionnalités secondaires affectées</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 4 heures</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Impact limité sur certaines opérations</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Modéré - Fonctionnalités secondaires affectées</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 4 heures</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Impact limité sur certaines opérations</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#D47D5A]">P4</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Mineur - Problèmes cosmétiques ou non-urgents</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 24 heures</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Pas d'impact sur les opérations quotidiennes</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Mineur - Problèmes cosmétiques ou non-urgents</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 24 heures</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Pas d'impact sur les opérations quotidiennes</td>
                 </tr>
               </tbody>
             </table>
@@ -233,7 +233,7 @@ const ResourceContent: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                   {scenario.sections.map((section, idx) => (
                     <div key={idx} className="bg-gray-50 dark:bg-[#1A2A40]/60 p-4 rounded-lg border border-[#87A28F]/20">
-                      <h4 className="text-[#87A28F] font-medium mb-3">{section.title}</h4>
+                      <h4 className="text-[#87A28F] dark:text-[#A7C2AF] font-medium mb-3">{section.title}</h4>
                       <ul className="space-y-2">
                         {section.items.map((item, i) => {
                           const parts = item.split(' - ');
@@ -243,10 +243,12 @@ const ResourceContent: React.FC = () => {
                               <span>
                                 {parts.length > 1 ? (
                                   <>
-                                    <span className="font-medium">{parts[0]}</span>
+                                    <span className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">{parts[0]}</span>
                                     <span className="text-gray-600 dark:text-gray-400"> - {parts[1]}</span>
                                   </>
-                                ) : item}
+                                ) : (
+                                  <span className="text-[#1A2A40] dark:text-gray-300">{item}</span>
+                                )}
                               </span>
                             </li>
                           );
@@ -265,36 +267,36 @@ const ResourceContent: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-6 text-[#D47D5A]">Organisation et responsabilités</h2>
         
         <div className="mb-8">
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Équipe de gestion de crise</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Équipe de gestion de crise</h3>
           <div className="overflow-x-auto rounded-lg shadow border border-[#D4B483]/30">
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead className="bg-[#1A2A40] text-white dark:bg-[#1A2A40]/80">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Rôle</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Responsabilités</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Temps de mobilisation</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Rôle</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Responsabilités</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Temps de mobilisation</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200 dark:bg-[#1A2A40]/40 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Responsable d'incident</td>
-                  <td className="px-6 py-4 text-sm">Coordination générale, communication externe</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 15 minutes</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Responsable d'incident</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Coordination générale, communication externe</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 15 minutes</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Ingénieur d'astreinte</td>
-                  <td className="px-6 py-4 text-sm">Diagnostic technique, mise en œuvre des solutions</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Immédiat</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Ingénieur d'astreinte</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Diagnostic technique, mise en œuvre des solutions</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Immédiat</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Support client</td>
-                  <td className="px-6 py-4 text-sm">Communication avec les restaurants, aide à la continuité</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 30 minutes</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Support client</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Communication avec les restaurants, aide à la continuité</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 30 minutes</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Responsable sécurité</td>
-                  <td className="px-6 py-4 text-sm">Gestion des incidents liés à la sécurité/confidentialité</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">&lt; 1 heure</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Responsable sécurité</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Gestion des incidents liés à la sécurité/confidentialité</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">&lt; 1 heure</td>
                 </tr>
               </tbody>
             </table>
@@ -302,7 +304,7 @@ const ResourceContent: React.FC = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Processus d'escalade</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Processus d'escalade</h3>
           <div className="relative">
             <div className="absolute left-4 top-0 h-full w-0.5 bg-[#D47D5A]/30"></div>
             <ol className="space-y-6 relative">
@@ -317,7 +319,7 @@ const ResourceContent: React.FC = () => {
                 { step: "Analyse post-mortem", desc: "Revue d'incident et améliorations" }
               ].map((item, idx) => (
                 <li key={idx} className="pl-10 relative">
-                  <div className="absolute left-0 top-0 bg-white dark:bg-[#0a0a0a] border-2 border-[#D47D5A] rounded-full w-8 h-8 flex items-center justify-center z-10">
+                  <div className="absolute left-0 top-0 bg-white dark:bg-[#0a0a0a] border-2 border-[#D47D5A] rounded-full w-8 h-8 flex items-center justify-center z-10 text-[#1A2A40] dark:text-[#F5F5F0]">
                     {idx + 1}
                   </div>
                   <div className="bg-white dark:bg-[#1A2A40]/40 p-4 rounded-lg shadow border border-[#D4B483]/20">
@@ -336,7 +338,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Stratégie de sauvegarde</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Stratégie de sauvegarde</h3>
             <ul className="space-y-3">
               {[
                 "Sauvegarde continue des transactions avec réplication multi-région",
@@ -353,7 +355,7 @@ const ResourceContent: React.FC = () => {
           </div>
           
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Procédures de restauration</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Procédures de restauration</h3>
             <ol className="space-y-3">
               {[
                 "Évaluation - Détermination du point de restauration optimal",
@@ -363,7 +365,9 @@ const ResourceContent: React.FC = () => {
                 "Vérification - Contrôles d'intégrité post-restauration"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="flex-shrink-0 flex items-center justify-center bg-[#D47D5A] text-white w-5 h-5 rounded-full mr-2 text-xs">{idx + 1}</span>
+                  <span className="flex-shrink-0 flex items-center justify-center bg-[#D47D5A] text-white w-5 h-5 rounded-full mr-2 text-xs">
+                    {idx + 1}
+                  </span>
                   <span className="text-gray-700 dark:text-gray-300">{item}</span>
                 </li>
               ))}
@@ -376,41 +380,41 @@ const ResourceContent: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-6 text-[#D47D5A]">Tests et amélioration continue</h2>
         
         <div className="mb-8">
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Programme de tests</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Programme de tests</h3>
           <div className="overflow-x-auto rounded-lg shadow border border-[#D4B483]/30">
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead className="bg-[#1A2A40] text-white dark:bg-[#1A2A40]/80">
                 <tr>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Type de test</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Fréquence</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Participants</th>
-                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">Objectifs</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Type de test</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Fréquence</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Participants</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-white">Objectifs</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200 dark:bg-[#1A2A40]/40 dark:divide-gray-700">
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Test de basculement</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Mensuel</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Équipe technique</td>
-                  <td className="px-6 py-4 text-sm">Valider les procédures de failover automatique</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Test de basculement</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Mensuel</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Équipe technique</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Valider les procédures de failover automatique</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Simulation d'incident</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Trimestriel</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Équipe élargie</td>
-                  <td className="px-6 py-4 text-sm">Tester la coordination et les procédures</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Simulation d'incident</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Trimestriel</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Équipe élargie</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Tester la coordination et les procédures</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Test de restauration</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Mensuel</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Équipe technique</td>
-                  <td className="px-6 py-4 text-sm">Vérifier l'intégrité des sauvegardes</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Test de restauration</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Mensuel</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Équipe technique</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Vérifier l'intégrité des sauvegardes</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-[#1A2A40]/60 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">Exercice de crise</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Semestriel</td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm">Toute l'entreprise</td>
-                  <td className="px-6 py-4 text-sm">Valider le plan complet de continuité</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Exercice de crise</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Semestriel</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-[#1A2A40] dark:text-gray-300">Toute l'entreprise</td>
+                  <td className="px-6 py-4 text-sm text-[#1A2A40] dark:text-gray-300">Valider le plan complet de continuité</td>
                 </tr>
               </tbody>
             </table>
@@ -418,7 +422,7 @@ const ResourceContent: React.FC = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Processus d'amélioration</h3>
+          <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Processus d'amélioration</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               "Analyse post-incident systématique avec documentation des enseignements",
@@ -444,7 +448,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Canaux de communication</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Canaux de communication</h3>
             <ul className="space-y-3">
               {[
                 "Dashboard d'état du service - Page publique indiquant l'état des systèmes",
@@ -468,7 +472,7 @@ const ResourceContent: React.FC = () => {
           </div>
           
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Modèles de communication</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Modèles de communication</h3>
             <p className="mb-4 text-gray-700 dark:text-gray-300">
               Pour chaque niveau de gravité, des modèles de communication sont préétablis pour garantir:
             </p>
@@ -499,7 +503,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Programme de formation</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Programme de formation</h3>
             <ul className="space-y-3">
               {[
                 "Onboarding technique incluant les procédures de continuité",
@@ -516,7 +520,7 @@ const ResourceContent: React.FC = () => {
           </div>
           
           <div className="bg-white dark:bg-[#1A2A40]/40 p-6 rounded-lg shadow-md border border-[#D4B483]/20">
-            <h3 className="text-xl font-medium mb-4 text-[#87A28F]">Kit de continuité restaurant</h3>
+            <h3 className="text-xl font-medium mb-4 text-[#87A28F] dark:text-[#A7C2AF]">Kit de continuité restaurant</h3>
             <p className="mb-3 text-gray-700 dark:text-gray-300">Chaque établissement partenaire reçoit:</p>
             <ul className="space-y-3">
               {[
@@ -526,7 +530,7 @@ const ResourceContent: React.FC = () => {
                 "Checklist de diagnostic de premier niveau"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-start">
-                  <span className="flex-shrink-0 w-6 h-6 rounded bg-[#87A28F]/20 text-[#87A28F] flex items-center justify-center mr-2 text-xs">
+                  <span className="flex-shrink-0 w-6 h-6 rounded bg-[#87A28F]/20 text-[#87A28F] dark:text-[#A7C2AF] flex items-center justify-center mr-2 text-xs">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
@@ -565,7 +569,7 @@ const ResourceContent: React.FC = () => {
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#D47D5A] text-white flex items-center justify-center mr-3 text-sm">
                   {idx + 1}
                 </span>
-                <span>{item}</span>
+                <span className="text-white">{item}</span>
               </li>
             ))}
           </ul>

@@ -1,6 +1,6 @@
 const ResourceContent = () => {
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
+    <div className="max-w-4xl mx-auto py-8 px-4 resource-content">
       <div className="mb-10">
         <h1 className="text-4xl font-bold text-[#1A2A40] mb-6 border-b-2 border-[#D47D5A] pb-2">
           Guide d'Entretien Utilisateur
@@ -8,15 +8,15 @@ const ResourceContent = () => {
         
         <div className="bg-[#F5F5F0] p-6 rounded-lg shadow-md mb-10 transform hover:scale-[1.01] transition-transform">
           <h2 className="text-2xl font-semibold text-[#1A2A40] mb-4">Introduction</h2>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-[#1A2A40]">
             Ce guide d'entretien utilisateur constitue un outil essentiel pour recueillir des retours qualitatifs après le déploiement de Sotto dans les établissements partenaires. Conçu pour être à la fois rigoureux et flexible, il permet d'évaluer l'impact réel de notre système vocal IA sur les opérations quotidiennes des restaurants et d'identifier les axes d'amélioration prioritaires.
           </p>
-          <p className="mb-4 text-gray-700">L'objectif de ces entretiens est double :</p>
-          <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700">
+          <p className="mb-4 text-[#1A2A40]">L'objectif de ces entretiens est double :</p>
+          <ul className="list-disc pl-6 mb-4 space-y-2 text-[#1A2A40]">
             <li>Mesurer l'adoption et la satisfaction des différentes parties prenantes (propriétaires, managers, serveurs, cuisiniers)</li>
             <li>Collecter des insights concrets pour orienter nos prochaines itérations produit</li>
           </ul>
-          <p className="text-gray-700">
+          <p className="text-[#1A2A40]">
             Ce document structure une approche conversationnelle qui privilégie les réponses ouvertes tout en permettant une analyse comparative entre établissements.
           </p>
         </div>
@@ -34,36 +34,36 @@ const ResourceContent = () => {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-[#F5F5F0]">
                   <tr>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Profil</th>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Nombre</th>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Durée recommandée</th>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Focus principal</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Profil</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Nombre</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Durée recommandée</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Focus principal</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Propriétaire/Manager</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">1</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">45-60 min</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">Impact business, ROI, vision stratégique</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Propriétaire/Manager</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">1</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">45-60 min</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Impact business, ROI, vision stratégique</td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Chef de salle</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">1</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">30-45 min</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">Organisation du service, coordination</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Chef de salle</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">1</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">30-45 min</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Organisation du service, coordination</td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Serveurs</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">2-3</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">20-30 min</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">Expérience quotidienne, ergonomie</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Serveurs</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">2-3</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">20-30 min</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Expérience quotidienne, ergonomie</td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Personnel de cuisine</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">1-2</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">20-30 min</td>
-                    <td className="px-3 py-2 text-sm text-gray-700">Communication salle-cuisine, efficacité</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Personnel de cuisine</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">1-2</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">20-30 min</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Communication salle-cuisine, efficacité</td>
                   </tr>
                 </tbody>
               </table>
@@ -72,7 +72,7 @@ const ResourceContent = () => {
           
           <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#D4B483] hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-medium text-[#1A2A40] mb-4">Matériel nécessaire</h3>
-            <ul className="space-y-3 text-gray-700">
+            <ul className="space-y-3 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
                 <span>Enregistreur audio (avec autorisation préalable)</span>
@@ -99,7 +99,7 @@ const ResourceContent = () => {
         
         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#1A2A40] hover:shadow-lg transition-shadow">
           <h3 className="text-xl font-medium text-[#1A2A40] mb-4">Environnement idéal</h3>
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-[#1A2A40]">
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
               <span>Espace calme, à l'écart de l'activité du restaurant</span>
@@ -128,7 +128,7 @@ const ResourceContent = () => {
         <div className="space-y-6">
           <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#87A28F] hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-medium text-[#1A2A40] mb-3">1. Introduction (5 minutes)</h3>
-            <ul className="space-y-3 mb-4 text-gray-700">
+            <ul className="space-y-3 mb-4 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
                 <span>Présentation de l'interviewer et rappel de l'objectif de l'entretien</span>
@@ -146,10 +146,10 @@ const ResourceContent = () => {
                 <span>Questions de mise en contexte :</span>
               </li>
             </ul>
-            <div className="bg-[#F5F5F0] p-4 rounded-md mb-4 italic text-gray-700">
+            <div className="bg-[#F5F5F0] p-4 rounded-md mb-4 italic text-[#1A2A40]">
               "Pouvez-vous me décrire brièvement votre rôle dans l'établissement et depuis combien de temps vous y travaillez ?"
             </div>
-            <div className="bg-[#F5F5F0] p-4 rounded-md italic text-gray-700">
+            <div className="bg-[#F5F5F0] p-4 rounded-md italic text-[#1A2A40]">
               "Quelle était votre première réaction quand vous avez appris que le restaurant allait adopter un système vocal comme Sotto ?"
             </div>
           </div>
@@ -159,7 +159,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Comment s'est déroulée votre phase d'apprentissage avec Sotto ?</span>
@@ -181,7 +181,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Pouvez-vous me raconter un moment où vous avez eu une difficulté avec le système ? Comment l'avez-vous surmontée ?</span>
@@ -203,7 +203,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>En quoi Sotto a-t-il modifié votre façon de travailler au quotidien ?</span>
@@ -215,7 +215,7 @@ const ResourceContent = () => {
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Comment évalueriez-vous l'impact sur :</span>
-                  <ul className="ml-6 mt-2 space-y-1">
+                  <ul className="ml-6 mt-2 space-y-1 text-[#1A2A40]">
                     <li>• La rapidité du service</li>
                     <li>• La précision des commandes</li>
                     <li>• La communication entre les équipes</li>
@@ -227,7 +227,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Pouvez-vous quantifier le gain de temps sur certaines opérations spécifiques ?</span>
@@ -253,7 +253,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Comment évalueriez-vous la fiabilité du système sur une échelle de 1 à 10 ?</span>
@@ -275,7 +275,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Dans quelles circonstances avez-vous rencontré des problèmes de reconnaissance vocale ?</span>
@@ -301,7 +301,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Comment les clients ont-ils réagi au nouveau système ?</span>
@@ -323,7 +323,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Pouvez-vous partager une anecdote positive concernant la réaction d'un client ?</span>
@@ -349,7 +349,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Si vous pouviez améliorer trois aspects de Sotto, quels seraient-ils ?</span>
@@ -371,7 +371,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Avez-vous développé des "astuces" personnelles pour mieux utiliser le système ?</span>
@@ -397,7 +397,7 @@ const ResourceContent = () => {
             
             <div className="mb-4">
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions principales</h4>
-              <ul className="space-y-2 mb-4 text-gray-700">
+              <ul className="space-y-2 mb-4 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Quel impact Sotto a-t-il eu sur vos indicateurs de performance clés ?</span>
@@ -405,7 +405,7 @@ const ResourceContent = () => {
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Avez-vous observé des changements dans :</span>
-                  <ul className="ml-6 mt-2 space-y-1">
+                  <ul className="ml-6 mt-2 space-y-1 text-[#1A2A40]">
                     <li>• Le chiffre d'affaires</li>
                     <li>• La rotation des tables</li>
                     <li>• Les coûts opérationnels</li>
@@ -418,7 +418,7 @@ const ResourceContent = () => {
             
             <div>
               <h4 className="text-lg font-medium text-[#1A2A40] mb-2">Questions d'approfondissement</h4>
-              <ul className="space-y-2 text-gray-700">
+              <ul className="space-y-2 text-[#1A2A40]">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
                   <span>Comment évaluez-vous le retour sur investissement jusqu'à présent ?</span>
@@ -441,7 +441,7 @@ const ResourceContent = () => {
 
           <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-[#D4B483] hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-medium text-[#1A2A40] mb-3">Conclusion de l'entretien (5 minutes)</h3>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
                 <span>Résumé des points clés abordés</span>
@@ -479,41 +479,41 @@ const ResourceContent = () => {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-[#F5F5F0]">
                   <tr>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Dimension</th>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Score (1-5)</th>
-                    <th className="px-3 py-3 text-left text-sm font-medium text-gray-700">Observations clés</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Dimension</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Score (1-5)</th>
+                    <th className="px-3 py-3 text-left text-sm font-medium text-[#1A2A40]">Observations clés</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Facilité d'adoption</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Facilité d'adoption</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Satisfaction générale</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Satisfaction générale</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Performance technique</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Performance technique</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Impact opérationnel</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Impact opérationnel</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Réaction client</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Réaction client</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                   <tr>
-                    <td className="px-3 py-2 text-sm text-gray-700">Valeur perçue</td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
-                    <td className="px-3 py-2 text-sm text-gray-700"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]">Valeur perçue</td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
+                    <td className="px-3 py-2 text-sm text-[#1A2A40]"></td>
                   </tr>
                 </tbody>
               </table>
@@ -522,7 +522,7 @@ const ResourceContent = () => {
           
           <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#D4B483] hover:shadow-lg transition-shadow">
             <h3 className="text-xl font-medium text-[#1A2A40] mb-4">Synthèse qualitative</h3>
-            <ul className="space-y-3 text-gray-700">
+            <ul className="space-y-3 text-[#1A2A40]">
               <li className="flex items-start">
                 <span className="text-[#D47D5A] mr-2">•</span>
                 <span>Points forts mentionnés de façon récurrente</span>
@@ -570,7 +570,7 @@ const ResourceContent = () => {
           ].map((practice, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md p-5 hover:shadow-lg transition-shadow flex items-start">
               <div className="text-2xl mr-3 animate-float">{practice.icon}</div>
-              <p className="text-gray-700 font-medium">{practice.text}</p>
+              <p className="text-[#1A2A40] font-medium">{practice.text}</p>
             </div>
           ))}
         </div>
@@ -582,17 +582,17 @@ const ResourceContent = () => {
         </h2>
         
         <div className="bg-[#F5F5F0] p-6 rounded-lg shadow-md mb-8">
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-[#1A2A40]">
             Ce guide d'entretien constitue un cadre structuré mais flexible pour recueillir des retours qualitatifs approfondis sur l'expérience Sotto. Les insights collectés alimenteront directement notre processus d'amélioration continue et nous permettront d'affiner notre proposition de valeur pour mieux répondre aux besoins réels des établissements.
           </p>
-          <p className="mb-4 text-gray-700">
+          <p className="mb-4 text-[#1A2A40]">
             Les entretiens doivent être menés régulièrement (idéalement à 1 semaine, 1 mois, puis 3 mois après le déploiement) pour capturer l'évolution de l'expérience utilisateur dans le temps. Chaque vague d'entretiens fera l'objet d'une synthèse partagée avec l'équipe produit et servira à prioriser les développements futurs.
           </p>
         </div>
         
         <div className="bg-white rounded-lg shadow-md p-6 border-t-4 border-[#1A2A40]">
           <h3 className="text-xl font-medium text-[#1A2A40] mb-4">Prochaines étapes :</h3>
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-[#1A2A40]">
             <li className="flex items-start">
               <span className="text-[#D47D5A] mr-2">•</span>
               <span>Programmer les entretiens avec les établissements pilotes</span>
@@ -613,7 +613,7 @@ const ResourceContent = () => {
         </div>
       </section>
 
-      <div className="mt-12 p-4 bg-gray-100 border-l-4 border-[#D47D5A] rounded-md text-sm text-gray-600 italic">
+      <div className="mt-12 p-4 bg-gray-100 border-l-4 border-[#D47D5A] rounded-md text-sm text-[#1A2A40] italic">
         Document interne - Ne pas partager en dehors de l'équipe Sotto
       </div>
     </div>

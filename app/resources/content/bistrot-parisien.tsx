@@ -1,13 +1,13 @@
 const ResourceContent: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+    <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 resource-content">
       <h1 className="text-3xl md:text-4xl font-bold mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">
         Le Bistrot Parisien : +15% de chiffre d'affaires
       </h1>
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Introduction</h2>
-        <p className="text-lg leading-relaxed mb-6">
+        <p className="text-lg leading-relaxed mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">
           Dans le quartier animé du Marais à Paris, Le Bistrot Parisien représente l'essence de la gastronomie française traditionnelle. 
           Établissement familial de 45 couverts dirigé par les frères Laurent, ce restaurant proposant une cuisine raffinée faisait face 
           à des défis opérationnels qui limitaient sa croissance malgré une réputation culinaire excellente. Cette étude de cas détaille 
@@ -36,7 +36,7 @@ const ResourceContent: React.FC = () => {
                 className="bg-white dark:bg-[#1A2A40]/30 p-4 rounded-lg shadow-md border border-[#D4B483]/20 hover:border-[#D4B483]/40 transition-all duration-300 hover:shadow-lg group"
               >
                 <h4 className="font-medium text-[#D47D5A] mb-1 group-hover:translate-x-1 transition-transform duration-300">{item.title}</h4>
-                <p className="text-gray-700 dark:text-gray-300">{item.content}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{item.content}</p>
               </div>
             ))}
           </div>
@@ -44,7 +44,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">Défis identifiés avant l'implémentation</h3>
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             Le Bistrot Parisien, malgré sa qualité culinaire reconnue, rencontrait plusieurs obstacles qui freinaient son développement :
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -61,14 +61,14 @@ const ResourceContent: React.FC = () => {
               >
                 <div className="flex items-start">
                   <span className="text-[#D47D5A] font-bold mr-2">{index + 1}.</span>
-                  <p className="text-gray-700 dark:text-gray-300">{challenge}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{challenge}</p>
                 </div>
               </div>
             ))}
           </div>
           
           <blockquote className="border-l-4 border-[#87A28F] pl-4 py-2 italic bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/30 rounded-r-lg mb-6">
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
               "Nos serveurs passaient plus de temps à manipuler les tablettes qu'à interagir avec nos clients. 
               Ce n'était pas l'expérience que nous voulions offrir dans notre établissement."
             </p>
@@ -82,7 +82,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">Phase d'implémentation</h3>
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             L'intégration de Sotto s'est déroulée en trois étapes principales, minimisant les perturbations sur l'activité quotidienne :
           </p>
           
@@ -97,29 +97,29 @@ const ResourceContent: React.FC = () => {
               </thead>
               <tbody>
                 <tr className="border-b border-[#D4B483]/20 hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Préparation</td>
-                  <td className="py-3 px-4">1 semaine</td>
-                  <td className="py-3 px-4">Audit WiFi, formation initiale, personnalisation du menu vocal</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Préparation</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1 semaine</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Audit WiFi, formation initiale, personnalisation du menu vocal</td>
                 </tr>
                 <tr className="border-b border-[#D4B483]/20 hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Transition</td>
-                  <td className="py-3 px-4">2 semaines</td>
-                  <td className="py-3 px-4">Utilisation en parallèle avec l'ancien système, ajustements en temps réel</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Transition</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2 semaines</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Utilisation en parallèle avec l'ancien système, ajustements en temps réel</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Optimisation</td>
-                  <td className="py-3 px-4">1 mois</td>
-                  <td className="py-3 px-4">Analyse des données, perfectionnement des commandes vocales, intégration complète</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Optimisation</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1 mois</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Analyse des données, perfectionnement des commandes vocales, intégration complète</td>
                 </tr>
               </tbody>
             </table>
           </div>
           
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             L'équipe Sotto a travaillé en étroite collaboration avec le personnel pour adapter le système aux spécificités du restaurant, notamment :
           </p>
           
-          <ul className="space-y-2 mb-6">
+          <ul className="space-y-2 mb-6 text-[#1A2A40] dark:text-[#F5F5F0]">
             {[
               "Intégration du vocabulaire spécifique à la carte",
               "Paramétrage des workflows adaptés à l'agencement du restaurant",
@@ -135,7 +135,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">Résultats immédiats (premier mois)</h3>
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             Dès les premières semaines d'utilisation, l'équipe du Bistrot Parisien a constaté des améliorations significatives :
           </p>
           
@@ -152,7 +152,7 @@ const ResourceContent: React.FC = () => {
                 style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] group-hover:text-[#D47D5A] transition-colors duration-300">{result.title}</h4>
-                <p className="text-gray-700 dark:text-gray-300">{result.content}</p>
+                <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{result.content}</p>
               </div>
             ))}
           </div>
@@ -164,14 +164,14 @@ const ResourceContent: React.FC = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">Augmentation du chiffre d'affaires</h3>
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             La mise en place de Sotto a généré une croissance de 15% du chiffre d'affaires global, résultant de plusieurs facteurs combinés :
           </p>
           
           <div className="space-y-6 mb-6">
             <div className="bg-white dark:bg-[#1A2A40]/30 p-5 rounded-lg shadow-md border-t-4 border-[#87A28F] hover:shadow-lg transition-all duration-300">
               <h4 className="font-bold text-[#87A28F] text-lg mb-2">Amélioration de la rotation des tables (+20%)</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 rounded-full bg-[#87A28F] mt-2 mr-2"></span>
                   <span>Réduction du temps entre la demande et l'édition de l'addition</span>
@@ -189,7 +189,7 @@ const ResourceContent: React.FC = () => {
             
             <div className="bg-white dark:bg-[#1A2A40]/30 p-5 rounded-lg shadow-md border-t-4 border-[#D47D5A] hover:shadow-lg transition-all duration-300">
               <h4 className="font-bold text-[#D47D5A] text-lg mb-2">Augmentation du panier moyen (+8%)</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 rounded-full bg-[#D47D5A] mt-2 mr-2"></span>
                   <span>Suggestions contextuelles pertinentes (accords mets-vins)</span>
@@ -207,7 +207,7 @@ const ResourceContent: React.FC = () => {
             
             <div className="bg-white dark:bg-[#1A2A40]/30 p-5 rounded-lg shadow-md border-t-4 border-[#D4B483] hover:shadow-lg transition-all duration-300">
               <h4 className="font-bold text-[#D4B483] text-lg mb-2">Réduction des coûts opérationnels (-12%)</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[#1A2A40] dark:text-[#F5F5F0]">
                 <li className="flex items-start">
                   <span className="inline-block w-2 h-2 rounded-full bg-[#D4B483] mt-2 mr-2"></span>
                   <span>Diminution des erreurs de commande et des pertes associées</span>
@@ -225,7 +225,7 @@ const ResourceContent: React.FC = () => {
           </div>
           
           <blockquote className="border-l-4 border-[#D47D5A] pl-4 py-2 italic bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/30 rounded-r-lg mb-6">
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
               "Avant Sotto, nous servions environ 65 couverts par soir. Aujourd'hui, nous atteignons régulièrement 80 couverts, 
               avec un service plus fluide et des clients plus satisfaits. Notre ticket moyen est passé de 65€ à 70€, et nos marges 
               se sont améliorées grâce à une gestion plus précise."
@@ -238,7 +238,7 @@ const ResourceContent: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Transformation de l'expérience client</h2>
         
-        <p className="mb-4">
+        <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
           L'élimination des interfaces technologiques visibles a profondément modifié l'ambiance et l'expérience au Bistrot Parisien :
         </p>
         
@@ -259,7 +259,7 @@ const ResourceContent: React.FC = () => {
                 <div className="w-3 h-12 bg-[#87A28F] rounded-l-full mr-3"></div>
                 <div>
                   <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0]">{benefit.title}</h4>
-                  <p className="text-gray-700 dark:text-gray-300">{benefit.content}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{benefit.content}</p>
                 </div>
               </div>
             ))}
@@ -268,7 +268,7 @@ const ResourceContent: React.FC = () => {
         
         <div className="mb-8">
           <h3 className="text-xl font-medium mb-4 text-[#D47D5A]">Analyse des avis clients</h3>
-          <p className="mb-4">
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
             Une analyse comparative des avis clients avant et après l'implémentation de Sotto révèle des changements significatifs :
           </p>
           
@@ -284,27 +284,27 @@ const ResourceContent: React.FC = () => {
               </thead>
               <tbody>
                 <tr className="border-b border-[#D4B483]/20 hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Note moyenne (sur 5)</td>
-                  <td className="py-3 px-4">4.2</td>
-                  <td className="py-3 px-4">4.7</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Note moyenne (sur 5)</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">4.2</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">4.7</td>
                   <td className="py-3 px-4 text-[#87A28F] font-medium">+0.5</td>
                 </tr>
                 <tr className="border-b border-[#D4B483]/20 hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Mention positive du service</td>
-                  <td className="py-3 px-4">45%</td>
-                  <td className="py-3 px-4">78%</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Mention positive du service</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">45%</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">78%</td>
                   <td className="py-3 px-4 text-[#87A28F] font-medium">+33%</td>
                 </tr>
                 <tr className="border-b border-[#D4B483]/20 hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Commentaires sur l'attente</td>
-                  <td className="py-3 px-4">28% (négatifs)</td>
-                  <td className="py-3 px-4">5% (négatifs)</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Commentaires sur l'attente</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">28% (négatifs)</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">5% (négatifs)</td>
                   <td className="py-3 px-4 text-[#87A28F] font-medium">-23%</td>
                 </tr>
                 <tr className="hover:bg-[#F5F5F0] dark:hover:bg-[#1A2A40]/50 transition-colors">
-                  <td className="py-3 px-4 font-medium">Intention de retour déclarée</td>
-                  <td className="py-3 px-4">65%</td>
-                  <td className="py-3 px-4">82%</td>
+                  <td className="py-3 px-4 font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Intention de retour déclarée</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">65%</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">82%</td>
                   <td className="py-3 px-4 text-[#87A28F] font-medium">+17%</td>
                 </tr>
               </tbody>
@@ -316,14 +316,14 @@ const ResourceContent: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Bénéfices pour l'équipe</h2>
         
-        <p className="mb-4">
+        <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
           L'adoption de Sotto a également transformé l'expérience de travail pour l'équipe du Bistrot Parisien :
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           <div className="bg-white dark:bg-[#1A2A40]/30 p-5 rounded-lg shadow-md border border-[#D4B483]/20">
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A] border-b border-[#D4B483]/20 pb-2">Pour les serveurs</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-[#1A2A40] dark:text-[#F5F5F0]">
               {[
                 "Libération des mains permettant une meilleure présentation des plats",
                 "Réduction du stress lié aux périodes d'affluence",
@@ -340,7 +340,7 @@ const ResourceContent: React.FC = () => {
           
           <div className="bg-white dark:bg-[#1A2A40]/30 p-5 rounded-lg shadow-md border border-[#D4B483]/20">
             <h3 className="text-xl font-medium mb-4 text-[#D47D5A] border-b border-[#D4B483]/20 pb-2">Pour la cuisine</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-[#1A2A40] dark:text-[#F5F5F0]">
               {[
                 "Meilleure prévisibilité du flux de commandes",
                 "Communication claire et instantanée avec la salle",
@@ -357,7 +357,7 @@ const ResourceContent: React.FC = () => {
         </div>
         
         <blockquote className="border-l-4 border-[#87A28F] pl-4 py-2 italic bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/30 rounded-r-lg mb-6">
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             "Je craignais que la technologie nous complique la vie en cuisine. C'est exactement l'inverse qui s'est produit. 
             Nous recevons les commandes de manière plus fluide, plus claire, et nous pouvons mieux nous organiser."
           </p>
@@ -368,7 +368,7 @@ const ResourceContent: React.FC = () => {
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Leçons apprises et conseils pratiques</h2>
         
-        <p className="mb-4">
+        <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
           L'expérience du Bistrot Parisien offre des enseignements précieux pour d'autres établissements envisageant une transformation similaire :
         </p>
         
@@ -390,7 +390,7 @@ const ResourceContent: React.FC = () => {
                   <div className="w-6 h-6 rounded-full bg-[#1A2A40] dark:bg-[#D47D5A] text-white flex items-center justify-center mr-3">
                     {index + 1}
                   </div>
-                  <p>{factor}</p>
+                  <p className="text-[#1A2A40] dark:text-[#F5F5F0]">{factor}</p>
                 </div>
               ))}
             </div>
@@ -408,7 +408,7 @@ const ResourceContent: React.FC = () => {
               ].map((recommendation, index) => (
                 <li key={index} className="flex items-start bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/20 p-3 rounded-lg">
                   <span className="inline-block text-[#D47D5A] mr-2">•</span>
-                  <span>{recommendation}</span>
+                  <span className="text-[#1A2A40] dark:text-[#F5F5F0]">{recommendation}</span>
                 </li>
               ))}
             </ul>
@@ -420,24 +420,24 @@ const ResourceContent: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">Conclusion et perspectives</h2>
         
         <div className="prose prose-lg dark:prose-invert max-w-none mb-6">
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             Le cas du Bistrot Parisien illustre parfaitement comment la technologie peut paradoxalement permettre un retour à l'essentiel 
             dans l'expérience de restauration. En éliminant les écrans et en privilégiant l'interaction humaine, Sotto a permis à cet 
             établissement de renouer avec l'essence même de la gastronomie française : l'attention portée au client, la mise en valeur 
             du savoir-faire, et la création d'une expérience mémorable.
           </p>
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             L'augmentation de 15% du chiffre d'affaires n'est pas simplement le résultat d'une optimisation technique, mais la conséquence 
             d'une transformation plus profonde de l'établissement, recentré sur ses valeurs fondamentales et libéré des contraintes 
             technologiques visibles.
           </p>
-          <p>
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             Pour les frères Laurent, cette transformation ouvre de nouvelles perspectives :
           </p>
         </div>
         
         <blockquote className="border-l-4 border-[#D4B483] pl-4 py-2 italic bg-[#F5F5F0]/50 dark:bg-[#1A2A40]/30 rounded-r-lg mb-8">
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-[#1A2A40] dark:text-[#F5F5F0]">
             "Avec le temps et l'espace mental que nous avons récupérés, nous pouvons désormais envisager l'ouverture d'un deuxième 
             établissement, avec la certitude de pouvoir maintenir notre niveau d'exigence et notre identité."
           </p>
@@ -445,7 +445,7 @@ const ResourceContent: React.FC = () => {
         </blockquote>
         
         <div className="bg-[#1A2A40] text-white p-6 rounded-lg shadow-lg">
-          <p className="mb-4">
+          <p className="mb-4 text-white">
             Vous souhaitez découvrir comment Sotto peut transformer votre établissement ? 
             <a href="https://sotto.ai/contact" className="text-[#D47D5A] hover:text-[#D4B483] ml-1 font-medium">
               Contactez notre équipe
