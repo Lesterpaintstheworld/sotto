@@ -27,8 +27,8 @@ export default function Demo() {
       const isAtBottom = scrollHeight - scrollTop - clientHeight < 100; // Marge de 100px
       
       // Ne faire défiler que si l'utilisateur est déjà proche du bas
-      if (isAtBottom) {
-        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+      if (isAtBottom && messagesEndRef.current) {
+        messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
