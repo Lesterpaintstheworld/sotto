@@ -15,9 +15,13 @@ async function getResourcesData() {
       const resourcesData = JSON.parse(fs.readFileSync(resourcesPath, 'utf8'));
       return resourcesData;
     } 
-    // En production, utiliser l'API avec une URL relative
+    // En production, utiliser l'API avec une URL absolue
     else {
-      const response = await fetch('/api/resources');
+      const baseUrl = typeof window !== 'undefined' 
+        ? window.location.origin 
+        : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+      
+      const response = await fetch(`${baseUrl}/api/resources`);
       const resourcesData = await response.json();
       return resourcesData;
     }

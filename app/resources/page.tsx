@@ -6,8 +6,12 @@ import Image from "next/image";
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
   try {
-    // Utiliser une URL relative pour l'API
-    const res = await fetch('/api/resources', { 
+    // Utiliser une URL absolue pour l'API
+    const baseUrl = typeof window !== 'undefined' 
+      ? window.location.origin 
+      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    
+    const res = await fetch(`${baseUrl}/api/resources`, { 
       cache: 'no-store',
       next: { revalidate: 0 }
     });
