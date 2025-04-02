@@ -126,6 +126,7 @@ export async function generateMetadata(props: any) {
 export async function generateStaticParams() {
   try {
     const resourcesData = await getResourcesData();
+    // @ts-ignore - Ignorer l'erreur de type pour params
     let params = [];
     
     // Ajouter les IDs des ressources publiques
