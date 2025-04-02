@@ -44,8 +44,8 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center z-10">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
-            {/* Image héro 1:1 */}
+          <div className="relative w-80 h-80 md:w-[450px] md:h-[450px] flex items-center justify-center">
+            {/* Image héro 1:1 agrandie */}
             <div className="relative w-full h-full rounded-lg overflow-hidden shadow-xl">
               <Image 
                 src="/hero.png" 
@@ -175,31 +175,61 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-3">Exemple de dialogue</h3>
             <div className="space-y-4">
               <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
-                <div className="bg-white p-3 rounded-lg shadow-sm max-w-[80%]">
-                  <p className="text-[#505A64]"><span className="font-bold">Serveur:</span> "Table 12 commande un burger saignant avec frites, une pizza végétarienne sans oignons et deux verres de vin rouge maison."</p>
+                <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
+                <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
+                  {/* Icône micro pour indiquer commande vocale */}
+                  <div className="absolute -left-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#505A64] text-base md:text-lg"><span className="font-bold">Serveur:</span> "Table 12 commande un burger saignant avec frites, une pizza végétarienne sans oignons et deux verres de vin rouge maison."</p>
                 </div>
               </div>
               
               <div className="flex gap-3 justify-end">
-                <div className="bg-[#1A2A40] p-3 rounded-lg shadow-sm max-w-[80%]">
-                  <p className="text-white"><span className="font-bold">Sotto:</span> "Commande enregistrée pour la table 12: un burger saignant avec frites, une pizza végétarienne sans oignons, deux verres de vin rouge maison. Transmis en cuisine et au bar."</p>
+                <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
+                  {/* Icône son pour indiquer réponse vocale */}
+                  <div className="absolute -right-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  </div>
+                  <p className="text-white text-base md:text-lg"><span className="font-bold">Sotto:</span> "Commande enregistrée pour la table 12: un burger saignant avec frites, une pizza végétarienne sans oignons, deux verres de vin rouge maison. Transmis en cuisine et au bar."</p>
                 </div>
-                <div className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center flex-shrink-0">AI</div>
+                <div className="w-10 h-10 rounded-full bg-[#D47D5A] text-white flex items-center justify-center flex-shrink-0">AI</div>
               </div>
               
               <div className="flex gap-3">
-                <div className="w-8 h-8 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
-                <div className="bg-white p-3 rounded-lg shadow-sm max-w-[80%]">
-                  <p className="text-[#505A64]"><span className="font-bold">Serveur:</span> "Ajoute une carafe d'eau pour la 12."</p>
+                <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
+                <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
+                  {/* Icône micro pour indiquer commande vocale */}
+                  <div className="absolute -left-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                      <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    </svg>
+                  </div>
+                  <p className="text-[#505A64] text-base md:text-lg"><span className="font-bold">Serveur:</span> "Ajoute une carafe d'eau pour la 12."</p>
                 </div>
               </div>
               
               <div className="flex gap-3 justify-end">
-                <div className="bg-[#1A2A40] p-3 rounded-lg shadow-sm max-w-[80%]">
-                  <p className="text-white"><span className="font-bold">Sotto:</span> "Carafe d'eau ajoutée pour la table 12."</p>
+                <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
+                  {/* Icône son pour indiquer réponse vocale */}
+                  <div className="absolute -right-1 top-4 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                    </svg>
+                  </div>
+                  <p className="text-white text-base md:text-lg"><span className="font-bold">Sotto:</span> "Carafe d'eau ajoutée pour la table 12."</p>
                 </div>
-                <div className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center flex-shrink-0">AI</div>
+                <div className="w-10 h-10 rounded-full bg-[#D47D5A] text-white flex items-center justify-center flex-shrink-0">AI</div>
               </div>
             </div>
           </div>
