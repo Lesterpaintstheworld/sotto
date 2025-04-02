@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import fs from 'fs';
 import path from 'path';
+import TeamResourceGuard from '@/app/components/TeamResourceGuard';
 
 // Définir les interfaces pour les types
 interface Resource {
@@ -233,20 +234,16 @@ export default async function ResourcePage(props: any) {
     );
   }
   
-  // Accès complet aux ressources pour le rendu statique
-  const isTeamMember = true;
-  
-  // Si c'est une ressource d'équipe et que l'utilisateur n'est pas membre de l'équipe, retourner une page 404
-  if (isTeam && !isTeamMember) {
-    notFound();
-  }
+  // Nous n'utilisons plus cette vérification statique
+  // La protection sera gérée par le composant TeamResourceGuard côté client
 
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
       <Header />
       
       <main className="px-6 md:px-20 py-16">
-        <div className="max-w-4xl mx-auto">
+        <TeamResourceGuard isTeamResource={isTeam}>
+          <div className="max-w-4xl mx-auto">
           {/* Fil d'Ariane */}
           <div className="mb-8 flex items-center text-sm text-[#505A64]">
             <Link href="/resources" className="hover:text-[#D47D5A]">Ressources</Link>
@@ -341,7 +338,8 @@ export default async function ResourcePage(props: any) {
                 ))}
             </div>
           </div>
-        </div>
+          </div>
+        </TeamResourceGuard>
       </main>
       
       <Footer />

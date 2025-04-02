@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import TeamResources from "./TeamResources";
 
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
@@ -321,9 +322,9 @@ export default async function Resources() {
     testing: []
   };
 
-  // Vérifier si l'utilisateur est connecté et a accès aux ressources de l'équipe
-  // Pour l'instant, nous utiliserons une variable simple pour simuler l'authentification
-  const isTeamMember = true; // À remplacer par une vérification d'authentification réelle
+  // Nous utiliserons le contexte d'authentification côté client
+  // La variable isTeamMember sera utilisée uniquement pour le rendu statique initial
+  const isTeamMember = false; // Valeur par défaut pour le rendu statique
 
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
@@ -504,205 +505,8 @@ export default async function Resources() {
             </section>
           )}
           
-          {/* Section Ressources d'équipe (privée) */}
-          {isTeamMember && (
-            <div className="mt-20 pt-16 border-t border-[#1A2A40]/10">
-              <div className="text-center mb-12">
-                <span className="inline-block px-4 py-1 rounded-full bg-blue-dark/10 text-blue-dark text-sm font-medium mb-2">
-                  Accès restreint
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Ressources d'équipe</h2>
-                <p className="text-lg text-[#505A64] max-w-2xl mx-auto">
-                  Documents internes et ressources stratégiques pour l'équipe Sotto.
-                </p>
-              </div>
-              
-              {/* Documents stratégiques */}
-              {teamData.strategic && teamData.strategic.length > 0 && (
-                <section className="mb-16">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents stratégiques</h2>
-                  <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.strategic.map((document: Resource) => (
-                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="relative aspect-video">
-                          <Image 
-                            src={`/images/resources/team/${document.id}.jpg`} 
-                            alt={document.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 20vw"
-                            className="object-cover"
-                            priority={true}
-                          />
-                          {/* Suppression des éléments superposés */}
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
-                            {document.title}
-                          </h3>
-                          <p className="text-[#505A64] mb-3 text-sm">
-                            {document.description}
-                          </p>
-                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                            {document.linkText}
-                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-              
-              {/* Documents techniques */}
-              {teamData.technical && teamData.technical.length > 0 && (
-                <section className="mb-16">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents techniques</h2>
-                  <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.technical.map((document: Resource) => (
-                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="relative aspect-video">
-                          <Image 
-                            src={`/images/resources/team/${document.id}.jpg`} 
-                            alt={document.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 20vw"
-                            className="object-cover"
-                            priority={true}
-                          />
-                          {/* Suppression des éléments superposés */}
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
-                            {document.title}
-                          </h3>
-                          <p className="text-[#505A64] mb-3 text-sm">
-                            {document.description}
-                          </p>
-                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                            {document.linkText}
-                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-              
-              {/* Documents opérationnels */}
-              {teamData.operational && teamData.operational.length > 0 && (
-                <section className="mb-16">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents opérationnels</h2>
-                  <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.operational.map((document: Resource) => (
-                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="relative aspect-video">
-                          <Image 
-                            src={`/images/resources/team/${document.id}.jpg`} 
-                            alt={document.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 20vw"
-                            className="object-cover"
-                            priority={true}
-                          />
-                          {/* Suppression des éléments superposés */}
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
-                            {document.title}
-                          </h3>
-                          <p className="text-[#505A64] mb-3 text-sm">
-                            {document.description}
-                          </p>
-                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                            {document.linkText}
-                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-              
-              {/* Documents financiers */}
-              {teamData.financial && teamData.financial.length > 0 && (
-                <section className="mb-16">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Documents juridiques & financiers</h2>
-                  <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.financial.map((document: Resource) => (
-                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="relative aspect-video">
-                          <Image 
-                            src={`/images/resources/team/${document.id}.jpg`} 
-                            alt={document.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 20vw"
-                            className="object-cover"
-                            priority={true}
-                          />
-                          {/* Suppression des éléments superposés */}
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
-                            {document.title}
-                          </h3>
-                          <p className="text-[#505A64] mb-3 text-sm">
-                            {document.description}
-                          </p>
-                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                            {document.linkText}
-                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-              
-              {/* Documents de test */}
-              {teamData.testing && teamData.testing.length > 0 && (
-                <section>
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
-                  <div className="grid md:grid-cols-5 gap-4">
-                    {teamData.testing.map((document: Resource) => (
-                      <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
-                        <div className="relative aspect-video">
-                          <Image 
-                            src={`/images/resources/team/${document.id}.jpg`} 
-                            alt={document.title}
-                            fill
-                            sizes="(max-width: 768px) 100vw, 20vw"
-                            className="object-cover"
-                            priority={true}
-                          />
-                          {/* Suppression des éléments superposés */}
-                        </div>
-                        <div className="p-4">
-                          <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                            <Icon name={document.icon ?? "file-text"} size={20} color={document.categoryColor} strokeWidth={2} />
-                            {document.title}
-                          </h3>
-                          <p className="text-[#505A64] mb-3 text-sm">
-                            {document.description}
-                          </p>
-                          <div className="text-[#D47D5A] hover:underline flex items-center gap-1 text-sm">
-                            {document.linkText}
-                            <Icon name={document.linkIcon} size={14} strokeWidth={2} />
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
-              )}
-            </div>
-          )}
+          {/* Section Ressources d'équipe (privée) - Utilisation du composant client */}
+          <TeamResources teamData={teamData} />
         </div>
       </main>
       
