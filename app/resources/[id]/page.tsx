@@ -125,34 +125,8 @@ export async function generateMetadata(props: any) {
 
 // Fonction pour obtenir les paramètres statiques
 export async function generateStaticParams() {
-  try {
-    const resourcesData = await getResourcesData();
-    // Définir explicitement le type de params
-    let params: Array<{id: string}> = [];
-    
-    // Ajouter les IDs des ressources publiques
-    for (const category in resourcesData.public) {
-      params = params.concat(
-        resourcesData.public[category].map((resource: Resource) => ({
-          id: resource.id
-        }))
-      );
-    }
-    
-    // Ajouter les IDs des ressources d'équipe
-    for (const category in resourcesData.team) {
-      params = params.concat(
-        resourcesData.team[category].map((resource: Resource) => ({
-          id: resource.id
-        }))
-      );
-    }
-    
-    return params;
-  } catch (error) {
-    console.error('Error generating static params:', error);
-    return [];
-  }
+  // Désactivé pour éviter les problèmes de génération statique
+  return [];
 }
 
 // Composant pour afficher une icône

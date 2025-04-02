@@ -7,21 +7,500 @@ import TeamResources from "./TeamResources";
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
   try {
-    // Utiliser une URL absolue pour l'API
-    const baseUrl = typeof window !== 'undefined' 
-      ? window.location.origin 
-      : process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    // Utiliser directement les données JSON importées
+    const resourcesData = {
+      "public": {
+        "guides": [
+          {
+            "id": "guide-demarrage",
+            "title": "Guide de démarrage",
+            "description": "Tout ce que vous devez savoir pour commencer avec Sotto, de l'installation à la première commande.",
+            "icon": "microphone",
+            "link": "#",
+            "linkText": "Télécharger le PDF",
+            "linkIcon": "download"
+          },
+          {
+            "id": "formation-personnel",
+            "title": "Formation du personnel",
+            "description": "Ressources pour former efficacement votre équipe à l'utilisation quotidienne de Sotto.",
+            "icon": "bell",
+            "link": "#",
+            "linkText": "Accéder aux vidéos",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "faq-avancee",
+            "title": "FAQ avancée",
+            "description": "Réponses détaillées aux questions techniques et opérationnelles les plus fréquentes.",
+            "icon": "help-circle",
+            "link": "#",
+            "linkText": "Consulter la FAQ",
+            "linkIcon": "arrow-right"
+          }
+        ],
+        "casestudies": [
+          {
+            "id": "bistrot-parisien",
+            "title": "Le Bistrot Parisien : +15% de chiffre d'affaires",
+            "description": "Comment un restaurant gastronomique a transformé son service et augmenté sa rentabilité grâce à Sotto.",
+            "category": "Restaurant gastronomique",
+            "categoryColor": "#87A28F",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Lire l'étude de cas",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "groupe-saveurs",
+            "title": "Groupe Saveurs : Standardisation réussie sur 12 établissements",
+            "description": "Comment une chaîne de restaurants a uniformisé son service et optimisé ses opérations avec Sotto.",
+            "category": "Chaîne de restaurants",
+            "categoryColor": "#D4B483",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Lire l'étude de cas",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "benchmark-roi",
+            "title": "Benchmark ROI Client",
+            "description": "Analyse détaillée du retour sur investissement pour les restaurants ayant adopté Sotto.",
+            "category": "Analyse financière",
+            "categoryColor": "#D47D5A",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Consulter le benchmark",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "test-pilote",
+            "title": "Résultats des Tests Pilotes",
+            "description": "Résultats et enseignements des déploiements pilotes de Sotto dans différents types d'établissements.",
+            "category": "Validation terrain",
+            "categoryColor": "#1A2A40",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Voir les résultats",
+            "linkIcon": "arrow-right"
+          }
+        ],
+        "tools": [
+          {
+            "id": "calculateur-roi",
+            "title": "Calculateur de ROI",
+            "description": "Estimez votre retour sur investissement en implémentant Sotto dans votre établissement.",
+            "icon": "monitor",
+            "iconColor": "#D47D5A",
+            "link": "#",
+            "linkText": "Accéder au calculateur",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "evaluateur-efficacite",
+            "title": "Évaluateur d'efficacité",
+            "description": "Analysez les performances actuelles de votre restaurant et identifiez les opportunités d'amélioration.",
+            "icon": "trending-up",
+            "iconColor": "#D47D5A",
+            "link": "#",
+            "linkText": "Commencer l'évaluation",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "checklist-deploiement",
+            "title": "Checklist de Déploiement",
+            "description": "Liste de vérification interactive pour préparer votre établissement à l'installation de Sotto.",
+            "icon": "check-square",
+            "iconColor": "#87A28F",
+            "link": "#",
+            "linkText": "Accéder à la checklist",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "guide-wifi",
+            "title": "Guide d'Implémentation WiFi",
+            "description": "Évaluez et optimisez votre infrastructure réseau pour garantir une performance optimale du système Sotto.",
+            "icon": "wifi",
+            "iconColor": "#1A2A40",
+            "link": "#",
+            "linkText": "Consulter le guide",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "kpi-dashboard",
+            "title": "KPI Dashboard Demo",
+            "description": "Aperçu interactif du tableau de bord de performance que vous obtiendrez avec Sotto.",
+            "icon": "bar-chart-2",
+            "iconColor": "#D4B483",
+            "link": "#",
+            "linkText": "Explorer la démo",
+            "linkIcon": "arrow-right"
+          }
+        ],
+        "webinars": [
+          {
+            "id": "webinar-ia-vocale",
+            "title": "Comment optimiser votre service avec l'IA vocale",
+            "description": "Rejoignez notre expert Thomas Dubois pour découvrir les meilleures pratiques et astuces pour tirer le maximum de votre système Sotto.",
+            "date": "2024-06-15",
+            "time": "14:00 - 15:30",
+            "timezone": "CET",
+            "tag": "Prochain webinaire",
+            "tagColor": "#D47D5A",
+            "buttonText": "S'inscrire gratuitement",
+            "buttonLink": "#"
+          },
+          {
+            "id": "webinar-architecture",
+            "title": "Architecture Technique de Sotto",
+            "description": "Session technique avec notre CTO pour comprendre l'infrastructure qui permet à Sotto de fonctionner de manière fluide et sécurisée.",
+            "date": "2024-06-22",
+            "time": "11:00 - 12:30",
+            "timezone": "CET",
+            "tag": "Webinaire technique",
+            "tagColor": "#1A2A40",
+            "buttonText": "S'inscrire gratuitement",
+            "buttonLink": "#"
+          },
+          {
+            "id": "webinar-formation",
+            "title": "Former efficacement votre équipe à Sotto",
+            "description": "Stratégies et bonnes pratiques pour une adoption rapide et enthousiaste de Sotto par votre personnel.",
+            "date": "2024-07-05",
+            "time": "14:00 - 15:00",
+            "timezone": "CET",
+            "tag": "Webinaire RH",
+            "tagColor": "#87A28F",
+            "buttonText": "S'inscrire gratuitement",
+            "buttonLink": "#"
+          }
+        ],
+        "documents": [
+          {
+            "id": "architecture-technique",
+            "title": "Architecture Technique",
+            "description": "Schémas techniques détaillés, infrastructures, composants et flux de données du système Sotto.",
+            "category": "Documentation technique",
+            "categoryColor": "#1A2A40",
+            "icon": "layers",
+            "link": "#",
+            "linkText": "Consulter le document",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "specifications-api",
+            "title": "Spécifications API",
+            "description": "Documentation des interfaces pour l'intégration avec les systèmes externes (TPE, systèmes de réservation, etc.).",
+            "category": "Documentation technique",
+            "categoryColor": "#1A2A40",
+            "icon": "code",
+            "link": "#",
+            "linkText": "Consulter les spécifications",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "brand-book",
+            "title": "Brand Book Sotto",
+            "description": "Guide complet de l'identité visuelle, ton de voix, et principes de communication de la marque Sotto.",
+            "category": "Marketing",
+            "categoryColor": "#D47D5A",
+            "icon": "book",
+            "link": "#",
+            "linkText": "Télécharger le brand book",
+            "linkIcon": "download"
+          },
+          {
+            "id": "termes-conditions",
+            "title": "Termes et Conditions",
+            "description": "Contrats d'utilisation du service pour les restaurants partenaires de Sotto.",
+            "category": "Juridique",
+            "categoryColor": "#D4B483",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Consulter le document",
+            "linkIcon": "arrow-right"
+          },
+          {
+            "id": "politique-confidentialite",
+            "title": "Politique de Confidentialité",
+            "description": "Documentation RGPD et gestion des données personnelles dans le cadre de l'utilisation de Sotto.",
+            "category": "Juridique",
+            "categoryColor": "#D4B483",
+            "icon": "shield",
+            "link": "#",
+            "linkText": "Consulter la politique",
+            "linkIcon": "arrow-right"
+          }
+        ]
+      },
+      "team": {
+        "strategic": [
+          {
+            "id": "livre-blanc-sotto",
+            "title": "Livre Blanc Sotto",
+            "description": "Document détaillé présentant la vision, l'architecture et les objectifs du projet pour partenaires et investisseurs.",
+            "category": "Documents Stratégiques",
+            "categoryColor": "#1A2A40",
+            "icon": "file-text",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "business-plan",
+            "title": "Business Plan Complet",
+            "description": "Projections financières, modèle de revenus, analyse de marché, et objectifs de croissance sur 3-5 ans.",
+            "category": "Documents Stratégiques",
+            "categoryColor": "#1A2A40",
+            "icon": "trending-up",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "analyse-concurrentielle",
+            "title": "Analyse Concurrentielle",
+            "description": "Cartographie des solutions existantes, positionnement différentiant de Sotto, et opportunités de marché.",
+            "category": "Documents Stratégiques",
+            "categoryColor": "#1A2A40",
+            "icon": "search",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "plan-go-to-market",
+            "title": "Plan Go-to-Market",
+            "description": "Stratégie de lancement, segmentation des clients cibles, et plan d'acquisition des premiers utilisateurs.",
+            "category": "Documents Stratégiques",
+            "categoryColor": "#1A2A40",
+            "icon": "target",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "roadmap-produit",
+            "title": "Roadmap Produit",
+            "description": "Chronologie détaillée du développement par phases, priorités fonctionnelles, et jalons clés.",
+            "category": "Documents Stratégiques",
+            "categoryColor": "#1A2A40",
+            "icon": "map",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          }
+        ],
+        "technical": [
+          {
+            "id": "architecture-technique-detaillee",
+            "title": "Architecture Technique",
+            "description": "Schémas techniques détaillés, infrastructures, composants et flux de données du système.",
+            "category": "Documents Techniques",
+            "categoryColor": "#D47D5A",
+            "icon": "layers",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "specifications-api-detaillees",
+            "title": "Spécifications API",
+            "description": "Documentation des interfaces pour l'intégration avec les systèmes externes (TPE, systèmes de réservation, etc.).",
+            "category": "Documents Techniques",
+            "categoryColor": "#D47D5A",
+            "icon": "code",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "guide-implementation-wifi",
+            "title": "Guide d'Implémentation WiFi",
+            "description": "Prérequis, configuration et tests pour l'installation dans les restaurants.",
+            "category": "Documents Techniques",
+            "categoryColor": "#D47D5A",
+            "icon": "wifi",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "benchmark-oreillettes",
+            "title": "Benchmark des Oreillettes WiFi",
+            "description": "Évaluation comparative des options matérielles, avec recommandations.",
+            "category": "Documents Techniques",
+            "categoryColor": "#D47D5A",
+            "icon": "headphones",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "plan-scalabilite",
+            "title": "Plan de Scalabilité Technique",
+            "description": "Stratégies pour gérer la croissance du volume de données et d'utilisateurs.",
+            "category": "Documents Techniques",
+            "categoryColor": "#D47D5A",
+            "icon": "trending-up",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          }
+        ],
+        "operational": [
+          {
+            "id": "guide-onboarding",
+            "title": "Guide d'Onboarding Restaurant",
+            "description": "Processus complet d'intégration d'un nouveau restaurant, de l'installation à la formation.",
+            "category": "Documents Opérationnels",
+            "categoryColor": "#87A28F",
+            "icon": "clipboard",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "checklist-deploiement-complete",
+            "title": "Checklist de Déploiement",
+            "description": "Liste de vérification pour chaque installation, assurant la standardisation du processus.",
+            "category": "Documents Opérationnels",
+            "categoryColor": "#87A28F",
+            "icon": "check-square",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "scripts-formation",
+            "title": "Scripts de Formation Personnel",
+            "description": "Matériel de formation pour différents rôles (serveurs, cuisiniers, managers).",
+            "category": "Documents Opérationnels",
+            "categoryColor": "#87A28F",
+            "icon": "users",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "manuel-support",
+            "title": "Manuel de Support Niveau 1",
+            "description": "Procédures de résolution des problèmes courants pour l'équipe support.",
+            "category": "Documents Opérationnels",
+            "categoryColor": "#87A28F",
+            "icon": "help-circle",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "plan-continuite",
+            "title": "Plan de Continuité de Service",
+            "description": "Stratégies pour gérer les interruptions et garantir la disponibilité du service.",
+            "category": "Documents Opérationnels",
+            "categoryColor": "#87A28F",
+            "icon": "shield",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          }
+        ],
+        "financial": [
+          {
+            "id": "structure-prix",
+            "title": "Structure de Prix",
+            "description": "Modèles d'abonnement, commissions et options premium détaillés.",
+            "category": "Documents Juridiques & Financiers",
+            "categoryColor": "#D4B483",
+            "icon": "dollar-sign",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "plan-investissement",
+            "title": "Plan d'Investissement",
+            "description": "Besoins financiers, utilisation des fonds et stratégie de levée de fonds.",
+            "category": "Documents Juridiques & Financiers",
+            "categoryColor": "#D4B483",
+            "icon": "briefcase",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "analyse-risques",
+            "title": "Analyse des Risques",
+            "description": "Identification des risques techniques, commerciaux et réglementaires avec plans d'atténuation.",
+            "category": "Documents Juridiques & Financiers",
+            "categoryColor": "#D4B483",
+            "icon": "alert-triangle",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          }
+        ],
+        "testing": [
+          {
+            "id": "protocole-test",
+            "title": "Protocole de Test Pilote",
+            "description": "Méthodologie détaillée pour mesurer succès et collecter feedback lors des tests initiaux.",
+            "category": "Tests & Validation",
+            "categoryColor": "#505A64",
+            "icon": "clipboard",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "kpi-dashboard-complet",
+            "title": "KPI Dashboard",
+            "description": "Indicateurs clés de performance pour suivre l'efficacité opérationnelle et commerciale.",
+            "category": "Tests & Validation",
+            "categoryColor": "#505A64",
+            "icon": "bar-chart-2",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "guide-entretien",
+            "title": "Guide d'Entretien Utilisateur",
+            "description": "Questionnaire structuré pour les interviews post-déploiement.",
+            "category": "Tests & Validation",
+            "categoryColor": "#505A64",
+            "icon": "message-square",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "plan-iteration",
+            "title": "Plan d'Itération Produit",
+            "description": "Processus de collecte et intégration du feedback pour les améliorations continues.",
+            "category": "Tests & Validation",
+            "categoryColor": "#505A64",
+            "icon": "refresh-cw",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          },
+          {
+            "id": "benchmark-roi-complet",
+            "title": "Benchmark ROI Client",
+            "description": "Outil de mesure du retour sur investissement pour les restaurants clients.",
+            "category": "Tests & Validation",
+            "categoryColor": "#505A64",
+            "icon": "pie-chart",
+            "link": "#",
+            "linkText": "Accéder au document",
+            "linkIcon": "lock"
+          }
+        ]
+      }
+    };
     
-    const res = await fetch(`${baseUrl}/api/resources`, { 
-      cache: 'no-store',
-      next: { revalidate: 0 }
-    });
-    
-    if (!res.ok) {
-      throw new Error(`Failed to fetch resources data: ${res.status}`);
-    }
-    
-    return res.json();
+    return resourcesData;
   } catch (error) {
     console.error('Error fetching resources data:', error);
     // Retourner un objet vide mais avec la structure attendue pour éviter les erreurs
