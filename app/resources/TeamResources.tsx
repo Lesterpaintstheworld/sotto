@@ -3,6 +3,7 @@
 import { useAuth } from '../context/AuthContext';
 import Link from 'next/link';
 import Image from 'next/image';
+import AuthButton from './AuthButton';
 import { useState, useEffect } from 'react';
 
 // Composant pour afficher les icônes
