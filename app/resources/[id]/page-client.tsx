@@ -5,7 +5,8 @@ import { useParams } from 'next/navigation';
 import dynamic from 'next/dynamic';
 
 export default function ResourceClientPage() {
-  const { id } = useParams();
+  const params = useParams();
+  const id = Array.isArray(params.id) ? params.id[0] : params.id;
   const [Component, setComponent] = useState<React.ComponentType | null>(null);
   const [loading, setLoading] = useState(true);
 
