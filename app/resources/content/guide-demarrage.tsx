@@ -110,8 +110,8 @@ const ResourceContent = () => {
             </div>
 
             <div className="mt-6 bg-[#D47D5A]/10 border-l-4 border-[#D47D5A] p-4 rounded-r-lg">
-              <p className="font-medium text-[#1A2A40] dark:text-[#F5F5F0]">Note importante :</p>
-              <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Prévoyez cette installation pendant une période calme de votre activité, idéalement en dehors des heures d'ouverture.</p>
+              <p className="font-medium text-[#1A2A40]">Note importante :</p>
+              <p className="text-[#1A2A40]/80">Prévoyez cette installation pendant une période calme de votre activité, idéalement en dehors des heures d'ouverture.</p>
             </div>
           </div>
 
@@ -585,9 +585,9 @@ const ResourceContent = () => {
         </div>
       </section>
 
-      <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md text-center">
-        <h3 className="text-xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Besoin d'aide supplémentaire ?</h3>
-        <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Consultez nos autres guides ou contactez-nous directement via l'application Sotto Support ou au 01 23 45 67 89.</p>
+      <div className="bg-[#F5F5F0] rounded-xl p-6 shadow-md text-center">
+        <h3 className="text-xl font-medium text-[#1A2A40] mb-4">Besoin d'aide supplémentaire ?</h3>
+        <p className="text-[#1A2A40]/80">Consultez nos autres guides ou contactez-nous directement via l'application Sotto Support ou au 01 23 45 67 89.</p>
       </div>
     </div>
   );
