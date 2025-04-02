@@ -9,6 +9,10 @@ export async function POST(request: NextRequest) {
     // Get API key from environment variables
     const apiKey = process.env.KINOS_API_KEY;
     
+    // Log pour déboguer
+    console.log("API Key available:", !!apiKey);
+    console.log("API Key first chars:", apiKey ? apiKey.substring(0, 5) + "..." : "undefined");
+    
     if (!apiKey) {
       return NextResponse.json(
         { error: 'API credentials not configured' },
@@ -36,6 +40,10 @@ export async function POST(request: NextRequest) {
       system: addSystem || ''
     };
 
+    // Log pour déboguer
+    console.log("Sending request to:", `https://api.kinos-engine.ai/projects/${customerId}/${projectId}/messages`);
+    console.log("Request body:", JSON.stringify(requestBody));
+
     // Send request to Kinos Engine API
     const response = await fetch(`https://api.kinos-engine.ai/projects/${customerId}/${projectId}/messages`, {
       method: 'POST',
@@ -46,17 +54,29 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify(requestBody)
     });
 
+    // Log pour déboguer
+    console.log("Response status:", response.status);
+    
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error('Kinos Engine API error:', errorData);
+      const errorText = await response.text();
+      console.error('Kinos Engine API error response:', errorText);
+      
+      try {
+        const errorData = JSON.parse(errorText);
+        console.error('Parsed error data:', errorData);
+      } catch (e) {
+        console.error('Could not parse error response as JSON');
+      }
+      
       return NextResponse.json(
-        { error: 'Error communicating with Kinos Engine API' },
+        { error: `Error communicating with Kinos Engine API: ${response.status} ${response.statusText}` },
         { status: response.status }
       );
     }
 
     // Parse and return the response
     const data = await response.json();
+    console.log("Received response:", data);
     
     // Create response with cookie to store customer_id
     const responseWithCookie = NextResponse.json({
@@ -78,7 +98,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error processing request:', error);
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'Internal server error', message: error instanceof Error ? error.message : 'Unknown error' },
       { status: 500 }
     );
   }
