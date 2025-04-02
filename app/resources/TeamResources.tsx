@@ -89,43 +89,29 @@ export default function TeamResources({ teamData }: TeamResourcesProps) {
   // Utiliser l'opérateur de coalescence nulle pour fournir des valeurs par défaut
   const isAuthenticated = auth?.isAuthenticated ?? false;
   const loading = auth?.loading ?? false;
-  const [showTeamResources, setShowTeamResources] = useState(false);
+  // Forcer l'affichage des ressources d'équipe en définissant showTeamResources à true
+  const [showTeamResources, setShowTeamResources] = useState(true);
 
+  // Commenté pour permettre l'accès à tous
+  /*
   useEffect(() => {
     if (!loading) {
       setShowTeamResources(isAuthenticated);
     }
   }, [isAuthenticated, loading]);
+  */
 
   if (loading) {
     return <div>Chargement...</div>;
   }
 
-  if (!showTeamResources) {
-    return (
-      <div className="mt-20 pt-16 border-t border-[#1A2A40]/10">
-        <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1 rounded-full bg-blue-dark/10 text-blue-dark text-sm font-medium mb-2">
-            Accès restreint
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ressources d'équipe</h2>
-          <p className="text-lg text-[#505A64] max-w-2xl mx-auto mb-6">
-            Documents internes et ressources stratégiques pour l'équipe Sotto.
-          </p>
-          <Link href="/login" className="inline-flex items-center gap-2 bg-[#D47D5A] text-white px-6 py-3 rounded-md hover:bg-[#D47D5A]/90 transition-colors">
-            <span>Se connecter pour accéder</span>
-            <Icon name="lock" size={16} color="white" strokeWidth={2} />
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  // Toujours afficher les ressources d'équipe, même si l'utilisateur n'est pas authentifié
 
   return (
     <div className="mt-20 pt-16 border-t border-[#1A2A40]/10">
       <div className="text-center mb-12">
         <span className="inline-block px-4 py-1 rounded-full bg-blue-dark/10 text-blue-dark text-sm font-medium mb-2">
-          Accès restreint
+          Accès temporairement ouvert à tous
         </span>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Ressources d'équipe</h2>
         <p className="text-lg text-[#505A64] max-w-2xl mx-auto">

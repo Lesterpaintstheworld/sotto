@@ -216,7 +216,8 @@ export default async function ResourcePage(props: any) {
       <Header />
       
       <main className="px-6 md:px-20 py-16">
-        <TeamResourceGuard isTeamResource={isTeam}>
+        {/* TeamResourceGuard désactivé pour permettre l'accès à tous */}
+        <>
           <div className="max-w-4xl mx-auto">
           {/* Fil d'Ariane */}
           <div className="mb-8 flex items-center text-sm text-[#505A64]">
@@ -313,7 +314,7 @@ export default async function ResourcePage(props: any) {
             </div>
           </div>
           </div>
-        </TeamResourceGuard>
+        </>
       </main>
       
       <Footer />
