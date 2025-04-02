@@ -84,8 +84,15 @@ export default function About() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/3">
-                  <div className="w-32 h-32 rounded-full bg-[#1A2A40]/10 mx-auto md:mx-0 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-[#1A2A40]">ACDC</span>
+                  <div className="w-40 h-40 mx-auto md:mx-0 flex items-center justify-center relative">
+                    <Image 
+                      src="/acdc.jpg" 
+                      alt="Logo du Groupe Au Comptoir de la Caisse" 
+                      width={160}
+                      height={160}
+                      className="rounded-lg shadow-md"
+                    />
+                    <div className="absolute -inset-1 bg-gradient-to-tr from-[#D47D5A]/10 to-transparent rounded-lg -z-10 blur-sm"></div>
                   </div>
                 </div>
                 <div className="md:w-2/3">
