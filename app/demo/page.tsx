@@ -1,12 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Demo() {
   // État pour suivre l'index actif du carousel
   const [activeSlide, setActiveSlide] = useState(0);
+  
+  // État pour le chat
+  const [messages, setMessages] = useState([
+    { role: "assistant", content: "Bonjour, je suis prêt à prendre votre commande." }
+  ]);
+  const [inputMessage, setInputMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  
+  // Référence pour faire défiler automatiquement vers le bas
+  const messagesEndRef = useRef(null);
+  
+  // Fonction pour faire défiler vers le bas
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  
+  // Effet pour faire défiler vers le bas quand les messages changent
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
   
   // Fonction pour passer au slide suivant
   const nextSlide = () => {
@@ -16,6 +36,55 @@ export default function Demo() {
   // Fonction pour passer au slide précédent
   const prevSlide = () => {
     setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
+  };
+  
+  // Fonction pour envoyer un message à l'API Claude
+  const sendMessage = async (e) => {
+    e.preventDefault();
+    
+    if (!inputMessage.trim()) return;
+    
+    // Ajouter le message de l'utilisateur à l'état
+    const userMessage = { role: "user", content: inputMessage };
+    setMessages(prev => [...prev, userMessage]);
+    
+    // Réinitialiser l'input et activer l'état de chargement
+    setInputMessage("");
+    setIsLoading(true);
+    
+    try {
+      // Appeler notre API qui communique avec Claude
+      const response = await fetch('/api/send-message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          content: inputMessage,
+          model: 'claude-3-7-sonnet-latest',
+          mode: 'restaurant_assistant',
+          addSystem: "Tu es Sotto, un assistant vocal pour restaurant. Tu dois répondre comme si tu étais un système de prise de commande vocal dans un restaurant. Sois concis, précis et professionnel. Confirme toujours les commandes et les modifications. N'utilise jamais plus de 2-3 phrases."
+        }),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Erreur lors de la communication avec l\'API');
+      }
+      
+      const data = await response.json();
+      
+      // Ajouter la réponse de l'assistant à l'état
+      setMessages(prev => [...prev, { role: "assistant", content: data.response }]);
+    } catch (error) {
+      console.error('Erreur:', error);
+      // Ajouter un message d'erreur
+      setMessages(prev => [...prev, { 
+        role: "assistant", 
+        content: "Désolé, j'ai rencontré un problème. Pourriez-vous répéter votre commande ?" 
+      }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
@@ -164,49 +233,61 @@ export default function Demo() {
               <h2 className="text-2xl font-bold mb-6">Interface Sotto</h2>
               <div className="flex flex-col h-[400px] border border-[#1A2A40]/20 rounded-lg overflow-hidden">
                 {/* En-tête du chat */}
-                <div className="bg-blue-dark text-white p-4 flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-terracotta"></div>
+                <div className="bg-[#1A2A40] text-white p-4 flex items-center gap-3">
+                  <div className="w-3 h-3 rounded-full bg-[#D47D5A]"></div>
                   <span>Sotto Assistant</span>
                 </div>
                 
                 {/* Corps du chat */}
                 <div className="flex-1 p-4 bg-[#F5F5F0] overflow-y-auto space-y-4">
-                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
-                    <p className="text-sm">Bonjour, je suis prêt à prendre votre commande.</p>
-                  </div>
+                  {messages.map((message, index) => (
+                    <div 
+                      key={index} 
+                      className={`${
+                        message.role === "assistant" 
+                          ? "bg-[#1A2A40]/10 ml-auto" 
+                          : "bg-white"
+                      } p-3 rounded-lg max-w-[80%]`}
+                    >
+                      <p className="text-sm">{message.content}</p>
+                    </div>
+                  ))}
                   
-                  <div className="bg-white p-3 rounded-lg max-w-[80%]">
-                    <p className="text-sm">Table 7, 2 menus du jour avec entrée et plat.</p>
-                  </div>
+                  {isLoading && (
+                    <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
+                      <div className="flex space-x-2 justify-center items-center h-5">
+                        <div className="w-2 h-2 bg-[#D47D5A] rounded-full animate-bounce"></div>
+                        <div className="w-2 h-2 bg-[#D47D5A] rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                        <div className="w-2 h-2 bg-[#D47D5A] rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                      </div>
+                    </div>
+                  )}
                   
-                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
-                    <p className="text-sm">J'ai enregistré 2 menus du jour avec entrée et plat pour la table 7. Que souhaitez-vous ajouter ?</p>
-                  </div>
-                  
-                  <div className="bg-white p-3 rounded-lg max-w-[80%]">
-                    <p className="text-sm">1 burger végétarien sans gluten avec frites et 1 salade César au poulet grillé.</p>
-                  </div>
-                  
-                  <div className="bg-[#1A2A40]/10 p-3 rounded-lg max-w-[80%] ml-auto">
-                    <p className="text-sm">Ajouté : 1 burger végétarien sans gluten avec frites et 1 salade César au poulet grillé. Souhaitez-vous des boissons ?</p>
-                  </div>
+                  <div ref={messagesEndRef} />
                 </div>
                 
                 {/* Pied du chat avec input */}
                 <div className="p-3 border-t border-[#1A2A40]/20 bg-white">
-                  <div className="flex items-center gap-2">
+                  <form onSubmit={sendMessage} className="flex items-center gap-2">
                     <input 
                       type="text" 
+                      value={inputMessage}
+                      onChange={(e) => setInputMessage(e.target.value)}
                       placeholder="Dictez votre commande ici..." 
                       className="flex-1 p-3 border border-[#1A2A40]/20 rounded-md focus:outline-none focus:ring-2 focus:ring-[#D47D5A]"
+                      disabled={isLoading}
                     />
-                    <button className="bg-[#D47D5A] text-white p-3 rounded-md hover:bg-[#D47D5A]/90 transition-colors">
+                    <button 
+                      type="submit" 
+                      className="bg-[#D47D5A] text-white p-3 rounded-md hover:bg-[#D47D5A]/90 transition-colors disabled:opacity-50"
+                      disabled={isLoading || !inputMessage.trim()}
+                    >
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M22 2L11 13"></path>
                         <path d="M22 2L15 22 11 13 2 9 22 2z"></path>
                       </svg>
                     </button>
-                  </div>
+                  </form>
                 </div>
               </div>
               <p className="mt-4 text-sm text-[#505A64] text-center">Cette démonstration simule l'interface vocale Sotto. Dans un environnement réel, vous utiliseriez une oreillette discrète.</p>
