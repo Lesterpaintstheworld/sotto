@@ -1,7 +1,22 @@
+"use client";
+
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Demo() {
+  // État pour suivre l'index actif du carousel
+  const [activeSlide, setActiveSlide] = useState(0);
+  
+  // Fonction pour passer au slide suivant
+  const nextSlide = () => {
+    setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));
+  };
+  
+  // Fonction pour passer au slide précédent
+  const prevSlide = () => {
+    setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
+  };
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
       <Header />
@@ -16,12 +31,18 @@ export default function Demo() {
               <h2 className="text-2xl font-bold mb-6 flex items-center justify-between">
                 <span>Commande à prendre</span>
                 <div className="flex gap-2">
-                  <button className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors">
+                  <button 
+                    onClick={prevSlide}
+                    className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors"
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </button>
-                  <button className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors">
+                  <button 
+                    onClick={nextSlide}
+                    className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors"
+                  >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
@@ -31,8 +52,8 @@ export default function Demo() {
               
               {/* Carousel d'exemples de commandes */}
               <div className="relative overflow-hidden">
-                {/* Premier exemple de commande (visible) */}
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-sm">
+                {/* Premier exemple de commande */}
+                <div className={`bg-white p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-sm transition-opacity duration-300 ${activeSlide === 0 ? 'block' : 'hidden'}`}>
                   <h3 className="font-bold text-lg mb-3 flex items-center">
                     <span className="w-6 h-6 rounded-full bg-[#D47D5A] text-white flex items-center justify-center text-sm mr-2">1</span>
                     Table 7 - 4 personnes
@@ -62,8 +83,8 @@ export default function Demo() {
                   <p className="mt-4 text-sm text-[#505A64] italic">Dictez cette commande dans l'interface à droite →</p>
                 </div>
                 
-                {/* Deuxième exemple de commande (caché) */}
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#87A28F] shadow-sm hidden">
+                {/* Deuxième exemple de commande */}
+                <div className={`bg-white p-6 rounded-lg border-l-4 border-[#87A28F] shadow-sm transition-opacity duration-300 ${activeSlide === 1 ? 'block' : 'hidden'}`}>
                   <h3 className="font-bold text-lg mb-3 flex items-center">
                     <span className="w-6 h-6 rounded-full bg-[#87A28F] text-white flex items-center justify-center text-sm mr-2">2</span>
                     Table 12 - 2 personnes
@@ -89,8 +110,8 @@ export default function Demo() {
                   <p className="mt-4 text-sm text-[#505A64] italic">Dictez cette commande dans l'interface à droite →</p>
                 </div>
                 
-                {/* Troisième exemple de commande (caché) */}
-                <div className="bg-white p-6 rounded-lg border-l-4 border-[#D4B483] shadow-sm hidden">
+                {/* Troisième exemple de commande */}
+                <div className={`bg-white p-6 rounded-lg border-l-4 border-[#D4B483] shadow-sm transition-opacity duration-300 ${activeSlide === 2 ? 'block' : 'hidden'}`}>
                   <h3 className="font-bold text-lg mb-3 flex items-center">
                     <span className="w-6 h-6 rounded-full bg-[#D4B483] text-white flex items-center justify-center text-sm mr-2">3</span>
                     Table 3 - 6 personnes
@@ -122,9 +143,18 @@ export default function Demo() {
                 
                 {/* Indicateurs de position du carousel */}
                 <div className="flex justify-center gap-2 mt-4">
-                  <div className="w-2 h-2 rounded-full bg-[#D47D5A]"></div>
-                  <div className="w-2 h-2 rounded-full bg-[#1A2A40]/20"></div>
-                  <div className="w-2 h-2 rounded-full bg-[#1A2A40]/20"></div>
+                  <div 
+                    onClick={() => setActiveSlide(0)}
+                    className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${activeSlide === 0 ? 'bg-[#D47D5A]' : 'bg-[#1A2A40]/20'}`}
+                  ></div>
+                  <div 
+                    onClick={() => setActiveSlide(1)}
+                    className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${activeSlide === 1 ? 'bg-[#D47D5A]' : 'bg-[#1A2A40]/20'}`}
+                  ></div>
+                  <div 
+                    onClick={() => setActiveSlide(2)}
+                    className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${activeSlide === 2 ? 'bg-[#D47D5A]' : 'bg-[#1A2A40]/20'}`}
+                  ></div>
                 </div>
               </div>
             </div>
