@@ -713,9 +713,9 @@ export default function Home() {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold mb-2">Que se passe-t-il en cas de panne de connexion ?</h3>
+              <h3 className="text-lg font-bold mb-2">Quel est le retour sur investissement avec Sotto ?</h3>
               <p className="text-[#505A64]">
-                Sotto fonctionne comme une Progressive Web App avec un mode hors-ligne. En cas de problème de connexion, le système continue de fonctionner et se synchronise automatiquement une fois la connexion rétablie. Un mode dégradé est également disponible.
+                La plupart de nos clients constatent un ROI positif en seulement un mois. En éliminant les coûts de matériel (écrans, tablettes, caisses), en réduisant le temps de formation et en augmentant l'efficacité du service, Sotto permet une économie moyenne de 15-20% sur les coûts opérationnels tout en augmentant le chiffre d'affaires grâce à un service plus rapide et attentif.
               </p>
             </div>
             
