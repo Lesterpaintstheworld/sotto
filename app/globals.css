@@ -124,6 +124,21 @@ a:focus {
   table tbody td {
     background-color: #1A2A40 !important;
   }
+  
+  /* Assurer que le fond principal est sombre en mode sombre */
+  .resource-content,
+  .prose,
+  [id^="resource-"] {
+    background-color: #1A2A40 !important;
+  }
+  
+  /* Assurer que les sections et divs principaux ont un fond sombre */
+  .resource-content > div,
+  .resource-content > section,
+  .prose > div,
+  .prose > section {
+    background-color: #1A2A40 !important;
+  }
 }
 
 /* Exception pour les boutons et éléments d'interface spécifiques */
