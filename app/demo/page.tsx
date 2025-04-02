@@ -48,6 +48,20 @@ export default function Demo() {
     }
   }, [messages]);
   
+  // Ajouter cet effet pour empêcher le défilement automatique au chargement
+  useEffect(() => {
+    // Désactiver temporairement le défilement automatique au chargement
+    const preventInitialScroll = () => {
+      window.scrollTo(0, 0);
+    };
+    
+    // Appliquer immédiatement et après un court délai pour s'assurer que ça fonctionne
+    preventInitialScroll();
+    const timer = setTimeout(preventInitialScroll, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
   // Fonction pour passer au slide suivant
   const nextSlide = () => {
     setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));

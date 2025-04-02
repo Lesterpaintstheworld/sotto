@@ -175,7 +175,7 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-6">Exemple de dialogue</h3>
             <div className="space-y-8">
               {/* Premier message - Serveur */}
-              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '0.2s' }}>
+              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '0.2s', transform: 'none' }}>
                 <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
                 <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône micro pour indiquer commande vocale - maintenant à droite du cercle S */}
@@ -190,7 +190,7 @@ export default function Home() {
               </div>
               
               {/* Deuxième message - Sotto */}
-              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '1.2s' }}>
+              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '1.2s', transform: 'none' }}>
                 <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône son pour indiquer réponse vocale - maintenant à gauche du cercle AI */}
                   <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '1.5s' }}>
@@ -206,7 +206,7 @@ export default function Home() {
               </div>
               
               {/* Troisième message - Serveur */}
-              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '2.2s' }}>
+              <div className="flex gap-3 animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '2.2s', transform: 'none' }}>
                 <div className="w-10 h-10 rounded-full bg-[#1A2A40] text-white flex items-center justify-center flex-shrink-0">S</div>
                 <div className="bg-white p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône micro pour indiquer commande vocale */}
@@ -221,7 +221,7 @@ export default function Home() {
               </div>
               
               {/* Quatrième message - Sotto */}
-              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '3.2s' }}>
+              <div className="flex gap-3 justify-end animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '3.2s', transform: 'none' }}>
                 <div className="bg-[#1A2A40] p-4 rounded-lg shadow-sm max-w-[85%] relative">
                   {/* Icône son pour indiquer réponse vocale */}
                   <div className="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#D47D5A] flex items-center justify-center shadow-sm animate-[fadeIn_0.5s_ease-in-out]" style={{ animationFillMode: 'both', animationDelay: '3.5s' }}>
