@@ -125,19 +125,19 @@ a:focus {
     background-color: #1A2A40 !important;
   }
   
-  /* Assurer que le fond principal est sombre en mode sombre */
-  .resource-content,
-  .prose,
-  [id^="resource-"] {
+  /* Conteneur principal transparent pour hériter du fond de la page */
+  .resource-content {
+    background-color: transparent !important;
+  }
+  
+  /* Permettre aux cartes et sections de conserver leur fond */
+  .bg-white, .bg-gray-50, .bg-gray-100 {
     background-color: #1A2A40 !important;
   }
   
-  /* Assurer que les sections et divs principaux ont un fond sombre */
-  .resource-content > div,
-  .resource-content > section,
-  .prose > div,
-  .prose > section {
-    background-color: #1A2A40 !important;
+  /* Fond plus clair pour les éléments qui doivent se distinguer */
+  .bg-[#F5F5F0] {
+    background-color: #2A3A50 !important;
   }
 }
 
