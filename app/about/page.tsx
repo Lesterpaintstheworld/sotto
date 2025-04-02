@@ -48,7 +48,7 @@ export default function About() {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="w-24 h-24 rounded-full bg-[#1A2A40] mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold text-center">Julie Lefèvre</h3>
+                <h3 className="text-xl font-bold text-center">Samantha Omri</h3>
                 <p className="text-center text-[#505A64]">Directrice Produit</p>
               </div>
             </div>

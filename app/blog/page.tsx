@@ -37,7 +37,7 @@ const blogPosts = [
     category: "Opérations",
     readTime: "7 min",
     image: "/blog/slow-service.jpg",
-    author: "Julie Lefèvre",
+    author: "Samantha Omri",
     authorRole: "Directrice Produit",
     featured: false
   },
@@ -61,7 +61,7 @@ const blogPosts = [
     category: "Marketing",
     readTime: "9 min",
     image: "/blog/customer-loyalty.jpg",
-    author: "Julie Lefèvre",
+    author: "Samantha Omri",
     authorRole: "Directrice Produit",
     featured: false
   },
@@ -97,7 +97,7 @@ const blogPosts = [
     category: "Guide pratique",
     readTime: "14 min",
     image: "/blog/day-with-sotto.jpg",
-    author: "Julie Lefèvre",
+    author: "Samantha Omri",
     authorRole: "Directrice Produit",
     featured: false
   },
