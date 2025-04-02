@@ -136,7 +136,8 @@ a:focus {
   }
   
   /* Fond plus clair pour les éléments qui doivent se distinguer */
-  .bg-light-gray, .bg-\[\#F5F5F0\] {
+  .bg-light-gray, 
+  .bg-\[#F5F5F0\] {
     background-color: #2A3A50 !important;
   }
 }
