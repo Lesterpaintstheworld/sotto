@@ -105,6 +105,11 @@ a:focus {
   [id^="resource-"] a {
     color: #D47D5A !important;
   }
+  
+  /* S'assurer que les éléments avec bg-white ont un fond sombre en mode sombre */
+  .bg-white {
+    background-color: #1A2A40 !important;
+  }
 }
 
 /* Exception pour les boutons et éléments d'interface spécifiques */
