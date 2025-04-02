@@ -91,35 +91,35 @@ a:focus {
 }
 
 /* Force les éléments avec des classes dark: à utiliser les styles du mode clair */
-.dark\:bg-gray-800 {
+[class*="dark:bg-gray-800"] {
   background-color: white !important;
 }
 
-.dark\:text-\[\#F5F5F0\] {
+[class*="dark:text-[#F5F5F0]"] {
   color: #1A2A40 !important;
 }
 
-.dark\:bg-\[\#D47D5A\] {
+[class*="dark:bg-[#D47D5A]"] {
   background-color: #D47D5A !important;
 }
 
-.dark\:bg-\[\#D47D5A\]\/80 {
+[class*="dark:bg-[#D47D5A]/80"] {
   background-color: #1A2A40 !important;
 }
 
-.dark\:hover\:bg-gray-700:hover {
+[class*="dark:hover:bg-gray-700"]:hover {
   background-color: #f8f8f8 !important;
 }
 
-.dark\:divide-gray-700 {
+[class*="dark:divide-gray-700"] {
   border-color: #e5e7eb !important;
 }
 
-.dark\:bg-\[\#1A2A40\] {
+[class*="dark:bg-[#1A2A40]"] {
   background-color: #F5F5F0 !important;
 }
 
-.dark\:bg-\[\#D47D5A\]\/20 {
+[class*="dark:bg-[#D47D5A]/20"] {
   background-color: rgba(212, 125, 90, 0.1) !important;
 }
 
