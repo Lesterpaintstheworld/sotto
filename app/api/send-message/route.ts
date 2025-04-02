@@ -6,8 +6,8 @@ export async function POST(request: NextRequest) {
     // Parse the request body
     const { content, model, mode, addSystem } = await request.json();
 
-    // Get API key from environment variables
-    const apiKey = process.env.KINOS_API_KEY;
+    // Get API key - using hardcoded value instead of environment variable
+    const apiKey = "sk-...yjI"; // Replace with your actual API key
     const apiBaseUrl = process.env.API_BASE_URL || 'https://api.kinos-engine.ai';
     
     // Log pour déboguer
@@ -45,6 +45,7 @@ export async function POST(request: NextRequest) {
     // Log pour déboguer
     console.log("Sending request to:", `${apiBaseUrl}/projects/${customerId}/${projectId}/messages`);
     console.log("Request body:", JSON.stringify(requestBody));
+    console.log("Authorization header:", `Bearer ${apiKey.substring(0, 5)}...`);
 
     // Send request to Kinos Engine API using the API_BASE_URL
     const response = await fetch(`${apiBaseUrl}/projects/${customerId}/${projectId}/messages`, {
