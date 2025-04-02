@@ -6,6 +6,15 @@ import Image from 'next/image';
 import AuthButton from '../components/AuthButton';
 import { useState, useEffect } from 'react';
 
+// Interface pour définir le type de retour du hook useAuth
+interface AuthContextType {
+  user: any;
+  loading: boolean;
+  login: (userData: any) => void;
+  logout: () => void;
+  isAuthenticated: boolean;
+}
+
 // Composant pour afficher les icônes
 const Icon = ({ 
   name, 
@@ -76,7 +85,7 @@ interface TeamResourcesProps {
 }
 
 export default function TeamResources({ teamData }: TeamResourcesProps) {
-  const auth = useAuth();
+  const auth = useAuth() as AuthContextType | null;
   // Utiliser l'opérateur de coalescence nulle pour fournir des valeurs par défaut
   const isAuthenticated = auth?.isAuthenticated ?? false;
   const loading = auth?.loading ?? false;
