@@ -95,9 +95,8 @@ function checkTsxComponentExists(id: string): boolean {
 }
 
 // Génération des métadonnées
-export async function generateMetadata({ params }: { params: { id: string } }) {
-  // Récupérer l'ID directement des paramètres
-  const { id } = params;
+export async function generateMetadata(props: any) {
+  const id = props.params.id;
   
   try {
     const resourcesData = await getResourcesData();
@@ -124,10 +123,10 @@ export async function generateMetadata({ params }: { params: { id: string } }) {
 }
 
 // Fonction pour obtenir les paramètres statiques
-export const generateStaticParams = async () => {
+export async function generateStaticParams() {
   try {
     const resourcesData = await getResourcesData();
-    let params: { id: string }[] = [];
+    let params = [];
     
     // Ajouter les IDs des ressources publiques
     for (const category in resourcesData.public) {
@@ -152,7 +151,7 @@ export const generateStaticParams = async () => {
     console.error('Error generating static params:', error);
     return [];
   }
-};
+}
 
 // Composant pour afficher une icône
 interface IconProps {
@@ -196,9 +195,8 @@ const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }: IconPro
   return renderIcon();
 };
 
-export default async function ResourcePage({ params }: { params: { id: string } }) {
-  // Récupérer l'ID directement des paramètres
-  const { id } = params;
+export default async function ResourcePage(props: any) {
+  const id = props.params.id;
   
   const resourcesData = await getResourcesData();
   const resourceInfo = findResourceById(resourcesData, id);
