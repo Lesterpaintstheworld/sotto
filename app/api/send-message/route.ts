@@ -39,7 +39,7 @@ export async function POST(request: NextRequest) {
       content: content,
       model: model || 'claude-3-7-sonnet-latest',
       mode: mode || 'restaurant_assistant',
-      system: addSystem || ''
+      addSystem: addSystem || ''
     };
 
     // Log pour déboguer
