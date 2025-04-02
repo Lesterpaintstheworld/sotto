@@ -126,13 +126,13 @@ export async function generateMetadata(props: any) {
 export async function generateStaticParams() {
   try {
     const resourcesData = await getResourcesData();
-    // @ts-ignore - Ignorer l'erreur de type pour params
-    let params = [];
+    // Définir explicitement le type de params
+    let params: Array<{id: string}> = [];
     
     // Ajouter les IDs des ressources publiques
     for (const category in resourcesData.public) {
       params = params.concat(
-        resourcesData.public[category].map((resource) => ({
+        resourcesData.public[category].map((resource: Resource) => ({
           id: resource.id
         }))
       );
@@ -141,7 +141,7 @@ export async function generateStaticParams() {
     // Ajouter les IDs des ressources d'équipe
     for (const category in resourcesData.team) {
       params = params.concat(
-        resourcesData.team[category].map((resource) => ({
+        resourcesData.team[category].map((resource: Resource) => ({
           id: resource.id
         }))
       );
