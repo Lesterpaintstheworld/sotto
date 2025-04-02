@@ -722,7 +722,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold mb-2">Sotto est-il compatible avec mon système de caisse actuel ?</h3>
               <p className="text-[#505A64]">
-                Oui, Sotto s'intègre avec la plupart des systèmes de caisse modernes via notre API. Nous proposons également notre propre solution de caisse intelligente pour une expérience totalement intégrée et optimisée.
+                Avec Sotto, plus besoin de caisse du tout ! Notre IA s'occupe de l'intégralité des opérations d'encaissement, de gestion des commandes et de facturation. Nous remplaçons complètement votre système de caisse traditionnel par une solution vocale intelligente qui élimine le besoin d'interfaces physiques tout en conservant toutes les fonctionnalités essentielles.
               </p>
             </div>
           </div>
