@@ -76,7 +76,10 @@ interface TeamResourcesProps {
 }
 
 export default function TeamResources({ teamData }: TeamResourcesProps) {
-  const { isAuthenticated, loading } = useAuth();
+  const auth = useAuth();
+  // Utiliser l'opérateur de coalescence nulle pour fournir des valeurs par défaut
+  const isAuthenticated = auth?.isAuthenticated ?? false;
+  const loading = auth?.loading ?? false;
   const [showTeamResources, setShowTeamResources] = useState(false);
 
   useEffect(() => {
