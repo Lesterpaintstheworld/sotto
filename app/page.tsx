@@ -44,21 +44,25 @@ export default function Home() {
           </div>
         </div>
         <div className="md:w-1/2 flex justify-center z-10">
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-[#D47D5A]/10 flex items-center justify-center">
-            <div className="absolute w-48 h-48 md:w-64 md:h-64 rounded-full bg-[#D47D5A]/20 flex items-center justify-center animate-pulse" style={{ animationDuration: '4s' }}>
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#D47D5A]/30 flex items-center justify-center animate-pulse" style={{ animationDuration: '3s', animationDelay: '0.5s' }}>
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#D47D5A] flex items-center justify-center text-[#F5F5F0] text-2xl font-bold shadow-lg">
-                  S
-                </div>
-              </div>
+          <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+            {/* Image héro 1:1 */}
+            <div className="relative w-full h-full rounded-lg overflow-hidden shadow-xl">
+              <Image 
+                src="/hero.png" 
+                alt="Sotto - Solution vocale pour restaurants" 
+                fill
+                style={{ objectFit: 'cover' }}
+                className="rounded-lg"
+                priority
+              />
             </div>
             
-            {/* Éléments décoratifs - ondes sonores */}
+            {/* Effet de superposition */}
+            <div className="absolute -inset-1 bg-gradient-to-tr from-[#D47D5A]/20 to-transparent rounded-lg -z-10 blur-sm"></div>
+            
+            {/* Élément décoratif - onde sonore */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-full h-full rounded-full border border-[#1A2A40]/10 animate-ping" style={{ animationDuration: '3s', animationIterationCount: 'infinite' }}></div>
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[110%] h-[110%] rounded-full border border-[#1A2A40]/5 animate-ping" style={{ animationDuration: '4s', animationDelay: '0.5s', animationIterationCount: 'infinite' }}></div>
+              <div className="w-[110%] h-[110%] rounded-lg border border-[#1A2A40]/5 animate-ping" style={{ animationDuration: '4s', animationDelay: '0.5s', animationIterationCount: 'infinite' }}></div>
             </div>
           </div>
         </div>
