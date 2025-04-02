@@ -22,16 +22,16 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Use fixed project ID "sottowelcome"
-    const projectId = "sottowelcome";
+    // Use fixed customer ID "sottowelcome"
+    const customerId = "sottowelcome";
     
-    // Get or generate customer ID from cookies
+    // Get or generate project ID from cookies
     const cookies = request.cookies;
-    let customerId = cookies.get('customer_id')?.value;
+    let projectId = cookies.get('project_id')?.value;
     
-    if (!customerId) {
-      // Generate a UUID v4 if no customer_id exists
-      customerId = uuidv4();
+    if (!projectId) {
+      // Generate a UUID v4 if no project_id exists
+      projectId = uuidv4();
     }
 
     // Prepare the request body for Kinos Engine API
@@ -87,8 +87,8 @@ export async function POST(request: NextRequest) {
       id: data.id || 'unknown'
     });
     
-    // Set customer_id cookie
-    responseWithCookie.cookies.set('customer_id', customerId, {
+    // Set project_id cookie
+    responseWithCookie.cookies.set('project_id', projectId, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       maxAge: 60 * 60 * 24 * 30, // 30 days
