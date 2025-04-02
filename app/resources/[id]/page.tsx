@@ -6,8 +6,37 @@ import Image from "next/image";
 import fs from 'fs';
 import path from 'path';
 
+// Définir les interfaces pour les types
+interface Resource {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  linkText: string;
+  linkIcon: string;
+  category?: string;
+  categoryColor?: string;
+  icon?: string;
+  [key: string]: any; // Pour les autres propriétés
+}
+
+interface ResourcesData {
+  public: {
+    [category: string]: Resource[];
+  };
+  team: {
+    [category: string]: Resource[];
+  };
+}
+
+interface ResourceInfo {
+  resource: Resource;
+  category: string;
+  isTeam: boolean;
+}
+
 // Fonction pour obtenir les données JSON des ressources
-async function getResourcesData() {
+async function getResourcesData(): Promise<ResourcesData> {
   try {
     // En développement, utiliser le fichier local
     if (process.env.NODE_ENV === 'development') {
@@ -35,7 +64,7 @@ async function getResourcesData() {
 }
 
 // Fonction pour trouver une ressource par ID
-function findResourceById(resourcesData, id) {
+function findResourceById(resourcesData: ResourcesData, id: string): ResourceInfo | null {
   // Chercher dans les ressources publiques
   for (const category in resourcesData.public) {
     const found = resourcesData.public[category].find((resource) => resource.id === id);
@@ -56,7 +85,7 @@ function findResourceById(resourcesData, id) {
 }
 
 // Fonction pour vérifier si le composant TSX existe
-function checkTsxComponentExists(id) {
+function checkTsxComponentExists(id: string): boolean {
   try {
     const tsxPath = path.join(process.cwd(), `app/resources/content/${id}.tsx`);
     return fs.existsSync(tsxPath);
@@ -66,7 +95,7 @@ function checkTsxComponentExists(id) {
 }
 
 // Génération des métadonnées
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }: { params: { id: string } }) {
   // Récupérer l'ID directement des paramètres
   const { id } = params;
   
@@ -98,7 +127,7 @@ export async function generateMetadata({ params }) {
 export const generateStaticParams = async () => {
   try {
     const resourcesData = await getResourcesData();
-    let params = [];
+    let params: { id: string }[] = [];
     
     // Ajouter les IDs des ressources publiques
     for (const category in resourcesData.public) {
@@ -126,7 +155,14 @@ export const generateStaticParams = async () => {
 };
 
 // Composant pour afficher une icône
-const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }) => {
+interface IconProps {
+  name: string;
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+}
+
+const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }: IconProps) => {
   // Fonction pour rendre l'icône selon son nom
   const renderIcon = () => {
     switch (name) {
@@ -160,7 +196,7 @@ const Icon = ({ name, size = 24, color = "#1A2A40", strokeWidth = 1.5 }) => {
   return renderIcon();
 };
 
-export default async function ResourcePage({ params }) {
+export default async function ResourcePage({ params }: { params: { id: string } }) {
   // Récupérer l'ID directement des paramètres
   const { id } = params;
   
@@ -249,7 +285,12 @@ export default async function ResourcePage({ params }) {
           {/* Contenu de la ressource */}
           <div 
             className="prose prose-lg max-w-none prose-headings:text-[#1A2A40] prose-p:text-[#1A2A40] prose-li:text-[#1A2A40] prose-strong:text-[#1A2A40]"
-            style={{color: '#1A2A40', '--tw-prose-body': '#1A2A40', '--tw-prose-headings': '#1A2A40'}}
+            style={{
+              color: '#1A2A40',
+              // @ts-ignore - Ces propriétés CSS personnalisées sont valides mais TypeScript ne les reconnaît pas
+              '--tw-prose-body': '#1A2A40',
+              '--tw-prose-headings': '#1A2A40'
+            }}
           >
             <ResourceContent />
           </div>
@@ -270,9 +311,9 @@ export default async function ResourcePage({ params }) {
             <div className="grid md:grid-cols-3 gap-6">
               {/* Afficher 3 ressources de la même catégorie (à l'exception de la ressource actuelle) */}
               {(isTeam ? resourcesData.team[category] : resourcesData.public[category])
-                .filter((item) => item.id !== id)
+                .filter((item: Resource) => item.id !== id)
                 .slice(0, 3)
-                .map((relatedResource) => (
+                .map((relatedResource: Resource) => (
                   <Link key={relatedResource.id} href={`/resources/${relatedResource.id}`} className="group">
                     <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                       <div className="h-40 bg-[#1A2A40]/10 relative">
