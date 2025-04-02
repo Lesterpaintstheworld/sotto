@@ -73,7 +73,7 @@ IMPORTANT:
       'https://api.anthropic.com/v1/messages',
       {
         model: "claude-3-7-sonnet-latest",
-        max_tokens: 4000,
+        max_tokens: 64000,
         temperature: 0.2,
         system: systemPrompt,
         messages: [
