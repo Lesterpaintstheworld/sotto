@@ -1,21 +1,21 @@
 const ResourceContent = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-[#F5F5F0] rounded-xl shadow-lg text-[#1A2A40]">
-      <h1 className="text-4xl md:text-5xl font-bold text-[#1A2A40] mb-6 border-b-2 border-[#D47D5A] pb-4">Guide de démarrage</h1>
+      <h1 className="text-4xl md:text-5xl font-bold mb-6 border-b-2 border-[#D47D5A] pb-4">Guide de démarrage</h1>
       
       <div className="italic text-lg mb-10 text-[#1A2A40]/80 bg-white/50 p-6 rounded-lg border-l-4 border-[#D47D5A] shadow-md">
         <p>Bienvenue dans l'aventure Sotto. Ce guide vous accompagne pas à pas dans l'intégration de notre système vocal IA, de l'installation initiale jusqu'à votre première commande. Découvrez comment libérer votre restaurant des écrans et recentrer votre équipe sur l'essentiel : l'humain et la gastronomie.</p>
       </div>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold text-[#1A2A40] mb-6 flex items-center">
+        <h2 className="text-3xl font-semibold mb-6 flex items-center">
           <span className="inline-block w-8 h-8 bg-[#D47D5A] rounded-full mr-3"></span>
           Avant de commencer
         </h2>
 
         <div className="space-y-8">
           <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
-            <h3 className="text-2xl font-medium text-[#1A2A40] mb-4">Prérequis techniques</h3>
+            <h3 className="text-2xl font-medium mb-4">Prérequis techniques</h3>
             <p className="mb-4 text-[#1A2A40]/80">Avant l'installation de Sotto, assurez-vous que votre établissement dispose des éléments suivants :</p>
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -47,7 +47,7 @@ const ResourceContent = () => {
                 <span className="bg-[#D47D5A] text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 shrink-0">1</span>
                 <span>Informez votre personnel à l'avance du changement à venir</span>
               </li>
-              <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg flex items-start">
+              <li className="bg-[#F5F5F0] p-4 rounded-lg flex items-start">
                 <span className="bg-[#D47D5A] text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 shrink-0">2</span>
                 <span>Insistez sur les bénéfices : mains libres, attention accrue aux clients, simplification des processus</span>
               </li>
@@ -116,15 +116,15 @@ const ResourceContent = () => {
           </div>
 
           <div className="bg-white dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
-            <h3 className="text-2xl font-medium text-[#1A2A40] dark:text-[#F5F5F0] mb-4">Paramétrage initial</h3>
-            <p className="mb-4 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Le paramétrage initial comprend :</p>
+            <h3 className="text-2xl font-medium mb-4">Paramétrage initial</h3>
+            <p className="mb-4 text-[#1A2A40]/80">Le paramétrage initial comprend :</p>
             
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg flex items-start">
                 <span className="text-[#D4B483] mr-3">●</span>
                 <div>
                   <span className="font-medium">Importation de votre menu</span>
-                  <p className="text-sm mt-1 text-[#1A2A40]/70 dark:text-[#F5F5F0]/70">Tous vos plats, options, et spécificités seront intégrés au système</p>
+                  <p className="text-sm mt-1 text-[#1A2A40]/70">Tous vos plats, options, et spécificités seront intégrés au système</p>
                 </div>
               </li>
               <li className="bg-[#F5F5F0] dark:bg-[#1A2A40]/40 p-4 rounded-lg flex items-start">
@@ -154,7 +154,7 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-3xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-6 flex items-center">
+        <h2 className="text-3xl font-semibold mb-6 flex items-center">
           <span className="inline-block w-8 h-8 bg-[#D47D5A] rounded-full mr-3"></span>
           Formation du personnel
         </h2>
@@ -548,7 +548,7 @@ const ResourceContent = () => {
           Prochaines étapes
         </h2>
 
-        <div className="bg-white dark:bg-[#1A2A40]/70 rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
+        <div className="bg-white rounded-xl p-6 shadow-md transform transition-all hover:scale-[1.01]">
           <p className="mb-6 text-[#1A2A40]/80 dark:text-[#F5F5F0]/80">Une fois à l'aise avec les fonctionnalités de base, découvrez les capacités avancées de Sotto :</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -578,7 +578,7 @@ const ResourceContent = () => {
           Conclusion
         </h2>
 
-        <div className="bg-[#1A2A40] text-[#F5F5F0] rounded-xl p-8 shadow-lg">
+        <div className="bg-[#1A2A40] text-[#1A2A40] rounded-xl p-8 shadow-lg">
           <p className="mb-6">Félicitations ! Vous êtes maintenant prêt à transformer l'expérience de votre restaurant avec Sotto. En libérant votre équipe des contraintes des écrans, vous leur permettez de se concentrer sur l'essentiel : l'accueil, le service et l'attention portée à vos clients.</p>
           
           <p className="mb-6">Rappelez-vous que la période d'adaptation est normale et que votre équipe deviendra rapidement experte dans l'utilisation de Sotto. Notre équipe reste à votre disposition pour vous accompagner à chaque étape de cette transition.</p>

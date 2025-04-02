@@ -78,7 +78,8 @@ a:focus {
 /* Force la couleur du texte pour tous les éléments dans les ressources */
 [class*="resource-content"] *,
 .prose *,
-[id^="resource-"] * {
+[id^="resource-"] *,
+.bg-[#1A2A40] * {
   color: #1A2A40 !important;
 }
 
@@ -87,4 +88,10 @@ a:focus {
 .prose a,
 [id^="resource-"] a {
   color: #D47D5A !important;
+}
+
+/* Exception pour les boutons et éléments d'interface spécifiques */
+button.bg-[#D47D5A] *,
+.bg-[#D47D5A] * {
+  color: white !important;
 }
