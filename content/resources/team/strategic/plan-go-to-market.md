@@ -6,6 +6,8 @@
 
 Ce plan Go-to-Market définit notre stratégie de lancement pour Sotto, notre système d'interface vocale IA pour restaurants. Il détaille notre approche de segmentation du marché, identifie nos premiers utilisateurs cibles et établit une feuille de route claire pour l'acquisition et la fidélisation des clients. Ce document servira de guide stratégique pour aligner nos équipes produit, marketing, vente et support autour d'objectifs communs, en cohérence avec notre vision de libérer les restaurants des écrans pour créer une expérience plus humaine et efficace.
 
+Ce plan s'appuie sur le partenariat stratégique avec Au Comptoir de la Caisse (ACDC), qui dispose déjà d'une base de 4500 clients restaurateurs à travers la France. Cette relation privilégiée avec le marché constitue un avantage concurrentiel majeur et accélérateur de croissance pour le déploiement de Sotto.
+
 ## Analyse du marché et positionnement
 
 ### Contexte du marché
@@ -42,19 +44,24 @@ Sotto se distingue sur le marché par :
 
 ### Segmentation primaire
 
-Nous avons identifié trois segments prioritaires pour notre phase de lancement :
+Nous avons identifié trois segments prioritaires pour notre phase de lancement, avec une attention particulière sur la base existante de 4500 clients d'Au Comptoir de la Caisse :
 
-1. **Restaurants indépendants premium** (30-80 couverts)
+1. **Clients existants d'Au Comptoir de la Caisse** (4500 établissements)
+   - Relation de confiance déjà établie
+   - Connaissance approfondie de leurs besoins et configurations
+   - Opportunité de vente croisée avec les solutions déjà en place
+
+2. **Restaurants indépendants premium** (30-80 couverts)
    - Établissements valorisant l'expérience client et le service attentif
    - Ticket moyen supérieur à 35€
    - Sensibles à leur image de marque et à l'innovation discrète
 
-2. **Petits groupes de restauration locale** (3-10 établissements)
+3. **Petits groupes de restauration locale** (3-10 établissements)
    - Recherchant une solution unifiée pour leurs différents points de vente
    - Soucieux de maintenir une cohérence d'expérience
    - Disposant d'une équipe de direction ouverte à l'innovation
 
-3. **Concepts de restauration nouvelle génération**
+4. **Concepts de restauration nouvelle génération**
    - Restaurants hybrides (café/coworking, restaurant/épicerie)
    - Fondés par des entrepreneurs tech-friendly
    - Cherchant à se différencier par l'expérience client
@@ -77,9 +84,9 @@ Nous avons identifié trois segments prioritaires pour notre phase de lancement 
 
 ## Stratégie de lancement
 
-### Phase 1 : Pilote contrôlé (3 mois)
+### Phase 1 : Pilote contrôlé (2 mois)
 
-**Objectif :** Valider le produit en conditions réelles avec 5-8 établissements partenaires
+**Objectif :** Valider le produit en conditions réelles avec 15-20 établissements partenaires, principalement issus de la base clients ACDC
 
 - Sélection minutieuse des restaurants pilotes selon critères de compatibilité
 - Installation complète et formation approfondie par notre équipe
@@ -87,9 +94,9 @@ Nous avons identifié trois segments prioritaires pour notre phase de lancement 
 - Itérations rapides du produit basées sur les retours utilisateurs
 - Documentation des études de cas et calcul du ROI réel
 
-### Phase 2 : Lancement ciblé (6 mois)
+### Phase 2 : Lancement ciblé (4 mois)
 
-**Objectif :** Atteindre 50 établissements actifs dans 3 zones géographiques prioritaires
+**Objectif :** Atteindre 150 établissements actifs en ciblant prioritairement les clients ACDC dans 5 zones géographiques
 
 - Déploiement commercial dans des zones métropolitaines sélectionnées (Paris, Lyon, Bordeaux)
 - Programme de référencement avec incitatifs pour les premiers clients
@@ -97,9 +104,9 @@ Nous avons identifié trois segments prioritaires pour notre phase de lancement 
 - Développement de partenariats avec des consultants en restauration
 - Optimisation des processus d'onboarding et de support
 
-### Phase 3 : Expansion nationale (12 mois)
+### Phase 3 : Expansion nationale (8 mois)
 
-**Objectif :** Atteindre 300+ établissements et préparer l'internationalisation
+**Objectif :** Atteindre 800+ établissements et préparer l'internationalisation, avec un taux de pénétration de 15% de la base clients ACDC
 
 - Élargissement de la couverture commerciale à l'ensemble du territoire
 - Automatisation partielle du processus d'onboarding
@@ -111,22 +118,27 @@ Nous avons identifié trois segments prioritaires pour notre phase de lancement 
 
 ### Canaux d'acquisition prioritaires
 
-1. **Vente directe consultative**
+1. **Activation de la base clients ACDC**
+   - Programme de présentation dédié aux clients existants
+   - Offres préférentielles pour les clients fidèles
+   - Intégration facilitée avec les systèmes déjà en place
+
+2. **Vente directe consultative**
    - Équipe commerciale spécialisée en restauration
    - Approche personnalisée avec démonstration sur site
    - Processus de qualification rigoureux des prospects
 
-2. **Partenariats stratégiques**
+3. **Partenariats stratégiques**
    - Consultants et agences spécialisés en restauration
    - Fournisseurs complémentaires (mobilier, équipement cuisine)
    - Écoles hôtelières et incubateurs food-tech
 
-3. **Marketing de contenu ciblé**
+4. **Marketing de contenu ciblé**
    - Études de cas détaillées avec métriques d'impact
    - Contenu éducatif sur la transformation digitale en restauration
    - Webinaires et événements virtuels de démonstration
 
-4. **Présence événementielle sélective**
+5. **Présence événementielle sélective**
    - Salons professionnels majeurs (SIRHA, EquipHotel)
    - Événements locaux dans nos zones d'expansion prioritaires
    - Organisation de tables rondes sur l'avenir de la restauration
@@ -221,7 +233,7 @@ Nous adoptons un modèle SaaS avec matériel inclus :
 
 ## Conclusion et prochaines étapes
 
-Ce plan Go-to-Market positionne Sotto pour un lancement progressif mais ambitieux, en privilégiant la qualité de l'expérience et la validation de notre proposition de valeur avant une expansion plus large. Notre approche centrée sur l'humain se reflète non seulement dans notre produit, mais aussi dans notre stratégie commerciale consultative et notre processus d'onboarding approfondi.
+Ce plan Go-to-Market positionne Sotto pour un lancement ambitieux et accéléré, en capitalisant sur la base existante de 4500 clients d'Au Comptoir de la Caisse. Cette relation privilégiée nous permet d'envisager une adoption rapide et une validation à grande échelle de notre solution, tout en maintenant une approche centrée sur l'humain.
 
 ### Actions immédiates
 

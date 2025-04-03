@@ -17,6 +17,9 @@ const ResourceContent = () => {
         <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/90 leading-relaxed">
           Ce plan Go-to-Market définit notre stratégie de lancement pour Sotto, notre système d'interface vocale IA pour restaurants. Il détaille notre approche de segmentation du marché, identifie nos premiers utilisateurs cibles et établit une feuille de route claire pour l'acquisition et la fidélisation des clients. Ce document servira de guide stratégique pour aligner nos équipes produit, marketing, vente et support autour d'objectifs communs, en cohérence avec notre vision de libérer les restaurants des écrans pour créer une expérience plus humaine et efficace.
         </p>
+        <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/90 leading-relaxed mt-4">
+          Ce plan s'appuie sur le partenariat stratégique avec Au Comptoir de la Caisse (ACDC), qui dispose déjà d'une base de 4500 clients restaurateurs à travers la France. Cette relation privilégiée avec le marché constitue un avantage concurrentiel majeur et accélérateur de croissance pour le déploiement de Sotto.
+        </p>
       </section>
 
       <section className="mb-10">
@@ -151,25 +154,25 @@ const ResourceContent = () => {
             Segmentation primaire
           </h3>
           <p className="mb-4 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
-            Nous avons identifié trois segments prioritaires pour notre phase de lancement :
+            Nous avons identifié trois segments prioritaires pour notre phase de lancement, avec une attention particulière sur la base existante de 4500 clients d'Au Comptoir de la Caisse :
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#D47D5A]">
               <div className="p-5">
-                <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Restaurants indépendants premium</h4>
+                <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Clients existants d'Au Comptoir de la Caisse</h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Établissements valorisant l'expérience client et le service attentif</span>
+                    <span>Relation de confiance déjà établie</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Ticket moyen supérieur à 35€</span>
+                    <span>Connaissance approfondie de leurs besoins et configurations</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Sensibles à leur image de marque et à l'innovation discrète</span>
+                    <span>Opportunité de vente croisée avec les solutions déjà en place</span>
                   </li>
                 </ul>
               </div>
@@ -177,19 +180,19 @@ const ResourceContent = () => {
             
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 border-t-4 border-[#87A28F]">
               <div className="p-5">
-                <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Petits groupes de restauration locale</h4>
+                <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Restaurants indépendants premium</h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
                     <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                    <span>Recherchant une solution unifiée pour leurs différents points de vente</span>
+                    <span>Établissements valorisant l'expérience client et le service attentif</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                    <span>Soucieux de maintenir une cohérence d'expérience</span>
+                    <span>Ticket moyen supérieur à 35€</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                    <span>Disposant d'une équipe de direction ouverte à l'innovation</span>
+                    <span>Sensibles à leur image de marque et à l'innovation discrète</span>
                   </li>
                 </ul>
               </div>
@@ -294,11 +297,11 @@ const ResourceContent = () => {
         <div className="space-y-8">
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 1 : Pilote contrôlé (3 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 1 : Pilote contrôlé (2 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#D47D5A]">Objectif :</span> Valider le produit en conditions réelles avec 5-8 établissements partenaires
+                <span className="text-[#D47D5A]">Objectif :</span> Valider le produit en conditions réelles avec 15-20 établissements partenaires, principalement issus de la base clients ACDC
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
@@ -327,11 +330,11 @@ const ResourceContent = () => {
           
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#87A28F] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 2 : Lancement ciblé (6 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 2 : Lancement ciblé (4 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#87A28F] dark:text-[#87A28F]">Objectif :</span> Atteindre 50 établissements actifs dans 3 zones géographiques prioritaires
+                <span className="text-[#87A28F] dark:text-[#87A28F]">Objectif :</span> Atteindre 150 établissements actifs en ciblant prioritairement les clients ACDC dans 5 zones géographiques
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
@@ -360,11 +363,11 @@ const ResourceContent = () => {
           
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#D4B483] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 3 : Expansion nationale (12 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 3 : Expansion nationale (8 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#D4B483] dark:text-[#D4B483]">Objectif :</span> Atteindre 300+ établissements et préparer l'internationalisation
+                <span className="text-[#D4B483] dark:text-[#D4B483]">Objectif :</span> Atteindre 800+ établissements et préparer l'internationalisation, avec un taux de pénétration de 15% de la base clients ACDC
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
@@ -407,20 +410,20 @@ const ResourceContent = () => {
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
               <div className="p-5">
                 <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#D47D5A] pb-2">
-                  1. Vente directe consultative
+                  1. Activation de la base clients ACDC
                 </h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Équipe commerciale spécialisée en restauration</span>
+                    <span>Programme de présentation dédié aux clients existants</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Approche personnalisée avec démonstration sur site</span>
+                    <span>Offres préférentielles pour les clients fidèles</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-[#D47D5A] mr-2">•</span>
-                    <span>Processus de qualification rigoureux des prospects</span>
+                    <span>Intégration facilitée avec les systèmes déjà en place</span>
                   </li>
                 </ul>
               </div>
@@ -429,7 +432,7 @@ const ResourceContent = () => {
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
               <div className="p-5">
                 <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#87A28F] pb-2">
-                  2. Partenariats stratégiques
+                  2. Vente directe consultative
                 </h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
@@ -451,7 +454,7 @@ const ResourceContent = () => {
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
               <div className="p-5">
                 <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#D4B483] pb-2">
-                  3. Marketing de contenu ciblé
+                  3. Partenariats stratégiques
                 </h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
@@ -473,7 +476,7 @@ const ResourceContent = () => {
             <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
               <div className="p-5">
                 <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3 border-b border-[#1A2A40] dark:border-[#F5F5F0] pb-2">
-                  4. Présence événementielle sélective
+                  4. Marketing de contenu ciblé
                 </h4>
                 <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                   <li className="flex items-start">
@@ -842,7 +845,7 @@ const ResourceContent = () => {
         
         <div className="bg-white dark:bg-[#1A2A40]/80 p-6 rounded-lg shadow-md mb-8">
           <p className="text-[#1A2A40]/80 dark:text-[#F5F5F0]/90 leading-relaxed mb-6">
-            Ce plan Go-to-Market positionne Sotto pour un lancement progressif mais ambitieux, en privilégiant la qualité de l'expérience et la validation de notre proposition de valeur avant une expansion plus large. Notre approche centrée sur l'humain se reflète non seulement dans notre produit, mais aussi dans notre stratégie commerciale consultative et notre processus d'onboarding approfondi.
+            Ce plan Go-to-Market positionne Sotto pour un lancement ambitieux et accéléré, en capitalisant sur la base existante de 4500 clients d'Au Comptoir de la Caisse. Cette relation privilégiée nous permet d'envisager une adoption rapide et une validation à grande échelle de notre solution, tout en maintenant une approche centrée sur l'humain.
           </p>
           
           <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">
