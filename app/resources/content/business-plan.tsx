@@ -472,7 +472,7 @@ const ResourceContent = () => {
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D47D5A]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Série A (T4 2024)</h4>
               <p className="text-2xl font-semibold text-[#D47D5A] mb-2">1,5M€</p>
-              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour accélérer le développement commercial et produit</p>
+              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour accélérer le développement commercial et produit, qui sera levée par [KinOS Ventures/ACDC - à définir]</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D4B483]">
