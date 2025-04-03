@@ -111,29 +111,29 @@ Chaque abonnement inclut :
 
 ### Hypothèses de croissance
 
-- **Adoption** : Déploiement progressif avec 50 restaurants la première année, croissance de 150% en Y2, 120% en Y3, puis 80% et 60% les années suivantes
-- **Revenu moyen par utilisateur (ARPU)** : 249€ mensuels en Y1, augmentant à 310€ d'ici Y5 avec l'ajout de services
+- **Adoption** : Déploiement progressif avec 300 restaurants la première année, croissance de 200% en Y2, 122% en Y3, puis 75% et 43% les années suivantes
+- **Revenu moyen par utilisateur (ARPU)** : 710€ mensuels, stable sur la période avec équilibre entre optimisation des prix et ajout de services
 - **Rétention** : Objectif de 92% de rétention annuelle
 - **Coût d'acquisition client (CAC)** : 1 800€ en Y1, diminuant à 1 200€ d'ici Y5 avec l'effet réseau
-- **Marge brute** : 65% en Y1, évoluant vers 78% en Y5 avec les économies d'échelle
+- **Marge brute** : 70% stable sur la période grâce aux économies d'échelle compensant les investissements en qualité de service
 
 ### Prévisions de revenus et rentabilité
 
 | Indicateur | Année 1 | Année 2 | Année 3 | Année 4 | Année 5 |
 |------------|---------|---------|---------|---------|---------|
 | Nombre de clients | 300 | 900 | 2000 | 3500 | 5000 |
-| Revenu annuel | 900 K€ | 2,7 M€ | 6,4 M€ | 11,9 M€ | 18 M€ |
-| Marge brute | 585 K€ | 1,89 M€ | 4,8 M€ | 9,3 M€ | 14,4 M€ |
-| EBITDA | 50 K€ | 750 K€ | 2,5 M€ | 5,2 M€ | 8,5 M€ |
-| Trésorerie (fin d'année) | 550 K€ | 1,3 M€ | 3,8 M€ | 7,5 M€ | 12 M€ |
+| Revenu annuel | 2,56 M€ | 7,67 M€ | 17,04 M€ | 29,82 M€ | 42,6 M€ |
+| Marge brute | 1,79 M€ | 5,37 M€ | 11,93 M€ | 20,87 M€ | 29,82 M€ |
+| EBITDA | 0,64 M€ | 2,3 M€ | 5,96 M€ | 11,93 M€ | 17,04 M€ |
+| Trésorerie (fin d'année) | 1,14 M€ | 3,44 M€ | 9,4 M€ | 21,33 M€ | 38,37 M€ |
 
 ### Besoins de financement
 
-Pour réaliser notre plan de croissance, nous anticipons les besoins de financement suivants :
+Grâce à un modèle économique solide et des revenus par client plus élevés que prévu initialement, nos besoins de financement sont optimisés :
 
 - **Amorçage (réalisé)** : 250K€ pour le développement du MVP et les premiers déploiements
-- **Série A (T4 2024)** : 750K€ pour accélérer le développement commercial et produit, qui sera levée par [KinOS Ventures/ACDC - à définir]
-- **Série B (2026)** : 2-2,5M€ pour l'expansion internationale et l'intégration verticale
+- **Série A (T4 2024)** : 500K€ pour accélérer le développement commercial et produit, qui sera levée par [KinOS Ventures/ACDC - à définir]
+- **Série B (2026)** : 1-1,5M€ pour l'expansion internationale et l'intégration verticale, avec possibilité d'autofinancement partiel
 
 ## Stratégie de mise en marché
 

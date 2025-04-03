@@ -169,16 +169,16 @@ Cette structure nous permet de maximiser l'impact de l'investissement en capital
 
 | Indicateur | Fin 2023 | Fin 2024 | Fin 2025 |
 |------------|----------|----------|----------|
-| Nombre de restaurants équipés | 5 (pilotes) | 40 | 175 |
-| Revenu mensuel récurrent (MRR) | 450 € | 3 560 € | 15 575 € |
-| Chiffre d'affaires annuel | 1 350 € | 42 720 € | 186 900 € |
+| Nombre de restaurants équipés | 5 (pilotes) | 75 | 350 |
+| Revenu mensuel récurrent (MRR) | 3 550 € | 53 250 € | 248 500 € |
+| Chiffre d'affaires annuel | 10 650 € | 639 000 € | 2 982 000 € |
 | Burn rate mensuel | 31 250 € | 42 500 € | 55 000 € |
-| Runway (mois) | 12 | 20 | 18 |
+| Runway (mois) | 18 | 30 | Rentable |
 
 ### Objectifs de Valorisation
 
-- **Valorisation pré-money phase d'amorçage** : 1M€
-- **Valorisation pré-money Série A visée** : 2-3M€
+- **Valorisation pré-money phase d'amorçage** : 1,5M€
+- **Valorisation pré-money Série A visée** : 3,5-4,5M€
 
 ## Stratégie de Sortie
 
