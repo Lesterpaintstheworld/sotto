@@ -90,19 +90,19 @@ Le modèle économique de Sotto repose sur quatre piliers complémentaires :
 
 | Indicateur | Année 1 | Année 2 | Année 3 | Année 4 | Année 5 |
 |------------|---------|---------|---------|---------|---------|
-| Nombre de clients | 50 | 125 | 275 | 495 | 792 |
-| Revenu annuel | 149 K€ | 403 K€ | 956 K€ | 1,86 M€ | 3,20 M€ |
-| Marge brute | 97 K€ | 282 K€ | 716 K€ | 1,44 M€ | 2,50 M€ |
-| EBITDA | -320 K€ | -180 K€ | 120 K€ | 650 K€ | 1,28 M€ |
-| Trésorerie (fin d'année) | 680 K€ | 350 K€ | 470 K€ | 1,12 M€ | 2,40 M€ |
+| Nombre de clients | 30 | 75 | 165 | 297 | 475 |
+| Revenu annuel | 89 K€ | 242 K€ | 574 K€ | 1,12 M€ | 1,92 M€ |
+| Marge brute | 58 K€ | 169 K€ | 430 K€ | 864 K€ | 1,50 M€ |
+| EBITDA | -160 K€ | -90 K€ | 72 K€ | 390 K€ | 768 K€ |
+| Trésorerie (fin d'année) | 340 K€ | 175 K€ | 235 K€ | 560 K€ | 1,20 M€ |
 
 ### Besoins de financement
 
 Pour réaliser notre plan de croissance, nous anticipons les besoins de financement suivants :
 
-- **Amorçage (réalisé)** : 500K€ pour le développement du MVP et les premiers déploiements
-- **Série A (T4 2024)** : 1,5M€ pour accélérer le développement commercial et produit
-- **Série B (2026)** : 4-5M€ pour l'expansion internationale et l'intégration verticale
+- **Amorçage (réalisé)** : 250K€ pour le développement du MVP et les premiers déploiements
+- **Série A (T4 2024)** : 750K€ pour accélérer le développement commercial et produit
+- **Série B (2026)** : 2-2,5M€ pour l'expansion internationale et l'intégration verticale
 
 ## Stratégie de mise en marché
 
@@ -165,10 +165,10 @@ Nous suivrons attentivement les métriques suivantes pour évaluer notre succès
 ### Structure organisationnelle cible (fin 2024)
 
 - **Direction** : 3 personnes (CEO, CTO, COO)
-- **Développement produit** : 4-5 personnes (ingénieurs IA, développeurs full-stack, UX)
-- **Opérations & Support** : 3-4 personnes
-- **Commercial & Marketing** : 3 personnes
-- **Finances & Administration** : 2 personnes
+- **Développement produit** : 2-3 personnes (ingénieurs IA, développeurs full-stack, UX)
+- **Opérations & Support** : 2 personnes
+- **Commercial & Marketing** : 2 personnes
+- **Finances & Administration** : 1 personne
 
 ### Recrutements prioritaires
 

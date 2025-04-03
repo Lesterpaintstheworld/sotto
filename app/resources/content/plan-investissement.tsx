@@ -135,7 +135,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Développement Technique</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">190 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">95 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Équipe de développement</li>
                 <li>Infrastructure et outils</li>
@@ -153,7 +153,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Tests et Validation</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">85 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">42 500 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Programme pilote</li>
                 <li>Optimisation produit</li>
@@ -171,7 +171,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Marketing et Commercial</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">50 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">25 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Identité de marque</li>
                 <li>Acquisition premiers clients</li>
@@ -188,7 +188,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Frais Généraux et Réserve</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">100 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">50 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Frais de structure</li>
                 <li>Réserve de trésorerie</li>
@@ -201,23 +201,23 @@ const ResourceContent = () => {
             
             <div className="space-y-6">
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Technique (190 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Technique (95 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Équipe de développement</span> (125 000 €)
+                  <li className="list-disc"><span className="font-medium">Équipe de développement</span> (62 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">2 développeurs full-stack senior</li>
                       <li className="list-disc text-sm">1 ingénieur IA/ML spécialisé en traitement du langage</li>
                       <li className="list-disc text-sm">1 designer UX/UI à temps partiel</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Infrastructure et outils</span> (40 000 €)
+                  <li className="list-disc"><span className="font-medium">Infrastructure et outils</span> (20 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Serveurs cloud et services SaaS</li>
                       <li className="list-disc text-sm">Licences logicielles et API tierces</li>
                       <li className="list-disc text-sm">Environnements de test et d'intégration continue</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Matériel prototype</span> (25 000 €)
+                  <li className="list-disc"><span className="font-medium">Matériel prototype</span> (12 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Oreillettes professionnelles pour tests</li>
                       <li className="list-disc text-sm">Équipement de test acoustique</li>
@@ -228,16 +228,16 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Tests et Validation (85 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Tests et Validation (42 500 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Programme pilote</span> (60 000 €)
+                  <li className="list-disc"><span className="font-medium">Programme pilote</span> (30 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Installation dans 5 restaurants partenaires</li>
                       <li className="list-disc text-sm">Support technique dédié pendant la phase pilote</li>
                       <li className="list-disc text-sm">Collecte et analyse des données d'usage</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Optimisation produit</span> (25 000 €)
+                  <li className="list-disc"><span className="font-medium">Optimisation produit</span> (12 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Itérations basées sur les retours utilisateurs</li>
                       <li className="list-disc text-sm">Ajustements des algorithmes et de l'UX vocale</li>
@@ -247,15 +247,15 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Marketing et Commercial (50 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Marketing et Commercial (25 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Identité de marque</span> (15 000 €)
+                  <li className="list-disc"><span className="font-medium">Identité de marque</span> (7 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Développement de l'identité visuelle complète</li>
                       <li className="list-disc text-sm">Site web et matériel de présentation</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Acquisition premiers clients</span> (35 000 €)
+                  <li className="list-disc"><span className="font-medium">Acquisition premiers clients</span> (17 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Présence événementielle ciblée</li>
                       <li className="list-disc text-sm">Contenu marketing spécialisé</li>
@@ -266,16 +266,16 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Frais Généraux et Réserve (50 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Frais Généraux et Réserve (25 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Frais de structure</span> (35 000 €)
+                  <li className="list-disc"><span className="font-medium">Frais de structure</span> (17 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Locaux et équipements</li>
                       <li className="list-disc text-sm">Services juridiques et comptables</li>
                       <li className="list-disc text-sm">Assurances professionnelles</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Réserve de trésorerie</span> (15 000 €)
+                  <li className="list-disc"><span className="font-medium">Réserve de trésorerie</span> (7 500 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Fonds d'urgence pour imprévus</li>
                     </ul>
@@ -301,7 +301,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Développement Produit</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">350 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">175 000 €</p>
             </div>
 
             {/* Expansion Commerciale */}
@@ -350,7 +350,7 @@ const ResourceContent = () => {
             
             <div className="space-y-6">
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Produit (350 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Produit (175 000 €)</h5>
                 <ul className="space-y-1 pl-5 text-[#1A2A40]">
                   <li className="list-disc">Expansion de l'équipe technique (4 à 8 développeurs)</li>
                   <li className="list-disc">Développement des fonctionnalités avancées</li>
@@ -360,7 +360,7 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Expansion Commerciale (300 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Expansion Commerciale (150 000 €)</h5>
                 <ul className="space-y-1 pl-5 text-[#1A2A40]">
                   <li className="list-disc">Constitution d'une équipe commerciale (3-4 personnes)</li>
                   <li className="list-disc">Programme de marketing digital et contenu</li>
@@ -370,7 +370,7 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Opérations (150 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Opérations (75 000 €)</h5>
                 <ul className="space-y-1 pl-5 text-[#1A2A40]">
                   <li className="list-disc">Équipe support client et succès client</li>
                   <li className="list-disc">Logistique et déploiement à l'échelle</li>
@@ -379,7 +379,7 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Internationalisation (75 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Internationalisation (37 500 €)</h5>
                 <ul className="space-y-1 pl-5 text-[#1A2A40]">
                   <li className="list-disc">Adaptation linguistique et culturelle du produit</li>
                   <li className="list-disc">Études de marché pour expansion européenne</li>
@@ -413,7 +413,7 @@ const ResourceContent = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-white !important">Business Angels (150 000 €)</p>
+                    <p className="font-medium text-white !important">Business Angels (75 000 €)</p>
                     <p className="text-sm text-white !important">Profils ciblés : entrepreneurs du secteur restauration/tech</p>
                     <p className="text-sm text-white !important">Apport de réseau et expertise métier</p>
                   </div>
@@ -427,7 +427,7 @@ const ResourceContent = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-white !important">Fonds d'amorçage (150 000 €)</p>
+                    <p className="font-medium text-white !important">Fonds d'amorçage (75 000 €)</p>
                     <p className="text-sm text-white !important">Fonds spécialisés en FoodTech et solutions B2B</p>
                   </div>
                 </li>
@@ -440,7 +440,7 @@ const ResourceContent = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-white !important">Subventions et aides (75 000 €)</p>
+                    <p className="font-medium text-white !important">Subventions et aides (37 500 €)</p>
                     <p className="text-sm text-white !important">BPI France (Innovation)</p>
                     <p className="text-sm text-white !important">Crédit Impôt Recherche</p>
                     <p className="text-sm text-white !important">Programmes européens d'innovation</p>
@@ -461,7 +461,7 @@ const ResourceContent = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-white !important">Venture Capital (750 000 €)</p>
+                    <p className="font-medium text-white !important">Venture Capital (375 000 €)</p>
                     <p className="text-sm text-white !important">Fonds spécialisés en Series A avec expertise SaaS B2B</p>
                     <p className="text-sm text-white !important">Fonds thématiques FoodTech et IA</p>
                   </div>
@@ -475,7 +475,7 @@ const ResourceContent = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="font-medium text-white !important">Partenaires stratégiques (125 000 €)</p>
+                    <p className="font-medium text-white !important">Partenaires stratégiques (62 500 €)</p>
                     <p className="text-sm text-white !important">Acteurs de l'écosystème restauration et paiement</p>
                   </div>
                 </li>
@@ -616,9 +616,9 @@ const ResourceContent = () => {
                   </tr>
                   <tr className="border-b border-[#1A2A40]/10">
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Burn rate mensuel</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">62 500 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">85 000 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">110 000 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">31 250 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">42 500 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">55 000 €</td>
                   </tr>
                   <tr>
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Runway (mois)</td>

@@ -14,15 +14,15 @@ Pour réaliser notre vision et atteindre nos objectifs commerciaux, nous prévoy
 
 ## Besoins Financiers
 
-### Phase 1 : Amorçage (750 000 €)
+### Phase 1 : Amorçage (375 000 €)
 
-Notre objectif immédiat est de sécuriser un financement initial de 750 000 € pour développer notre MVP (Minimum Viable Product) et lancer nos premiers tests en environnement réel.
+Notre objectif immédiat est de sécuriser un financement initial de 375 000 € pour développer notre MVP (Minimum Viable Product) et lancer nos premiers tests en environnement réel.
 
 | Période | Montant | Objectif principal |
 |---------|---------|-------------------|
 | T3-T4 2023 | 375 000 € | Développement MVP et tests pilotes |
 
-### Phase 2 : Série A (1 750 000 €)
+### Phase 2 : Série A (875 000 €)
 
 Une fois la preuve de concept validée, nous prévoyons une levée plus conséquente pour accélérer notre développement commercial et technique.
 
@@ -32,72 +32,72 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 ## Utilisation des Fonds
 
-### Phase 1 : Amorçage (750 000 €)
+### Phase 1 : Amorçage (375 000 €)
 
 ![Répartition Phase 1](https://placeholder-for-chart-phase1.png)
 
-#### Développement Technique (190 000 €)
-- **Équipe de développement** (125 000 €)
+#### Développement Technique (95 000 €)
+- **Équipe de développement** (62 500 €)
   - 2 développeurs full-stack senior
   - 1 ingénieur IA/ML spécialisé en traitement du langage
   - 1 designer UX/UI à temps partiel
-- **Infrastructure et outils** (40 000 €)
+- **Infrastructure et outils** (20 000 €)
   - Serveurs cloud et services SaaS
   - Licences logicielles et API tierces
   - Environnements de test et d'intégration continue
-- **Matériel prototype** (25 000 €)
+- **Matériel prototype** (12 500 €)
   - Oreillettes professionnelles pour tests
   - Équipement de test acoustique
   - Matériel d'installation pilote
 
-#### Tests et Validation (85 000 €)
-- **Programme pilote** (60 000 €)
+#### Tests et Validation (42 500 €)
+- **Programme pilote** (30 000 €)
   - Installation dans 5 restaurants partenaires
   - Support technique dédié pendant la phase pilote
   - Collecte et analyse des données d'usage
-- **Optimisation produit** (25 000 €)
+- **Optimisation produit** (12 500 €)
   - Itérations basées sur les retours utilisateurs
   - Ajustements des algorithmes et de l'UX vocale
 
-#### Marketing et Commercial (50 000 €)
-- **Identité de marque** (15 000 €)
+#### Marketing et Commercial (25 000 €)
+- **Identité de marque** (7 500 €)
   - Développement de l'identité visuelle complète
   - Site web et matériel de présentation
-- **Acquisition premiers clients** (35 000 €)
+- **Acquisition premiers clients** (17 500 €)
   - Présence événementielle ciblée
   - Contenu marketing spécialisé
   - Démarches commerciales directes
 
-#### Frais Généraux et Réserve (50 000 €)
-- **Frais de structure** (35 000 €)
+#### Frais Généraux et Réserve (25 000 €)
+- **Frais de structure** (17 500 €)
   - Locaux et équipements
   - Services juridiques et comptables
   - Assurances professionnelles
-- **Réserve de trésorerie** (15 000 €)
+- **Réserve de trésorerie** (7 500 €)
   - Fonds d'urgence pour imprévus
 
-### Phase 2 : Série A (1 750 000 €)
+### Phase 2 : Série A (875 000 €)
 
 ![Répartition Phase 2](https://placeholder-for-chart-phase2.png)
 
-#### Développement Produit (350 000 €)
-- Expansion de l'équipe technique (4 à 8 développeurs)
+#### Développement Produit (175 000 €)
+- Expansion de l'équipe technique (4 à 6 développeurs)
 - Développement des fonctionnalités avancées
 - Intégrations avec systèmes tiers (TPE, plateformes de livraison)
 - Amélioration continue des algorithmes IA
 
-#### Expansion Commerciale (300 000 €)
-- Constitution d'une équipe commerciale (3-4 personnes)
+#### Expansion Commerciale (150 000 €)
+- Constitution d'une équipe commerciale (2-3 personnes)
 - Programme de marketing digital et contenu
 - Développement de partenariats stratégiques
 - Présence renforcée sur salons professionnels
 
-#### Opérations (150 000 €)
+#### Opérations (75 000 €)
 - Équipe support client et succès client
 - Logistique et déploiement à l'échelle
 - Formation et documentation
 
-#### Internationalisation (75 000 €)
+#### Internationalisation (37 500 €)
 - Adaptation linguistique et culturelle du produit
 - Études de marché pour expansion européenne
 - Conformité réglementaire internationale
@@ -107,21 +107,21 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 ### Sources de Financement Ciblées
 
 #### Phase 1 : Amorçage
-- **Business Angels** (150 000 €)
+- **Business Angels** (75 000 €)
   - Profils ciblés : entrepreneurs du secteur restauration/tech
   - Apport de réseau et expertise métier
-- **Fonds d'amorçage** (150 000 €)
+- **Fonds d'amorçage** (75 000 €)
   - Fonds spécialisés en FoodTech et solutions B2B
-- **Subventions et aides** (75 000 €)
+- **Subventions et aides** (37 500 €)
   - BPI France (Innovation)
   - Crédit Impôt Recherche
   - Programmes européens d'innovation
 
 #### Phase 2 : Série A
-- **Venture Capital** (750 000 €)
+- **Venture Capital** (375 000 €)
   - Fonds spécialisés en Series A avec expertise SaaS B2B
   - Fonds thématiques FoodTech et IA
-- **Partenaires stratégiques** (125 000 €)
+- **Partenaires stratégiques** (62 500 €)
   - Acteurs de l'écosystème restauration et paiement
 
 ### Calendrier et Jalons
@@ -156,16 +156,16 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 | Indicateur | Fin 2023 | Fin 2024 | Fin 2025 |
 |------------|----------|----------|----------|
-| Nombre de restaurants équipés | 5 (pilotes) | 75 | 350 |
-| Revenu mensuel récurrent (MRR) | 450 € | 6 675 € | 31 150 € |
-| Chiffre d'affaires annuel | 1 350 € | 80 100 € | 373 800 € |
-| Burn rate mensuel | 62 500 € | 85 000 € | 110 000 € |
+| Nombre de restaurants équipés | 5 (pilotes) | 40 | 175 |
+| Revenu mensuel récurrent (MRR) | 450 € | 3 560 € | 15 575 € |
+| Chiffre d'affaires annuel | 1 350 € | 42 720 € | 186 900 € |
+| Burn rate mensuel | 31 250 € | 42 500 € | 55 000 € |
 | Runway (mois) | 12 | 20 | 18 |
 
 ### Objectifs de Valorisation
 
-- **Valorisation pré-money phase d'amorçage** : 1,5M€
-- **Valorisation pré-money Série A visée** : 3,5-4,5M€
+- **Valorisation pré-money phase d'amorçage** : 1M€
+- **Valorisation pré-money Série A visée** : 2-3M€
 
 ## Stratégie de Sortie
 
@@ -173,7 +173,7 @@ Nous envisageons plusieurs scénarios de sortie à l'horizon 5-7 ans :
 
 1. **Acquisition stratégique** (scénario privilégié)
    - Acquéreurs potentiels : acteurs majeurs des solutions de caisse, groupes de restauration, entreprises de paiement
-   - Valorisation cible : 8-10x le revenu annuel
+   - Valorisation cible : 5-7x le revenu annuel
 
 2. **Levée de fonds Série B/C**
    - Pour une expansion internationale accélérée
