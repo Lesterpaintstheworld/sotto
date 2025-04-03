@@ -10,7 +10,7 @@ export default function Footer() {
             Libérez votre restaurant des écrans et recentrez-vous sur l'essentiel : l'humain et la gastronomie.
           </p>
           <p className="text-[#F5F5F0]/70 mt-2">
-            Une entreprise du Groupe Au Comptoir de la Caisse
+            Une entreprise du groupe KinOS Ventures
           </p>
         </div>
         <div>
