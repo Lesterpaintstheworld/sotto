@@ -25,6 +25,7 @@ export default function Header() {
       <nav className="hidden md:flex items-center gap-6">
         <Link href="/about" className="text-sm hover:text-[#D47D5A] transition-colors">À propos</Link>
         <Link href="/demo" className="text-sm hover:text-[#D47D5A] transition-colors">Démo</Link>
+        <Link href="/pricing" className="text-sm hover:text-[#D47D5A] transition-colors">Tarifs</Link>
         <Link href="/blog" className="text-sm hover:text-[#D47D5A] transition-colors">Blog</Link>
         <Link href="/resources" className="text-sm hover:text-[#D47D5A] transition-colors">Ressources</Link>
         <Link href="/contact" className="text-sm hover:text-[#D47D5A] transition-colors">Contact</Link>
@@ -125,6 +126,13 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Démo
+            </Link>
+            <Link 
+              href="/pricing" 
+              className="py-2 text-sm hover:text-[#D47D5A]"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Tarifs
             </Link>
             <Link 
               href="/blog" 
