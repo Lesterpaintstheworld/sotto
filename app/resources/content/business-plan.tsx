@@ -360,7 +360,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0]">Adoption</h4>
               </div>
-              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Déploiement progressif avec 50 restaurants la première année, croissance de 150% en Y2, 120% en Y3, puis 80% et 60% les années suivantes</p>
+              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Déploiement progressif avec 300 restaurants la première année, croissance de 200% en Y2, 122% en Y3, puis 75% et 43% les années suivantes</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -372,7 +372,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0]">ARPU</h4>
               </div>
-              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Revenu moyen par utilisateur de 249€ mensuels en Y1, augmentant à 310€ d'ici Y5 avec l'ajout de services</p>
+              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Revenu moyen par utilisateur de 710€ mensuels, stable sur la période avec équilibre entre optimisation des prix et ajout de services</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
@@ -442,35 +442,35 @@ const ResourceContent = () => {
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Revenu annuel</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">900 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2,7 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">6,4 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">11,9 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">18 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2,56 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">7,67 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">17,04 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">29,82 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">42,6 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Marge brute</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">585 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,89 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">4,8 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">9,3 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">14,4 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,79 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">5,37 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">11,93 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">20,87 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">29,82 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">EBITDA</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">50 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">750 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">2,5 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">5,2 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">8,5 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">0,64 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">2,3 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">5,96 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">11,93 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">17,04 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Trésorerie (fin d'année)</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">550 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,3 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">3,8 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">7,5 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">12 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,14 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">3,44 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">9,4 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">21,33 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">38,37 M€</td>
                 </tr>
               </tbody>
             </table>
@@ -483,7 +483,7 @@ const ResourceContent = () => {
           </h3>
           
           <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
-            Pour réaliser notre plan de croissance, nous anticipons les besoins de financement suivants :
+            Grâce à un modèle économique solide et des revenus par client plus élevés que prévu initialement, nos besoins de financement sont optimisés :
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -495,14 +495,14 @@ const ResourceContent = () => {
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D47D5A]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Série A (T4 2024)</h4>
-              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">1,5M€</p>
+              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">1M€</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour accélérer le développement commercial et produit, qui sera levée par [KinOS Ventures/ACDC - à définir]</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D4B483]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Série B (2026)</h4>
-              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">4-5M€</p>
-              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour l'expansion internationale et l'intégration verticale</p>
+              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">2-3M€</p>
+              <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour l'expansion internationale et l'intégration verticale, avec possibilité d'autofinancement partiel</p>
             </div>
           </div>
         </div>
