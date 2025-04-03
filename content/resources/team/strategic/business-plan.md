@@ -6,6 +6,8 @@
 
 Ce business plan détaille la stratégie de croissance de Sotto pour les cinq prochaines années, en présentant une analyse approfondie du marché, notre modèle économique, nos projections financières et notre feuille de route de développement. Sotto se positionne comme une solution révolutionnaire dans le secteur de la restauration, en remplaçant les interfaces à écran traditionnelles par un système d'intelligence artificielle vocale, permettant ainsi une expérience plus humaine et efficace.
 
+Sotto est le fruit d'une collaboration stratégique entre deux entités complémentaires : KinOS Ventures, qui apporte la technologie (KinOS Engine) et le développement produit, et Au Comptoir de la Caisse (ACDC), qui contribue avec son expertise métier et sa base de 4500 clients dans le secteur de la restauration. Cette synergie nous permet de combiner innovation technologique et connaissance approfondie du marché.
+
 Notre vision s'étend au-delà d'une simple solution technologique pour devenir un écosystème complet d'encaissement intelligent qui centralise les flux de commandes et de paiements tout en libérant l'espace physique et l'attention du personnel.
 
 ## Analyse du marché
@@ -43,6 +45,21 @@ Le secteur de la restauration en France représente un marché considérable ave
 Sotto se distingue par son approche holistique qui combine interface vocale spécialisée et écosystème d'encaissement complet, comblant ainsi un vide significatif sur le marché.
 
 ## Modèle économique
+
+### Structure de partenariat
+
+Notre modèle repose sur une collaboration étroite entre deux entités aux expertises complémentaires :
+
+1. **KinOS Ventures**
+   - Développement de la technologie KinOS Engine pour le traitement vocal
+   - Conception et évolution du produit Sotto
+   - Gestion de l'infrastructure technique et des appels IA
+
+2. **Au Comptoir de la Caisse (ACDC)**
+   - Expertise métier dans le secteur de la restauration
+   - Accès à une base de 4500 clients existants
+   - Connaissance approfondie des problématiques d'encaissement
+   - Réseau commercial établi
 
 ### Sources de revenus
 
@@ -101,7 +118,7 @@ Le modèle économique de Sotto repose sur quatre piliers complémentaires :
 Pour réaliser notre plan de croissance, nous anticipons les besoins de financement suivants :
 
 - **Amorçage (réalisé)** : 250K€ pour le développement du MVP et les premiers déploiements
-- **Série A (T4 2024)** : 750K€ pour accélérer le développement commercial et produit
+- **Série A (T4 2024)** : 750K€ pour accélérer le développement commercial et produit, qui sera levée par [KinOS Ventures/ACDC - à définir]
 - **Série B (2026)** : 2-2,5M€ pour l'expansion internationale et l'intégration verticale
 
 ## Stratégie de mise en marché

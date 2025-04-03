@@ -18,6 +18,9 @@ const ResourceContent = () => {
           <p className="mb-4">
             Ce business plan détaille la stratégie de croissance de Sotto pour les cinq prochaines années, en présentant une analyse approfondie du marché, notre modèle économique, nos projections financières et notre feuille de route de développement. Sotto se positionne comme une solution révolutionnaire dans le secteur de la restauration, en remplaçant les interfaces à écran traditionnelles par un système d'intelligence artificielle vocale, permettant ainsi une expérience plus humaine et efficace.
           </p>
+          <p className="mb-4">
+            Sotto est le fruit d'une collaboration stratégique entre deux entités complémentaires : KinOS Ventures, qui apporte la technologie (KinOS Engine) et le développement produit, et Au Comptoir de la Caisse (ACDC), qui contribue avec son expertise métier et sa base de 4500 clients dans le secteur de la restauration. Cette synergie nous permet de combiner innovation technologique et connaissance approfondie du marché.
+          </p>
           <p>
             Notre vision s'étend au-delà d'une simple solution technologique pour devenir un écosystème complet d'encaissement intelligent qui centralise les flux de commandes et de paiements tout en libérant l'espace physique et l'attention du personnel.
           </p>
@@ -189,6 +192,37 @@ const ResourceContent = () => {
           Modèle économique
         </h2>
         
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
+            Structure de partenariat
+          </h3>
+          
+          <p className="mb-4 text-[#1A2A40] dark:text-[#F5F5F0]">
+            Notre modèle repose sur une collaboration étroite entre deux entités aux expertises complémentaires :
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 rounded-lg shadow-md p-5 border-t-4 border-[#D47D5A] hover:shadow-lg transition-shadow">
+              <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">1. KinOS Ventures</h4>
+              <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
+                <li>Développement de la technologie KinOS Engine pour le traitement vocal</li>
+                <li>Conception et évolution du produit Sotto</li>
+                <li>Gestion de l'infrastructure technique et des appels IA</li>
+              </ul>
+            </div>
+            
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 rounded-lg shadow-md p-5 border-t-4 border-[#87A28F] hover:shadow-lg transition-shadow">
+              <h4 className="font-bold text-lg text-[#1A2A40] dark:text-[#F5F5F0] mb-3">2. Au Comptoir de la Caisse (ACDC)</h4>
+              <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
+                <li>Expertise métier dans le secteur de la restauration</li>
+                <li>Accès à une base de 4500 clients existants</li>
+                <li>Connaissance approfondie des problématiques d'encaissement</li>
+                <li>Réseau commercial établi</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <div className="mb-8">
           <h3 className="text-xl font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-4">
             Sources de revenus

@@ -35,6 +35,9 @@ const ResourceContent = () => {
           <p className="text-[#1A2A40] leading-relaxed">
             Ce plan d'investissement détaille la stratégie financière de Sotto pour transformer le secteur de la restauration grâce à notre système d'interface vocale IA. Il présente nos besoins en capitaux, l'allocation prévue des fonds et notre approche de levée de fonds pour les 24 prochains mois. Ce document s'adresse à l'équipe interne et servira de base pour nos discussions avec les investisseurs potentiels, en alignement avec notre vision de libérer les restaurants des écrans pour créer une expérience plus humaine et efficace.
           </p>
+          <p className="text-[#1A2A40] leading-relaxed mt-4">
+            Ce plan s'inscrit dans le cadre du partenariat stratégique entre KinOS Ventures, qui fournit la technologie KinOS Engine et le développement produit, et Au Comptoir de la Caisse (ACDC), qui apporte son expertise métier et sa base de 4500 clients dans le secteur de la restauration.
+          </p>
         </div>
       </section>
 
@@ -49,6 +52,9 @@ const ResourceContent = () => {
           </p>
           <p className="leading-relaxed text-white !important">
             Pour réaliser notre vision et atteindre nos objectifs commerciaux, nous prévoyons une levée de fonds de <span className="font-bold text-[#D4B483]">1,25 million d'euros</span> sur les deux prochaines années, divisée en deux phases distinctes.
+          </p>
+          <p className="leading-relaxed text-white !important mt-4">
+            La levée de fonds sera réalisée par [KinOS Ventures/ACDC - à définir], avec une répartition des ressources qui permettra d'optimiser le développement technologique et l'accès au marché.
           </p>
         </div>
       </section>
@@ -396,6 +402,34 @@ const ResourceContent = () => {
         <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">
           Stratégie de Levée de Fonds
         </h2>
+        
+        <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-sm mb-8">
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Structure de l'opération</h3>
+          
+          <p className="text-[#1A2A40] mb-4">
+            La levée de fonds sera portée par [KinOS Ventures/ACDC - à définir], avec une répartition stratégique des ressources entre les deux entités partenaires :
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-lg p-5 shadow-inner">
+              <h4 className="font-medium text-[#1A2A40] mb-2">KinOS Ventures</h4>
+              <p className="text-sm text-[#1A2A40]">
+                Allocation des ressources pour le développement de la technologie KinOS Engine, l'infrastructure IA et l'évolution produit
+              </p>
+            </div>
+            
+            <div className="bg-white rounded-lg p-5 shadow-inner">
+              <h4 className="font-medium text-[#1A2A40] mb-2">Au Comptoir de la Caisse</h4>
+              <p className="text-sm text-[#1A2A40]">
+                Allocation des ressources pour l'adaptation marché, le déploiement commercial et l'intégration avec la base clients existante de 4500 établissements
+              </p>
+            </div>
+          </div>
+          
+          <p className="text-[#1A2A40] mt-4">
+            Cette structure nous permet de maximiser l'impact de l'investissement en capitalisant sur les forces complémentaires des deux partenaires.
+          </p>
+        </div>
         
         <div className="bg-[#1A2A40] text-white rounded-lg p-6 shadow-md mb-8">
           <h3 className="text-xl font-semibold mb-4 text-white !important">Sources de Financement Ciblées</h3>

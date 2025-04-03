@@ -6,11 +6,15 @@
 
 Ce plan d'investissement détaille la stratégie financière de Sotto pour transformer le secteur de la restauration grâce à notre système d'interface vocale IA. Il présente nos besoins en capitaux, l'allocation prévue des fonds et notre approche de levée de fonds pour les 24 prochains mois. Ce document s'adresse à l'équipe interne et servira de base pour nos discussions avec les investisseurs potentiels, en alignement avec notre vision de libérer les restaurants des écrans pour créer une expérience plus humaine et efficace.
 
+Ce plan s'inscrit dans le cadre du partenariat stratégique entre KinOS Ventures, qui fournit la technologie KinOS Engine et le développement produit, et Au Comptoir de la Caisse (ACDC), qui apporte son expertise métier et sa base de 4500 clients dans le secteur de la restauration.
+
 ## Résumé Exécutif
 
 Sotto développe une solution d'IA vocale qui élimine les interfaces à écran dans les restaurants, permettant au personnel de se concentrer sur l'essentiel : l'expérience client et la gastronomie. Notre technologie s'intègre dans un écosystème complet d'encaissement intelligent, offrant une proposition de valeur unique sur un marché de la restauration en pleine transformation numérique.
 
 Pour réaliser notre vision et atteindre nos objectifs commerciaux, nous prévoyons une levée de fonds de **1,25 million d'euros** sur les deux prochaines années, divisée en deux phases distinctes.
+
+La levée de fonds sera réalisée par [KinOS Ventures/ACDC - à définir], avec une répartition des ressources qui permettra d'optimiser le développement technologique et l'accès au marché.
 
 ## Besoins Financiers
 
@@ -103,6 +107,15 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 - Conformité réglementaire internationale
 
 ## Stratégie de Levée de Fonds
+
+### Structure de l'opération
+
+La levée de fonds sera portée par [KinOS Ventures/ACDC - à définir], avec une répartition stratégique des ressources entre les deux entités partenaires :
+
+- **KinOS Ventures** : Allocation des ressources pour le développement de la technologie KinOS Engine, l'infrastructure IA et l'évolution produit
+- **Au Comptoir de la Caisse** : Allocation des ressources pour l'adaptation marché, le déploiement commercial et l'intégration avec la base clients existante
+
+Cette structure nous permet de maximiser l'impact de l'investissement en capitalisant sur les forces complémentaires des deux partenaires.
 
 ### Sources de Financement Ciblées
 
