@@ -10,7 +10,7 @@ Ce plan d'investissement détaille la stratégie financière de Sotto pour trans
 
 Sotto développe une solution d'IA vocale qui élimine les interfaces à écran dans les restaurants, permettant au personnel de se concentrer sur l'essentiel : l'expérience client et la gastronomie. Notre technologie s'intègre dans un écosystème complet d'encaissement intelligent, offrant une proposition de valeur unique sur un marché de la restauration en pleine transformation numérique.
 
-Pour réaliser notre vision et atteindre nos objectifs commerciaux, nous prévoyons une levée de fonds de **2,5 millions d'euros** sur les deux prochaines années, divisée en deux phases distinctes.
+Pour réaliser notre vision et atteindre nos objectifs commerciaux, nous prévoyons une levée de fonds de **1,25 million d'euros** sur les deux prochaines années, divisée en deux phases distinctes.
 
 ## Besoins Financiers
 
@@ -20,7 +20,7 @@ Notre objectif immédiat est de sécuriser un financement initial de 750 000 €
 
 | Période | Montant | Objectif principal |
 |---------|---------|-------------------|
-| T3-T4 2023 | 750 000 € | Développement MVP et tests pilotes |
+| T3-T4 2023 | 375 000 € | Développement MVP et tests pilotes |
 
 ### Phase 2 : Série A (1 750 000 €)
 
@@ -28,7 +28,7 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 | Période | Montant | Objectif principal |
 |---------|---------|-------------------|
-| T3-T4 2024 | 1 750 000 € | Scaling commercial et développement produit avancé |
+| T3-T4 2024 | 875 000 € | Scaling commercial et développement produit avancé |
 
 ## Utilisation des Fonds
 
@@ -36,68 +36,68 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 ![Répartition Phase 1](https://placeholder-for-chart-phase1.png)
 
-#### Développement Technique (380 000 €)
-- **Équipe de développement** (250 000 €)
+#### Développement Technique (190 000 €)
+- **Équipe de développement** (125 000 €)
   - 2 développeurs full-stack senior
   - 1 ingénieur IA/ML spécialisé en traitement du langage
   - 1 designer UX/UI à temps partiel
-- **Infrastructure et outils** (80 000 €)
+- **Infrastructure et outils** (40 000 €)
   - Serveurs cloud et services SaaS
   - Licences logicielles et API tierces
   - Environnements de test et d'intégration continue
-- **Matériel prototype** (50 000 €)
+- **Matériel prototype** (25 000 €)
   - Oreillettes professionnelles pour tests
   - Équipement de test acoustique
   - Matériel d'installation pilote
 
-#### Tests et Validation (170 000 €)
-- **Programme pilote** (120 000 €)
+#### Tests et Validation (85 000 €)
+- **Programme pilote** (60 000 €)
   - Installation dans 5 restaurants partenaires
   - Support technique dédié pendant la phase pilote
   - Collecte et analyse des données d'usage
-- **Optimisation produit** (50 000 €)
+- **Optimisation produit** (25 000 €)
   - Itérations basées sur les retours utilisateurs
   - Ajustements des algorithmes et de l'UX vocale
 
-#### Marketing et Commercial (100 000 €)
-- **Identité de marque** (30 000 €)
+#### Marketing et Commercial (50 000 €)
+- **Identité de marque** (15 000 €)
   - Développement de l'identité visuelle complète
   - Site web et matériel de présentation
-- **Acquisition premiers clients** (70 000 €)
+- **Acquisition premiers clients** (35 000 €)
   - Présence événementielle ciblée
   - Contenu marketing spécialisé
   - Démarches commerciales directes
 
-#### Frais Généraux et Réserve (100 000 €)
-- **Frais de structure** (70 000 €)
+#### Frais Généraux et Réserve (50 000 €)
+- **Frais de structure** (35 000 €)
   - Locaux et équipements
   - Services juridiques et comptables
   - Assurances professionnelles
-- **Réserve de trésorerie** (30 000 €)
+- **Réserve de trésorerie** (15 000 €)
   - Fonds d'urgence pour imprévus
 
 ### Phase 2 : Série A (1 750 000 €)
 
 ![Répartition Phase 2](https://placeholder-for-chart-phase2.png)
 
-#### Développement Produit (700 000 €)
+#### Développement Produit (350 000 €)
 - Expansion de l'équipe technique (4 à 8 développeurs)
 - Développement des fonctionnalités avancées
 - Intégrations avec systèmes tiers (TPE, plateformes de livraison)
 - Amélioration continue des algorithmes IA
 
-#### Expansion Commerciale (600 000 €)
+#### Expansion Commerciale (300 000 €)
 - Constitution d'une équipe commerciale (3-4 personnes)
 - Programme de marketing digital et contenu
 - Développement de partenariats stratégiques
 - Présence renforcée sur salons professionnels
 
-#### Opérations (300 000 €)
+#### Opérations (150 000 €)
 - Équipe support client et succès client
 - Logistique et déploiement à l'échelle
 - Formation et documentation
 
-#### Internationalisation (150 000 €)
+#### Internationalisation (75 000 €)
 - Adaptation linguistique et culturelle du produit
 - Études de marché pour expansion européenne
 - Conformité réglementaire internationale
@@ -107,21 +107,21 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 ### Sources de Financement Ciblées
 
 #### Phase 1 : Amorçage
-- **Business Angels** (300 000 €)
+- **Business Angels** (150 000 €)
   - Profils ciblés : entrepreneurs du secteur restauration/tech
   - Apport de réseau et expertise métier
-- **Fonds d'amorçage** (300 000 €)
+- **Fonds d'amorçage** (150 000 €)
   - Fonds spécialisés en FoodTech et solutions B2B
-- **Subventions et aides** (150 000 €)
+- **Subventions et aides** (75 000 €)
   - BPI France (Innovation)
   - Crédit Impôt Recherche
   - Programmes européens d'innovation
 
 #### Phase 2 : Série A
-- **Venture Capital** (1 500 000 €)
+- **Venture Capital** (750 000 €)
   - Fonds spécialisés en Series A avec expertise SaaS B2B
   - Fonds thématiques FoodTech et IA
-- **Partenaires stratégiques** (250 000 €)
+- **Partenaires stratégiques** (125 000 €)
   - Acteurs de l'écosystème restauration et paiement
 
 ### Calendrier et Jalons
@@ -164,8 +164,8 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 ### Objectifs de Valorisation
 
-- **Valorisation pré-money phase d'amorçage** : 3M€
-- **Valorisation pré-money Série A visée** : 7-9M€
+- **Valorisation pré-money phase d'amorçage** : 1,5M€
+- **Valorisation pré-money Série A visée** : 3,5-4,5M€
 
 ## Stratégie de Sortie
 

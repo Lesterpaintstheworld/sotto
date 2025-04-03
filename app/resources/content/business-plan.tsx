@@ -431,19 +431,19 @@ const ResourceContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#87A28F]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Amorçage (réalisé)</h4>
-              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">1M€</p>
+              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">500K€</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour le développement du MVP et les premiers déploiements</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D47D5A]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Série A (T4 2024)</h4>
-              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">3M€</p>
+              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">1,5M€</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour accélérer le développement commercial et produit</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-5 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#D4B483]">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Série B (2026)</h4>
-              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">8-10M€</p>
+              <p className="text-2xl font-semibold text-[#D47D5A] mb-2">4-5M€</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Pour l'expansion internationale et l'intégration verticale</p>
             </div>
           </div>
@@ -724,19 +724,19 @@ const ResourceContent = () => {
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Développement produit</h4>
-              <p className="text-3xl font-bold text-[#D47D5A] mb-2">8</p>
+              <p className="text-3xl font-bold text-[#D47D5A] mb-2">4-5</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Ingénieurs IA, développeurs full-stack, UX</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Opérations & Support</h4>
-              <p className="text-3xl font-bold text-[#D47D5A] mb-2">6</p>
+              <p className="text-3xl font-bold text-[#D47D5A] mb-2">3-4</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Personnel</p>
             </div>
             
             <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow">
               <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Commercial & Marketing</h4>
-              <p className="text-3xl font-bold text-[#D47D5A] mb-2">5</p>
+              <p className="text-3xl font-bold text-[#D47D5A] mb-2">3</p>
               <p className="text-sm text-[#1A2A40] dark:text-[#F5F5F0]">Personnel</p>
             </div>
             

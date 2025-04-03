@@ -100,9 +100,9 @@ Le modèle économique de Sotto repose sur quatre piliers complémentaires :
 
 Pour réaliser notre plan de croissance, nous anticipons les besoins de financement suivants :
 
-- **Amorçage (réalisé)** : 1M€ pour le développement du MVP et les premiers déploiements
-- **Série A (T4 2024)** : 3M€ pour accélérer le développement commercial et produit
-- **Série B (2026)** : 8-10M€ pour l'expansion internationale et l'intégration verticale
+- **Amorçage (réalisé)** : 500K€ pour le développement du MVP et les premiers déploiements
+- **Série A (T4 2024)** : 1,5M€ pour accélérer le développement commercial et produit
+- **Série B (2026)** : 4-5M€ pour l'expansion internationale et l'intégration verticale
 
 ## Stratégie de mise en marché
 
@@ -165,9 +165,9 @@ Nous suivrons attentivement les métriques suivantes pour évaluer notre succès
 ### Structure organisationnelle cible (fin 2024)
 
 - **Direction** : 3 personnes (CEO, CTO, COO)
-- **Développement produit** : 8 personnes (ingénieurs IA, développeurs full-stack, UX)
-- **Opérations & Support** : 6 personnes
-- **Commercial & Marketing** : 5 personnes
+- **Développement produit** : 4-5 personnes (ingénieurs IA, développeurs full-stack, UX)
+- **Opérations & Support** : 3-4 personnes
+- **Commercial & Marketing** : 3 personnes
 - **Finances & Administration** : 2 personnes
 
 ### Recrutements prioritaires
