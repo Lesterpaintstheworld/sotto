@@ -86,12 +86,26 @@ Le modèle économique de Sotto repose sur quatre piliers complémentaires :
 
 ### Structure tarifaire
 
-| Formule | Tarif mensuel | Inclusions | Commission |
-|---------|---------------|------------|------------|
-| Starter | 99€ | Jusqu'à 3 oreillettes, support standard | 1,2% |
-| Pro | 199€ | Jusqu'à 8 oreillettes, support prioritaire | 1,0% |
-| Enterprise | 349€ | Jusqu'à 15 oreillettes, support dédié, analytiques avancées | 0,8% |
-| Sur mesure | Devis | Solutions personnalisées pour chaînes et grands établissements | Négociable |
+Notre modèle de tarification est basé sur le nombre d'oreillettes utilisées, avec un prix unique tout inclus :
+
+| Nombre d'oreillettes | Prix unitaire |
+|----------------------|---------------|
+| 1-5 oreillettes | 79€ HT/oreillette/mois |
+| 6-10 oreillettes | 74€ HT/oreillette/mois |
+| 11-20 oreillettes | 69€ HT/oreillette/mois |
+| 21+ oreillettes | 64€ HT/oreillette/mois |
+
+Chaque abonnement inclut :
+- Support premium 24/7 avec manager de compte dédié
+- Toutes les fonctionnalités de la plateforme sans restriction
+- Formation complète et mises à jour prioritaires
+- Matériel de remplacement sous 24h
+
+**Commission fixe** : 0,8% sur toutes les transactions, sans plafond
+
+**Options simplifiées** :
+- Oreillettes premium (conduction osseuse, autonomie prolongée) : +10€ HT/mois par oreillette
+- Multi-établissements : 250€ HT de frais uniques par établissement supplémentaire
 
 ## Projections financières
 

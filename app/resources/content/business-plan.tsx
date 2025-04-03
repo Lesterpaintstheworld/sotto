@@ -275,43 +275,67 @@ const ResourceContent = () => {
             Structure tarifaire
           </h3>
           
+          <p className="mb-4 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
+            Notre modèle de tarification est basé sur le nombre d'oreillettes utilisées, avec un prix unique tout inclus :
+          </p>
+          
           <div className="overflow-x-auto mb-6">
             <table className="min-w-full bg-white dark:bg-[#1A2A40]/80 rounded-lg overflow-hidden shadow-md">
               <thead className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white">
                 <tr>
-                  <th className="py-3 px-4 text-left text-white">Formule</th>
-                  <th className="py-3 px-4 text-left text-white">Tarif mensuel</th>
-                  <th className="py-3 px-4 text-left text-white">Inclusions</th>
-                  <th className="py-3 px-4 text-left text-white">Commission</th>
+                  <th className="py-3 px-4 text-left text-white">Nombre d'oreillettes</th>
+                  <th className="py-3 px-4 text-left text-white">Prix unitaire</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Starter</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">99€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Jusqu'à 3 oreillettes, support standard</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,2%</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1-5 oreillettes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">79€ HT/oreillette/mois</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Pro</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">199€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Jusqu'à 8 oreillettes, support prioritaire</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,0%</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">6-10 oreillettes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">74€ HT/oreillette/mois</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Enterprise</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">349€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Jusqu'à 15 oreillettes, support dédié, analytiques avancées</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">0,8%</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">11-20 oreillettes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">69€ HT/oreillette/mois</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Sur mesure</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Devis</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Solutions personnalisées pour chaînes et grands établissements</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">Négociable</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">21+ oreillettes</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">64€ HT/oreillette/mois</td>
                 </tr>
               </tbody>
             </table>
+          </div>
+          
+          <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 p-5 rounded-lg mb-6">
+            <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-3">Inclus dans chaque abonnement :</h4>
+            <ul className="list-disc pl-5 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90 space-y-1">
+              <li>Support premium 24/7 avec manager de compte dédié</li>
+              <li>Toutes les fonctionnalités de la plateforme sans restriction</li>
+              <li>Formation complète et mises à jour prioritaires</li>
+              <li>Matériel de remplacement sous 24h</li>
+            </ul>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 p-5 rounded-lg">
+              <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Commission fixe</h4>
+              <p className="text-xl font-bold text-[#D47D5A]">0,8%</p>
+              <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">sur toutes les transactions, sans plafond</p>
+            </div>
+            
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 p-5 rounded-lg">
+              <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Oreillettes premium</h4>
+              <p className="text-xl font-bold text-[#D47D5A]">+10€ HT/mois</p>
+              <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">par oreillette (conduction osseuse, autonomie prolongée)</p>
+            </div>
+            
+            <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/60 p-5 rounded-lg">
+              <h4 className="font-semibold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Multi-établissements</h4>
+              <p className="text-xl font-bold text-[#D47D5A]">250€ HT</p>
+              <p className="text-sm text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">frais uniques par établissement supplémentaire</p>
+            </div>
           </div>
         </div>
       </section>
