@@ -62,422 +62,140 @@ const ResourceContent = () => {
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Modèles d'abonnement</h2>
+        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Tarification par oreillette</h2>
         <p className="mb-6 text-[#1A2A40]">
-          Nous proposons trois formules principales, adaptées aux différents profils d'établissements.
+          Nous proposons une structure tarifaire simplifiée basée sur le nombre d'oreillettes, avec tous les services inclus.
         </p>
 
         <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Formule Essentiel</h3>
-          <p className="mb-4 text-[#1A2A40]">
-            Cette formule d'entrée est idéale pour les petits établissements ou ceux qui souhaitent tester notre solution.
-          </p>
+          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-6">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Prix unique par oreillette</h3>
+            <p className="mb-4 text-[#1A2A40] font-medium">
+              <span className="text-2xl font-bold text-[#D47D5A]">79€ HT</span> par oreillette et par mois
+            </p>
+            <ul className="list-disc pl-5 text-[#1A2A40] space-y-2">
+              <li>Tout inclus : matériel, logiciel, support premium, utilisation illimitée</li>
+              <li>Engagement minimum de 12 mois</li>
+            </ul>
+          </div>
           
           <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-6">
+            <h4 className="font-semibold mb-3 text-[#1A2A40]">Paliers dégressifs automatiques :</h4>
             <div className="overflow-x-auto">
               <table className="min-w-full">
                 <thead>
                   <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Caractéristique</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Détail</th>
+                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Nombre d'oreillettes</th>
+                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Prix unitaire</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Prix mensuel</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">99€ HT</td>
+                    <td className="px-4 py-2 text-[#1A2A40]">1-5 oreillettes</td>
+                    <td className="px-4 py-2 font-medium text-[#D47D5A]">79€ HT/oreillette/mois</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre d'oreillettes incluses</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">3</td>
+                    <td className="px-4 py-2 text-[#1A2A40]">6-10 oreillettes</td>
+                    <td className="px-4 py-2 font-medium text-[#D47D5A]">74€ HT/oreillette/mois</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre de tables gérées</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Jusqu'à 20</td>
+                    <td className="px-4 py-2 text-[#1A2A40]">11-20 oreillettes</td>
+                    <td className="px-4 py-2 font-medium text-[#D47D5A]">69€ HT/oreillette/mois</td>
                   </tr>
                   <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Support</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">IA uniquement + email (réponse sous 24h)</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Mises à jour</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Trimestrielles</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Engagement</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">6 mois</td>
+                    <td className="px-4 py-2 text-[#1A2A40]">21+ oreillettes</td>
+                    <td className="px-4 py-2 font-medium text-[#D47D5A]">64€ HT/oreillette/mois</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </div>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
-            <h4 className="font-semibold mb-3 text-[#1A2A40]">Inclus dans la formule :</h4>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>Interface vocale Sotto avec fonctionnalités de base</li>
-              <li>Installation et configuration initiale</li>
-              <li>Formation de l'équipe (2h)</li>
-              <li>Matériel et maintenance</li>
-              <li>Stockage des données (3 mois d'historique)</li>
-            </ul>
           </div>
         </div>
 
         <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Formule Professionnel</h3>
-          <p className="mb-4 text-[#1A2A40]">
-            Notre offre la plus populaire, conçue pour les restaurants établis avec un volume d'activité moyen à élevé.
-          </p>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-6">
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Caractéristique</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Détail</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Prix mensuel</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">199€ HT</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre d'oreillettes incluses</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">6</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre de tables gérées</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Jusqu'à 40</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Support</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">IA + téléphone (7j/7, 9h-19h)</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Mises à jour</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Mensuelles avec nouveautés prioritaires</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Engagement</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">12 mois</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
+          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Tout inclus pour tous</h3>
           <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
-            <h4 className="font-semibold mb-3 text-[#1A2A40]">Inclus dans la formule :</h4>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>Toutes les fonctionnalités de la formule Essentiel</li>
-              <li>Module d'analyse des performances</li>
-              <li>Gestion avancée des stocks</li>
-              <li>Intégration avec les principales plateformes de livraison</li>
-              <li>Formation approfondie de l'équipe (4h)</li>
-              <li>Stockage des données (12 mois d'historique)</li>
-              <li>Oreillette de secours</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Formule Premium</h3>
-          <p className="mb-4 text-[#1A2A40]">
-            Destinée aux établissements haut de gamme ou aux groupes de restaurants nécessitant des fonctionnalités avancées.
-          </p>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-6">
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Caractéristique</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Détail</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Prix mensuel</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">349€ HT</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre d'oreillettes incluses</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">10</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Nombre de tables gérées</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Illimité</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Support</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">IA + téléphone (24/7) + manager dédié</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Mises à jour</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">Accès anticipé à toutes les nouveautés</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Engagement</td>
-                    <td className="px-4 py-2 text-[#1A2A40]">12 mois</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
-            <h4 className="font-semibold mb-3 text-[#1A2A40]">Inclus dans la formule :</h4>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>Toutes les fonctionnalités de la formule Professionnel</li>
-              <li>Module de fidélité client avancé</li>
-              <li>Analytique prédictive</li>
-              <li>Personnalisation de l'interface vocale</li>
-              <li>Intégration comptable complète</li>
-              <li>Formation sur site (8h) + formation continue</li>
-              <li>Stockage des données illimité</li>
-              <li>Kit de secours complet (oreillettes + hub)</li>
+            <p className="mb-4 text-[#1A2A40]">
+              Chaque client bénéficie de :
+            </p>
+            <ul className="list-disc pl-5 text-[#1A2A40] space-y-2">
+              <li>Support premium 24/7 avec manager de compte dédié</li>
+              <li>Toutes les fonctionnalités de la plateforme sans restriction</li>
+              <li>Utilisation illimitée des API (pas de quotas)</li>
+              <li>Formation complète incluse</li>
+              <li>Mises à jour prioritaires</li>
+              <li>Matériel de remplacement sous 24h</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Structure des commissions</h2>
+        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Options simplifiées</h2>
         <p className="mb-6 text-[#1A2A40]">
-          Notre modèle économique comprend également une composante variable sous forme de commissions, conçue pour être significativement inférieure aux standards du marché.
+          Seulement deux options additionnelles pour une clarté maximale.
         </p>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Commission sur transactions</h3>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-6">
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Volume mensuel</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Taux de commission</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">0€ - 10 000€</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">1,2%</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">10 001€ - 30 000€</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">1,0%</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">30 001€ - 100 000€</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">0,8%</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">100 001€ et plus</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">0,6%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
-            <h4 className="font-semibold mb-3 text-[#1A2A40]">Caractéristiques clés :</h4>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>Facturation mensuelle basée sur le chiffre d'affaires réalisé via notre système</li>
-              <li>Plafonnement des commissions à 600€/mois, quelle que soit l'activité</li>
-              <li>Réduction de 0,1% pour paiement par prélèvement automatique</li>
-              <li>Exonération des 3 premiers mois pour les nouveaux clients</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Commission sur réservations</h3>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Type de réservation</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Commission</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Réservation standard</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">1€</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Réservation avec pré-paiement</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">1,5% du montant prépayé</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Réservation de groupe ({'>8'} personnes)</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">2€</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">Événement privatif</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">10€</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Options premium à la carte</h2>
-        <p className="mb-6 text-[#1A2A40]">
-          Pour les établissements ayant des besoins spécifiques, nous proposons des modules additionnels qui peuvent être ajoutés à n'importe quelle formule.
-        </p>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Modules fonctionnels</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              {
-                module: "Multi-établissements",
-                description: "Gestion centralisée de plusieurs restaurants",
-                price: "99€ HT par établissement supplémentaire"
-              },
-              {
-                module: "Gestion avancée des stocks",
-                description: "Prévisions, alertes automatiques, suggestions de commandes",
-                price: "49€ HT"
-              },
-              {
-                module: "Module événementiel",
-                description: "Gestion des réservations de groupe, menus spéciaux, staffing",
-                price: "79€ HT"
-              },
-              {
-                module: "Fidélité premium",
-                description: "Programme de fidélité personnalisé avec segmentation client",
-                price: "59€ HT"
-              },
-              {
-                module: "Analytique concurrentielle",
-                description: "Benchmarking anonymisé avec restaurants similaires",
-                price: "89€ HT"
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-[#F5F5F0] rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h4 className="font-semibold text-[#1A2A40] mb-2">{item.module}</h4>
-                <p className="text-[#1A2A40] text-sm mb-3">{item.description}</p>
-                <p className="text-[#D47D5A] font-medium">{item.price}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Options matérielles</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              {
-                option: "Oreillette supplémentaire",
-                description: "Ajout d'oreillette au parc existant",
-                price: "15€ HT/mois"
-              },
-              {
-                option: "Oreillettes premium",
-                description: "Modèle à conduction osseuse, autonomie prolongée",
-                price: "+5€ HT/mois par unité"
-              },
-              {
-                option: "Hub de secours",
-                description: "Système de backup en cas de panne",
-                price: "29€ HT/mois"
-              },
-              {
-                option: "Imprimante thermique",
-                description: "Imprimante supplémentaire (cuisine, bar)",
-                price: "19€ HT/mois"
-              },
-              {
-                option: "Kit de charge rapide",
-                description: "Station permettant de recharger 4 oreillettes en 30 minutes",
-                price: "25€ HT/mois"
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-[#F5F5F0] rounded-lg p-5 shadow-md hover:shadow-lg transition-shadow duration-300">
-                <h4 className="font-semibold text-[#1A2A40] mb-2">{item.option}</h4>
-                <p className="text-[#1A2A40] text-sm mb-3">{item.description}</p>
-                <p className="text-[#D47D5A] font-medium">{item.price}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Réductions et programmes spéciaux</h2>
-        <p className="mb-6 text-[#1A2A40]">
-          Nous avons développé plusieurs programmes pour rendre notre solution encore plus accessible et encourager l'adoption à long terme.
-        </p>
-
-        <div className="mb-10">
-          <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Réductions d'engagement</h3>
-          
-          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-8">
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead>
-                  <tr>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Durée d'engagement</th>
-                    <th className="px-4 py-2 text-left text-[#1A2A40] font-semibold">Réduction sur abonnement</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">18 mois</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">-10%</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">24 mois</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">-15%</td>
-                  </tr>
-                  <tr className="border-t border-gray-200">
-                    <td className="px-4 py-2 text-[#1A2A40]">36 mois</td>
-                    <td className="px-4 py-2 font-medium text-[#D47D5A]">-20%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Programme Parrainage</h3>
-            <p className="text-[#1A2A40] mb-3">Les clients existants peuvent parrainer d'autres établissements :</p>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>1 mois d'abonnement offert au parrain pour chaque nouveau client</li>
-              <li>1 mois d'abonnement offert au filleul</li>
-              <li>Cumul possible jusqu'à 6 mois d'abonnement gratuit par an</li>
-            </ul>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Oreillettes premium</h3>
+            <p className="text-[#1A2A40] mb-2">Conduction osseuse, autonomie prolongée</p>
+            <p className="text-xl font-bold text-[#D47D5A]">+10€ HT/mois</p>
+            <p className="text-sm text-[#1A2A40] mt-2">par oreillette</p>
           </div>
-
+          
           <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
-            <h3 className="text-xl font-semibold text-[#1A2A40] mb-4">Programme Pionnier</h3>
-            <p className="text-[#1A2A40] mb-3">Pour les 50 premiers restaurants adoptant Sotto dans chaque nouvelle région :</p>
-            <ul className="list-disc pl-5 text-[#1A2A40] space-y-1">
-              <li>Réduction de 30% sur l'abonnement pendant 6 mois</li>
-              <li>Formation premium offerte</li>
-              <li>Accès anticipé aux nouvelles fonctionnalités</li>
-              <li>Visibilité dans nos communications (avec accord)</li>
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Multi-établissements</h3>
+            <p className="text-[#1A2A40] mb-2">Configuration pour plusieurs restaurants</p>
+            <p className="text-xl font-bold text-[#D47D5A]">250€ HT</p>
+            <p className="text-sm text-[#1A2A40] mt-2">frais unique par établissement supplémentaire</p>
+          </div>
+        </div>
+        
+        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Commission sur transactions</h2>
+        <div className="mb-10">
+          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md">
+            <div className="flex items-center mb-4">
+              <div className="w-12 h-12 rounded-full bg-[#D47D5A] flex items-center justify-center mr-4">
+                <span className="text-xl font-bold text-white">0,8%</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-[#1A2A40]">Taux fixe sur toutes les transactions</h3>
+              </div>
+            </div>
+            
+            <ul className="list-disc pl-5 text-[#1A2A40] space-y-2 mt-4">
+              <li><span className="font-medium">Sans plafond :</span> La commission s'applique sur l'ensemble du volume de transactions</li>
+              <li><span className="font-medium">Transparence :</span> Facturation mensuelle détaillée</li>
             </ul>
           </div>
         </div>
       </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Programmes spéciaux</h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#D47D5A]">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Programme Engagement</h3>
+            <div className="flex items-center mb-3">
+              <div className="bg-[#D47D5A]/10 text-[#D47D5A] font-bold text-xl px-3 py-1 rounded mr-2">-15%</div>
+              <p className="text-[#1A2A40]">sur le prix des oreillettes</p>
+            </div>
+            <p className="text-[#1A2A40]">Pour engagement de 24 mois</p>
+          </div>
+          
+          <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-[#87A28F]">
+            <h3 className="text-xl font-semibold text-[#1A2A40] mb-3">Programme Parrainage</h3>
+            <div className="flex items-center mb-3">
+              <div className="bg-[#87A28F]/10 text-[#87A28F] font-bold text-xl px-3 py-1 rounded mr-2">1 mois</div>
+              <p className="text-[#1A2A40]">offert</p>
+            </div>
+            <p className="text-[#1A2A40]">Pour le parrain et le filleul</p>
+          </div>
+        </div>
+      </section>
+
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[#1A2A40] mb-6">Comparaison avec la concurrence</h2>
@@ -505,13 +223,13 @@ const ResourceContent = () => {
                 </tr>
                 <tr className="border-t border-gray-200">
                   <td className="px-4 py-2 text-[#1A2A40]">Abonnement mensuel</td>
-                  <td className="px-4 py-2 font-medium text-[#87A28F]">99€ - 349€</td>
+                  <td className="px-4 py-2 font-medium text-[#87A28F]">79€ par oreillette</td>
                   <td className="px-4 py-2 text-[#1A2A40]">50€ - 150€</td>
                   <td className="px-4 py-2 text-[#1A2A40]">150€ - 400€</td>
                 </tr>
                 <tr className="border-t border-gray-200">
                   <td className="px-4 py-2 text-[#1A2A40]">Commission moyenne</td>
-                  <td className="px-4 py-2 font-medium text-[#87A28F]">0,6% - 1,2%</td>
+                  <td className="px-4 py-2 font-medium text-[#87A28F]">0,8% fixe</td>
                   <td className="px-4 py-2 text-[#1A2A40]">1,5% - 3%</td>
                   <td className="px-4 py-2 text-[#1A2A40]">1% - 2,5%</td>
                 </tr>
@@ -535,7 +253,7 @@ const ResourceContent = () => {
                 </tr>
                 <tr className="border-t border-gray-200 font-bold">
                   <td className="px-4 py-2 text-[#1A2A40]">Coût total sur 3 ans</td>
-                  <td className="px-4 py-2 text-[#87A28F]">4 564€ - 15 064€</td>
+                  <td className="px-4 py-2 text-[#87A28F]">4 500€ - 14 000€</td>
                   <td className="px-4 py-2 text-[#1A2A40]">8 300€ - 24 200€</td>
                   <td className="px-4 py-2 text-[#1A2A40]">7 900€ - 21 400€</td>
                 </tr>
@@ -545,7 +263,7 @@ const ResourceContent = () => {
         </div>
         
         <p className="text-sm text-[#1A2A40] italic">
-          *Estimation pour un restaurant réalisant 30 000€ de CA mensuel
+          *Estimation pour un restaurant réalisant 30 000€ de CA mensuel avec 5 oreillettes
         </p>
       </section>
 
@@ -579,18 +297,18 @@ const ResourceContent = () => {
         
         <div className="bg-[#F5F5F0] rounded-lg p-6 shadow-md mb-8">
           <p className="mb-4 text-[#1A2A40]">
-            La structure de prix de Sotto a été élaborée pour offrir une transparence totale et un rapport qualité-prix inégalé dans le secteur. Notre objectif est de créer une relation gagnant-gagnant où notre réussite dépend directement de celle de nos clients restaurateurs.
+            La structure tarifaire simplifiée de Sotto a été élaborée pour offrir une transparence totale et un rapport qualité-prix inégalé dans le secteur. Notre objectif est de créer une relation gagnant-gagnant où notre réussite dépend directement de celle de nos clients restaurateurs.
           </p>
           
-          <p className="mb-4 text-[#1A2A40]">
-            Cette structure n'est pas figée et évoluera pour intégrer :
+          <p className="mb-4 text-[#1A2A40] font-medium">
+            Avantages de notre nouvelle structure tarifaire :
           </p>
           
-          <ul className="list-disc pl-5 text-[#1A2A40] space-y-1 mb-4">
-            <li>Les retours de nos premiers clients</li>
-            <li>Les nouvelles fonctionnalités développées</li>
-            <li>L'expansion de notre écosystème (TPE, solutions bancaires)</li>
-            <li>Les spécificités des marchés internationaux</li>
+          <ul className="list-disc pl-5 text-[#1A2A40] space-y-2 mb-4">
+            <li><span className="font-medium">Simplicité maximale</span> : un prix unique par oreillette, tout inclus</li>
+            <li><span className="font-medium">Flexibilité</span> : ajustez votre nombre d'oreillettes selon vos besoins</li>
+            <li><span className="font-medium">Prévisibilité</span> : pas de surprises, vous savez exactement ce que vous payez</li>
+            <li><span className="font-medium">Équité</span> : vous ne payez que pour ce que vous utilisez</li>
           </ul>
           
           <p className="text-[#1A2A40]">
