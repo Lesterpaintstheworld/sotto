@@ -40,44 +40,47 @@ Une fois la preuve de concept validée, nous prévoyons une levée plus conséqu
 
 ![Répartition Phase 1](https://placeholder-for-chart-phase1.png)
 
-#### Développement Technique (95 000 €)
-- **Équipe de développement** (62 500 €)
-  - 2 développeurs full-stack senior
+#### Développement Technique (70 000 €) ⬇️
+- **Équipe de développement réduite** (45 000 €)
+  - 1 développeur full-stack senior
   - 1 ingénieur IA/ML spécialisé en traitement du langage
-  - 1 designer UX/UI à temps partiel
-- **Infrastructure et outils** (20 000 €)
+- **Infrastructure et outils** (15 000 €)
   - Serveurs cloud et services SaaS
   - Licences logicielles et API tierces
   - Environnements de test et d'intégration continue
-- **Matériel prototype** (12 500 €)
+- **Matériel prototype** (10 000 €)
   - Oreillettes professionnelles pour tests
   - Équipement de test acoustique
   - Matériel d'installation pilote
 
-#### Tests et Validation (42 500 €)
-- **Programme pilote** (30 000 €)
+#### Tests et Validation (40 000 €) ≈
+- **Programme pilote** (25 000 €)
   - Installation dans 5 restaurants partenaires
   - Support technique dédié pendant la phase pilote
   - Collecte et analyse des données d'usage
-- **Optimisation produit** (12 500 €)
+- **Optimisation produit** (15 000 €)
   - Itérations basées sur les retours utilisateurs
   - Ajustements des algorithmes et de l'UX vocale
 
-#### Marketing et Commercial (25 000 €)
-- **Identité de marque** (7 500 €)
-  - Développement de l'identité visuelle complète
-  - Site web et matériel de présentation
-- **Acquisition premiers clients** (17 500 €)
+#### Marketing et Commercial (45 000 €) ⬆️
+- **Acquisition clients renforcée** (45 000 €)
   - Présence événementielle ciblée
   - Contenu marketing spécialisé
-  - Démarches commerciales directes
+  - Campagnes digitales ciblées
+  - Matériel de présentation et démos
 
-#### Frais Généraux et Réserve (25 000 €)
-- **Frais de structure** (17 500 €)
+#### Équipe Commerciale (40 000 €) ⬆️ NOUVEAU
+- **2 commerciaux** (40 000 €)
+  - Salaires et commissions
+  - Frais de déplacement
+  - Outils de vente
+
+#### Frais Généraux et Réserve (30 000 €) ⬇️
+- **Frais de structure** (20 000 €)
   - Locaux et équipements
   - Services juridiques et comptables
   - Assurances professionnelles
-- **Réserve de trésorerie** (7 500 €)
+- **Réserve de trésorerie** (10 000 €)
   - Fonds d'urgence pour imprévus
 
 ### Phase 2 : Série A (875 000 €)

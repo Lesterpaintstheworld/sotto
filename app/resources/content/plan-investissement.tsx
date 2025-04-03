@@ -130,7 +130,7 @@ const ResourceContent = () => {
         <div className="mb-10">
           <h3 className="text-xl font-semibold text-[#D47D5A] mb-4">Phase 1 : Amorçage (375 000 €)</h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-6">
             {/* Développement Technique */}
             <div className="bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow duration-300 border border-[#1A2A40]/10">
               <div className="flex items-center mb-3">
@@ -141,9 +141,9 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Développement Technique</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">95 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">70 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
-                <li>Équipe de développement</li>
+                <li>Équipe de développement réduite</li>
                 <li>Infrastructure et outils</li>
                 <li>Matériel prototype</li>
               </ul>
@@ -159,7 +159,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Tests et Validation</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">42 500 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">40 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Programme pilote</li>
                 <li>Optimisation produit</li>
@@ -177,10 +177,11 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Marketing et Commercial</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">25 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">45 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
-                <li>Identité de marque</li>
-                <li>Acquisition premiers clients</li>
+                <li>Acquisition clients renforcée</li>
+                <li>Campagnes digitales ciblées</li>
+                <li>Matériel de présentation</li>
               </ul>
             </div>
 
@@ -194,7 +195,7 @@ const ResourceContent = () => {
                 </div>
                 <h4 className="text-lg font-medium text-[#1A2A40]">Frais Généraux et Réserve</h4>
               </div>
-              <p className="text-2xl font-bold text-[#1A2A40] mb-2">50 000 €</p>
+              <p className="text-2xl font-bold text-[#1A2A40] mb-2">30 000 €</p>
               <ul className="text-sm text-[#1A2A40] space-y-1">
                 <li>Frais de structure</li>
                 <li>Réserve de trésorerie</li>
@@ -207,23 +208,22 @@ const ResourceContent = () => {
             
             <div className="space-y-6">
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Technique (95 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Développement Technique (70 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Équipe de développement</span> (62 500 €)
+                  <li className="list-disc"><span className="font-medium">Équipe de développement réduite</span> (45 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
-                      <li className="list-disc text-sm">2 développeurs full-stack senior</li>
+                      <li className="list-disc text-sm">1 développeur full-stack senior</li>
                       <li className="list-disc text-sm">1 ingénieur IA/ML spécialisé en traitement du langage</li>
-                      <li className="list-disc text-sm">1 designer UX/UI à temps partiel</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Infrastructure et outils</span> (20 000 €)
+                  <li className="list-disc"><span className="font-medium">Infrastructure et outils</span> (15 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Serveurs cloud et services SaaS</li>
                       <li className="list-disc text-sm">Licences logicielles et API tierces</li>
                       <li className="list-disc text-sm">Environnements de test et d'intégration continue</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Matériel prototype</span> (12 500 €)
+                  <li className="list-disc"><span className="font-medium">Matériel prototype</span> (10 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Oreillettes professionnelles pour tests</li>
                       <li className="list-disc text-sm">Équipement de test acoustique</li>
@@ -234,16 +234,16 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Tests et Validation (42 500 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Tests et Validation (40 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Programme pilote</span> (30 000 €)
+                  <li className="list-disc"><span className="font-medium">Programme pilote</span> (25 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Installation dans 5 restaurants partenaires</li>
                       <li className="list-disc text-sm">Support technique dédié pendant la phase pilote</li>
                       <li className="list-disc text-sm">Collecte et analyse des données d'usage</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Optimisation produit</span> (12 500 €)
+                  <li className="list-disc"><span className="font-medium">Optimisation produit</span> (15 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Itérations basées sur les retours utilisateurs</li>
                       <li className="list-disc text-sm">Ajustements des algorithmes et de l'UX vocale</li>
@@ -253,35 +253,43 @@ const ResourceContent = () => {
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Marketing et Commercial (25 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Marketing et Commercial (45 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Identité de marque</span> (7 500 €)
-                    <ul className="pl-5 mt-1 space-y-1">
-                      <li className="list-disc text-sm">Développement de l'identité visuelle complète</li>
-                      <li className="list-disc text-sm">Site web et matériel de présentation</li>
-                    </ul>
-                  </li>
-                  <li className="list-disc"><span className="font-medium">Acquisition premiers clients</span> (17 500 €)
+                  <li className="list-disc"><span className="font-medium">Acquisition clients renforcée</span> (45 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Présence événementielle ciblée</li>
                       <li className="list-disc text-sm">Contenu marketing spécialisé</li>
-                      <li className="list-disc text-sm">Démarches commerciales directes</li>
+                      <li className="list-disc text-sm">Campagnes digitales ciblées</li>
+                      <li className="list-disc text-sm">Matériel de présentation et démos</li>
                     </ul>
                   </li>
                 </ul>
               </div>
               
               <div>
-                <h5 className="font-medium text-[#1A2A40] mb-2">Frais Généraux et Réserve (25 000 €)</h5>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Équipe Commerciale (40 000 €)</h5>
                 <ul className="space-y-2 pl-5 text-[#1A2A40]">
-                  <li className="list-disc"><span className="font-medium">Frais de structure</span> (17 500 €)
+                  <li className="list-disc"><span className="font-medium">2 commerciaux</span> (40 000 €)
+                    <ul className="pl-5 mt-1 space-y-1">
+                      <li className="list-disc text-sm">Salaires et commissions</li>
+                      <li className="list-disc text-sm">Frais de déplacement</li>
+                      <li className="list-disc text-sm">Outils de vente</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h5 className="font-medium text-[#1A2A40] mb-2">Frais Généraux et Réserve (30 000 €)</h5>
+                <ul className="space-y-2 pl-5 text-[#1A2A40]">
+                  <li className="list-disc"><span className="font-medium">Frais de structure</span> (20 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Locaux et équipements</li>
                       <li className="list-disc text-sm">Services juridiques et comptables</li>
                       <li className="list-disc text-sm">Assurances professionnelles</li>
                     </ul>
                   </li>
-                  <li className="list-disc"><span className="font-medium">Réserve de trésorerie</span> (7 500 €)
+                  <li className="list-disc"><span className="font-medium">Réserve de trésorerie</span> (10 000 €)
                     <ul className="pl-5 mt-1 space-y-1">
                       <li className="list-disc text-sm">Fonds d'urgence pour imprévus</li>
                     </ul>
