@@ -107,11 +107,11 @@ Le modèle économique de Sotto repose sur quatre piliers complémentaires :
 
 | Indicateur | Année 1 | Année 2 | Année 3 | Année 4 | Année 5 |
 |------------|---------|---------|---------|---------|---------|
-| Nombre de clients | 30 | 75 | 165 | 297 | 475 |
-| Revenu annuel | 89 K€ | 242 K€ | 574 K€ | 1,12 M€ | 1,92 M€ |
-| Marge brute | 58 K€ | 169 K€ | 430 K€ | 864 K€ | 1,50 M€ |
-| EBITDA | -160 K€ | -90 K€ | 72 K€ | 390 K€ | 768 K€ |
-| Trésorerie (fin d'année) | 340 K€ | 175 K€ | 235 K€ | 560 K€ | 1,20 M€ |
+| Nombre de clients | 300 | 900 | 2000 | 3500 | 5000 |
+| Revenu annuel | 900 K€ | 2,7 M€ | 6,4 M€ | 11,9 M€ | 18 M€ |
+| Marge brute | 585 K€ | 1,89 M€ | 4,8 M€ | 9,3 M€ | 14,4 M€ |
+| EBITDA | 50 K€ | 750 K€ | 2,5 M€ | 5,2 M€ | 8,5 M€ |
+| Trésorerie (fin d'année) | 550 K€ | 1,3 M€ | 3,8 M€ | 7,5 M€ | 12 M€ |
 
 ### Besoins de financement
 
@@ -126,24 +126,24 @@ Pour réaliser notre plan de croissance, nous anticipons les besoins de financem
 ### Phases de déploiement
 
 1. **Phase Pilote (Actuelle - T3 2023)**
-   - 5-10 restaurants partenaires à Paris
-   - Collecte intensive de feedback et itérations rapides
+   - 50-75 restaurants partenaires, principalement issus de la base clients ACDC
+   - Déploiement accéléré et itérations rapides
    - Perfectionnement du produit en conditions réelles
 
-2. **Lancement Commercial (T4 2023 - T2 2024)**
-   - Expansion à 50 établissements en Île-de-France
-   - Focalisation sur les restaurants indépendants premium
+2. **Lancement Commercial (T4 2023 - T1 2024)**
+   - Expansion rapide à 500 établissements, en priorité parmi les clients ACDC
+   - Déploiement simultané dans plusieurs régions
    - Construction des premiers cas d'usage et témoignages
 
-3. **Accélération (T3 2024 - 2025)**
-   - Déploiement dans les principales villes françaises
-   - Diversification des segments (bistrots, restauration rapide qualitative)
+3. **Accélération (T2 2024 - T4 2024)**
+   - Déploiement massif auprès de 2000+ établissements, avec un taux de pénétration de 45% de la base clients ACDC
+   - Couverture nationale complète
    - Développement de partenariats stratégiques avec des groupes de restauration
 
-4. **Expansion (2026-2027)**
-   - Internationalisation (Europe du Sud puis du Nord)
+4. **Expansion (2025-2026)**
+   - Internationalisation agressive (Europe puis Amérique du Nord)
    - Élargissement de l'écosystème (intégration bancaire complète)
-   - Consolidation de la position de leader sur le marché
+   - Consolidation de la position de leader sur le marché avec 5000+ établissements
 
 ### Acquisition clients
 

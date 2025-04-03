@@ -297,28 +297,28 @@ const ResourceContent = () => {
         <div className="space-y-8">
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#1A2A40] dark:bg-[#D47D5A] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 1 : Pilote contrôlé (2 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 1 : Pilote accéléré (1 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#D47D5A]">Objectif :</span> Valider le produit en conditions réelles avec 15-20 établissements partenaires, principalement issus de la base clients ACDC
+                <span className="text-[#D47D5A]">Objectif :</span> Valider le produit en conditions réelles avec 50-75 établissements partenaires, principalement issus de la base clients ACDC
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Sélection minutieuse des restaurants pilotes selon critères de compatibilité</span>
+                  <span>Déploiement simultané dans plusieurs zones géographiques</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Installation complète et formation approfondie par notre équipe</span>
+                  <span>Installation rapide et formation intensive par notre équipe</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Collecte intensive de feedback via observations sur site et entretiens hebdomadaires</span>
+                  <span>Collecte automatisée de feedback via plateforme dédiée</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
-                  <span>Itérations rapides du produit basées sur les retours utilisateurs</span>
+                  <span>Itérations hebdomadaires du produit basées sur les retours utilisateurs</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D47D5A] mr-2">•</span>
@@ -330,24 +330,24 @@ const ResourceContent = () => {
           
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#87A28F] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 2 : Lancement ciblé (4 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 2 : Lancement massif (3 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#87A28F] dark:text-[#87A28F]">Objectif :</span> Atteindre 150 établissements actifs en ciblant prioritairement les clients ACDC dans 5 zones géographiques
+                <span className="text-[#87A28F] dark:text-[#87A28F]">Objectif :</span> Atteindre 500 établissements actifs en ciblant prioritairement les clients ACDC dans 10 zones géographiques
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
                   <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                  <span>Déploiement commercial dans des zones métropolitaines sélectionnées (Paris, Lyon, Bordeaux)</span>
+                  <span>Déploiement commercial national avec équipes régionales</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                  <span>Programme de référencement avec incitatifs pour les premiers clients</span>
+                  <span>Programme d'ambassadeurs avec incitatifs pour les premiers clients</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                  <span>Événements de démonstration dans des espaces partenaires</span>
+                  <span>Événements de démonstration simultanés dans plusieurs villes</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
@@ -355,7 +355,7 @@ const ResourceContent = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#87A28F] dark:text-[#87A28F] mr-2">•</span>
-                  <span>Optimisation des processus d'onboarding et de support</span>
+                  <span>Processus d'onboarding optimisé pour des déploiements rapides</span>
                 </li>
               </ul>
             </div>
@@ -363,20 +363,20 @@ const ResourceContent = () => {
           
           <div className="bg-white dark:bg-[#1A2A40]/80 rounded-lg shadow-md overflow-hidden">
             <div className="bg-[#D4B483] text-white p-4">
-              <h3 className="font-bold text-xl">Phase 3 : Expansion nationale (8 mois)</h3>
+              <h3 className="font-bold text-xl">Phase 3 : Expansion nationale (6 mois)</h3>
             </div>
             <div className="p-5">
               <p className="font-semibold mb-3 text-[#1A2A40] dark:text-[#F5F5F0]">
-                <span className="text-[#D4B483] dark:text-[#D4B483]">Objectif :</span> Atteindre 800+ établissements et préparer l'internationalisation, avec un taux de pénétration de 15% de la base clients ACDC
+                <span className="text-[#D4B483] dark:text-[#D4B483]">Objectif :</span> Atteindre 2000+ établissements et préparer l'internationalisation, avec un taux de pénétration de 45% de la base clients ACDC
               </p>
               <ul className="space-y-2 text-[#1A2A40]/80 dark:text-[#F5F5F0]/90">
                 <li className="flex items-start">
                   <span className="text-[#D4B483] dark:text-[#D4B483] mr-2">•</span>
-                  <span>Élargissement de la couverture commerciale à l'ensemble du territoire</span>
+                  <span>Couverture commerciale complète du territoire</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D4B483] dark:text-[#D4B483] mr-2">•</span>
-                  <span>Automatisation partielle du processus d'onboarding</span>
+                  <span>Automatisation complète du processus d'onboarding</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#D4B483] dark:text-[#D4B483] mr-2">•</span>

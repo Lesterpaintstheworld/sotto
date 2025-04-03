@@ -410,43 +410,43 @@ const ResourceContent = () => {
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Nombre de clients</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">50</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">125</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">275</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">495</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">792</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">300</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">900</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2000</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">3500</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">5000</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Revenu annuel</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">149 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">403 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">956 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,86 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">3,20 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">900 K€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2,7 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">6,4 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">11,9 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">18 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Marge brute</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">97 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">282 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">716 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,44 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2,50 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">585 K€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,89 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">4,8 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">9,3 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">14,4 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">EBITDA</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-red-600 dark:text-red-400">-320 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-red-600 dark:text-red-400">-180 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">120 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">650 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">1,28 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">50 K€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">750 K€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">2,5 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">5,2 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] text-green-600 dark:text-green-400">8,5 M€</td>
                 </tr>
                 <tr className="hover:bg-gray-100 dark:hover:bg-[#1A2A40] transition-colors">
                   <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0] font-medium">Trésorerie (fin d'année)</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">680 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">350 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">470 K€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,12 M€</td>
-                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">2,40 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">550 K€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">1,3 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">3,8 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">7,5 M€</td>
+                  <td className="py-3 px-4 text-[#1A2A40] dark:text-[#F5F5F0]">12 M€</td>
                 </tr>
               </tbody>
             </table>
@@ -502,8 +502,8 @@ const ResourceContent = () => {
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md">
                 <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Phase Pilote (Actuelle - T3 2023)</h4>
                 <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
-                  <li>5-10 restaurants partenaires à Paris</li>
-                  <li>Collecte intensive de feedback et itérations rapides</li>
+                  <li>50-75 restaurants partenaires, principalement issus de la base clients ACDC</li>
+                  <li>Déploiement accéléré et itérations rapides</li>
                   <li>Perfectionnement du produit en conditions réelles</li>
                 </ul>
               </div>
@@ -512,10 +512,10 @@ const ResourceContent = () => {
             <div className="relative pl-10 pb-8">
               <div className="absolute left-3 -translate-x-1/2 w-6 h-6 rounded-full bg-[#D47D5A] z-10 flex items-center justify-center text-white font-bold">2</div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md">
-                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Lancement Commercial (T4 2023 - T2 2024)</h4>
+                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Lancement Commercial (T4 2023 - T1 2024)</h4>
                 <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
-                  <li>Expansion à 50 établissements en Île-de-France</li>
-                  <li>Focalisation sur les restaurants indépendants premium</li>
+                  <li>Expansion rapide à 500 établissements, en priorité parmi les clients ACDC</li>
+                  <li>Déploiement simultané dans plusieurs régions</li>
                   <li>Construction des premiers cas d'usage et témoignages</li>
                 </ul>
               </div>
@@ -524,10 +524,10 @@ const ResourceContent = () => {
             <div className="relative pl-10 pb-8">
               <div className="absolute left-3 -translate-x-1/2 w-6 h-6 rounded-full bg-[#D47D5A] z-10 flex items-center justify-center text-white font-bold">3</div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md">
-                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Accélération (T3 2024 - 2025)</h4>
+                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Accélération (T2 2024 - T4 2024)</h4>
                 <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
-                  <li>Déploiement dans les principales villes françaises</li>
-                  <li>Diversification des segments (bistrots, restauration rapide qualitative)</li>
+                  <li>Déploiement massif auprès de 2000+ établissements, avec un taux de pénétration de 45% de la base clients ACDC</li>
+                  <li>Couverture nationale complète</li>
                   <li>Développement de partenariats stratégiques avec des groupes de restauration</li>
                 </ul>
               </div>
@@ -536,11 +536,11 @@ const ResourceContent = () => {
             <div className="relative pl-10">
               <div className="absolute left-3 -translate-x-1/2 w-6 h-6 rounded-full bg-[#D47D5A] z-10 flex items-center justify-center text-white font-bold">4</div>
               <div className="bg-[#F5F5F0] dark:bg-[#1A2A40]/90 p-4 rounded-lg shadow-md">
-                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Expansion (2026-2027)</h4>
+                <h4 className="font-bold text-[#1A2A40] dark:text-[#F5F5F0] mb-2">Expansion (2025-2026)</h4>
                 <ul className="list-disc pl-5 text-[#1A2A40] dark:text-[#F5F5F0] space-y-1">
-                  <li>Internationalisation (Europe du Sud puis du Nord)</li>
+                  <li>Internationalisation agressive (Europe puis Amérique du Nord)</li>
                   <li>Élargissement de l'écosystème (intégration bancaire complète)</li>
-                  <li>Consolidation de la position de leader sur le marché</li>
+                  <li>Consolidation de la position de leader sur le marché avec 5000+ établissements</li>
                 </ul>
               </div>
             </div>

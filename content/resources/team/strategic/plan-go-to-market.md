@@ -84,32 +84,32 @@ Nous avons identifié trois segments prioritaires pour notre phase de lancement,
 
 ## Stratégie de lancement
 
-### Phase 1 : Pilote contrôlé (2 mois)
+### Phase 1 : Pilote accéléré (1 mois)
 
-**Objectif :** Valider le produit en conditions réelles avec 15-20 établissements partenaires, principalement issus de la base clients ACDC
+**Objectif :** Valider le produit en conditions réelles avec 50-75 établissements partenaires, principalement issus de la base clients ACDC
 
-- Sélection minutieuse des restaurants pilotes selon critères de compatibilité
-- Installation complète et formation approfondie par notre équipe
-- Collecte intensive de feedback via observations sur site et entretiens hebdomadaires
-- Itérations rapides du produit basées sur les retours utilisateurs
+- Déploiement simultané dans plusieurs zones géographiques
+- Installation rapide et formation intensive par notre équipe
+- Collecte automatisée de feedback via plateforme dédiée
+- Itérations hebdomadaires du produit basées sur les retours utilisateurs
 - Documentation des études de cas et calcul du ROI réel
 
-### Phase 2 : Lancement ciblé (4 mois)
+### Phase 2 : Lancement massif (3 mois)
 
-**Objectif :** Atteindre 150 établissements actifs en ciblant prioritairement les clients ACDC dans 5 zones géographiques
+**Objectif :** Atteindre 500 établissements actifs en ciblant prioritairement les clients ACDC dans 10 zones géographiques
 
-- Déploiement commercial dans des zones métropolitaines sélectionnées (Paris, Lyon, Bordeaux)
-- Programme de référencement avec incitatifs pour les premiers clients
-- Événements de démonstration dans des espaces partenaires
+- Déploiement commercial national avec équipes régionales
+- Programme d'ambassadeurs avec incitatifs pour les premiers clients
+- Événements de démonstration simultanés dans plusieurs villes
 - Développement de partenariats avec des consultants en restauration
-- Optimisation des processus d'onboarding et de support
+- Processus d'onboarding optimisé pour des déploiements rapides
 
-### Phase 3 : Expansion nationale (8 mois)
+### Phase 3 : Expansion nationale (6 mois)
 
-**Objectif :** Atteindre 800+ établissements et préparer l'internationalisation, avec un taux de pénétration de 15% de la base clients ACDC
+**Objectif :** Atteindre 2000+ établissements et préparer l'internationalisation, avec un taux de pénétration de 45% de la base clients ACDC
 
-- Élargissement de la couverture commerciale à l'ensemble du territoire
-- Automatisation partielle du processus d'onboarding
+- Couverture commerciale complète du territoire
+- Automatisation complète du processus d'onboarding
 - Développement de programmes spécifiques pour les groupes multi-sites
 - Préparation des adaptations linguistiques et culturelles pour l'international
 - Construction d'une communauté active d'utilisateurs ambassadeurs
