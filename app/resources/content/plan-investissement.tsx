@@ -638,15 +638,15 @@ const ResourceContent = () => {
                   </tr>
                   <tr className="border-b border-[#1A2A40]/10">
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Revenu mensuel récurrent (MRR)</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">450 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">6 675 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">31 150 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">3 550 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">53 250 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">248 500 €</td>
                   </tr>
                   <tr className="border-b border-[#1A2A40]/10">
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Chiffre d'affaires annuel</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">1 350 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">80 100 €</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">373 800 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">10 650 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">639 000 €</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">2 982 000 €</td>
                   </tr>
                   <tr className="border-b border-[#1A2A40]/10">
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Burn rate mensuel</td>
@@ -656,9 +656,9 @@ const ResourceContent = () => {
                   </tr>
                   <tr>
                     <td className="py-3 px-4 text-sm text-[#1A2A40]">Runway (mois)</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">12</td>
-                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">20</td>
                     <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">18</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">30</td>
+                    <td className="py-3 px-4 text-right text-sm text-[#1A2A40]">Rentable</td>
                   </tr>
                 </tbody>
               </table>
