@@ -4,6 +4,73 @@ import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
+interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  avatar: string;
+  color: string;
+}
+
+const TEAM_MEMBERS: TeamMember[] = [
+  {
+    id: 'staff_01',
+    name: 'Sophie',
+    role: 'manager',
+    avatar: 'SM',
+    color: '#1A2A40'
+  },
+  {
+    id: 'staff_02',
+    name: 'Thomas',
+    role: 'serveur',
+    avatar: 'TD',
+    color: '#D47D5A'
+  },
+  {
+    id: 'staff_03',
+    name: 'Julie',
+    role: 'serveur',
+    avatar: 'JL',
+    color: '#D47D5A'
+  },
+  {
+    id: 'staff_04',
+    name: 'Marc',
+    role: 'cuisine',
+    avatar: 'MC',
+    color: '#87A28F'
+  },
+  {
+    id: 'staff_05',
+    name: 'Ahmed',
+    role: 'cuisine',
+    avatar: 'AB',
+    color: '#87A28F'
+  }
+];
+
+const TeamMemberRow: React.FC<{ member: TeamMember }> = ({ member }) => {
+  return (
+    <div className="flex items-center gap-4 p-4 border-b border-[#1A2A40]/10">
+      <div className="w-1/3 min-h-[60px] flex justify-end">
+      </div>
+
+      <div className="flex-shrink-0">
+        <div 
+          className="w-12 h-12 rounded-full flex items-center justify-center text-white text-sm font-medium"
+          style={{ backgroundColor: member.color }}
+        >
+          {member.avatar}
+        </div>
+      </div>
+
+      <div className="w-1/3 min-h-[60px]">
+      </div>
+    </div>
+  );
+};
+
 export default function Demo() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [messages, setMessages] = useState<Array<{role: string, content: string}>>([
@@ -61,9 +128,12 @@ export default function Demo() {
           {/* Nouvelle démo à venir */}
           
 
-          <div className="flex flex-col md:flex-row gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
-            {/* Partie gauche - Commande à prendre (transformée en carousel) */}
-            <div className="md:w-1/2 p-8 bg-[#1A2A40]/5">
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="space-y-2">
+              {TEAM_MEMBERS.map(member => (
+                <TeamMemberRow key={member.id} member={member} />
+              ))}
+            </div>
               <h2 className="text-2xl font-bold mb-6 flex items-center justify-between">
                 <span>Commande à prendre</span>
                 <div className="flex gap-2">
