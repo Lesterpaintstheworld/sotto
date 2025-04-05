@@ -5,6 +5,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Demo() {
+  const [activeSlide, setActiveSlide] = useState(0);
+  
+  const nextSlide = () => {
+    setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
+  };
   
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
