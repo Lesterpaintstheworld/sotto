@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 interface Position {
@@ -29,12 +29,19 @@ interface Bubble {
   position: Position;
 }
 
+interface Client {
+  tableId: string;
+  position: Position;
+  color: string;
+}
+
 interface ServicePhase {
   id: string;
   timestamp: string;
   staffPositions: Record<string, Position>;
   tableStatuses: Record<string, Table['status']>;
   activeBubbles?: Bubble[];
+  clients?: Client[];
 }
 
 const SERVICE_PHASES: ServicePhase[] = [
@@ -48,6 +55,7 @@ const SERVICE_PHASES: ServicePhase[] = [
       'staff_04': { x: 750, y: 150 }, // Marc en cuisine
       'staff_05': { x: 750, y: 250 }, // Ahmed en cuisine
     },
+    clients: [],
     tableStatuses: {
       'table_01': 'libre',
       'table_02': 'libre',
@@ -83,6 +91,11 @@ const SERVICE_PHASES: ServicePhase[] = [
       'table_t2': 'libre',
       'table_t3': 'libre',
     },
+    clients: [
+      { tableId: 'table_01', position: { x: 110, y: 110 }, color: '#D47D5A' },
+      { tableId: 'table_01', position: { x: 130, y: 110 }, color: '#D47D5A' },
+      { tableId: 'table_01', position: { x: 120, y: 130 }, color: '#D47D5A' },
+    ],
     activeBubbles: [
       {
         id: 'bubble_1',
@@ -229,6 +242,23 @@ const Table: React.FC<Table> = ({ number, position, size, status }) => {
   );
 };
 
+const Client: React.FC<Client> = ({ position, color }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0 }}
+      className="absolute w-4 h-4 rounded-full"
+      style={{
+        left: position.x,
+        top: position.y,
+        backgroundColor: color,
+        transform: 'translate(-50%, -50%)'
+      }}
+    />
+  );
+};
+
 const StaffMember: React.FC<StaffMember> = ({ name, role, position }) => {
   return (
     <motion.div
@@ -327,20 +357,33 @@ export const RestaurantVisualization: React.FC = () => {
         <StaffMember key={member.id} {...member} />
       ))}
 
-      {/* Bulles de dialogue */}
-      {phase.activeBubbles?.map(bubble => (
-        <div
-          key={bubble.id}
-          className="absolute bg-white px-3 py-2 rounded-lg shadow-lg"
-          style={{
-            left: bubble.position.x,
-            top: bubble.position.y,
-            transform: 'translate(-50%, -50%)'
-          }}
-        >
-          {bubble.content}
-        </div>
-      ))}
+      {/* Clients avec AnimatePresence */}
+      <AnimatePresence>
+        {phase.clients?.map((client, index) => (
+          <Client key={`${client.tableId}-${index}`} {...client} />
+        ))}
+      </AnimatePresence>
+
+      {/* Bulles de dialogue avec AnimatePresence */}
+      <AnimatePresence>
+        {phase.activeBubbles?.map(bubble => (
+          <motion.div
+            key={bubble.id}
+            initial={{ opacity: 0, y: 20, scale: 0.8 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -20, scale: 0.8 }}
+            transition={{ duration: 0.3 }}
+            className="absolute bg-white px-3 py-2 rounded-lg shadow-lg"
+            style={{
+              left: bubble.position.x,
+              top: bubble.position.y,
+              transform: 'translate(-50%, -50%)'
+            }}
+          >
+            {bubble.content}
+          </motion.div>
+        ))}
+      </AnimatePresence>
     </div>
   );
 };
