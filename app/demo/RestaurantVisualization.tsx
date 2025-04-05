@@ -22,6 +22,56 @@ interface StaffMember {
   position: Position;
 }
 
+// Phases de service
+const SERVICE_PHASES = [
+  {
+    id: 'initial',
+    timestamp: '11:30',
+    staffPositions: {
+      'staff_01': { x: 300, y: 300 },
+      'staff_02': { x: 100, y: 300 },
+      'staff_03': { x: 200, y: 300 },
+      'staff_04': { x: 700, y: 100 },
+      'staff_05': { x: 700, y: 200 }
+    },
+    tableStatuses: {
+      'table_01': 'libre',
+      'table_02': 'libre',
+      'table_03': 'libre',
+      'table_04': 'libre',
+      'table_05': 'libre',
+      'table_06': 'libre',
+      'table_07': 'libre',
+      'table_t1': 'libre',
+      'table_t2': 'libre',
+      'table_t3': 'libre',
+    }
+  },
+  {
+    id: 'second_phase',
+    timestamp: '11:45',
+    staffPositions: {
+      'staff_01': { x: 200, y: 100 }, // Manager se déplace
+      'staff_02': { x: 150, y: 150 }, // Thomas reste en place
+      'staff_03': { x: 250, y: 150 }, // Julie reste en place
+      'staff_04': { x: 750, y: 150 }, // Marc reste en cuisine
+      'staff_05': { x: 750, y: 250 }, // Ahmed reste en cuisine
+    },
+    tableStatuses: {
+      'table_01': 'libre',
+      'table_02': 'libre',
+      'table_03': 'libre',
+      'table_04': 'libre',
+      'table_05': 'libre',
+      'table_06': 'libre',
+      'table_07': 'libre',
+      'table_t1': 'libre',
+      'table_t2': 'libre',
+      'table_t3': 'libre',
+    }
+  }
+];
+
 // Configuration statique du restaurant
 const TABLES: Table[] = [
   // Salle principale - Tables rondes
