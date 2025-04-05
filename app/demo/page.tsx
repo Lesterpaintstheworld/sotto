@@ -1,140 +1,23 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { RestaurantVisualization } from './RestaurantVisualization';
 
 export default function Demo() {
-  // État pour suivre l'index actif du carousel
-  const [activeSlide, setActiveSlide] = useState(0);
   
-  // État pour le chat
-  const [messages, setMessages] = useState([
-    { role: "assistant", content: "Bonjour, je suis prêt à prendre votre commande." }
-  ]);
-  const [inputMessage, setInputMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  
-  // Référence pour faire défiler automatiquement vers le bas
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-  
-  // Fonction pour faire défiler vers le bas
-  const scrollToBottom = () => {
-    // Vérifier si l'utilisateur est déjà en bas de la conversation
-    const chatContainer = document.querySelector('.chat-container');
-    if (chatContainer) {
-      const { scrollHeight, scrollTop, clientHeight } = chatContainer;
-      const isAtBottom = scrollHeight - scrollTop - clientHeight < 100; // Marge de 100px
-      
-      // Ne faire défiler que si l'utilisateur est déjà proche du bas
-      if (isAtBottom && messagesEndRef.current) {
-        messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
-  
-  // Effet pour faire défiler vers le bas quand les messages changent
-  useEffect(() => {
-    // Ajouter une classe au conteneur de chat pour pouvoir le sélectionner
-    const chatContainer = document.querySelector('.flex-1.p-4.bg-\\[\\#F5F5F0\\].overflow-y-auto');
-    if (chatContainer) {
-      chatContainer.classList.add('chat-container');
-    }
-    
-    // Appeler scrollToBottom uniquement lors de l'ajout d'un nouveau message de l'assistant
-    const lastMessage = messages[messages.length - 1];
-    if (lastMessage && lastMessage.role === "assistant") {
-      scrollToBottom();
-    }
-  }, [messages]);
-  
-  // Ajouter cet effet pour empêcher le défilement automatique au chargement
-  useEffect(() => {
-    // Désactiver temporairement le défilement automatique au chargement
-    const preventInitialScroll = () => {
-      window.scrollTo(0, 0);
-    };
-    
-    // Appliquer immédiatement et après un court délai pour s'assurer que ça fonctionne
-    preventInitialScroll();
-    const timer = setTimeout(preventInitialScroll, 100);
-    
-    return () => clearTimeout(timer);
-  }, []);
-  
-  // Fonction pour passer au slide suivant
-  const nextSlide = () => {
-    setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));
-  };
-  
-  // Fonction pour passer au slide précédent
-  const prevSlide = () => {
-    setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
-  };
-  
-  // Fonction pour envoyer un message à l'API Claude
-  const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    if (!inputMessage.trim()) return;
-    
-    // Ajouter le message de l'utilisateur à l'état
-    const userMessage = { role: "user", content: inputMessage };
-    setMessages(prev => [...prev, userMessage]);
-    
-    // Réinitialiser l'input et activer l'état de chargement
-    setInputMessage("");
-    setIsLoading(true);
-    
-    // Ne pas défiler automatiquement ici
-    
-    try {
-      // Appeler notre API qui communique avec Claude
-      const response = await fetch('/api/send-message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          content: inputMessage,
-          model: 'claude-3-7-sonnet-latest',
-          mode: 'restaurant_assistant',
-          addSystem: "Tu es Sotto, un assistant vocal pour restaurant. Tu dois répondre comme si tu étais un système de prise de commande vocal dans un restaurant. Sois concis mais naturel, précis et professionnel. Confirme les commandes et modifications clairement. Limite tes réponses à 1-2 phrases maximum."
-        }),
-      });
-      
-      if (!response.ok) {
-        throw new Error('Erreur lors de la communication avec l\'API');
-      }
-      
-      const data = await response.json();
-      
-      // Ajouter la réponse de l'assistant à l'état
-      setMessages(prev => [...prev, { role: "assistant", content: data.response }]);
-    } catch (error) {
-      console.error('Erreur:', error);
-      // Ajouter un message d'erreur
-      setMessages(prev => [...prev, { 
-        role: "assistant", 
-        content: "Désolé, j'ai rencontré un problème. Pourriez-vous répéter votre commande ?" 
-      }]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
       <Header />
       
       <main className="px-6 md:px-20 py-16">
-        <div className="max-w-6xl mx-auto mb-20">
-          <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Essayez Sotto maintenant !</h1>
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">
+            Essayez Sotto maintenant !
+          </h1>
           
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6">Visualisation du Restaurant</h2>
-            <RestaurantVisualization />
-          </div>
+          {/* Nouvelle démo à venir */}
+          
 
           <div className="flex flex-col md:flex-row gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Partie gauche - Commande à prendre (transformée en carousel) */}
