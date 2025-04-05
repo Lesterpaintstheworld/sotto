@@ -1,12 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Demo() {
   const [activeSlide, setActiveSlide] = useState(0);
-  
+  const [messages, setMessages] = useState<Array<{role: string, content: string}>>([
+    {
+      role: "assistant",
+      content: "Bonjour ! Je suis votre assistant Sotto. Je suis prêt à prendre votre commande."
+    }
+  ]);
+  const [inputMessage, setInputMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+
   const nextSlide = () => {
     setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));
   };
@@ -14,6 +23,30 @@ export default function Demo() {
   const prevSlide = () => {
     setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
   };
+
+  const sendMessage = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!inputMessage.trim() || isLoading) return;
+
+    // Ajouter le message de l'utilisateur
+    setMessages(prev => [...prev, { role: "user", content: inputMessage }]);
+    setInputMessage("");
+    setIsLoading(true);
+
+    // Simuler une réponse après un délai
+    setTimeout(() => {
+      setMessages(prev => [...prev, {
+        role: "assistant",
+        content: "J'ai bien noté votre commande. Je la transmets en cuisine."
+      }]);
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  // Scroll automatique vers le bas
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
   
   return (
     <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
