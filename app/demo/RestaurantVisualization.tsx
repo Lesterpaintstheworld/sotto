@@ -22,17 +22,31 @@ interface StaffMember {
   position: Position;
 }
 
-// Phases de service
-const SERVICE_PHASES = [
+interface Bubble {
+  id: string;
+  from: string;
+  content: string;
+  position: Position;
+}
+
+interface ServicePhase {
+  id: string;
+  timestamp: string;
+  staffPositions: Record<string, Position>;
+  tableStatuses: Record<string, Table['status']>;
+  activeBubbles?: Bubble[];
+}
+
+const SERVICE_PHASES: ServicePhase[] = [
   {
     id: 'initial',
     timestamp: '11:30',
     staffPositions: {
-      'staff_01': { x: 300, y: 300 },
-      'staff_02': { x: 100, y: 300 },
-      'staff_03': { x: 200, y: 300 },
-      'staff_04': { x: 700, y: 100 },
-      'staff_05': { x: 700, y: 200 }
+      'staff_01': { x: 200, y: 50 },  // Manager près de l'entrée
+      'staff_02': { x: 150, y: 150 }, // Thomas en salle
+      'staff_03': { x: 250, y: 150 }, // Julie en salle
+      'staff_04': { x: 750, y: 150 }, // Marc en cuisine
+      'staff_05': { x: 750, y: 250 }, // Ahmed en cuisine
     },
     tableStatuses: {
       'table_01': 'libre',
@@ -48,17 +62,17 @@ const SERVICE_PHASES = [
     }
   },
   {
-    id: 'second_phase',
-    timestamp: '11:45',
+    id: 'clients_arrive',
+    timestamp: '12:05',
     staffPositions: {
-      'staff_01': { x: 200, y: 100 }, // Manager se déplace
-      'staff_02': { x: 150, y: 150 }, // Thomas reste en place
-      'staff_03': { x: 250, y: 150 }, // Julie reste en place
-      'staff_04': { x: 750, y: 150 }, // Marc reste en cuisine
-      'staff_05': { x: 750, y: 250 }, // Ahmed reste en cuisine
+      'staff_01': { x: 200, y: 50 },
+      'staff_02': { x: 120, y: 120 }, // Thomas se déplace vers table 1
+      'staff_03': { x: 250, y: 150 },
+      'staff_04': { x: 750, y: 150 },
+      'staff_05': { x: 750, y: 250 },
     },
     tableStatuses: {
-      'table_01': 'libre',
+      'table_01': 'occupee',
       'table_02': 'libre',
       'table_03': 'libre',
       'table_04': 'libre',
@@ -68,7 +82,52 @@ const SERVICE_PHASES = [
       'table_t1': 'libre',
       'table_t2': 'libre',
       'table_t3': 'libre',
-    }
+    },
+    activeBubbles: [
+      {
+        id: 'bubble_1',
+        from: 'staff_02',
+        content: 'Table 1 : 3 couverts',
+        position: { x: 120, y: 80 }
+      }
+    ]
+  },
+  {
+    id: 'prise_commande',
+    timestamp: '12:08',
+    staffPositions: {
+      'staff_01': { x: 200, y: 50 },
+      'staff_02': { x: 120, y: 120 }, // Thomas reste à table 1
+      'staff_03': { x: 250, y: 150 },
+      'staff_04': { x: 750, y: 150 },
+      'staff_05': { x: 750, y: 250 },
+    },
+    tableStatuses: {
+      'table_01': 'occupee',
+      'table_02': 'libre',
+      'table_03': 'libre',
+      'table_04': 'libre',
+      'table_05': 'libre',
+      'table_06': 'libre',
+      'table_07': 'libre',
+      'table_t1': 'libre',
+      'table_t2': 'libre',
+      'table_t3': 'libre',
+    },
+    activeBubbles: [
+      {
+        id: 'bubble_2',
+        from: 'staff_02',
+        content: 'Commande enregistrée',
+        position: { x: 120, y: 80 }
+      },
+      {
+        id: 'bubble_3',
+        from: 'system',
+        content: 'Commande transmise en cuisine',
+        position: { x: 700, y: 100 }
+      }
+    ]
   }
 ];
 
@@ -166,11 +225,44 @@ const StaffMember: React.FC<StaffMember> = ({ name, role, position }) => {
 };
 
 export const RestaurantVisualization: React.FC = () => {
+  const [currentPhase, setCurrentPhase] = useState<number>(0);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [tables, setTables] = useState<Table[]>(TABLES);
   const [staff, setStaff] = useState<StaffMember[]>(INITIAL_STAFF);
   
+  // Effet pour l'animation automatique
+  useEffect(() => {
+    if (!isPlaying) return;
+    
+    const timer = setInterval(() => {
+      setCurrentPhase((prev) => {
+        if (prev >= SERVICE_PHASES.length - 1) {
+          setIsPlaying(false);
+          return prev;
+        }
+        return prev + 1;
+      });
+    }, 3000); // Chaque phase dure 3 secondes
+    
+    return () => clearInterval(timer);
+  }, [isPlaying]);
+
+  const phase = SERVICE_PHASES[currentPhase];
+  
   return (
     <div className="relative w-full h-[600px] bg-[#F5F5F0] rounded-lg border border-[#1A2A40]/10 overflow-hidden">
+      {/* Contrôles d'animation */}
+      <div className="absolute top-4 right-4 z-10 flex items-center gap-4">
+        <button
+          onClick={() => setIsPlaying(!isPlaying)}
+          className="px-4 py-2 bg-[#D47D5A] text-white rounded-md"
+        >
+          {isPlaying ? 'Pause' : 'Play'}
+        </button>
+        <span className="text-sm bg-white px-3 py-1 rounded">
+          {phase.timestamp}
+        </span>
+      </div>
       {/* Zones */}
       <div className="absolute inset-0 p-4">
         {/* Salle principale */}
@@ -209,6 +301,21 @@ export const RestaurantVisualization: React.FC = () => {
       {/* Personnel */}
       {staff.map(member => (
         <StaffMember key={member.id} {...member} />
+      ))}
+
+      {/* Bulles de dialogue */}
+      {phase.activeBubbles?.map(bubble => (
+        <div
+          key={bubble.id}
+          className="absolute bg-white px-3 py-2 rounded-lg shadow-lg"
+          style={{
+            left: bubble.position.x,
+            top: bubble.position.y,
+            transform: 'translate(-50%, -50%)'
+          }}
+        >
+          {bubble.content}
+        </div>
       ))}
     </div>
   );
