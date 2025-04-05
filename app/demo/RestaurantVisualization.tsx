@@ -158,15 +158,39 @@ const INITIAL_STAFF: StaffMember[] = [
 
 const Table: React.FC<Table> = ({ number, position, size, status }) => {
   const isSquare = number.startsWith('5') || number.startsWith('6') || number.startsWith('7');
-  const dimension = size * 12; // Augmentation légère de la taille
+  const dimension = size * 12;
+
+  // Définition des couleurs selon le statut
+  const getTableColors = (status: string) => {
+    switch (status) {
+      case 'occupee':
+        return {
+          table: 'bg-[#D47D5A]/20 border-[#D47D5A]',
+          chairs: 'bg-[#D47D5A]/40'
+        };
+      case 'sale':
+        return {
+          table: 'bg-[#1A2A40]/20 border-[#1A2A40]',
+          chairs: 'bg-[#1A2A40]/40'
+        };
+      case 'reservee':
+        return {
+          table: 'bg-[#87A28F]/20 border-[#87A28F]',
+          chairs: 'bg-[#87A28F]/40'
+        };
+      default:
+        return {
+          table: 'bg-white border-[#1A2A40]',
+          chairs: 'bg-[#1A2A40]/20'
+        };
+    }
+  };
+
+  const colors = getTableColors(status);
 
   return (
     <div 
-      className={`absolute ${isSquare ? 'rounded-md' : 'rounded-full'} border-2 border-[#1A2A40] 
-        ${status === 'occupee' ? 'bg-[#D47D5A]/20 border-[#D47D5A]' : 
-          status === 'sale' ? 'bg-[#1A2A40]/20 border-[#1A2A40]' : 
-          status === 'reservee' ? 'bg-[#87A28F]/20 border-[#87A28F]' : 
-          'bg-white'}`}
+      className={`absolute ${isSquare ? 'rounded-md' : 'rounded-full'} border-2 ${colors.table}`}
       style={{
         left: position.x,
         top: position.y,
@@ -178,14 +202,14 @@ const Table: React.FC<Table> = ({ number, position, size, status }) => {
       <span className="absolute inset-0 flex items-center justify-center text-sm font-medium">
         {number}
       </span>
-      {/* Ajout des chaises */}
+      {/* Chaises pour tables rondes */}
       {!isSquare && Array.from({ length: size }).map((_, i) => {
         const angle = (i * 360) / size;
         const radius = dimension / 2 + 10;
         return (
           <div
             key={i}
-            className="absolute w-3 h-3 bg-[#1A2A40]/40 rounded-sm"
+            className={`absolute w-3 h-3 ${colors.chairs} rounded-sm`}
             style={{
               left: `50%`,
               top: `50%`,
@@ -197,8 +221,8 @@ const Table: React.FC<Table> = ({ number, position, size, status }) => {
       {/* Chaises pour tables carrées */}
       {isSquare && (
         <>
-          <div className="absolute -left-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#1A2A40]/40 rounded-sm" />
-          <div className="absolute -right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-[#1A2A40]/40 rounded-sm" />
+          <div className={`absolute -left-3 top-1/2 transform -translate-y-1/2 w-3 h-3 ${colors.chairs} rounded-sm`} />
+          <div className={`absolute -right-3 top-1/2 transform -translate-y-1/2 w-3 h-3 ${colors.chairs} rounded-sm`} />
         </>
       )}
     </div>
