@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -50,7 +50,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   }
 ];
 
-const TeamMemberRow: React.FC<{ member: TeamMember }> = ({ member }) => {
+const TeamMemberRow = ({ member }: { member: TeamMember }) => {
   return (
     <div className="flex items-center gap-4 p-4 border-b border-[#1A2A40]/10">
       <div className="w-1/3 min-h-[60px] flex justify-end">
@@ -72,51 +72,8 @@ const TeamMemberRow: React.FC<{ member: TeamMember }> = ({ member }) => {
 };
 
 export default function Demo() {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [messages, setMessages] = useState<Array<{role: string, content: string}>>([
-    {
-      role: "assistant",
-      content: "Bonjour ! Je suis votre assistant Sotto. Je suis prêt à prendre votre commande."
-    }
-  ]);
-  const [inputMessage, setInputMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const nextSlide = () => {
-    setActiveSlide((prev) => (prev === 2 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setActiveSlide((prev) => (prev === 0 ? 2 : prev - 1));
-  };
-
-  const sendMessage = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!inputMessage.trim() || isLoading) return;
-
-    // Ajouter le message de l'utilisateur
-    setMessages(prev => [...prev, { role: "user", content: inputMessage }]);
-    setInputMessage("");
-    setIsLoading(true);
-
-    // Simuler une réponse après un délai
-    setTimeout(() => {
-      setMessages(prev => [...prev, {
-        role: "assistant",
-        content: "J'ai bien noté votre commande. Je la transmets en cuisine."
-      }]);
-      setIsLoading(false);
-    }, 1000);
-  };
-
-  // Scroll automatique vers le bas
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
-  
   return (
-    <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40] font-[family-name:var(--font-geist-sans)]">
+    <div className="min-h-screen bg-[#F5F5F0] text-[#1A2A40]">
       <Header />
       
       <main className="px-6 md:px-20 py-16">
@@ -125,36 +82,18 @@ export default function Demo() {
             Essayez Sotto maintenant !
           </h1>
           
-          {/* Nouvelle démo à venir */}
-          
-
           <div className="bg-white rounded-lg shadow-lg p-6">
             <div className="space-y-2">
               {TEAM_MEMBERS.map(member => (
                 <TeamMemberRow key={member.id} member={member} />
               ))}
             </div>
-              <h2 className="text-2xl font-bold mb-6 flex items-center justify-between">
-                <span>Commande à prendre</span>
-                <div className="flex gap-2">
-                  <button 
-                    onClick={prevSlide}
-                    className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m15 18-6-6 6-6"></path>
-                    </svg>
-                  </button>
-                  <button 
-                    onClick={nextSlide}
-                    className="w-8 h-8 rounded-full bg-[#D47D5A] text-white flex items-center justify-center hover:bg-[#D47D5A]/90 transition-colors"
-                  >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="m9 18 6-6-6-6"></path>
-                    </svg>
-                  </button>
-                </div>
-              </h2>
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
+    </div>
               
               {/* Carousel d'exemples de commandes */}
               <div className="relative overflow-hidden">
