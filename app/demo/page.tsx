@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { RestaurantVisualization } from './RestaurantVisualization';
 
 export default function Demo() {
   // État pour suivre l'index actif du carousel
@@ -130,6 +131,11 @@ export default function Demo() {
         <div className="max-w-6xl mx-auto mb-20">
           <h1 className="text-4xl md:text-5xl font-bold mb-10 text-center">Essayez Sotto maintenant !</h1>
           
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold mb-6">Visualisation du Restaurant</h2>
+            <RestaurantVisualization />
+          </div>
+
           <div className="flex flex-col md:flex-row gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Partie gauche - Commande à prendre (transformée en carousel) */}
             <div className="md:w-1/2 p-8 bg-[#1A2A40]/5">
