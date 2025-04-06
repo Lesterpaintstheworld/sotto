@@ -273,33 +273,24 @@ export default function ResourceContent() {
         <div className="space-y-6">
           {[
             {
-              phase: "Installation et formation (J1)",
+              phase: "Jour 1 - Installation et tests initiaux",
               tasks: [
-                "Configuration du réseau",
-                "Installation du poste opérateur",
-                "Test des communications",
-                "Formation initiale (2h)",
-                "Simulation de service (2h)"
+                "9h00 : Installation et configuration",
+                "10h00 : Formation initiale (1h)",
+                "11h30-14h30 : Service test midi (conduction osseuse)",
+                "15h00 : Debriefing et ajustements",
+                "18h30-22h30 : Service test soir (micro tige)",
+                "22h30 : Debriefing rapide"
               ]
             },
             {
-              phase: "Test en conditions réelles (J2-J6)",
+              phase: "Jour 2 - Validation finale",
               tasks: [
-                "11h00 : Briefing et vérification",
-                "11h30-14h30 : Service test",
-                "14h30-15h00 : Debriefing",
-                "18h00 : Briefing soirée",
-                "18h30-22h30 : Service test",
-                "22h30-23h00 : Debriefing"
-              ]
-            },
-            {
-              phase: "Analyse et conclusion (J7)",
-              tasks: [
-                "Entretien approfondi avec l'ambassadeur",
-                "Analyse des données collectées",
-                "Synthèse des observations",
-                "Recommandations pour itération"
+                "10h00 : Briefing et préparation",
+                "11h30-14h30 : Service test midi (micro cravate)",
+                "15h00 : Analyse comparative",
+                "18h30-22h30 : Test approfondi meilleure option",
+                "22h30-23h30 : Debriefing final et conclusions"
               ]
             }
           ].map((phase, index) => (
