@@ -27,6 +27,28 @@ Ce protocole définit la méthodologie de test des oreillettes Sotto sur un serv
 
 ## Configuration du test
 
+### Test comparatif des oreillettes
+
+#### Phase préparatoire
+- Test sur 3 services consécutifs (midi ou soir)
+- Même ambassadeur pour garantir la cohérence des retours
+- Même opérateur Sotto pour standardiser les interactions
+- Rotation des 3 types d'oreillettes :
+  * Jour 1 : Conduction osseuse
+  * Jour 2 : Micro tige
+  * Jour 3 : Micro cravate
+
+#### Grille d'évaluation comparative
+
+| Critère | Conduction osseuse | Micro tige | Micro cravate |
+|---------|-------------------|------------|---------------|
+| Confort (1-10) | | | |
+| Qualité audio émission | | | |
+| Qualité audio réception | | | |
+| Stabilité en mouvement | | | |
+| Discrétion visuelle | | | |
+| Résistance bruit ambiant | | | |
+
 ### Équipe de test
 
 | Rôle | Responsabilités |
@@ -39,12 +61,13 @@ Ce protocole définit la méthodologie de test des oreillettes Sotto sur un serv
 ### Environnement de test
 
 - Restaurant partenaire représentatif
-- Durée : 1 semaine (2 services par jour)
+- Phase comparative : 3 services consécutifs
+- Phase complète : 1 semaine (2 services par jour)
 - Configuration minimale :
   * Réseau WiFi dédié
   * Station d'opérateur isolée
   * Système d'enregistrement audio
-  * Oreillettes de test et backup
+  * 3 types d'oreillettes de test + backup
 
 ## Protocole de test
 
@@ -85,12 +108,18 @@ Ce protocole définit la méthodologie de test des oreillettes Sotto sur un serv
 
 ### 1. Ergonomie physique
 
+#### Évaluation par type d'oreillette
+
+Pour chaque type d'oreillette (conduction osseuse, micro tige, micro cravate) :
+
 | Critère | Méthode de mesure | Objectif |
 |---------|-------------------|-----------|
 | Confort | Échelle 1-10 toutes les 2h | > 8/10 |
 | Stabilité | Nombre d'ajustements nécessaires | < 3/service |
 | Autonomie | Durée effective d'utilisation | > 6h |
 | Facilité d'utilisation | Temps pour mettre/enlever | < 30s |
+| Discrétion | Retours clients et personnel | Minimal |
+| Adaptabilité morphologique | Test sur différents profils | > 90% |
 
 ### 2. Qualité audio
 
