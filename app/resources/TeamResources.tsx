@@ -94,7 +94,9 @@ export default function TeamResources({ teamData }: TeamResourcesProps) {
 
   // Ajout d'un log pour déboguer
   useEffect(() => {
-    console.log('Testing resources:', teamData.testing);
+    if (teamData?.testing) {
+      console.log('Testing resources:', teamData.testing);
+    }
   }, [teamData]);
 
   // Commenté pour permettre l'accès à tous
