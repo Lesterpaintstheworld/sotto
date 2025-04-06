@@ -432,6 +432,17 @@
     ],
     "testing": [
       {
+        "id": "protocole-validation-oreillettes",
+        "title": "Protocole de Validation des Oreillettes",
+        "description": "Méthodologie de test des oreillettes avec approche Wizard of Oz pour validation ergonomique.",
+        "category": "Tests & Validation", 
+        "categoryColor": "#505A64",
+        "icon": "headphones",
+        "link": "#",
+        "linkText": "Accéder au document",
+        "linkIcon": "lock"
+      },
+      {
         "id": "protocole-test",
         "title": "Protocole de Test Pilote",
         "description": "Méthodologie détaillée pour mesurer succès et collecter feedback lors des tests initiaux.",
