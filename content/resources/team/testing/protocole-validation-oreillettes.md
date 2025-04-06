@@ -42,12 +42,23 @@ Ce protocole définit la méthodologie de test des oreillettes Sotto sur un serv
 
 | Critère | Conduction osseuse | Micro tige | Micro cravate |
 |---------|-------------------|------------|---------------|
-| Confort (1-10) | | | |
+| Confort initial (1-10) | | | |
+| Confort après 2h (1-10) | | | |
+| Confort après 4h (1-10) | | | |
+| Fatigue ressentie (1-10) | | | |
+| Points de pression | | | |
 | Qualité audio émission | | | |
 | Qualité audio réception | | | |
 | Stabilité en mouvement | | | |
 | Discrétion visuelle | | | |
 | Résistance bruit ambiant | | | |
+| Adaptation morphologique | | | |
+
+#### Suivi ergonomique
+- Questionnaire confort toutes les 2h
+- Photos positionnement avant/après service
+- Notation points de pression/irritation
+- Rotation des modèles entre services
 
 ### Équipe de test
 
