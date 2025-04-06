@@ -7,12 +7,20 @@ import TeamResources from "./TeamResources";
 // Fonction pour obtenir les données JSON via l'API
 async function getResourcesData() {
   try {
-    //TODO
-    
-    return resourcesData;
+    // En développement, utiliser le fichier local
+    if (process.env.NODE_ENV === 'development') {
+      const resourcesData = (await import('@/app/data/resources.json')).default;
+      return resourcesData;
+    } 
+    // En production, utiliser l'API
+    else {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+      const response = await fetch(`${baseUrl}/api/resources`);
+      const resourcesData = await response.json();
+      return resourcesData;
+    }
   } catch (error) {
     console.error('Error fetching resources data:', error);
-    // Retourner un objet vide mais avec la structure attendue pour éviter les erreurs
     return { 
       public: { guides: [], casestudies: [], tools: [], webinars: [], documents: [] },
       team: { strategic: [], technical: [], operational: [], financial: [], testing: [] } 
