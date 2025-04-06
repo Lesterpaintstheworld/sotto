@@ -1,0 +1,206 @@
+# Protocole de Validation des Oreillettes - Approche "Wizard of Oz"
+
+## Introduction
+
+Ce protocole définit la méthodologie de test des oreillettes Sotto en utilisant une approche "Wizard of Oz", où un opérateur humain simule les réponses de l'IA. Cette approche permet d'isoler et de valider les aspects ergonomiques et opérationnels du système avant le déploiement de l'IA, tout en collectant des données précieuses pour son entraînement.
+
+### Objectifs principaux
+
+1. Valider l'ergonomie et l'utilisabilité des oreillettes en conditions réelles
+2. Tester le concept de service vocal sans écran
+3. Collecter des données pour l'entraînement de l'IA
+4. Mesurer la qualité audio dans différentes conditions
+5. Identifier les scénarios d'usage non anticipés
+
+## Configuration du test
+
+### Équipe de test
+
+| Rôle | Responsabilités |
+|------|-----------------|
+| Opérateur Sotto | Simulation des réponses IA, observation des interactions |
+| Ambassadeur restaurant | Utilisation du système en service réel |
+| Observateur | Documentation des interactions et retours |
+| Support technique | Installation et maintenance du matériel |
+
+### Environnement de test
+
+- Restaurant partenaire représentatif
+- Durée : 1 semaine (2 services par jour)
+- Configuration minimale :
+  * Réseau WiFi dédié
+  * Station d'opérateur isolée
+  * Système d'enregistrement audio
+  * Oreillettes de test et backup
+
+## Protocole de test
+
+### Phase 1 : Installation et formation (Jour 1)
+
+1. **Installation technique**
+   - Configuration du réseau
+   - Installation du poste opérateur
+   - Test des communications
+   - Vérification de la couverture WiFi
+
+2. **Formation initiale**
+   - Présentation du système à l'ambassadeur
+   - Exercices de base (2h)
+   - Simulation de service (2h)
+   - Questions/réponses
+
+### Phase 2 : Test en conditions réelles (Jours 2-6)
+
+#### Service du midi
+- 11h00 : Briefing et vérification matériel
+- 11h30-14h30 : Service avec système
+- 14h30-15h00 : Debriefing à chaud
+
+#### Service du soir
+- 18h00 : Briefing et vérification matériel
+- 18h30-22h30 : Service avec système
+- 22h30-23h00 : Debriefing à chaud
+
+### Phase 3 : Analyse et conclusion (Jour 7)
+
+- Entretien approfondi avec l'ambassadeur
+- Analyse des données collectées
+- Synthèse des observations
+- Recommandations pour itération
+
+## Aspects à mesurer
+
+### 1. Ergonomie physique
+
+| Critère | Méthode de mesure | Objectif |
+|---------|-------------------|-----------|
+| Confort | Échelle 1-10 toutes les 2h | > 8/10 |
+| Stabilité | Nombre d'ajustements nécessaires | < 3/service |
+| Autonomie | Durée effective d'utilisation | > 6h |
+| Facilité d'utilisation | Temps pour mettre/enlever | < 30s |
+
+### 2. Qualité audio
+
+| Critère | Méthode de mesure | Objectif |
+|---------|-------------------|-----------|
+| Clarté voix | Taux de compréhension | > 95% |
+| Bruit ambiant | Mesure dB et impact | Filtrage efficace |
+| Latence | Délai de transmission | < 200ms |
+| Volume | Ajustements nécessaires | < 2/service |
+
+### 3. Interactions service-cuisine
+
+| Aspect | Données à collecter |
+|--------|-------------------|
+| Temps de transmission | Mesure des délais |
+| Clarté des commandes | Taux d'erreur |
+| Confirmation réception | Efficacité protocole |
+| Gestion des urgences | Temps de réaction |
+
+### 4. Impact client
+
+- Réactions spontanées des clients
+- Temps d'attente perçu
+- Qualité du service perçue
+- Commentaires sur la technologie
+
+### 5. Données pour IA
+
+- Enregistrement des commandes vocales
+- Variations linguistiques observées
+- Scénarios non anticipés
+- Patterns de communication
+
+## Collecte de données
+
+### Outils de mesure
+
+1. **Journal de bord**
+   - Incidents techniques
+   - Observations ergonomiques
+   - Retours utilisateur
+   - Situations particulières
+
+2. **Enregistrements audio**
+   - Communications service-cuisine
+   - Commandes clients
+   - Ambiance sonore
+
+3. **Métriques quantitatives**
+   - Temps de service
+   - Taux d'erreur
+   - Utilisation batterie
+   - Métriques réseau
+
+### Grille d'observation
+
+| Moment | Aspect | Observation | Impact |
+|--------|--------|-------------|---------|
+| Installation | Ergonomie | Facilité de mise en place | Adoption |
+| Service | Audio | Qualité en période rush | Efficacité |
+| Clôture | Batterie | Autonomie réelle | Opérationnel |
+
+## Analyse et livrables
+
+### Rapport quotidien
+
+- Synthèse des observations
+- Incidents notables
+- Ajustements effectués
+- Points d'attention
+
+### Rapport final
+
+1. **Synthèse exécutive**
+   - Conclusions principales
+   - Go/No-go pour phase suivante
+   - Points critiques à adresser
+
+2. **Analyse détaillée**
+   - Performance par critère
+   - Données quantitatives
+   - Retours qualitatifs
+   - Recommandations
+
+3. **Annexes**
+   - Données brutes
+   - Enregistrements
+   - Notes d'observation
+   - Documentation technique
+
+## Considérations éthiques
+
+### Protection des données
+
+- Consentement des participants
+- Anonymisation des données
+- Sécurisation des enregistrements
+- Conformité RGPD
+
+### Bien-être des participants
+
+- Pauses régulières
+- Support continu
+- Droit de retrait
+- Compensation adaptée
+
+## Prochaines étapes
+
+1. **Validation du protocole**
+   - Revue par équipe technique
+   - Validation juridique
+   - Test à blanc
+
+2. **Préparation matérielle**
+   - Commande équipements
+   - Configuration outils
+   - Tests préliminaires
+
+3. **Planning**
+   - Sélection restaurant
+   - Recrutement ambassadeur
+   - Calendrier détaillé
+
+---
+
+*Document interne - Pour usage équipe Sotto uniquement*
