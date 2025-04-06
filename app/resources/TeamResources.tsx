@@ -268,6 +268,7 @@ export default function TeamResources({ teamData }: TeamResourcesProps) {
         <section>
           <h2 className="text-2xl md:text-3xl font-bold mb-8">Tests & validation</h2>
           <div className="grid md:grid-cols-5 gap-4">
+            {console.log('teamData.testing:', teamData.testing)}
             {teamData.testing.map((document: Resource) => (
               <Link href={`/resources/${document.id}`} key={document.id} className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
                 <div className="relative aspect-video">
