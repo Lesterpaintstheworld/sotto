@@ -454,17 +454,6 @@
         "linkIcon": "lock"
       },
       {
-        "id": "protocole-validation-oreillettes",
-        "title": "Protocole de Validation des Oreillettes",
-        "description": "Méthodologie de test des oreillettes avec approche Wizard of Oz pour validation ergonomique.",
-        "category": "Tests & Validation",
-        "categoryColor": "#505A64",
-        "icon": "headphones",
-        "link": "#",
-        "linkText": "Accéder au document",
-        "linkIcon": "lock"
-      },
-      {
         "id": "kpi-dashboard-complet",
         "title": "KPI Dashboard",
         "description": "Indicateurs clés de performance pour suivre l'efficacité opérationnelle et commerciale.",
