@@ -224,9 +224,41 @@ Pour maintenir l'alignement et la progression:
 - **Demo Day** — Présentation mensuelle des nouvelles fonctionnalités
 - **Rétrospective** — Analyse trimestrielle du processus d'itération
 
+## Procédures de continuité
+
+### Scénarios de défaillance
+En lien avec le Plan de Continuité de Service, les procédures suivantes sont à appliquer :
+
+| Type d'incident | Action immédiate | Solution de secours | Reprise normale |
+|----------------|------------------|---------------------|-----------------|
+| Panne oreillette | Switch backup | Mode dégradé mobile | Diagnostic/remplacement |
+| Perte WiFi | Basculement 4G | Interface simplifiée | Rétablissement réseau |
+| Défaut audio | Reset matériel | Communication alternative | Recalibration |
+| Erreur système | Redémarrage | Mode manuel temporaire | Analyse logs |
+
+### Continuité des tests
+- Procédures de sauvegarde des données en cours
+- Points de reprise prédéfinis
+- Documentation des incidents
+- Critères de suspension/reprise
+
+## Visualisation et monitoring
+
+### Tableaux de bord temps réel
+- Statut des oreillettes actives
+- Métriques de performance audio
+- Taux de reconnaissance STT
+- Alertes et incidents
+
+### Cartographie thermique
+- Zones de couverture WiFi
+- Points de congestion réseau
+- Niveaux sonores par zone
+- Performance reconnaissance vocale
+
 ## Conclusion
 
-Notre plan d'itération produit est conçu pour transformer systématiquement les retours utilisateurs en améliorations concrètes qui renforcent la proposition de valeur de Sotto. En maintenant un équilibre entre notre vision d'une technologie discrète et les besoins exprimés par nos utilisateurs, nous créons un produit qui évolue de manière organique tout en restant fidèle à notre mission: libérer la restauration des écrans pour créer une expérience plus humaine et efficace.
+Ce protocole de validation, enrichi des aspects de continuité et de monitoring visuel, permet une évaluation complète et rigoureuse des oreillettes Sotto. L'intégration des données collectées avec notre système d'IA et l'attention particulière portée à l'ergonomie garantissent des résultats exploitables pour l'amélioration continue de notre solution.
 
 ---
 

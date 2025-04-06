@@ -121,7 +121,7 @@ Pour chaque type d'oreillette (conduction osseuse, micro tige, micro cravate) :
 | Discrétion | Retours clients et personnel | Minimal |
 | Adaptabilité morphologique | Test sur différents profils | > 90% |
 
-### 2. Qualité audio
+### 2. Qualité audio et reconnaissance vocale
 
 | Critère | Méthode de mesure | Objectif |
 |---------|-------------------|-----------|
@@ -129,6 +129,22 @@ Pour chaque type d'oreillette (conduction osseuse, micro tige, micro cravate) :
 | Bruit ambiant | Mesure dB et impact | Filtrage efficace |
 | Latence | Délai de transmission | < 200ms |
 | Volume | Ajustements nécessaires | < 2/service |
+| STT Accuracy | Taux reconnaissance | > 98% |
+| Word Error Rate | WER sur commandes | < 2% |
+| Temps réponse STT | Latence traitement | < 300ms |
+
+#### Collecte données IA
+- **Variations linguistiques**
+  * Accents régionaux
+  * Vocabulaire métier
+  * Expressions locales
+  * Variations saisonnières menu
+
+- **Environnement sonore**
+  * Signature acoustique par zone
+  * Pics de bruit typiques
+  * Patterns de fond sonore
+  * Interférences spécifiques
 
 ### 3. Interactions service-cuisine
 
