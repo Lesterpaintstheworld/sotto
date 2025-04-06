@@ -1,16 +1,29 @@
-# Protocole de Validation des Oreillettes - Approche "Wizard of Oz"
+# Protocole de Validation des Oreillettes - Test Service Complet
 
 ## Introduction
 
-Ce protocole définit la méthodologie de test des oreillettes Sotto en utilisant une approche "Wizard of Oz", où un opérateur humain simule les réponses de l'IA. Cette approche permet d'isoler et de valider les aspects ergonomiques et opérationnels du système avant le déploiement de l'IA, tout en collectant des données précieuses pour son entraînement.
+Ce protocole définit la méthodologie de test des oreillettes Sotto sur un service complet en conditions réelles, en utilisant une approche "Wizard of Oz" où un opérateur humain simule les réponses de l'IA. Cette approche permet de valider l'ergonomie et les performances du système sur une durée prolongée, tout en collectant des données précieuses pour l'entraînement de l'IA.
 
 ### Objectifs principaux
 
-1. Valider l'ergonomie et l'utilisabilité des oreillettes en conditions réelles
-2. Tester le concept de service vocal sans écran
-3. Collecter des données pour l'entraînement de l'IA
-4. Mesurer la qualité audio dans différentes conditions
-5. Identifier les scénarios d'usage non anticipés
+1. Valider l'ergonomie physique de l'oreillette sur une durée de service complète
+2. Tester la fluidité des interactions vocales en conditions réelles de service
+3. Mesurer la qualité audio dans différentes zones du restaurant
+4. Collecter des données réelles pour calibrer l'IA
+5. Identifier les scénarios d'usage spécifiques au service
+
+### Configuration du test
+
+- **Durée** : 1 service complet (11h30-14h30)
+- **Participants** :
+  * 1 ambassadeur restaurant équipé de l'oreillette
+  * 1 opérateur Sotto simulant l'IA
+  * 1 observateur technique
+- **Matériel** :
+  * Oreillette de test + backup
+  * Système d'enregistrement audio
+  * Outils de mesure acoustique
+  * Grilles d'observation
 
 ## Configuration du test
 
