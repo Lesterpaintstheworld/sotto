@@ -321,6 +321,100 @@ export default function ResourceContent() {
       {/* Collecte de données */}
       <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#1A2A40]">
         <h2 className="text-2xl font-semibold mb-6">Collecte et analyse des données</h2>
+
+      {/* Notes pour l'IA Sotto */}
+      <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#87A28F]">
+        <h2 className="text-2xl font-semibold mb-6">Notes pour l'IA Sotto</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 className="font-semibold text-lg mb-4 text-[#87A28F]">Patterns de communication</h3>
+            <ul className="space-y-3">
+              {[
+                "Formulations naturelles des commandes",
+                "Expressions spécifiques au restaurant",
+                "Variations contextuelles (rush vs. calme)",
+                "Vocabulaire technique cuisine",
+                "Confirmations et validations",
+                "Gestion des modifications",
+                "Expressions d'urgence"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-gray-700">
+                  <span className="w-2 h-2 rounded-full bg-[#87A28F]"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-lg mb-4 text-[#87A28F]">Contextes d'utilisation</h3>
+            <ul className="space-y-3">
+              {[
+                "Moments de prise de commande",
+                "Communications cuisine-salle",
+                "Gestion des tables multiples",
+                "Coordination entre serveurs",
+                "Situations exceptionnelles",
+                "Interactions avec les clients",
+                "Périodes de rush"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-gray-700">
+                  <span className="w-2 h-2 rounded-full bg-[#87A28F]"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <h3 className="font-semibold text-lg mb-4 text-[#87A28F]">Grille d'observation IA</h3>
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-4 border-b-2 border-gray-200">Aspect</th>
+                <th className="text-left p-4 border-b-2 border-gray-200">Éléments à noter</th>
+                <th className="text-left p-4 border-b-2 border-gray-200">Impact pour l'IA</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  aspect: "Contexte sonore",
+                  elements: "Niveau de bruit, sources d'interférence",
+                  impact: "Calibration des filtres audio"
+                },
+                {
+                  aspect: "Flux de conversation",
+                  elements: "Enchaînements, interruptions, reprises",
+                  impact: "Gestion des dialogues"
+                },
+                {
+                  aspect: "Vocabulaire métier",
+                  elements: "Termes spécifiques, abréviations",
+                  impact: "Enrichissement lexical"
+                },
+                {
+                  aspect: "Situations critiques",
+                  elements: "Urgences, corrections, annulations",
+                  impact: "Gestion des priorités"
+                },
+                {
+                  aspect: "Adaptations humaines",
+                  elements: "Reformulations, clarifications",
+                  impact: "Stratégies de résolution"
+                }
+              ].map((item, index) => (
+                <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
+                  <td className="p-4 font-medium">{item.aspect}</td>
+                  <td className="p-4">{item.elements}</td>
+                  <td className="p-4 text-[#87A28F]">{item.impact}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
