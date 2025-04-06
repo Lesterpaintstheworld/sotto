@@ -92,6 +92,11 @@ export default function TeamResources({ teamData }: TeamResourcesProps) {
   // Forcer l'affichage des ressources d'équipe en définissant showTeamResources à true
   const [showTeamResources, setShowTeamResources] = useState(true);
 
+  // Ajout d'un log pour déboguer
+  useEffect(() => {
+    console.log('Testing resources:', teamData.testing);
+  }, [teamData]);
+
   // Commenté pour permettre l'accès à tous
   /*
   useEffect(() => {
