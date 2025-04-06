@@ -134,6 +134,100 @@ export default function ResourceContent() {
         </div>
       </div>
 
+      {/* Aspects à mesurer */}
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#D47D5A]">
+          <h2 className="text-2xl font-semibold mb-6">Évaluation par type d'oreillette</h2>
+          <table className="w-full">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-4">Critère</th>
+                <th className="text-left p-4">Méthode de mesure</th>
+                <th className="text-left p-4">Objectif</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { critere: "Confort", methode: "Échelle 1-10 toutes les 2h", objectif: "> 8/10" },
+                { critere: "Stabilité", methode: "Nombre d'ajustements nécessaires", objectif: "< 3/service" },
+                { critere: "Autonomie", methode: "Durée effective d'utilisation", objectif: "> 6h" },
+                { critere: "Facilité d'utilisation", methode: "Temps pour mettre/enlever", objectif: "< 30s" }
+              ].map((item, index) => (
+                <tr key={index} className="border-b border-gray-100">
+                  <td className="p-4">{item.critere}</td>
+                  <td className="p-4">{item.methode}</td>
+                  <td className="p-4">{item.objectif}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#87A28F]">
+          <h2 className="text-2xl font-semibold mb-6">Qualité audio et reconnaissance vocale</h2>
+          <table className="w-full">
+            <thead>
+              <tr className="bg-gray-50">
+                <th className="text-left p-4">Critère</th>
+                <th className="text-left p-4">Objectif</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { critere: "Clarté voix", objectif: "> 95% taux de compréhension" },
+                { critere: "Latence", objectif: "< 200ms" },
+                { critere: "STT Accuracy", objectif: "> 98%" },
+                { critere: "Word Error Rate", objectif: "< 2%" }
+              ].map((item, index) => (
+                <tr key={index} className="border-b border-gray-100">
+                  <td className="p-4">{item.critere}</td>
+                  <td className="p-4">{item.objectif}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Collecte de données pour IA */}
+      <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#1A2A40]">
+        <h2 className="text-2xl font-semibold mb-6">Données pour IA</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Variations linguistiques</h3>
+            <ul className="space-y-2">
+              {[
+                "Accents régionaux",
+                "Vocabulaire métier",
+                "Expressions locales",
+                "Variations saisonnières menu"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#1A2A40]"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg mb-4">Environnement sonore</h3>
+            <ul className="space-y-2">
+              {[
+                "Signature acoustique par zone",
+                "Pics de bruit typiques",
+                "Patterns de fond sonore",
+                "Interférences spécifiques"
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#1A2A40]"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+
       {/* Grille d'évaluation */}
       <div className="bg-white rounded-lg p-8 shadow-sm border-l-4 border-[#87A28F]">
         <h2 className="text-2xl font-semibold mb-6">Grille d'évaluation comparative</h2>
