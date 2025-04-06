@@ -180,6 +180,35 @@ Chaque cycle d'itération est documenté avec:
 - Résultats des tests et validations
 - Leçons apprises et recommandations futures
 
+## Collecte de données pour l'IA
+
+### Patterns de communication
+- Formulations naturelles des commandes
+- Expressions spécifiques au restaurant
+- Variations contextuelles (rush vs. calme)
+- Vocabulaire technique cuisine
+- Confirmations et validations
+- Gestion des modifications
+- Expressions d'urgence
+
+### Contextes d'utilisation
+- Moments de prise de commande
+- Communications cuisine-salle
+- Gestion des tables multiples
+- Coordination entre serveurs
+- Situations exceptionnelles
+- Interactions avec les clients
+- Périodes de rush
+
+### Grille d'observation IA
+| Aspect | Éléments à noter | Impact pour l'IA |
+|--------|-----------------|-----------------|
+| Contexte sonore | Niveau de bruit, sources d'interférence | Calibration des filtres audio |
+| Flux de conversation | Enchaînements, interruptions, reprises | Gestion des dialogues |
+| Vocabulaire métier | Termes spécifiques, abréviations | Enrichissement lexical |
+| Situations critiques | Urgences, corrections, annulations | Gestion des priorités |
+| Adaptations humaines | Reformulations, clarifications | Stratégies de résolution |
+
 ## Rôles et responsabilités
 
 ### Équipe d'itération produit

@@ -2,28 +2,36 @@
 
 ## Introduction
 
-Ce protocole définit la méthodologie de test des oreillettes Sotto sur un service complet en conditions réelles, en utilisant une approche "Wizard of Oz" où un opérateur humain simule les réponses de l'IA. Cette approche permet de valider l'ergonomie et les performances du système sur une durée prolongée, tout en collectant des données précieuses pour l'entraînement de l'IA.
+Ce protocole définit la méthodologie de test des oreillettes Sotto sur deux services complets en conditions réelles, en utilisant une approche "Wizard of Oz" où un opérateur humain simule les réponses de l'IA. Cette approche nous permet de :
+- Valider l'ergonomie physique en conditions réelles
+- Tester la fluidité des interactions vocales
+- Collecter des données pour l'entraînement de l'IA
+- Identifier les scénarios d'usage spécifiques
 
-### Objectifs principaux
+## Configuration du test
 
-1. Valider l'ergonomie physique de l'oreillette sur une durée de service complète
-2. Tester la fluidité des interactions vocales en conditions réelles de service
-3. Mesurer la qualité audio dans différentes zones du restaurant
-4. Collecter des données réelles pour calibrer l'IA
-5. Identifier les scénarios d'usage spécifiques au service
+### Planning sur 2 jours
 
-### Configuration du test
+#### Jour 1 - Installation et tests initiaux
+- 9h00 : Installation et configuration
+- 10h00 : Formation initiale (1h)
+- 11h30-14h30 : Service test midi (conduction osseuse)
+- 15h00 : Debriefing et ajustements
+- 18h30-22h30 : Service test soir (micro tige)
+- 22h30 : Debriefing rapide
 
-- **Durée** : 1 service complet (11h30-14h30)
-- **Participants** :
-  * 1 ambassadeur restaurant équipé de l'oreillette
-  * 1 opérateur Sotto simulant l'IA
-  * 1 observateur technique
-- **Matériel** :
-  * Oreillette de test + backup
-  * Système d'enregistrement audio
-  * Outils de mesure acoustique
-  * Grilles d'observation
+#### Jour 2 - Validation finale
+- 10h00 : Briefing et préparation
+- 11h30-14h30 : Service test midi (micro cravate)
+- 15h00 : Analyse comparative
+- 18h30-22h30 : Test approfondi meilleure option
+- 22h30-23h30 : Debriefing final et conclusions
+
+### Équipe de test
+- 1 ambassadeur restaurant équipé de l'oreillette
+- 1 opérateur Sotto simulant l'IA
+- 1 observateur technique
+- 1 support technique
 
 ## Configuration du test
 
