@@ -67,15 +67,11 @@ export default function ResourceContent() {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-gray-700">
                 <span className="w-8 h-8 rounded-full bg-[#1A2A40]/10 flex items-center justify-center text-sm font-medium">J1</span>
-                Conduction osseuse
+                Service midi : Conduction osseuse / Service soir : Micro tige
               </li>
               <li className="flex items-center gap-3 text-gray-700">
                 <span className="w-8 h-8 rounded-full bg-[#1A2A40]/10 flex items-center justify-center text-sm font-medium">J2</span>
-                Micro tige
-              </li>
-              <li className="flex items-center gap-3 text-gray-700">
-                <span className="w-8 h-8 rounded-full bg-[#1A2A40]/10 flex items-center justify-center text-sm font-medium">J3</span>
-                Micro cravate
+                Service midi : Micro cravate / Service soir : Test approfondi meilleure option
               </li>
             </ul>
           </div>
