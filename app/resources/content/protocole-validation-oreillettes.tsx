@@ -1,4 +1,4 @@
-export default function ResourceContent() {
+const ResourceContent = () => {
   return (
     <div className="space-y-12">
       {/* Introduction */}
@@ -523,5 +523,7 @@ export default function ResourceContent() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default ResourceContent;
